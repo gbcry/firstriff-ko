@@ -1,0 +1,107 @@
+{
+  "bands": [
+    {
+      "id": "togenashi_togeari",
+      "name": "토게나시 토게아리",
+      "introduction": [
+        "억눌린 마음을 품은 5명에 의한 걸즈 밴드.",
+        "감정적이고 질주감 넘치는 록 사운드가 특징이다.",
+        "벽에 부딪히면서도, 자신들의 음악이 가진 힘을 믿고 돌진해 나간다."
+      ],
+      "images": {
+        "main_visual": "images/band/togenashitogeari/main_visual.webp",
+        "band_main": "images/band/togenashitogeari/band_main.png",
+        "media_visual": "images/band/togenashitogeari/media_visual.jpeg",
+        "band_logo": "images/band/togenashitogeari/band_logo.png",
+        "list_logo": {
+          "default": "images/band/togenashitogeari/list_logo_default.webp",
+          "hover": "images/band/togenashitogeari/list_logo_hover.webp"
+        },
+        "background": "images/band/togenashitogeari/background.png"
+      },
+      "member_ids": ["subaru", "momoka", "nina", "tomo", "rupa"],
+      "links": {
+        "official_sns": [
+          {
+            "url": "https://x.com/girlsbandcry",
+            "text": "Girls Band Cry OFFICIAL X"
+          },
+          {
+            "url": "https://www.instagram.com/toge0toge1/",
+            "text": "TOGENASHI TOGEARI OFFICIAL Instagram"
+          }
+        ],
+        "debut_pv": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "canna_lily",
+      "name": "Canna Lily",
+      "introduction": [
+        "「필사적인」 발자취에서 피어난 록큰롤 밴드.",
+        "마음이 시드는 운명에 농락당할지라도,",
+        "끈질기게 발을 내딛는 기개를 갖추고 있다.",
+        "그런 볼품없는 꽃잎들이 투박하게 연주한 충동은,",
+        "머지않아 화려한 꽃이 된다."
+      ],
+      "images": {
+        "main_visual": "images/band/cannalily/main_visual.webp",
+        "band_main": "images/band/cannalily/band_main.png",
+        "media_visual": "images/band/cannalily/media_visual.jpeg",
+        "band_logo": "images/band/cannalily/band_logo.png",
+        "list_logo": {
+          "default": "images/band/cannalily/list_logo_default.webp",
+          "hover": "images/band/cannalily/list_logo_hover.webp"
+        },
+        "background": "images/band/cannalily/background.png"
+      },
+      "member_ids": ["shion", "rindo", "ayame", "kaede", "nazuna"],
+      "links": {
+        "official_sns": {
+          "url": "https://x.com/CannaLily_GBC",
+          "text": "Canna Lily OFFICIAL X"
+        },
+        "debut_pv": {
+          "url": "https://www.youtube.com/watch?v=irshMXtKQjo",
+          "text": "Canna Lily DEBUT PV"
+        }
+      }
+    },
+    {
+      "id": "f_272",
+      "name": "F-272",
+      "introduction": [
+        "너희들 전부 다 정말 싫어.",
+        "삐걱거리는 낙오자 아이돌 지망생 5인조.",
+        "희망도 절망도 이미 퇴색되어 냉소와 남 탓으로 흘러가는 나날들──",
+        "아픔이 없어야 할 마음이지만, 갑자기 삐걱이는 소리를 내기 시작한다.",
+        "들리니? 있지, 심장은 여기에 있어."
+      ],
+      "images": {
+        "main_visual": "images/band/f-272/main_visual.webp",
+        "band_main": "images/band/f-272/band_main.png",
+        "media_visual": "images/band/f-272/media_visual.jpeg",
+        "band_logo": "images/band/f-272/band_logo.png",
+        "list_logo": {
+          "default": "images/band/f-272/list_logo_default.webp",
+          "hover": "images/band/f-272/list_logo_hover.webp"
+        },
+        "background": "images/band/f-272/background.png"
+      },
+      "member_ids": ["ari", "koto", "hazuki", "momono", "saki"],
+      "links": {
+        "official_sns": {
+          "url": "https://x.com/F_272_GBC",
+          "text": "F-272 OFFICIAL X"
+        },
+        "debut_pv": {
+          "url": "https://www.youtube.com/watch?v=U3YpdxjD0n8",
+          "text": "F-272 DEBUT PV"
+        }
+      }
+    }
+  ]
+}

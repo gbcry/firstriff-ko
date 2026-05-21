@@ -1,0 +1,110 @@
+{
+  "news": [
+    {
+      "id": "20260322_01",
+      "date": "2026.03.22",
+      "title": "AnimeJapan 2026 참가 정보",
+      "details": {
+        "news_image": "images/news/20260322_01.png",
+        "description": [
+          "AnimeJapan 2026 토에이 애니메이션 부스에 「걸즈 밴드 크라이」와 「걸즈 밴드 크라이 First Riff」가 참가합니다.",
+          "「토게나시토게아리」와 「Canna Lily」의 캐릭터 패널 전시 및 오리지널 경품 증정이 예정되어 있습니다.",
+          "여러분의 많은 방문을 기다리고 있겠습니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": "2026년 3월 28일(土) ~ 29일(日) 9:00 ~ 17:00",
+            "link": null
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": "티켓 예매 정보는 공식 사이트를 확인해 주시기 바랍니다.",
+            "link": {
+              "url": "https://anime-japan.jp/tickets/",
+              "text": "AnimeJapan 공식 사이트 바로가기"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260322_02",
+      "date": "2026.03.22",
+      "title": "Canna Lily 1st ONE-MAN LIVE 「새벽녘에 피는 꽃」 개최 결정!",
+      "details": {
+        "main_image": "images/news/20260322_02.png",
+        "description": [
+          "Canna Lily 1st ONE-MAN LIVE 「새벽녘에 피는 꽃」의 개최가 결정되었습니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": "2026년 6월 26일(金) 입장 18:00 / 시작 19:00",
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": "다이칸야마 UNIT (도쿄도 시부야구)",
+            "link": null
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": "선행 추첨 판매를 실시합니다. 접수 기간: 2026년 3월 22일(日) 21:00 ~ 4월 1일(水) 23:59",
+            "link": {
+              "url": "https://livepocket.jp/e/cannalily_0626live",
+              "text": "LivePocket 예매 페이지 바로가기"
+            }
+          },
+          {
+            "label": "■ Canna Lily 공식 SNS",
+            "value": "라이브 관련 최신 정보는 Canna Lily 공식 X를 통해 확인해 주시기 바랍니다.",
+            "link": {
+              "url": "https://x.com/CannaLily_GBC",
+              "text": "Canna Lily 공식 X"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260418_01",
+      "date": "2026.04.18",
+      "title": "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL” 개최 결정!",
+      "details": {
+        "main_image": "images/news/20260418_01.png",
+        "description": [
+          "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL”의 개최가 결정되었습니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": "2026년 7월 20일(月·공휴일) 입장 16:00 / 시작 17:00",
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": "다이칸야마 UNIT (도쿄도 시부야구)",
+            "link": null
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": "선행 추첨 판매를 실시합니다. 접수 기간: 2026년 4월 18일(土) 21:00 ~ 4월 30일(木) 23:59 ※ 티켓 신청을 위해서는 Musing 회원가입(무료)이 필요합니다.",
+            "link": {
+              "url": "https://musing.jp/ticket/F272_1st/",
+              "text": "Musing 예매 페이지 바로가기"
+            }
+          },
+          {
+            "label": "■ F-272 공식 SNS",
+            "value": "라이브 관련 최신 정보는 F-272 공식 X를 통해 확인해 주시기 바랍니다.",
+            "link": {
+              "url": "https://x.com/F_272_GBC",
+              "text": "F-272 공식 X"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
