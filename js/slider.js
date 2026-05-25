@@ -36,8 +36,11 @@ function updateSliderPosition(hasAnimation = true) {
   const slideWidth = targetSlide.offsetWidth;
   const slideLeft = targetSlide.offsetLeft;
 
+  const sliderContainer = document.querySelector("#band-slider");
+  const containerWidth = sliderContainer.clientWidth;
+
   // 브라우저 정중앙 좌표 계산
-  const centerOffset = (window.innerWidth - slideWidth) / 2;
+  const centerOffset = (containerWidth - slideWidth) / 2;
   const moveX = -slideLeft + centerOffset;
 
   wrapper.style.transform = `translateX(${moveX}px)`;
