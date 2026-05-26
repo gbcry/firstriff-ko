@@ -94,6 +94,11 @@ a {
   color: var(--color-point);
 }
 
+#main-content {
+  margin-top: clamp(140px, 12vw, 180px);
+  width: 100%;
+}
+
 /* =========================================
    Footer
 ========================================= */
@@ -375,6 +380,10 @@ a {
     filter: blur(4px) brightness(0.6);
     pointer-events: none;
     transition: filter 0.2s ease;
+  }
+
+  #main-content {
+    margin-top: 100px;
   }
 
   /* ===== Footer ===== */
