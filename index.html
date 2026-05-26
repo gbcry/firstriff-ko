@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="menu-overlay"></div>
     <div id="app">
         <div id="header">
             <div class="header-container">
@@ -25,6 +26,39 @@
                     <a href="#band" class="nav-item">BAND</a>
                     <a href="#discography" class="nav-item">DISCOGRAPHY</a>
                 </div>
+
+                <div class="mobile-sidebar">
+                    <div class="mobile-menu-label">MENU:</div>
+                    <div class="mobile-menu-links">
+                        <a href="#home" class="nav-item active">HOME</a>
+                        <a href="#news" class="nav-item">NEWS</a>
+                        <a href="#band" class="nav-item">BAND</a>
+                        <a href="#discography" class="nav-item">DISCOGRAPHY</a>
+                    </div>
+
+                    <div class="mobile-menu-divider"></div>
+
+                    <div class="mobile-menu-label">OFFICIAL ACCOUNT:</div>
+
+                    <div class="mobile-menu-links">
+                        <a href="https://x.com/gbc_firstriff" target="_blank" rel="noopener noreferrer"
+                            class="link-item">FIRST RIFF 공식 X</a>
+                        <a href="https://gbc-firstriff.com/" target="_blank" rel="noopener noreferrer"
+                            class="link-item">FIRST RIFF 공식 사이트</a>
+                        <a href="https://girls-band-cry.com/" target="_blank" rel="noopener noreferrer"
+                            class="link-item">걸즈 밴드 크라이 공식 사이트</a>
+                        <a href="https://www.youtube.com/@girlsbandcry" target="_blank" rel="noopener noreferrer"
+                            class="link-item">걸즈 밴드 크라이 공식
+                            유튜브</a>
+                    </div>
+
+                    <div class="mobile-menu-logo">First Riff</div>
+                </div>
+
+                <button class="menu-toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
 
@@ -35,32 +69,42 @@
                 <div class="slider-wrapper">
                     <div class="slide-item">
                         <img src="images/band/f-272/background.png" class="slide-bg">
-                        <img src="images/band/f-272/main_visual.webp" class="slide-band">
+                        <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
+                            data-mobile="images/band/f-272/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/f-272/band_logo.png" class="slide-logo">
                     </div>
                     <div class="slide-item active">
                         <img src="images/band/togenashitogeari/background.png" class="slide-bg">
-                        <img src="images/band/togenashitogeari/main_visual.webp" class="slide-band">
+                        <img src="images/band/togenashitogeari/main_visual.webp"
+                            data-desktop="images/band/togenashitogeari/main_visual.webp"
+                            data-mobile="images/band/togenashitogeari/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
                     </div>
                     <div class="slide-item">
                         <img src="images/band/cannalily/background.png" class="slide-bg">
-                        <img src="images/band/cannalily/main_visual.webp" class="slide-band">
+                        <img src="images/band/cannalily/main_visual.webp"
+                            data-desktop="images/band/cannalily/main_visual.webp"
+                            data-mobile="images/band/cannalily/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/cannalily/band_logo.png" class="slide-logo">
                     </div>
                     <div class="slide-item">
                         <img src="images/band/f-272/background.png" class="slide-bg">
-                        <img src="images/band/f-272/main_visual.webp" class="slide-band">
+                        <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
+                            data-mobile="images/band/f-272/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/f-272/band_logo.png" class="slide-logo">
                     </div>
                     <div class="slide-item">
                         <img src="images/band/togenashitogeari/background.png" class="slide-bg">
-                        <img src="images/band/togenashitogeari/main_visual.webp" class="slide-band">
+                        <img src="images/band/togenashitogeari/main_visual.webp"
+                            data-desktop="images/band/togenashitogeari/main_visual.webp"
+                            data-mobile="images/band/togenashitogeari/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
                     </div>
                     <div class="slide-item">
                         <img src="images/band/cannalily/background.png" class="slide-bg">
-                        <img src="images/band/cannalily/main_visual.webp" class="slide-band">
+                        <img src="images/band/cannalily/main_visual.webp"
+                            data-desktop="images/band/cannalily/main_visual.webp"
+                            data-mobile="images/band/cannalily/main_visual_mobile.png" class="slide-band">
                         <img src="images/band/cannalily/band_logo.png" class="slide-logo">
                     </div>
                 </div>
@@ -118,6 +162,7 @@
         </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
