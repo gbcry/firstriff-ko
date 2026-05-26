@@ -69,23 +69,25 @@ function checkLoop() {
 }
 
 // [Event]
-nextBtn.addEventListener("click", () => {
-  // 슬라이딩 중일 때는 클릭 무시
-  if (isTransitioning) return;
+if (prevBtn && nextBtn) {
+  nextBtn.addEventListener("click", () => {
+    // 슬라이딩 중일 때는 클릭 무시
+    if (isTransitioning) return;
 
-  isTransitioning = true;
-  currentIndex++;
-  updateSliderPosition();
-});
+    isTransitioning = true;
+    currentIndex++;
+    updateSliderPosition();
+  });
 
-prevBtn.addEventListener("click", () => {
-  // 슬라이딩 중일 때는 클릭 무시
-  if (isTransitioning) return;
+  prevBtn.addEventListener("click", () => {
+    // 슬라이딩 중일 때는 클릭 무시
+    if (isTransitioning) return;
 
-  isTransitioning = true;
-  currentIndex--;
-  updateSliderPosition();
-});
+    isTransitioning = true;
+    currentIndex--;
+    updateSliderPosition();
+  });
+}
 
 // 트랜지션 애니메이션이 끝날 때 루프 검사
 wrapper.addEventListener("transitionend", checkLoop);
@@ -114,12 +116,30 @@ function startAutoSlide() {
 
 startAutoSlide();
 
-const sliderContainer = document.querySelector("#band-slider"); // 슬라이더 전체 영역 ID
+// 이미지 스위칭
+function switchSliderImages() {
+  const isMobile = window.innerWidth <= 768;
+  const bandImages = document.querySelectorAll(".slide-item .slide-band");
 
-sliderContainer.addEventListener("mouseenter", () => {
-  clearInterval(slideInterval);
-});
+  bandImages.forEach((img) => {
+    const desktopSrc = img.getAttribute("data-desktop");
+    const mobileSrc = img.getAttribute("data-mobile");
 
-sliderContainer.addEventListener("mouseleave", () => {
-  startAutoSlide();
+    if (isMobile && mobileSrc) {
+      if (img.src !== mobileSrc) img.src = mobileSrc;
+    } else if (!isMobile && desktopSrc) {
+      if (img.src !== desktopSrc) img.src = desktopSrc;
+    }
+  });
+}
+
+// 초기 실행 및 리사이즈 이벤트
+switchSliderImages();
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    switchSliderImages();
+  }, 100);
 });
