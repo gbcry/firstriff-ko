@@ -1,12 +1,6 @@
 /* =========================================
    Main Content - Band Slider
 ========================================= */
-
-#main-content {
-  margin-top: clamp(140px, 12vw, 180px);
-  width: 100%;
-}
-
 #band-slider {
   position: relative;
   width: 100%;
@@ -228,10 +222,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  #main-content {
-    margin-top: 100px;
-  }
-
   /* ===== Main Content - Band Slider ===== */
   #band-slider {
     padding: 0 !important;
