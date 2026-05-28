@@ -73,9 +73,13 @@ const templates = {
         </div>
     </div>
   `,
-  news: `<div><h2>뉴스 페이지 (준비 중)</h2></div>`,
-  band: `<div><h2>밴드 페이지 (준비 중)</h2></div>`,
-  discography: `<div><h2>디스코그래피 페이지 (준비 중)</h2></div>`,
+  news: `
+    <div id="main-content">
+        <div class="news-container"></div>
+    </div>
+  `,
+  band: `<div id="main-content"><h2>밴드 페이지 (준비 중)</h2></div>`,
+  discography: `<div id="main-content"><h2>디스코그래피 페이지 (준비 중)</h2></div>`,
 };
 
 // 화면 교체 라우터
@@ -85,14 +89,20 @@ function handleRouting() {
 
   const rootDiv = document.getElementById("main-root");
 
-  if (templates[hash]) {
+  // 뉴스 페이지 (목록 || 상세)
+  if (hash.startsWith("news")) {
+    rootDiv.innerHTML = templates.news;
+    initNews();
+  }
+  // 홈, 밴드, 디스코그래피 페이지
+  else if (templates[hash]) {
     rootDiv.innerHTML = templates[hash];
+
+    if (hash === "home") {
+      initSlider();
+    }
   } else {
     rootDiv.innerHTML = `<h2>404 - 페이지를 찾을 수 없습니다.</h2>`;
-  }
-
-  if (hash === "home") {
-    initSlider();
   }
 }
 
