@@ -23,6 +23,13 @@ body {
   scrollbar-gutter: stable;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -94,9 +101,19 @@ a {
   color: var(--color-point);
 }
 
+#main-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 #main-content {
-  margin-top: clamp(140px, 12vw, 180px);
+  margin-top: clamp(40px, 6vw, 80px);
+  margin-bottom: clamp(40px, 6vw, 80px);
   width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================================
@@ -108,7 +125,6 @@ a {
   background-color: var(--color-point);
   color: var(--color-white);
   padding: 60px 0 0 0;
-  margin-top: clamp(100px, 12vw, 160px);
   border-top: 10px solid var(--color-black);
   display: flex;
   flex-direction: column;
@@ -205,6 +221,10 @@ a {
    Responsive Mobile Layout
 ========================================= */
 @media screen and (max-width: 768px) {
+  #app {
+    padding-top: 60px;
+  }
+
   /* ===== Header ===== */
   #header {
     border-bottom: 4px solid var(--color-black);
@@ -383,7 +403,8 @@ a {
   }
 
   #main-content {
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   /* ===== Footer ===== */
