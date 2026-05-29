@@ -13,9 +13,9 @@
         "band_main": "images/band/togenashitogeari/band_main.png",
         "media_visual": "images/band/togenashitogeari/media_visual.jpeg",
         "band_logo": "images/band/togenashitogeari/band_logo.png",
-        "list_logo": {
-          "default": "images/band/togenashitogeari/list_logo_default.webp",
-          "hover": "images/band/togenashitogeari/list_logo_hover.webp"
+        "tab_logo": {
+          "default": "images/band/togenashitogeari/tab_logo_default.webp",
+          "hover": "images/band/togenashitogeari/tab_logo_hover.webp"
         },
         "background": "images/band/togenashitogeari/background.png"
       },
@@ -52,9 +52,9 @@
         "band_main": "images/band/cannalily/band_main.png",
         "media_visual": "images/band/cannalily/media_visual.jpeg",
         "band_logo": "images/band/cannalily/band_logo.png",
-        "list_logo": {
-          "default": "images/band/cannalily/list_logo_default.webp",
-          "hover": "images/band/cannalily/list_logo_hover.webp"
+        "tab_logo": {
+          "default": "images/band/cannalily/tab_logo_default.webp",
+          "hover": "images/band/cannalily/tab_logo_hover.webp"
         },
         "background": "images/band/cannalily/background.png"
       },
@@ -85,9 +85,9 @@
         "band_main": "images/band/f-272/band_main.png",
         "media_visual": "images/band/f-272/media_visual.jpeg",
         "band_logo": "images/band/f-272/band_logo.png",
-        "list_logo": {
-          "default": "images/band/f-272/list_logo_default.webp",
-          "hover": "images/band/f-272/list_logo_hover.webp"
+        "tab_logo": {
+          "default": "images/band/f-272/tab_logo_default.webp",
+          "hover": "images/band/f-272/tab_logo_hover.webp"
         },
         "background": "images/band/f-272/background.png"
       },

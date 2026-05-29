@@ -116,6 +116,19 @@ a {
   flex-direction: column;
 }
 
+.section-title {
+  font-family: var(--font-main);
+  font-size: clamp(38px, 4.5vw, 56px);
+  font-weight: 900;
+  color: var(--color-black);
+  margin-top: 40px;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+  align-self: center;
+  text-align: left;
+  width: 100%;
+}
+
 /* =========================================
    Footer
 ========================================= */
@@ -405,6 +418,11 @@ a {
   #main-content {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .section-title {
+    margin-top: 20px;
+    margin-bottom: 16px;
   }
 
   /* ===== Footer ===== */
