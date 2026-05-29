@@ -8,41 +8,41 @@ const templates = {
                 <div class="slide-item">
                     <img src="images/band/f-272/background.png" class="slide-bg">
                     <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
-                        data-mobile="images/band/f-272/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/f-272/band_main.png" class="slide-band">
                     <img src="images/band/f-272/band_logo.png" class="slide-logo">
                 </div>
                 <div class="slide-item active">
                     <img src="images/band/togenashitogeari/background.png" class="slide-bg">
                     <img src="images/band/togenashitogeari/main_visual.webp"
                         data-desktop="images/band/togenashitogeari/main_visual.webp"
-                        data-mobile="images/band/togenashitogeari/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/togenashitogeari/band_main.png" class="slide-band">
                     <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
                 </div>
                 <div class="slide-item">
                     <img src="images/band/cannalily/background.png" class="slide-bg">
                     <img src="images/band/cannalily/main_visual.webp"
                         data-desktop="images/band/cannalily/main_visual.webp"
-                        data-mobile="images/band/cannalily/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/cannalily/band_main.png" class="slide-band">
                     <img src="images/band/cannalily/band_logo.png" class="slide-logo">
                 </div>
                 <div class="slide-item">
                     <img src="images/band/f-272/background.png" class="slide-bg">
                     <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
-                        data-mobile="images/band/f-272/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/f-272/band_main.png" class="slide-band">
                     <img src="images/band/f-272/band_logo.png" class="slide-logo">
                 </div>
                 <div class="slide-item">
                 <img src="images/band/togenashitogeari/background.png" class="slide-bg">
                     <img src="images/band/togenashitogeari/main_visual.webp"
                         data-desktop="images/band/togenashitogeari/main_visual.webp"
-                        data-mobile="images/band/togenashitogeari/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/togenashitogeari/band_main.png" class="slide-band">
                     <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
                 </div>
                 <div class="slide-item">
                     <img src="images/band/cannalily/background.png" class="slide-bg">
                     <img src="images/band/cannalily/main_visual.webp"
                         data-desktop="images/band/cannalily/main_visual.webp"
-                        data-mobile="images/band/cannalily/main_visual_mobile.png" class="slide-band">
+                        data-mobile="images/band/cannalily/band_main.png" class="slide-band">
                     <img src="images/band/cannalily/band_logo.png" class="slide-logo">
                 </div>
             </div>
@@ -78,7 +78,7 @@ const templates = {
         <div class="news-container"></div>
     </div>
   `,
-  band: `<div id="main-content"><h2>밴드 페이지 (준비 중)</h2></div>`,
+  band: `<div id="main-content"><div class="band-container"></div></div>`,
   discography: `<div id="main-content"><h2>디스코그래피 페이지 (준비 중)</h2></div>`,
 };
 
@@ -93,8 +93,11 @@ function handleRouting() {
   if (hash.startsWith("news")) {
     rootDiv.innerHTML = templates.news;
     initNews();
+  } else if (hash.startsWith("band")) {
+    rootDiv.innerHTML = templates.band;
+    initBand();
   }
-  // 홈, 밴드, 디스코그래피 페이지
+  // 홈, 디스코그래피 페이지
   else if (templates[hash]) {
     rootDiv.innerHTML = templates[hash];
 
