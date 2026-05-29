@@ -88,7 +88,7 @@ function initBand() {
         <div class="media-link-group">
           <a href="https://x.com/girlsbandcry" target="_blank" class="media-link">[ 걸즈 밴드 크라이 공식 X ]</a>
           <a href="https://www.instagram.com/toge0toge1/" target="_blank" class="media-link">[ 토게나시 토게아리 공식 인스타그램 ]</a> 
-          <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=Dfr5r-QEMxq3iCgL" target="_blank" class="media-link">[ 토게나시 토게아리 첫 생방송 ]</a> 
+          <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6" target="_blank" class="media-link">[ 토게나시 토게아리 첫 생방송 ]</a> 
         </div>
       </div>
       
