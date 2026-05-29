@@ -236,7 +236,7 @@
 }
 
 .band-media-img {
-  width: 60%;
+  width: 50%;
   height: auto;
   object-fit: contain;
   display: block;
@@ -245,11 +245,12 @@
 }
 
 .media-link-group {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 30px 40px;
+  align-items: center;
+  padding: 30px 50px;
   box-sizing: border-box;
 }
 
@@ -346,10 +347,123 @@
   }
 
   .media-link-group {
-    padding: 15px 20px;
+    padding: 15px 30px;
   }
 
   .media-link {
     padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .band-view {
+    padding: 0 15px;
+  }
+
+  /* =========================================
+    Band Tab Menu
+  ========================================= */
+
+  .band-tab-menu {
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  .band-tab {
+    flex: 0 0 auto;
+    width: 25vw;
+    max-width: 250px;
+    aspect-ratio: 250 / 80;
+    height: auto;
+  }
+
+  /* =========================================
+    Band Detail Content
+  ========================================= */
+
+  .band-detail-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .band-visual-box,
+  .band-info-box {
+    width: 100%;
+  }
+
+  .band-visual-box {
+    aspect-ratio: 4 / 3;
+  }
+
+  .band-logo {
+    width: 65%;
+    bottom: 15px;
+  }
+
+  .band-info-box {
+    aspect-ratio: auto;
+    min-height: auto;
+    height: auto;
+    gap: 10px;
+  }
+
+  .band-name {
+    flex: none;
+    padding: 20px;
+    font-size: clamp(20px, 5vw, 26px);
+  }
+
+  .band-description {
+    flex: none;
+    padding: 20px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .band-description p {
+    padding: 6px 0;
+  }
+
+  .band-members {
+    flex: none;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  .member-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .member-card {
+    min-width: 50px;
+  }
+
+  .member-name {
+    font-size: 11px;
+  }
+
+  /* =========================================
+    Band Media Content
+  ========================================= */
+
+  .band-media-content {
+    border-bottom: 5px solid var(--color-black);
+  }
+
+  .band-media-img {
+    padding: 10px;
+  }
+
+  .media-link-group {
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .media-link {
+    padding: 8px 5px;
+    font-size: 11px;
   }
 }
