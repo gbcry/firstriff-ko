@@ -296,6 +296,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .character-view {
+    padding: 0 15px;
+  }
+
   /* =========================================
    Character Detail Content
   ========================================= */
