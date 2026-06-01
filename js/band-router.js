@@ -51,30 +51,30 @@ function initBand() {
           <div class="band-members">
             <div class="member-label"><i class="fa-solid fa-diamond"></i>MEMBER</div>
 
-            <div class="member-card">
+            <a href="#character/subaru" class="member-card">
               <img src="images/character/togenashitogeari/subaru_thumb.jpg" class="member-img">
               <div class="member-name">아와 스바루</div>
-            </div>
+            </a>
 
-            <div class="member-card">
+            <a href="#character/momoka" class="member-card">
               <img src="images/character/togenashitogeari/momoka_thumb.jpg" class="member-img">
               <div class="member-name">카와라기 모모카</div>
-            </div>
+            </a>
 
-            <div class="member-card">
+            <a href="#character/nina" class="member-card">
               <img src="images/character/togenashitogeari/nina_thumb.jpg" class="member-img">
               <div class="member-name">이세리 니나</div>
-            </div>
+            </a>
 
-            <div class="member-card">
+            <a href="#character/tomo" class="member-card">
               <img src="images/character/togenashitogeari/tomo_thumb.jpg" class="member-img">
               <div class="member-name">에비즈카 토모</div>
-            </div>
+            </a>
 
-            <div class="member-card">
+            <a href="#character/rupa" class="member-card">
               <img src="images/character/togenashitogeari/rupa_thumb.jpg" class="member-img">
               <div class="member-name">루파</div>
-             </div>
+             </a>
           </div>
         </div>
         
@@ -87,7 +87,7 @@ function initBand() {
         
         <div class="media-link-group">
           <a href="https://x.com/girlsbandcry" target="_blank" class="media-link">[ 걸즈 밴드 크라이 공식 X ]</a>
-          <a href="https://www.instagram.com/toge0toge1/" target="_blank" class="media-link">[ 토게나시 토게아리 공식 인스타그램 ]</a> 
+          <a href="https://www.instagram.com/toge0toge1/" target="_blank" class="media-link">[ 토게나시 토게아리 공식 인스타 ]</a> 
           <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6" target="_blank" class="media-link">[ 토게나시 토게아리 첫 생방송 ]</a> 
         </div>
       </div>
