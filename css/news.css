@@ -193,7 +193,7 @@
   ========================================= */
 
   .news-list-view {
-    padding: 0 20px;
+    padding: 60px 15px;
   }
 
   .news-link {
@@ -215,7 +215,7 @@
   }
 
   .news-detail-view {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .detail-header {
@@ -234,19 +234,18 @@
 
   .detail-body {
     width: 100%;
-    padding: 30px 20px;
-    margin-bottom: 30px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
+    font-size: 15px;
+    border-bottom: 5px solid var(--color-black);
   }
 
   .detail-image {
     width: 100%;
   }
 
-  .detail-body {
-    width: 100%;
-    padding: 20px;
-    font-size: 15px;
-    border-bottom: 5px solid var(--color-black);
+  .news-detail-content {
+    padding: 15px;
   }
 }
