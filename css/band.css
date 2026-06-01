@@ -227,47 +227,66 @@
 
 .band-media-content {
   display: flex;
-  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
   width: 100%;
   margin-bottom: 100px;
   background-color: var(--color-gray);
   border-bottom: 10px solid var(--color-black);
   box-sizing: border-box;
-}
-
-.band-media-img {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-.media-link-group {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 30px 50px;
-  box-sizing: border-box;
+  flex-wrap: nowrap;
 }
 
 .media-link {
+  flex: 1 1 0; /* 3개의 링크가 동일한 비율로 가로 공간 차지 */
+  min-width: 0;
+  max-width: 280px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* 썸네일 위, 텍스트 아래 */
   align-items: center;
   background-color: transparent;
-  padding: 15px 10px;
-  font-family: var(--font-main);
-  font-size: clamp(18px, 1.6vw, 24px);
-  font-weight: 800;
-  color: var(--color-black);
-  transition: color 0.2s ease;
+  gap: 15px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.media-link:hover {
+.media-thumb {
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid var(--color-black);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.media-thumb.youtube {
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+}
+
+.media-thumb.sns {
+  width: 56%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.media-text {
+  font-family: var(--font-main);
+  font-size: clamp(16px, 1.4vw, 22px);
+  font-weight: 800;
+  color: var(--color-black);
+  text-align: center;
+  transition: color 0.2s ease;
+  word-break: keep-all;
+  margin-top: auto;
+}
+
+.media-link:hover .media-thumb {
+  border-color: var(--color-point);
+}
+
+.media-link:hover .media-text {
   color: var(--color-point);
 }
 
@@ -340,18 +359,7 @@
 
   .band-media-content {
     border-bottom: 10px solid var(--color-black);
-  }
-
-  .band-media-img {
-    padding: 15px;
-  }
-
-  .media-link-group {
-    padding: 15px 30px;
-  }
-
-  .media-link {
-    padding: 10px 5px;
+    padding: 4vw;
   }
 }
 
@@ -450,20 +458,25 @@
   ========================================= */
 
   .band-media-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
     border-bottom: 5px solid var(--color-black);
   }
 
-  .band-media-img {
-    padding: 10px;
-  }
-
-  .media-link-group {
-    padding: 10px;
-    gap: 5px;
-  }
-
   .media-link {
-    padding: 8px 5px;
-    font-size: 11px;
+    max-width: 280px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .media-thumb.sns {
+    width: 50%;
+  }
+
+  .media-text {
+    font-size: 16px;
   }
 }

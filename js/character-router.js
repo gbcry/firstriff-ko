@@ -133,7 +133,7 @@ function initCharacter() {
           <span class="character-media-text">자기소개</span>
         </a>
         <a href="https://x.com/girlsbandcry/status/1664119579356938240?s=20" class="character-media-link">
-          <img src="images/character/togenashitogeari/gbc_sns_thumb.jpg" class="character-media-img sns">
+          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="character-media-img sns">
           <span class="character-media-text">캐릭터 소개</span>
         </a>
         <a href="https://x.com/mirei_togetoge/status/1684035814819504128?s=20" class="character-media-link">
