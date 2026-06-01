@@ -168,21 +168,25 @@
 .character-members-content {
   background-color: var(--color-gray); /* 시안의 연한 회색 배경 */
   border-bottom: 10px solid var(--color-black);
-  padding: 60px;
+  padding: clamp(20px, 3.5vw, 60px);
   display: flex;
   align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
   gap: 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .character-member-card {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   align-items: center;
   background-color: var(--color-black);
   border: 3px solid transparent;
-  padding: 15px;
+  padding: clamp(8px, 1.2vw, 15px);
+  box-sizing: border-box;
   transition: border-color 0.2s ease;
   cursor: pointer;
   text-decoration: none;
@@ -194,8 +198,9 @@
 }
 
 .character-member-img {
-  width: 80px;
-  height: 80px;
+  width: clamp(40px, 5.5vw, 80px);
+  height: auto;
+  flex: 0 0 auto;
   object-fit: cover;
   display: block;
 }
@@ -203,21 +208,22 @@
 .character-member-info {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: clamp(8px, 1.5vw, 20px);
   justify-content: center;
   gap: 5px;
+  overflow: hidden;
 }
 
 .character-member-part {
   font-family: var(--font-main);
-  font-size: 16px;
+  font-size: clamp(11px, 1.2vw, 16px);
   font-weight: 800;
   color: var(--color-white);
 }
 
 .character-member-name {
   font-family: var(--font-main);
-  font-size: 18px;
+  font-size: clamp(12px, 1.4vw, 18px);
   font-weight: 800;
   color: var(--color-white);
   word-break: keep-all;
@@ -287,4 +293,139 @@
 
 .character-media-link:hover .character-media-text {
   color: var(--color-point);
+}
+
+@media screen and (max-width: 768px) {
+  /* =========================================
+   Character Detail Content
+  ========================================= */
+
+  .character-detail-content {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .character-visual-box {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .character-main-img {
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .character-info-box {
+    display: contents;
+  }
+
+  .character-name-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 25px 20px;
+  }
+
+  .character-name-kr {
+    font-size: clamp(28px, 4vw, 36px);
+  }
+
+  .character-name-jp {
+    font-size: 20px;
+  }
+
+  .character-desc-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 30px 20px;
+  }
+
+  .character-quote {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .character-desc-box p {
+    font-size: 16px;
+  }
+
+  .character-profile-box {
+    grid-column: 1 / -1; /* 가로 100% 차지 */
+    grid-row: 3 / 4;
+    padding: 5px 10px;
+  }
+
+  .profile-label {
+    font-size: 16px;
+    width: 35%;
+  }
+
+  .profile-value {
+    font-size: 18px;
+    width: 65%;
+  }
+
+  .profile-footer {
+    margin-top: 10px;
+  }
+
+  /* =========================================
+   Character Members Content
+  ========================================= */
+
+  .character-members-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 10px;
+    border-bottom: 5px solid var(--color-black);
+  }
+
+  .character-member-card {
+    flex: none;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 15px 20px; /* 카드 내부 패딩 축소 */
+  }
+
+  .character-member-img {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+  }
+
+  .character-member-info {
+    padding-left: 15px;
+    gap: 2px;
+  }
+
+  .character-member-part {
+    font-size: 14px;
+  }
+
+  .character-member-name {
+    font-size: 16px;
+    word-break: break-all;
+  }
+
+  /* =========================================
+   Character Media Content
+  ========================================= */
+
+  .character-media-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+    border-bottom: 5px solid var(--color-black);
+  }
+
+  .character-media-link {
+    max-width: 100%;
+    gap: 10px;
+  }
 }
