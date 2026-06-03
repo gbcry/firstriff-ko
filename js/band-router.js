@@ -49,7 +49,7 @@ function initBand() {
           </div>
 
           <div class="band-members">
-            <div class="member-label"><i class="fa-solid fa-diamond"></i>MEMBER</div>
+            <div class="member-label">MEMBER</div>
 
             <a href="#character/subaru" class="member-card">
               <img src="images/character/togenashitogeari/subaru_thumb.jpg" class="member-img">
@@ -83,15 +83,15 @@ function initBand() {
       <div class="section-title">OFFICIAL MEDIA</div>
 
       <div class="band-media-content">        
-        <a href="https://x.com/girlsbandcry" target="_blank" class="media-link">
+        <a href="https://x.com/girlsbandcry" target="_blank" rel="noopener noreferrer" class="media-link">
           <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="media-thumb sns">
           <span class="media-text">걸즈 밴드 크라이 공식 X</span>
          </a>
-        <a href="https://www.instagram.com/toge0toge1/" target="_blank" class="media-link">
+        <a href="https://www.instagram.com/toge0toge1/" target="_blank" rel="noopener noreferrer" class="media-link">
           <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="media-thumb sns">
           <span class="media-text">토게나시 토게아리 공식 인스타</span>
         </a> 
-        <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6" target="_blank" class="media-link">
+        <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6" target="_blank" rel="noopener noreferrer" class="media-link">
           <img src="images/band/togenashitogeari/togetoge_stream_thumb.jpg" class="media-thumb youtube">
           <span class="media-text">토게나시 토게아리 첫 생방송</span>
         </a> 

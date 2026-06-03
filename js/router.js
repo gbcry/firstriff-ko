@@ -5,51 +5,51 @@ const templates = {
       <button type="button" class="slider-btn next-btn"><i class="fa-solid fa-angle-right"></i></button>
       <div class="slider-wrapper">
 
-          <div class="slide-item">
+          <a href="#band/f-272" class="slide-item">
               <img src="images/band/f-272/background.png" class="slide-bg">
               <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
                   data-mobile="images/band/f-272/band_main.png" class="slide-band">
               <img src="images/band/f-272/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
-          <div class="slide-item active">
+          <a href="#band/togenashitogeari" class="slide-item active">
               <img src="images/band/togenashitogeari/background.png" class="slide-bg">
               <img src="images/band/togenashitogeari/main_visual.webp"
                   data-desktop="images/band/togenashitogeari/main_visual.webp"
                   data-mobile="images/band/togenashitogeari/band_main.png" class="slide-band">
               <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
-          <div class="slide-item">
+          <a href="#band/cannalily" class="slide-item">
               <img src="images/band/cannalily/background.png" class="slide-bg">
               <img src="images/band/cannalily/main_visual.webp"
                   data-desktop="images/band/cannalily/main_visual.webp"
                   data-mobile="images/band/cannalily/band_main.png" class="slide-band">
               <img src="images/band/cannalily/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
-          <div class="slide-item">
+          <a href="#band/f-272" class="slide-item">
               <img src="images/band/f-272/background.png" class="slide-bg">
               <img src="images/band/f-272/main_visual.webp" data-desktop="images/band/f-272/main_visual.webp"
                   data-mobile="images/band/f-272/band_main.png" class="slide-band">
               <img src="images/band/f-272/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
-          <div class="slide-item">
-          <img src="images/band/togenashitogeari/background.png" class="slide-bg">
+          <a href="#band/togenashitogeari" class="slide-item">
+              <img src="images/band/togenashitogeari/background.png" class="slide-bg">
               <img src="images/band/togenashitogeari/main_visual.webp"
                   data-desktop="images/band/togenashitogeari/main_visual.webp"
                   data-mobile="images/band/togenashitogeari/band_main.png" class="slide-band">
               <img src="images/band/togenashitogeari/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
-          <div class="slide-item">
+          <a href="#band/cannalily" class="slide-item">
               <img src="images/band/cannalily/background.png" class="slide-bg">
               <img src="images/band/cannalily/main_visual.webp"
                   data-desktop="images/band/cannalily/main_visual.webp"
                   data-mobile="images/band/cannalily/band_main.png" class="slide-band">
               <img src="images/band/cannalily/band_logo.png" class="slide-logo">
-          </div>
+          </a>
 
       </div>
     </div>
