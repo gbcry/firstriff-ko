@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: clamp(30px, 5vw, 60px) clamp(15px, 4vw, 40px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,9 @@
 .character-detail-content {
   display: flex;
   align-items: stretch; /* 왼쪽 높이에 맞춰 오른쪽 상자들 확장 */
-  gap: 10px;
-  padding: 10px;
-  margin-bottom: 80px;
+  gap: clamp(5px, 1vw, 10px);
+  padding: clamp(5px, 1vw, 10px);
+  margin-bottom: clamp(40px, 6vw, 80px);
   width: 100%;
   background-color: var(--color-black);
 }
@@ -43,42 +43,42 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* 높이가 늘어나면 세 상자 사이의 간격을 균등하게 분배 */
-  gap: 10px;
+  gap: clamp(5px, 1vw, 10px);
 }
 
 .character-name-box {
   background-color: var(--color-white);
-  padding: 30px 30px;
+  padding: clamp(15px, 2vw, 30px);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: clamp(2px, 0.5vw, 5px);
 }
 
 .character-part {
   font-family: var(--font-main);
-  font-size: 24px;
+  font-size: clamp(16px, 1.8vw, 24px);
   font-weight: 900;
   color: var(--color-point);
 }
 
 .character-name-kr {
   font-family: var(--font-main);
-  font-size: clamp(40px, 4vw, 56px);
+  font-size: clamp(28px, 4vw, 56px);
   font-weight: 900;
   color: var(--color-black);
 }
 
 .character-name-jp {
-  font-size: 28px;
+  font-size: clamp(20px, 2vw, 28px);
   color: #999;
   font-weight: 800;
 }
 
 .character-desc-box {
   background-color: var(--color-white);
-  padding: 40px 20px;
+  padding: clamp(20px, 3vw, 40px) clamp(10px, 2vw, 20px);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -88,15 +88,15 @@
 
 .character-quote {
   font-family: var(--font-main);
-  font-size: 32px;
+  font-size: clamp(22px, 2.5vw, 32px);
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: clamp(10px, 1.5vw, 20px);
   color: var(--color-black);
 }
 
 .character-desc-box p {
   font-family: var(--font-main);
-  font-size: 20px;
+  font-size: clamp(15px, 1.5vw, 20px);
   font-weight: 700;
   line-height: 1.8;
   margin: 0;
@@ -104,37 +104,37 @@
 }
 
 .character-profile-box {
-  padding: 10px 15px;
+  padding: clamp(5px, 1vw, 10px) clamp(10px, 1.5vw, 15px);
   display: flex;
   flex-direction: column;
 }
 
 .profile-header {
   font-family: var(--font-main);
-  font-size: 24px;
+  font-size: clamp(18px, 1.8vw, 24px);
   font-weight: 900;
   color: var(--color-white);
-  margin-bottom: 15px;
+  margin-bottom: clamp(8px, 1.2vw, 15px);
 }
 
 .profile-table {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(5px, 0.8vw, 10px);
 }
 
 .profile-row {
   background-color: var(--color-white);
-  border-left: 5px solid var(--color-point);
+  border-left: clamp(3px, 0.5vw, 5px) solid var(--color-point);
   display: flex;
-  padding: 12px 20px;
+  padding: clamp(8px, 1vw, 12px) clamp(15px, 1.5vw, 20px);
   align-items: center;
 }
 
 .profile-label {
   width: 30%;
   font-family: var(--font-main);
-  font-size: 18px;
+  font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 900;
   color: var(--color-black);
 }
@@ -142,7 +142,7 @@
 .profile-value {
   width: 70%;
   font-family: var(--font-main);
-  font-size: 22px;
+  font-size: clamp(16px, 1.6vw, 22px);
   font-weight: 800;
   color: var(--color-black);
 }
@@ -150,10 +150,10 @@
 .profile-footer {
   text-align: right;
   font-family: var(--font-main);
-  font-size: 20px;
+  font-size: clamp(15px, 1.5vw, 20px);
   font-weight: 900;
   color: var(--color-white);
-  margin-top: 15px;
+  margin-top: clamp(8px, 1.2vw, 15px);
 }
 
 /* =========================================
@@ -162,18 +162,18 @@
 
 .character-members-wrapper {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: clamp(40px, 6vw, 80px);
 }
 
 .character-members-content {
   background-color: var(--color-gray); /* 시안의 연한 회색 배경 */
-  border-bottom: 10px solid var(--color-black);
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
   padding: clamp(20px, 3.5vw, 60px);
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: clamp(5px, 1vw, 10px);
   width: 100%;
   box-sizing: border-box;
 }
@@ -184,7 +184,7 @@
   display: flex;
   align-items: center;
   background-color: var(--color-black);
-  border: 3px solid transparent;
+  border: clamp(2px, 0.3vw, 3px) solid transparent;
   padding: clamp(8px, 1.2vw, 15px);
   box-sizing: border-box;
   transition: border-color 0.2s ease;
@@ -210,7 +210,7 @@
   flex-direction: column;
   padding-left: clamp(8px, 1.5vw, 20px);
   justify-content: center;
-  gap: 5px;
+  gap: clamp(2px, 0.4vw, 5px);
   overflow: hidden;
 }
 
@@ -235,22 +235,22 @@
 
 .character-media-content {
   background-color: var(--color-gray);
-  border-bottom: 10px solid var(--color-black);
-  padding: 60px 40px;
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
+  padding: clamp(30px, 4vw, 60px) clamp(20px, 4vw, 40px);
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: clamp(15px, 3vw, 30px);
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 100px;
+  margin-bottom: clamp(50px, 8vw, 100px);
 }
 
 .character-media-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: clamp(10px, 1.5vw, 15px);
   text-decoration: none;
   flex: 1;
   max-width: 280px;
@@ -258,7 +258,7 @@
 
 .character-media-img {
   object-fit: cover;
-  border: 3px solid var(--color-black);
+  border: clamp(2px, 0.3vw, 3px) solid var(--color-black);
   box-sizing: border-box;
   transition:
     border-color 0.2s ease,
@@ -272,14 +272,14 @@
 }
 
 .character-media-img.sns {
-  width: 56%;
+  width: clamp(50px, 56%, 150px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
 
 .character-media-text {
   font-family: var(--font-main);
-  font-size: clamp(16px, 1.4vw, 22px);
+  font-size: clamp(14px, 1.6vw, 22px);
   font-weight: 900;
   color: var(--color-black);
   text-align: center;
@@ -295,11 +295,7 @@
   color: var(--color-point);
 }
 
-@media screen and (max-width: 768px) {
-  .character-view {
-    padding: 0 15px;
-  }
-
+@media screen and (max-width: 1200px) {
   /* =========================================
    Character Detail Content
   ========================================= */
@@ -307,82 +303,21 @@
   .character-detail-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
   }
 
   .character-visual-box {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: var(--color-white);
     overflow: hidden;
   }
 
   .character-main-img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: top center;
   }
 
   .character-info-box {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .character-name-box {
-    padding: 25px 10px;
-    align-items: center;
-  }
-
-  .character-part {
-    font-size: 16px;
-  }
-
-  .character-name-kr {
-    font-size: clamp(28px, 4vw, 36px);
-  }
-
-  .character-name-jp {
-    font-size: 20px;
-  }
-
-  .character-desc-box {
-    padding: 30px 10px;
-  }
-
-  .character-quote {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  .character-desc-box p {
-    font-size: 16px;
-  }
-
-  .character-profile-box {
-    padding: 5px 10px;
-  }
-
-  .profile-row {
-    border-left: 3px solid var(--color-point);
-    padding: 12px 10px;
-  }
-
-  .profile-label {
-    font-size: 16px;
-    width: 35%;
-  }
-
-  .profile-value {
-    font-size: 18px;
-    width: 65%;
-  }
-
-  .profile-footer {
-    margin-top: 10px;
   }
 
   /* =========================================
@@ -392,37 +327,12 @@
   .character-members-content {
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
-    gap: 10px;
-    border-bottom: 5px solid var(--color-black);
   }
 
   .character-member-card {
     flex: none;
     width: 100%;
     max-width: 280px;
-    margin: 0 auto;
-    padding: 15px 20px; /* 카드 내부 패딩 축소 */
-  }
-
-  .character-member-img {
-    width: 60px;
-    height: 60px;
-    flex: 0 0 60px;
-  }
-
-  .character-member-info {
-    padding-left: 15px;
-    gap: 2px;
-  }
-
-  .character-member-part {
-    font-size: 14px;
-  }
-
-  .character-member-name {
-    font-size: 16px;
-    word-break: break-all;
   }
 
   /* =========================================
@@ -432,14 +342,5 @@
   .character-media-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px 15px;
-    padding: 40px 20px;
-    margin-bottom: 60px;
-    border-bottom: 5px solid var(--color-black);
-  }
-
-  .character-media-link {
-    max-width: 100%;
-    gap: 10px;
   }
 }
