@@ -24,16 +24,22 @@
         "official_sns": [
           {
             "url": "https://x.com/girlsbandcry",
-            "text": "Girls Band Cry OFFICIAL X"
+            "text": "걸즈 밴드 크라이 공식 X",
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
           },
           {
             "url": "https://www.instagram.com/toge0toge1/",
-            "text": "TOGENASHI TOGEARI OFFICIAL Instagram"
+            "text": "토게나시 토게아리 공식 인스타",
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
           }
         ],
         "debut_pv": {
           "url": null,
           "text": null
+        },
+        "first_streaming": {
+          "url": "https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6",
+          "text": "토게나시 토게아리 첫 생방송"
         }
       }
     },
@@ -60,13 +66,20 @@
       },
       "member_ids": ["shion", "rindo", "ayame", "kaede", "nazuna"],
       "links": {
-        "official_sns": {
-          "url": "https://x.com/CannaLily_GBC",
-          "text": "Canna Lily OFFICIAL X"
-        },
+        "official_sns": [
+          {
+            "url": "https://x.com/CannaLily_GBC",
+            "text": "Canna Lily 공식 X",
+            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          }
+        ],
         "debut_pv": {
           "url": "https://www.youtube.com/watch?v=irshMXtKQjo",
-          "text": "Canna Lily DEBUT PV"
+          "text": "Canna Lily 데뷔 PV"
+        },
+        "first_streaming": {
+          "url": "https://www.youtube.com/live/cFCkNSK6LV4?si=ZeYGYR942uIAaTFV",
+          "text": "Canna Lily 첫 생방송"
         }
       }
     },
@@ -93,13 +106,20 @@
       },
       "member_ids": ["ari", "koto", "hazuki", "momono", "saki"],
       "links": {
-        "official_sns": {
-          "url": "https://x.com/F_272_GBC",
-          "text": "F-272 OFFICIAL X"
-        },
+        "official_sns": [
+          {
+            "url": "https://x.com/F_272_GBC",
+            "text": "F-272 OFFICIAL X",
+            "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          }
+        ],
         "debut_pv": {
           "url": "https://www.youtube.com/watch?v=U3YpdxjD0n8",
           "text": "F-272 DEBUT PV"
+        },
+        "first_streaming": {
+          "url": "https://www.youtube.com/live/Jxx1WMFcK-U?si=7uP9B_38G_gxEknM",
+          "text": "F-272 첫 생방송"
         }
       }
     }

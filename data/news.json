@@ -74,6 +74,7 @@
       "details": {
         "main_image": "images/news/20260418_01.png",
         "description": [
+          "※ 2026/05/22: 티켓 정보(일반 판매)가 추가되었습니다.",
           "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL”의 개최가 결정되었습니다."
         ],
         "info_list": [
@@ -88,7 +89,15 @@
             "link": null
           },
           {
-            "label": "■ 티켓 정보",
+            "label": "■ 티켓 정보 (일반 판매)",
+            "value": "취소분 티켓 소량을 일반 판매합니다. 접수 기간: 2026년 5월 24일(日) 10:00 ~ (소진 시 종료) ※ 티켓 신청을 위해서는 Musing 회원가입(무료)이 필요합니다. ※ 티켓 판매는 선착순으로 진행됩니다. ※ 소량만 판매되는 점 미리 양해 부탁드립니다.",
+            "link": {
+              "url": "https://musing.jp/ticket/F272_1st_FCFS/",
+              "text": "Musing 예매 페이지 바로가기"
+            }
+          },
+          {
+            "label": "■ 티켓 정보 (선행 추첨 판매)",
             "value": "선행 추첨 판매를 실시합니다. 접수 기간: 2026년 4월 18일(土) 21:00 ~ 4월 30일(木) 23:59 ※ 티켓 신청을 위해서는 Musing 회원가입(무료)이 필요합니다.",
             "link": {
               "url": "https://musing.jp/ticket/F272_1st/",
