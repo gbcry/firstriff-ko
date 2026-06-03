@@ -23,6 +23,7 @@ body {
   scrollbar-gutter: stable;
   line-height: 1.6;
   letter-spacing: -0.2px;
+  font-weight: 500;
 }
 
 #app {
@@ -181,7 +182,6 @@ a {
 .official-label {
   font-family: var(--font-main);
   font-size: clamp(14px, 2vw, 22px);
-  font-weight: 800;
   color: var(--color-white);
   letter-spacing: 0.5px;
 }
@@ -189,7 +189,6 @@ a {
 .update-date {
   font-family: var(--font-main);
   font-size: clamp(11px, 1.5vw, 15px);
-  font-weight: 500;
   color: var(--color-white);
   opacity: 0.8;
 }
@@ -237,6 +236,7 @@ a {
 .disclaimer {
   font-family: var(--font-main);
   font-size: clamp(12px, 1.2vw, 14px);
+  font-weight: 400;
   color: var(--color-white);
   opacity: 0.7;
   word-break: keep-all;
@@ -246,7 +246,6 @@ a {
 .feedback-btn {
   font-family: var(--font-main);
   font-size: clamp(13px, 1.2vw, 15px);
-  font-weight: 700;
   color: var(--color-black);
   background-color: var(--color-white);
   padding: 10px 20px;
@@ -352,7 +351,6 @@ a {
   .mobile-menu-label {
     font-family: var(--font-main);
     font-size: 12px;
-    font-weight: 700;
     color: var(--color-point);
     margin: 10px 0 5px 0;
     padding-left: 20px;

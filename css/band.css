@@ -91,11 +91,11 @@
 .band-detail-content {
   display: flex;
   align-items: stretch;
-  gap: clamp(15px, 2vw, 20px);
+  gap: clamp(5px, 1vw, 10px);
   margin-bottom: clamp(60px, 8vw, 100px);
   width: 100%;
   background-color: var(--color-black);
-  padding: clamp(15px, 2vw, 20px);
+  padding: clamp(5px, 1vw, 10px);
   box-sizing: border-box;
 }
 
@@ -128,7 +128,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: clamp(10px, 2vw, 20px);
+  gap: clamp(5px, 1vw, 10px);
 }
 
 .band-name {
@@ -157,7 +157,6 @@
   padding: clamp(20px, 4vw, 40px) clamp(15px, 3vw, 20px);
   box-sizing: border-box;
   font-family: var(--font-main);
-  font-weight: 700;
   font-size: clamp(14px, 1.8vw, 20px);
   line-height: clamp(1.6, 2.2vw, 2.8);
   color: var(--color-black);

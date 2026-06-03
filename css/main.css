@@ -147,7 +147,7 @@
   color: var(--color-black);
   font-family: var(--font-main);
   font-size: clamp(15px, 1.6vw, 21px);
-  font-weight: 700;
+  font-weight: 800;
   padding: clamp(6px, 1vw, 8px) clamp(10px, 2vw, 16px);
   transition: all 0.2s ease;
   align-self: flex-end;
