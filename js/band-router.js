@@ -49,7 +49,7 @@ function initBand() {
           </div>
 
           <div class="band-members">
-            <div class="member-label"><i class="fa-solid fa-diamond"></i>MEMBER</div>
+            <div class="member-label">MEMBER</div>
 
             <a href="#character/subaru" class="member-card">
               <img src="images/character/togenashitogeari/subaru_thumb.jpg" class="member-img">
