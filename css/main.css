@@ -73,7 +73,7 @@
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(180px, 25vw, 380px);
+  width: clamp(120px, 35vw, 380px);
   height: auto;
   object-fit: contain;
 }

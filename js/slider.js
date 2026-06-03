@@ -86,6 +86,8 @@ function initSlider() {
       isTransitioning = true;
       currentIndex++;
       updateSliderPosition();
+
+      resetAutoSlide();
     });
 
     prevBtn.addEventListener("click", () => {
@@ -95,6 +97,8 @@ function initSlider() {
       isTransitioning = true;
       currentIndex--;
       updateSliderPosition();
+
+      resetAutoSlide();
     });
   }
 
@@ -141,6 +145,11 @@ function initSlider() {
       currentIndex++;
       updateSliderPosition();
     }, 5000);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
   }
 
   // 초기화
