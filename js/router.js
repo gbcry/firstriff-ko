@@ -121,6 +121,8 @@ function handleRouting() {
   } else {
     rootDiv.innerHTML = `<h2>404 - 페이지를 찾을 수 없습니다.</h2>`;
   }
+
+  window.scrollTo(0, 0);
 }
 
 window.addEventListener("hashchange", handleRouting);
