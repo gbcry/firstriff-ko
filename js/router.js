@@ -85,12 +85,10 @@ const templates = {
         <a href="#news" class="view-more-btn">VIEW MORE <i class="fa-solid fa-plus"></i></a>
     </div>
   `,
-  news: `
-  <div class="news-container"></div>
-  `,
+  news: `<div class="news-container"></div>`,
   band: `<div class="band-container"></div>`,
   character: `<div class="character-container"></div>`,
-  discography: `<h2>디스코그래피 페이지 (준비 중)</h2>`,
+  discography: `<div class="discography-container"></div>`,
 };
 
 // 화면 교체 라우터
@@ -110,9 +108,10 @@ function handleRouting() {
   } else if (hash.startsWith("character")) {
     rootDiv.innerHTML = templates.character;
     initCharacter();
-  }
-  // 홈, 디스코그래피 페이지
-  else if (templates[hash]) {
+  } else if (hash.startsWith("discography")) {
+    rootDiv.innerHTML = templates.discography;
+    initDiscography();
+  } else if (templates[hash]) {
     rootDiv.innerHTML = templates[hash];
 
     if (hash === "home") {
