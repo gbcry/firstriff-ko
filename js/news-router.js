@@ -65,12 +65,12 @@ function initNews() {
           <p>접수 기간: 2026년 4월 18일(土) 21:00 ~ 4월 30일(木) 23:59</p>
           <p>※ 티켓 신청을 위해서는 Musing 회원가입(무료)이 필요합니다.</p>
           <br>
-          <p><a href="https://musing.jp/ticket/F272_1st/" target="_blank" class="detail-link">Musing 예매 페이지 바로가기</a></p>
+          <p><a href="https://musing.jp/ticket/F272_1st/" target="_blank" rel="noopener noreferrer" class="detail-link">Musing 예매 페이지 바로가기</a></p>
           <br>
           <p>■ F-272 공식 SNS</p>
           <p>라이브 관련 최신 정보는 F-272 공식 X를 통해 확인해 주시기 바랍니다.</p>
           <br>
-          <p><a href="https://x.com/F_272_GBC" target="_blank" class="detail-link">F-272 공식 X</a></p>
+          <p><a href="https://x.com/F_272_GBC" target="_blank" rel="noopener noreferrer" class="detail-link">F-272 공식 X</a></p>
         </div>
       </div>
 
