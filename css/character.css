@@ -59,7 +59,7 @@
 .character-part {
   font-family: var(--font-main);
   font-size: clamp(16px, 1.8vw, 24px);
-  font-weight: 900;
+  font-weight: 800;
   color: var(--color-point);
 }
 
@@ -73,7 +73,7 @@
 .character-name-jp {
   font-size: clamp(20px, 2vw, 28px);
   color: #999;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .character-desc-box {
@@ -97,7 +97,6 @@
 .character-desc-box p {
   font-family: var(--font-main);
   font-size: clamp(15px, 1.5vw, 20px);
-  font-weight: 700;
   line-height: 1.8;
   margin: 0;
   color: var(--color-black);
@@ -135,7 +134,7 @@
   width: 30%;
   font-family: var(--font-main);
   font-size: clamp(14px, 1.4vw, 18px);
-  font-weight: 900;
+  font-weight: 800;
   color: var(--color-black);
 }
 
@@ -143,7 +142,7 @@
   width: 70%;
   font-family: var(--font-main);
   font-size: clamp(16px, 1.6vw, 22px);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--color-black);
 }
 
@@ -151,7 +150,7 @@
   text-align: right;
   font-family: var(--font-main);
   font-size: clamp(15px, 1.5vw, 20px);
-  font-weight: 900;
+  font-weight: 600;
   color: var(--color-white);
   margin-top: clamp(8px, 1.2vw, 15px);
 }
@@ -217,7 +216,7 @@
 .character-member-part {
   font-family: var(--font-main);
   font-size: clamp(11px, 1.2vw, 16px);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--color-white);
 }
 
@@ -280,7 +279,7 @@
 .character-media-text {
   font-family: var(--font-main);
   font-size: clamp(14px, 1.6vw, 22px);
-  font-weight: 900;
+  font-weight: 800;
   color: var(--color-black);
   text-align: center;
   transition: color 0.2s ease;
