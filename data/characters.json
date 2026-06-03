@@ -20,7 +20,8 @@
           "연예인 학교에 다니는 여자아이.",
           "유망주로 주목받으며 광고에도 출연하고 있다.",
           "붙임성 좋고 사회성도 뛰어난 미소녀.",
-          "모델이라고 해도 손색없을 미모를 가졌지만, 실제 성격은 자존심이 강하고 지기 싫어하는 아가씨 타입이다."
+          "모델이라고 해도 손색없을 미모를 가졌지만,",
+          "실제 성격은 자존심이 강하고 지기 싫어하는 아가씨 타입이다."
         ],
         "message": "거짓말하는 것도 쉬운 게 아니거든."
       },
@@ -39,11 +40,13 @@
         },
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664119579356938240?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/mirei_togetoge/status/1684035814819504128?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/togenashitogeari/mirei_thumb.jpg"
         }
       }
     },
@@ -86,11 +89,13 @@
         },
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1663742101362814976?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/yuri_togetoge/status/1684035823031791616?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/togenashitogeari/yuri_thumb.jpg"
         }
       }
     },
@@ -132,11 +137,13 @@
         },
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1663409904948764672?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/rina_togetoge/status/1684035814722879492?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/togenashitogeari/rina_thumb.jpg"
         }
       }
     },
@@ -179,11 +186,13 @@
         },
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664466868651053058?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/natsu_togetoge/status/1684035820141809664?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/togenashitogeari/natsu_thumb.jpg"
         }
       }
     },
@@ -226,11 +235,13 @@
         },
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664832455663300609?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/shuri_togetoge/status/1684035823874998273?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/togenashitogeari/shuri_thumb.jpg"
         }
       }
     },
@@ -272,11 +283,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2037001602444542279?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/KisakiCannaLily/status/2035683697631052136?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/cannalily/kisaki_thumb.jpg"
         }
       }
     },
@@ -317,11 +330,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036639206458495174?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/AruneCannaLily/status/2035684017765503123?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/cannalily/arune_thumb.jpg"
         }
       }
     },
@@ -362,11 +377,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036276829565362653?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/RineCannaLily/status/2035682465919180926?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/cannalily/rine_thumb.jpg"
         }
       }
     },
@@ -407,11 +424,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036382515259421056?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/YuwaCannaLily/status/2035684186624074162?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/cannalily/yuwa_thumb.jpg"
         }
       }
     },
@@ -453,11 +472,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036744903267348496?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/SakuraCannaLily/status/2035684248909496399?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/cannalily/sakura_thumb.jpg"
         }
       }
     },
@@ -497,11 +518,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046170978162712643?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/yoshi_F272/status/2045811164572242077?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/f-272/yoshi_thumb.jpg"
         }
       }
     },
@@ -542,11 +565,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046906117419405518?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/towa_F272/status/2045460964829802862?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/f-272/towa_thumb.jpg"
         }
       }
     },
@@ -587,11 +612,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046529551833219473?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/miyu_F272/status/2045462726504546730?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/f-272/miyu_thumb.jpg"
         }
       }
     },
@@ -632,11 +659,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2047254434833629568?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/hinano_F272/status/2045463037499646093?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/f-272/hinano_thumb.jpg"
         }
       }
     },
@@ -677,11 +706,13 @@
         },
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2047616554540704006?s=20",
-          "text": "캐릭터 소개"
+          "text": "캐릭터 소개",
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
         },
         "cv_comment": {
           "url": "https://x.com/luca_F272/status/2045463726623756681?s=20",
-          "text": "성우 코멘트"
+          "text": "성우 코멘트",
+          "thumbnail": "images/character/f-272/luca_thumb.jpg"
         }
       }
     }
