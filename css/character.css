@@ -125,25 +125,28 @@
 .profile-row {
   background-color: var(--color-white);
   border-left: clamp(3px, 0.5vw, 5px) solid var(--color-point);
-  display: flex;
-  padding: clamp(8px, 1vw, 12px) clamp(15px, 1.5vw, 20px);
-  align-items: center;
+  display: grid;
+  grid-template-columns: clamp(90px, 12vw, 150px) 1fr;
+  padding: clamp(8px, 1vw, 12px) clamp(10px, 1.5vw, 20px);
+  align-items: flex-start;
+  gap: clamp(10px, 4vw, 50px);
 }
 
 .profile-label {
-  width: 30%;
   font-family: var(--font-main);
-  font-size: clamp(14px, 1.4vw, 18px);
+  font-size: clamp(12px, 1.2vw, 18px);
   font-weight: 800;
   color: var(--color-black);
+  word-break: keep-all;
 }
 
 .profile-value {
-  width: 70%;
   font-family: var(--font-main);
-  font-size: clamp(16px, 1.6vw, 22px);
-  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 22px);
+  font-weight: 700;
   color: var(--color-black);
+  word-break: break-all;
+  line-height: 1.4;
 }
 
 .profile-footer {
