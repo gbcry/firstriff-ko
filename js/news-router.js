@@ -1,3 +1,37 @@
+// 메인 페이지 최신 뉴스 데이터
+async function initLatestNews() {
+  const newsListContainer = document.querySelector(".news-list");
+
+  if (!newsListContainer) return;
+
+  const newsData = await fetchNewsData();
+
+  // 날짜 & id 기준 최신순 정렬
+  const sortedNews = newsData.sort(
+    (a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id),
+  );
+
+  // 상위 3개만 자르기
+  const latestNews = sortedNews.slice(0, 3);
+
+  const latestNewsHTML = latestNews
+    .map(
+      (news) => `
+        <div class="news-item">
+          <a href="#news/${news.id}" class="news-link">
+              <div class="news-date">${news.date}</div>
+              <div class="news-title">${news.title}</div>
+          </a>
+        </div>
+      `,
+    )
+    .join("");
+
+  console.log(latestNewsHTML);
+
+  newsListContainer.innerHTML = latestNewsHTML;
+}
+
 function initNews() {
   const newsContainer = document.querySelector(".news-container");
 

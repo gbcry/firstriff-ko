@@ -55,34 +55,11 @@ const templates = {
     </div>
 
     <div id="latest-news">
-
       <div class="section-title">NEWS</div>
 
-        <div class="news-list">
+      <div class="news-list"></div>
 
-            <div class="news-item">
-                <a href="#news/20260418_01" class="news-link">
-                    <div class="news-date">2026.04.18</div>
-                    <div class="news-title">F-272 1st ONE-MAN LIVE The Dissonant “I DOLL” 개최 결정!</div>
-                </a>
-            </div>
-
-            <div class="news-item">
-                <a href="#news/20260322_02" class="news-link">
-                    <div class="news-date">2026.03.22</div>
-                    <div class="news-title">Canna Lily 1st ONE-MAN LIVE 「새벽녘에 피는 꽃」 개최 결정!</div>
-                </a>
-            </div>
-
-            <div class="news-item">
-                <a href="#news/20260322_01" class="news-link">
-                    <div class="news-date">2026.03.22</div>
-                    <div class="news-title">AnimeJapan 2026 참가 정보</div>
-                </a>
-            </div>
-            
-        </div>
-        <a href="#news" class="view-more-btn">VIEW MORE <i class="fa-solid fa-plus"></i></a>
+      <a href="#news" class="view-more-btn">VIEW MORE <i class="fa-solid fa-plus"></i></a>
     </div>
   `,
   news: `<div class="news-container"></div>`,
@@ -120,6 +97,7 @@ function handleRouting() {
 
     if (hash === "home") {
       initSlider();
+      initLatestNews();
     }
   } else {
     rootDiv.innerHTML = `<h2>404 - 페이지를 찾을 수 없습니다.</h2>`;
