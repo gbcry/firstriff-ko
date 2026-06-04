@@ -155,35 +155,6 @@
   color: var(--color-point-hover);
 }
 
-.detail-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: clamp(20px, 5vw, 40px);
-}
-
-.back-to-list-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-main);
-  font-size: clamp(16px, 1.6vw, 22px);
-  font-weight: 800;
-  color: var(--color-point);
-  padding: clamp(10px, 1.5vw, 12px) clamp(16px, 3vw, 24px);
-  transition: color 0.2s ease;
-}
-
-.back-to-list-btn i {
-  font-size: clamp(14px, 1.4vw, 20px);
-  color: var(--color-point);
-}
-
-.back-to-list-btn:hover,
-.back-to-list-btn i:hover {
-  color: var(--color-point-hover);
-}
-
 @media screen and (max-width: 768px) {
   .news-link {
     flex-direction: column;
