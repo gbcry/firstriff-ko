@@ -484,7 +484,7 @@ a {
     font-weight: 800;
     color: var(--color-black) !important;
     width: 100%;
-    padding: clamp(10px, 2vw, 15px) clamp(15px, 4vw, 40px);
+    padding: clamp(4px, 1.5vw, 8px) clamp(15px, 4vw, 40px);
     text-align: left;
     text-decoration: none;
     display: block;
@@ -579,19 +579,19 @@ a {
 @media screen and (max-width: 768px) {
   .official-media-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .official-media-link {
+    grid-column: span 2;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
   }
 
   .official-media-link:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
+    grid-column: 2 / 4;
     justify-self: center;
-    width: 65%;
   }
 
   .official-media-thumb.youtube {

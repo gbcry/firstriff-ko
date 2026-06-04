@@ -157,24 +157,32 @@ function initAlbumDetail() {
           <div class="tracklist-container">
             <div class="track-row">
               <div class="track-num">01</div>
-              <div class="track-name-main">이름 없는 모든 것</div>
-              <div class="track-name-sub">(名もなき何もかも | Nameless Name)</div>
+              <div class="track-text-group">
+                <div class="track-name-main">이름 없는 모든 것</div>
+                <div class="track-name-sub">(名もなき何もかも | Nameless Name)</div>
+              </div>
               <a href="https://youtu.be/ve6SQ3V8BSw" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="track-row">
               <div class="track-num">02</div>
-              <div class="track-name-main">거짓된 법칙</div>
-              <div class="track-name-sub">(偽りの理 | no rhyme nor reason)</div>
+              <div class="track-text-group">
+                <div class="track-name-main">거짓된 법칙</div>
+                <div class="track-name-sub">(偽りの理 | no rhyme nor reason)</div>
+              </div>
               <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="track-row">
               <div class="track-num">03</div>
-              <div class="track-name-main"">이름 없는 모든 것 (Instrumental)</div>
+              <div class="track-text-group">
+                <div class="track-name-main"">이름 없는 모든 것 (Instrumental)</div>
+              </div>
               <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="track-row">
               <div class="track-num">04</div>
-              <div class="track-name-main"">거짓된 법칙 (Instrumental)</div>
+              <div class="track-text-group">
+                <div class="track-name-main"">거짓된 법칙 (Instrumental)</div>
+              </div>
               <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
