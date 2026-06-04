@@ -1,7 +1,46 @@
 let slideInterval;
 let resizeHandler;
 
-function initSlider() {
+// 밴드 슬라이더 렌더링
+async function renderBandSlider() {
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+
+  if (!sliderWrapper) return;
+
+  const bands = await fetchBandsData();
+
+  if (bands.length === 0) return;
+
+  const sliderBands = [...bands, ...bands];
+
+  // 하드코딩 순서 [f-272 -> togetoge -> cannalily]였기 때문에, 맨 마지막 요소를 맨 앞으로 이동
+  // index 1번 자리를 togetoge에 줘야 함
+  sliderBands.unshift(sliderBands.pop());
+
+  const slidesHTML = sliderBands
+    .map((band, index) => {
+      const isActive = index === 1 ? "active" : "";
+
+      return `
+        <a href="#band/${band.id}" class="slide-item">
+          <img src="${band.images.background}" class="slide-bg">
+          <img src="${band.images.main_visual}" 
+              data-desktop="${band.images.main_visual}"
+              data-mobile="${band.images.band_main}" class="slide-band">
+          <img src="${band.images.band_logo}" class="slide-logo">
+        </a>
+      `;
+    })
+    .join("");
+
+  sliderWrapper.innerHTML = slidesHTML;
+}
+
+async function initSlider() {
+  // 1. HTML 렌더링
+  await renderBandSlider();
+
+  // 2. 렌더링이 끝난 후에 요소 찾기
   const wrapper = document.querySelector(".slider-wrapper");
   const slides = document.querySelectorAll(".slide-item");
   const prevBtn = document.querySelector(".prev-btn");
