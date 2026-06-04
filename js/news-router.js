@@ -74,8 +74,8 @@ function initNews() {
         </div>
       </div>
 
-      <div class="detail-footer">
-        <a href="#news" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i> 목록으로 돌아가기</a>
+      <div class="back-btn-wrapper">
+        <a href="#news" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
       </div>
   </div>
   `;
