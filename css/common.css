@@ -137,6 +137,77 @@ a {
 }
 
 /* =========================================
+   Official Media
+========================================= */
+
+.official-media-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(15px, 3vw, 30px);
+  padding: clamp(30px, 4vw, 60px) clamp(20px, 4vw, 40px);
+  margin-bottom: clamp(50px, 8vw, 100px);
+  width: 100%;
+  background-color: var(--color-gray);
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
+  box-sizing: border-box;
+}
+
+.official-media-link {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 15px);
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.official-media-thumb {
+  object-fit: cover;
+  border: clamp(2px, 0.3vw, 3px) solid var(--color-black);
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.official-media-thumb.youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+}
+
+.official-media-thumb.sns {
+  width: clamp(60px, 56%, 150px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.official-media-text {
+  font-family: var(--font-main);
+  font-size: clamp(14px, 1.6vw, 22px);
+  font-weight: 800;
+  color: var(--color-black);
+  text-align: center;
+  word-break: keep-all;
+  margin-top: auto;
+  transition: color 0.2s ease;
+}
+
+.official-media-link:hover .official-media-thumb {
+  border-color: var(--color-point);
+  transform: scale(1.05);
+}
+
+.official-media-link:hover .official-media-text {
+  color: var(--color-point);
+}
+
+/* =========================================
    Footer
 ========================================= */
 
@@ -168,7 +239,7 @@ a {
   /* 라벨 아래에 링크 위치 */
   flex-direction: column;
   width: 100%;
-  gap: 12px;
+  gap: clamp(8px, 1.5vw, 12px);
 }
 
 .footer-header {
@@ -230,7 +301,7 @@ a {
   margin-top: clamp(20px, 3vw, 40px);
   padding-top: clamp(15px, 2vw, 20px);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  gap: 20px;
+  gap: clamp(10px, 2vw, 20px);
 }
 
 .disclaimer {
@@ -248,13 +319,13 @@ a {
   font-size: clamp(13px, 1.2vw, 15px);
   color: var(--color-black);
   background-color: var(--color-white);
-  padding: 10px 20px;
+  padding: clamp(8px, 1vw, 12px) clamp(16px, 2vw, 24px);
   border-radius: 30px;
   white-space: nowrap;
   transition: color 0.2s ease;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: clamp(4px, 0.8vw, 8px);
 }
 
 .feedback-btn:hover {
@@ -265,7 +336,7 @@ a {
 .footer-text {
   width: 100%;
   text-align: center;
-  font-size: 19vw;
+  font-size: clamp(80px, 19vw, 280px);
   font-weight: 900;
   letter-spacing: clamp(-2px, -0.5vw, -5px);
   color: var(--color-white);
@@ -350,10 +421,10 @@ a {
 
   .mobile-menu-label {
     font-family: var(--font-main);
-    font-size: 12px;
+    font-size: clamp(11px, 3vw, 14px);
     color: var(--color-point);
     margin: 10px 0 5px 0;
-    padding-left: 20px;
+    padding-left: clamp(15px, 4vw, 40px);
     user-select: none;
     width: 100%;
     text-align: left;
@@ -370,11 +441,11 @@ a {
   .mobile-menu-links .nav-item,
   .mobile-menu-links .link-item {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: clamp(15px, 4.5vw, 20px);
     font-weight: 800;
     color: var(--color-black) !important;
     width: 100%;
-    padding: 8px 20px;
+    padding: clamp(10px, 2vw, 15px) clamp(15px, 4vw, 40px);
     text-align: left;
     text-decoration: none;
     display: block;
@@ -393,7 +464,7 @@ a {
     width: 100%;
     text-align: center;
     font-family: var(--font-main);
-    font-size: 40px;
+    font-size: clamp(30px, 8vw, 45px);
     font-weight: 900;
     color: var(--color-point);
     letter-spacing: -1px;
@@ -463,5 +534,33 @@ a {
   .mobile-menu-links,
   .mobile-menu-logo {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .official-media-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .official-media-link {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .official-media-link:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 65%;
+  }
+
+  .official-media-thumb.youtube {
+    width: 100%;
+  }
+
+  .official-media-thumb.sns {
+    width: 60%;
+    max-width: 130px;
   }
 }
