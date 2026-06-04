@@ -1,7 +1,7 @@
 {
   "bands": [
     {
-      "id": "togenashi_togeari",
+      "id": "togenashitogeari",
       "name": "토게나시 토게아리",
       "introduction": [
         "억눌린 마음을 품은 5명에 의한 걸즈 밴드.",
@@ -11,7 +11,6 @@
       "images": {
         "main_visual": "images/band/togenashitogeari/main_visual.webp",
         "band_main": "images/band/togenashitogeari/band_main.png",
-        "media_visual": "images/band/togenashitogeari/media_visual.jpeg",
         "band_logo": "images/band/togenashitogeari/band_logo.png",
         "tab_logo": {
           "default": "images/band/togenashitogeari/tab_logo_default.webp",
@@ -44,7 +43,7 @@
       }
     },
     {
-      "id": "canna_lily",
+      "id": "cannalily",
       "name": "Canna Lily",
       "introduction": [
         "「필사적인」 발자취에서 피어난 록큰롤 밴드.",
@@ -56,7 +55,6 @@
       "images": {
         "main_visual": "images/band/cannalily/main_visual.webp",
         "band_main": "images/band/cannalily/band_main.png",
-        "media_visual": "images/band/cannalily/media_visual.jpeg",
         "band_logo": "images/band/cannalily/band_logo.png",
         "tab_logo": {
           "default": "images/band/cannalily/tab_logo_default.webp",
@@ -84,7 +82,7 @@
       }
     },
     {
-      "id": "f_272",
+      "id": "f-272",
       "name": "F-272",
       "introduction": [
         "너희들 전부 다 정말 싫어.",
@@ -96,7 +94,6 @@
       "images": {
         "main_visual": "images/band/f-272/main_visual.webp",
         "band_main": "images/band/f-272/band_main.png",
-        "media_visual": "images/band/f-272/media_visual.jpeg",
         "band_logo": "images/band/f-272/band_logo.png",
         "tab_logo": {
           "default": "images/band/f-272/tab_logo_default.webp",
