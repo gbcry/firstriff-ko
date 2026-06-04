@@ -123,22 +123,22 @@ function initCharacter() {
       </div>
 
       <div class="section-title">OFFICIAL MEDIA</div>
-      <div class="character-media-content">
-        <a href="https://www.youtube.com/watch?v=1VTyLjtuQ98" class="character-media-link">
-          <img src="images/character/togenashitogeari/subaru_pv_thumb.jpg" class="character-media-img youtube">
-          <span class="character-media-text">캐릭터 PV</span>
+      <div class="official-media-content">
+        <a href="https://www.youtube.com/watch?v=1VTyLjtuQ98" class="official-media-link">
+          <img src="images/character/togenashitogeari/subaru_pv_thumb.jpg" class="official-media-thumb youtube">
+          <span class="official-media-text">캐릭터 PV</span>
         </a>
-        <a href="https://www.youtube.com/watch?v=6IiAfahrn2A" class="character-media-link">
-          <img src="images/character/togenashitogeari/subaru_intro_thumb.jpg" class="character-media-img youtube">
-          <span class="character-media-text">자기소개</span>
+        <a href="https://www.youtube.com/watch?v=6IiAfahrn2A" class="official-media-link">
+          <img src="images/character/togenashitogeari/subaru_intro_thumb.jpg" class="official-media-thumb youtube">
+          <span class="official-media-text">자기소개</span>
         </a>
-        <a href="https://x.com/girlsbandcry/status/1664119579356938240?s=20" class="character-media-link">
-          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="character-media-img sns">
-          <span class="character-media-text">캐릭터 소개</span>
+        <a href="https://x.com/girlsbandcry/status/1664119579356938240?s=20" class="official-media-link">
+          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="official-media-thumb sns">
+          <span class="official-media-text">캐릭터 소개</span>
         </a>
-        <a href="https://x.com/mirei_togetoge/status/1684035814819504128?s=20" class="character-media-link">
-          <img src="images/character/togenashitogeari/mirei_thumb.jpg" class="character-media-img sns">
-          <span class="character-media-text">성우 코멘트</span>
+        <a href="https://x.com/mirei_togetoge/status/1684035814819504128?s=20" class="official-media-link">
+          <img src="images/character/togenashitogeari/mirei_thumb.jpg" class="official-media-thumb sns">
+          <span class="official-media-text">성우 코멘트</span>
         </a>
       </div>
 

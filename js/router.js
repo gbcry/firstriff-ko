@@ -89,6 +89,7 @@ const templates = {
   band: `<div class="band-container"></div>`,
   character: `<div class="character-container"></div>`,
   discography: `<div class="discography-container"></div>`,
+  album: `<div class="album-container"></div>`,
 };
 
 // 화면 교체 라우터
@@ -111,6 +112,9 @@ function handleRouting() {
   } else if (hash.startsWith("discography")) {
     rootDiv.innerHTML = templates.discography;
     initDiscography();
+  } else if (hash.startsWith("album")) {
+    rootDiv.innerHTML = templates.album;
+    initAlbumDetail();
   } else if (templates[hash]) {
     rootDiv.innerHTML = templates[hash];
 
