@@ -1,4 +1,4 @@
-function initBand() {
+async function initBand() {
   const bandContainer = document.querySelector(".band-container");
 
   if (!bandContainer) return;
@@ -8,73 +8,125 @@ function initBand() {
   // 기본값 - 토게토게
   const bandId = hash.split("/")[1] || "togenashitogeari";
 
-  // 밴드 페이지 화면
-  const bandTemplate = `
+  const bands = await fetchBandsData();
+  const characters = await fetchCharactersData();
+
+  // 현재 주소와 일치하는 밴드 데이터 찾기
+  const currentBand = bands.find((band) => band.id === bandId);
+
+  if (!currentBand) {
+    bandContainer.innerHTML = "<h2>밴드 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
+
+  renderBandView(bandContainer, bands, currentBand, characters);
+}
+
+async function renderBandView(container, bands, currentBand, characters) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#band/${band.id}" class="band-tab ${isActive}">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 소개글
+  const introHTML = currentBand.introduction
+    .map((text) => `<p>${text}</p>`)
+    .join("");
+
+  // 멤버 목록
+  const membersHTML = currentBand.member_ids
+    .map((memberId) => {
+      const charInfo = characters.find((char) => char.id === memberId);
+
+      const krName = charInfo ? charInfo.name.ko : memberId;
+      const thumbImg = charInfo
+        ? charInfo.images.thumbnail
+        : `images/character/${currentBand.id}/${memberId}_thumb.jpg`;
+
+      return `
+        <a href="#character/${memberId}" class="member-card">
+          <img src="${thumbImg}" class="member-img">
+          <div class="member-name">${krName}</div>
+        </a>
+      `;
+    })
+    .join("");
+
+  // 오피셜 미디어 목록
+  let mediaHTML = "";
+  if (currentBand.links.official_sns) {
+    mediaHTML += currentBand.links.official_sns
+      .map(
+        (sns) => `
+          <a href="${sns.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+            <img src="${sns.thumbnail}" class="official-media-thumb sns">
+            <span class="official-media-text">${sns.text}</span>
+          </a>
+        `,
+      )
+      .join("");
+  }
+
+  // 첫 생방송
+  if (
+    currentBand.links.first_streaming &&
+    currentBand.links.first_streaming.url
+  ) {
+    const ytThumb = getYouTubeThumbnail(currentBand.links.first_streaming.url);
+    mediaHTML += `
+      <a href="${currentBand.links.first_streaming.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+        <img src="${ytThumb}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+        <span class="official-media-text">${currentBand.links.first_streaming.text}</span>
+      </a> 
+    `;
+  }
+
+  // 데뷔 PV
+  if (currentBand.links.debut_pv && currentBand.links.debut_pv.url) {
+    const ytThumb = getYouTubeThumbnail(currentBand.links.debut_pv.url);
+    mediaHTML += `
+      <a href="${currentBand.links.debut_pv.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+        <img src="${ytThumb}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+        <span class="official-media-text">${currentBand.links.debut_pv.text}</span>
+      </a> 
+    `;
+  }
+
+  container.innerHTML = `
     <div class="band-view">
 
       <div class="section-title">BAND</div>
       
       <div class="band-tab-menu">
-        <img src="images/band/${bandId}/background.png" class="menu-bg-img">
-
-        <a href="#band/togenashitogeari" class="band-tab ${bandId === "togenashitogeari" ? "active" : ""}">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-
-        <a href="#band/cannalily" class="band-tab ${bandId === "cannalily" ? "active" : ""}">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-        
-        <a href="#band/f-272" class="band-tab ${bandId === "f-272" ? "active" : ""}">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+        <img src="${currentBand.images.background}" class="menu-bg-img">
+        ${tabMenuHTML}
       </div>
 
       <div class="band-detail-content">
 
         <div class="band-visual-box">
-          <img src="images/band/togenashitogeari/band_main.png" class="band-main-img">
-          <img src="images/band/togenashitogeari/band_logo.png" class="band-logo">
+          <img src="${currentBand.images.band_main}" class="band-main-img">
+          <img src="${currentBand.images.band_logo}" class="band-logo">
         </div>
 
         <div class="band-info-box">
-          <div class="band-name">토게나시 토게아리</div>
+          <div class="band-name">${currentBand.name}</div>
           <div class="band-description">
-            <p>억눌린 마음을 품은 5명에 의한 걸즈 밴드.</p>
-            <p>감정적이고 질주감 넘치는 록 사운드가 특징이다.</p>
-            <p>벽에 부딪히면서도, 자신들의 음악이 가진 힘을 믿고 돌진해 나간다.</p>
+            ${introHTML}
           </div>
 
           <div class="band-members">
             <div class="member-label">MEMBER</div>
-
-            <a href="#character/subaru" class="member-card">
-              <img src="images/character/togenashitogeari/subaru_thumb.jpg" class="member-img">
-              <div class="member-name">아와 스바루</div>
-            </a>
-
-            <a href="#character/momoka" class="member-card">
-              <img src="images/character/togenashitogeari/momoka_thumb.jpg" class="member-img">
-              <div class="member-name">카와라기 모모카</div>
-            </a>
-
-            <a href="#character/nina" class="member-card">
-              <img src="images/character/togenashitogeari/nina_thumb.jpg" class="member-img">
-              <div class="member-name">이세리 니나</div>
-            </a>
-
-            <a href="#character/tomo" class="member-card">
-              <img src="images/character/togenashitogeari/tomo_thumb.jpg" class="member-img">
-              <div class="member-name">에비즈카 토모</div>
-            </a>
-
-            <a href="#character/rupa" class="member-card">
-              <img src="images/character/togenashitogeari/rupa_thumb.jpg" class="member-img">
-              <div class="member-name">루파</div>
-             </a>
+            ${membersHTML}
           </div>
         </div>
         
@@ -83,22 +135,9 @@ function initBand() {
       <div class="section-title">OFFICIAL MEDIA</div>
 
       <div class="official-media-content">        
-        <a href="https://x.com/girlsbandcry" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="official-media-thumb sns">
-          <span class="official-media-text">걸즈 밴드 크라이 공식 X</span>
-         </a>
-        <a href="https://www.instagram.com/toge0toge1/" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="official-media-thumb sns">
-          <span class="official-media-text">토게나시 토게아리 공식 인스타</span>
-        </a> 
-        <a href="https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="images/band/togenashitogeari/togetoge_stream_thumb.jpg" class="official-media-thumb youtube">
-          <span class="official-media-text">토게나시 토게아리 첫 생방송</span>
-        </a> 
+        ${mediaHTML}
       </div>
       
     </div>
   `;
-
-  bandContainer.innerHTML = bandTemplate;
 }

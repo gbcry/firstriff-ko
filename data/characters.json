@@ -484,7 +484,7 @@
     },
     {
       "id": "ari",
-      "band_id": "f_272",
+      "band_id": "f-272",
       "band_name": "F-272",
       "name": {
         "ko": "나카무라 아리",
@@ -504,7 +504,7 @@
         "message": "그런 말은, 팔로와 수로 이기고 나서 해 주시겠어요ー?"
       },
       "images": {
-        "thumbnail": "images/character/f-172/ari_thumb.jpg",
+        "thumbnail": "images/character/f-272/ari_thumb.jpg",
         "full_body": "images/character/f-272/ari_full.webp"
       },
       "links": {
@@ -530,7 +530,7 @@
     },
     {
       "id": "koto",
-      "band_id": "f_272",
+      "band_id": "f-272",
       "band_name": "F-272",
       "name": {
         "ko": "우다가와 코토",
@@ -551,7 +551,7 @@
         "message": "......"
       },
       "images": {
-        "thumbnail": "images/character/f-172/koto_thumb.jpg",
+        "thumbnail": "images/character/f-272/koto_thumb.jpg",
         "full_body": "images/character/f-272/koto_full.webp"
       },
       "links": {
@@ -577,7 +577,7 @@
     },
     {
       "id": "hazuki",
-      "band_id": "f_272",
+      "band_id": "f-272",
       "band_name": "F-272",
       "name": {
         "ko": "쿠로미야 하즈키",
@@ -598,7 +598,7 @@
         "message": "불쌍한 건, 당신들 아니야?"
       },
       "images": {
-        "thumbnail": "images/character/f-172/hazuki_thumb.jpg",
+        "thumbnail": "images/character/f-272/hazuki_thumb.jpg",
         "full_body": "images/character/f-272/hazuki_full.webp"
       },
       "links": {
@@ -624,7 +624,7 @@
     },
     {
       "id": "momono",
-      "band_id": "f_272",
+      "band_id": "f-272",
       "band_name": "F-272",
       "name": {
         "ko": "아사이 모모노",
@@ -645,7 +645,7 @@
         "message": "뭐죠......노력하고 싶어지기라도 한 건가요?"
       },
       "images": {
-        "thumbnail": "images/character/f-172/momono_thumb.jpg",
+        "thumbnail": "images/character/f-272/momono_thumb.jpg",
         "full_body": "images/character/f-272/momono_full.webp"
       },
       "links": {
@@ -671,7 +671,7 @@
     },
     {
       "id": "saki",
-      "band_id": "f_272",
+      "band_id": "f-272",
       "band_name": "F-272",
       "name": {
         "ko": "카토 사키",
@@ -692,7 +692,7 @@
         "message": "여긴 여기만의 규칙이 있거든. 지킬 자신 있어?"
       },
       "images": {
-        "thumbnail": "images/character/f-172/saki_thumb.jpg",
+        "thumbnail": "images/character/f-272/saki_thumb.jpg",
         "full_body": "images/character/f-272/saki_full.webp"
       },
       "links": {
