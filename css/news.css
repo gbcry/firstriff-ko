@@ -143,6 +143,20 @@
   margin-bottom: 4px;
 }
 
+.info-item {
+  margin-bottom: clamp(16px, 2.5vw, 24px);
+}
+
+.info-label {
+  font-family: var(--font-main);
+  color: var(--color-black);
+  margin-bottom: clamp(4px, 1vw, 8px);
+}
+
+.info-value-box p {
+  color: var(--color-black);
+}
+
 .detail-link {
   color: var(--color-point);
   font-family: var(--font-main);
