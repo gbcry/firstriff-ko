@@ -1,0 +1,1218 @@
+{
+  "discography": {
+    "togenashitogeari": [
+      {
+        "id": "toge_single_01",
+        "release_date": "2023.07.26",
+        "album_type": "single",
+        "album_tag": "1st Single",
+        "title": {
+          "ko": "이름 없는 모든 것",
+          "ja": "名もなき何もかも",
+          "en": "Nameless Name"
+        },
+        "cover_image": "images/discography/togenashitogeari/1st_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "이름 없는 모든 것",
+              "ja": "名もなき何もかも",
+              "en": "Nameless Name"
+            },
+            "links": {
+              "audio": "https://youtu.be/ve6SQ3V8BSw",
+              "mv": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+              "anime": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "거짓된 법칙",
+              "ja": "偽りの理 ",
+              "en": "no rhyme nor reason"
+            },
+            "links": {
+              "audio": "https://youtu.be/-GkyvFiAJNg",
+              "mv": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "이름 없는 모든 것 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "거짓된 법칙 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_02",
+        "release_date": "2023.08.30",
+        "album_type": "single",
+        "album_tag": "2nd Single",
+        "title": {
+          "ko": "우울, 흐려지다",
+          "ja": "気鬱、白濁す",
+          "en": "white drizzle in gloom"
+        },
+        "cover_image": "images/discography/togenashitogeari/2nd_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "우울, 흐려지다",
+              "ja": "気鬱、白濁す",
+              "en": "white drizzle in gloom"
+            },
+            "links": {
+              "audio": "https://youtu.be/3l3yLmFEzi8",
+              "mv": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "이상적 패러독스란",
+              "ja": "理想的パラドクスとは",
+              "en": "Ideal Paradox"
+            },
+            "links": {
+              "audio": "https://youtu.be/vm6KfrRdQTs",
+              "mv": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "우울, 흐려지다 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "이상적 패러독스란 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_03",
+        "release_date": "2023.10.25",
+        "album_type": "single",
+        "album_tag": "3rd Single",
+        "title": {
+          "ko": "망울을 터뜨리다",
+          "ja": "爆ぜて咲く",
+          "en": "Bleeding Hearts"
+        },
+        "cover_image": "images/discography/togenashitogeari/3rd_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "망울을 터뜨리다",
+              "ja": "爆ぜて咲く",
+              "en": "Bleeding Hearts"
+            },
+            "links": {
+              "audio": "https://youtu.be/YGkr5JE9xGY",
+              "mv": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "여명을 꿰뚫다",
+              "ja": "黎明を穿つ",
+              "en": "Piercing the dawn of time"
+            },
+            "links": {
+              "audio": "https://youtu.be/6qoriw__gGo",
+              "mv": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "망울을 터뜨리다 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "여명을 꿰뚫다 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_04",
+        "release_date": "2023.12.20",
+        "album_type": "single",
+        "album_tag": "4th Single",
+        "title": {
+          "ko": "극사적 극채색 앤서",
+          "ja": "極私的極彩色アンサー",
+          "en": "Answer to Extreme"
+        },
+        "cover_image": "images/discography/togenashitogeari/4th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "극사적 극채색 앤서",
+              "ja": "極私的極彩色アンサー",
+              "en": "Answer to Extreme"
+            },
+            "links": {
+              "audio": "https://youtu.be/i-JcDUAwzqI",
+              "mv": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "상처받고 상처주고 아파서 괴로워",
+              "ja": "傷つき傷つけ痛くて辛い",
+              "en": "Hurtful & Painful"
+            },
+            "links": {
+              "audio": "https://youtu.be/gLG7SCvceiQ",
+              "mv": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "극사적 극채색 앤서 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "상처받고 상처주고 아파서 괴로워 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_05",
+        "release_date": "2024.02.28",
+        "album_type": "single",
+        "album_tag": "5th Single",
+        "title": {
+          "ko": "운명에 걸고 싶은 논리",
+          "ja": "運命に賭けたい論理",
+          "en": "Lonely fate to be destined"
+        },
+        "cover_image": "images/discography/togenashitogeari/5th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "운명에 걸고 싶은 논리",
+              "ja": "運命に賭けたい論理",
+              "en": "Lonely fate to be destined"
+            },
+            "links": {
+              "audio": "https://youtu.be/WxUqv8t214E",
+              "mv": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "안녕 안녕 안녕",
+              "ja": "サヨナラサヨナラサヨナラ",
+              "en": "Underneath"
+            },
+            "links": {
+              "audio": "https://youtu.be/8vUnQuliaFM",
+              "mv": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "운명에 걸고 싶은 논리",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "안녕 안녕 안녕 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_06",
+        "release_date": "2024.05.22",
+        "album_type": "single",
+        "album_tag": "6th Single",
+        "title": {
+          "ko": "혼잡한 길, 우리의 도시",
+          "ja": "雑踏、僕らの街",
+          "en": "Wrong World"
+        },
+        "cover_image": "images/discography/togenashitogeari/6th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "혼잡한 길, 우리의 도시",
+              "ja": "雑踏、僕らの街",
+              "en": "Wrong World"
+            },
+            "links": {
+              "audio": "https://youtu.be/MSmfAa_oSqE",
+              "mv": null,
+              "anime": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "빈 상자(이세리 니나, 카와라기 모모카)",
+              "ja": "空の箱 (井芹仁菜、河原木桃香)",
+              "en": "VOID (Nina Iseri, Momoka Kawaragi)"
+            },
+            "links": {
+              "audio": "https://youtu.be/gpCHjSaetds",
+              "mv": null,
+              "anime": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K"
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "빈 상자(Vo.카와라기 모모카)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "혼잡한 길, 우리의 도시 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "빈 상자 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_07",
+        "release_date": "2024.05.22",
+        "album_type": "single",
+        "album_tag": "7th Single",
+        "title": {
+          "ko": "누구도 될 수 없는 나니까",
+          "ja": "誰にもなれない私だから",
+          "en": "I'm Nobody"
+        },
+        "cover_image": "images/discography/togenashitogeari/7th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "누구도 될 수 없는 나니까",
+              "ja": "誰にもなれない私だから",
+              "en": "I'm Nobody"
+            },
+            "links": {
+              "audio": "https://youtu.be/dJottC7FmYc",
+              "mv": null,
+              "anime": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "목소리 없는 물고기 (신카와사키 (임시))",
+              "ja": "声なき魚 (新川崎 (仮)",
+              "en": "Voiceless Fish (Shin Kawasaki (Temporary))"
+            },
+            "links": {
+              "audio": "https://youtu.be/uUUzZDlrt08",
+              "mv": null,
+              "anime": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT"
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "빈 상자 (제1화 연주 낭송)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "누구도 될 수 없는 나니까 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "목소리 없는 물고기 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_08",
+        "release_date": "2024.06.19",
+        "album_type": "single",
+        "album_tag": "8th Single",
+        "title": {
+          "ko": "시야 한구석 스러지는 소리",
+          "ja": "視界の隅 朽ちる音",
+          "en": "What to raise"
+        },
+        "cover_image": "images/discography/togenashitogeari/8th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "시야 한구석 스러지는 소리 (신카와사키 (임시))",
+              "ja": "視界の隅 朽ちる音 (新川崎 (仮))",
+              "en": "What to raise (Shin Kawasaki (Temporary))"
+            },
+            "links": {
+              "audio": "https://youtu.be/swVEesI3StM",
+              "mv": null,
+              "anime": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "심상적 프랙털 (beni-shouga)",
+              "ja": "心象的フラクタル (beni-shouga)",
+              "en": "Mind playing Fractal (beni-shouga)"
+            },
+            "links": {
+              "audio": "https://youtu.be/H_zV9w4rWm8",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "시야 한구석 스러지는 소리 (신카와사키 (임시) x beni-shouga)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "시야 한구석 스러지는 소리 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "심상적 프랙털 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_09",
+        "release_date": "2024.07.10",
+        "album_type": "single",
+        "album_tag": "9th Single",
+        "title": {
+          "ko": "공백과 카타르시스",
+          "ja": "空白とカタルシス",
+          "en": "Emptiness and Catharsis"
+        },
+        "cover_image": "images/discography/togenashitogeari/9th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "공백과 카타르시스",
+              "ja": "空白とカタルシス",
+              "en": "Emptiness and Catharsis"
+            },
+            "links": {
+              "audio": "https://youtu.be/hwvAh7M3erc",
+              "mv": null,
+              "anime": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "운명의 꽃",
+              "ja": "運命の華",
+              "en": "I'm here"
+            },
+            "links": {
+              "audio": "https://youtu.be/Nz-MAr3YPEA",
+              "mv": null,
+              "anime": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a"
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "이름 없는 모든 것 (Live at clubrockhearts edit)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "공백과 카타르시스 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "운명의 꽃 (Instrumental)",
+              "ja": null,
+              "en": null
+            },
+            "links": null
+          }
+        ]
+      },
+      {
+        "id": "toge_single_10",
+        "release_date": "2025.05.28",
+        "album_type": "single",
+        "album_tag": "10th Single",
+        "title": {
+          "ko": "아무도",
+          "ja": "ダレモ",
+          "en": "No one"
+        },
+        "cover_image": "images/discography/togenashitogeari/10th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "아무도",
+              "ja": "ダレモ",
+              "en": "No one"
+            },
+            "links": {
+              "audio": "https://youtu.be/6KuAgqO9oFY",
+              "mv": "https://youtu.be/egoue2V-TAk?si=UIN8Rz3ntKOTnTur",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "날 수 없는 나비는 꿈을 꾼다",
+              "ja": "飛べない蝶は夢を見る",
+              "en": "Belle papillon"
+            },
+            "links": {
+              "audio": "https://youtu.be/MH4VzK2S-Ug",
+              "mv": "https://youtu.be/TuaqYVDguXM?si=yYT9r8Wtco49c1i2",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "아무도 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/avNSGXX9eks",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "날 수 없는 나비는 꿈을 꾼다 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/xwjRJrv-jyQ",
+              "mv": null,
+              "anime": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "toge_single_11",
+        "release_date": "2025.09.24",
+        "album_type": "single",
+        "album_tag": "11th Single",
+        "title": {
+          "ko": "박채 디스플레이",
+          "ja": "薄采ディスプレイ",
+          "en": "Fragile Violet"
+        },
+        "cover_image": "images/discography/togenashitogeari/11th_single.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "박채 디스플레이",
+              "ja": "薄采ディスプレイ",
+              "en": "Fragile Violet"
+            },
+            "links": {
+              "audio": "https://youtu.be/urIe9fv3xgg",
+              "mv": "https://youtu.be/-etkkmuzZmM?si=Rw0IxZvfa2FXFZiw",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "신기루에게 묻다",
+              "ja": "蜃気楼ニ問フ",
+              "en": "Mirage of the mind"
+            },
+            "links": {
+              "audio": "https://youtu.be/SbpUV-4KHaM",
+              "mv": "https://youtu.be/L_32Cn1ViIA?si=EXFxXarsnh46Xy1N",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "박채 디스플레이 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/avNSGXX9eks",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "신기루에게 묻다 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/xwjRJrv-jyQ",
+              "mv": null,
+              "anime": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "toge_ep_01",
+        "release_date": "2025.11.19",
+        "album_type": "ep",
+        "album_tag": "1st ep",
+        "title": {
+          "ko": "새끼손가락 세우지 않을래요?",
+          "ja": "小指立てませんか",
+          "en": "Let's give them the pinky finger"
+        },
+        "cover_image": "images/discography/togenashitogeari/1st_ep.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "푸른 if",
+              "ja": "碧いif",
+              "en": "What if"
+            },
+            "links": {
+              "audio": "https://youtu.be/LIkC911e8II",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "무지했던 나",
+              "ja": "無知のち私",
+              "en": "Me renewed"
+            },
+            "links": {
+              "audio": "https://youtu.be/GxjsKvg-seM",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "갈증, 우울",
+              "ja": "渇く、憂う",
+              "en": "Thirsty, Anxiety"
+            },
+            "links": {
+              "audio": "https://youtu.be/Cl7NmX97eTk",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "불어서 끈 등불",
+              "ja": "吹き消した灯火",
+              "en": "Puff of Smoke"
+            },
+            "links": {
+              "audio": "https://youtu.be/pyDw-dW0wvE",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "살아가고 살아간다",
+              "ja": "​生きて生きてゆく",
+              "en": "Creep"
+            },
+            "links": {
+              "audio": "https://youtu.be/9k1MGMSDaSs",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 6,
+            "title": {
+              "ko": "겁 많은 백야",
+              "ja": "臆病な白夜",
+              "en": "Drowin' Loneliness"
+            },
+            "links": {
+              "audio": "https://youtu.be/I9g-Y0ACFDo",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 7,
+            "title": {
+              "ko": "마지막 기도",
+              "ja": "最期の禱り",
+              "en": "White Lie"
+            },
+            "links": {
+              "audio": "https://youtu.be/ealSZAVyEG8",
+              "mv": null,
+              "anime": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "toge_ep_02",
+        "release_date": "2025.12.17",
+        "album_type": "ep",
+        "album_tag": "2nd ep",
+        "title": {
+          "ko": "다 드러내고 살아 주겠어!",
+          "ja": "全部をさらして生きてやる",
+          "en": "I'll live with my heart on my sleeve!"
+        },
+        "cover_image": "images/discography/togenashitogeari/2nd_ep.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "더는 아무것도 필요 없는 미래",
+              "ja": "もう何もいらない未来",
+              "en": "Against All Answers"
+            },
+            "links": {
+              "audio": "https://youtu.be/BzOXySDldDE",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "살아갈 이유를 줘",
+              "ja": "命をくれよ",
+              "en": "Give Me Life"
+            },
+            "links": {
+              "audio": "https://youtu.be/aUPvnBZzb34",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "en": "arrow"
+            },
+            "links": {
+              "audio": "https://youtu.be/h3lyEYW8uio",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "가시덤불의 장미",
+              "ja": "荊の薔薇",
+              "en": "Roses in Thorns"
+            },
+            "links": {
+              "audio": "https://youtu.be/NoJinP58X8Q",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "더는 아무것도 필요 없는 미래 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/v85-YFfTt7Y",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 6,
+            "title": {
+              "ko": "살아갈 이유를 줘 (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/9Ar2AwGLvFs",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 7,
+            "title": {
+              "en": "arrow (Instrumental)"
+            },
+            "links": {
+              "audio": "https://youtu.be/9ctwEgQbtAs",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 8,
+            "title": {
+              "ko": "가시덤불의 장미 (Instrumental)",
+              "ja": "荊の薔薇",
+              "en": "Roses in Thorns"
+            },
+            "links": {
+              "audio": "https://youtu.be/vjGv_tJV8A8",
+              "mv": null,
+              "anime": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "toge_regular_01",
+        "release_date": "2024.04.24",
+        "album_type": "regular",
+        "album_tag": "1st Album",
+        "title": {
+          "ko": "토게아리",
+          "ja": "棘アリ",
+          "en": "Togeari"
+        },
+        "cover_image": "images/discography/togenashitogeari/1st_album.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "이름 없는 모든 것",
+              "ja": "名もなき何もかも",
+              "en": "Nameless Name"
+            },
+            "links": {
+              "audio": "https://youtu.be/ve6SQ3V8BSw",
+              "mv": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+              "anime": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "거짓된 법칙",
+              "ja": "偽りの理",
+              "en": "no rhyme nor reason"
+            },
+            "links": {
+              "audio": "https://youtu.be/-GkyvFiAJNg",
+              "mv": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "우울, 흐려지다",
+              "ja": "気鬱、白濁す",
+              "en": "white drizzle in gloom"
+            },
+            "links": {
+              "audio": "https://youtu.be/3l3yLmFEzi8",
+              "mv": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "이상적 패러독스란",
+              "ja": "理想的パラドクスとは",
+              "en": "Ideal Paradox"
+            },
+            "links": {
+              "audio": "https://youtu.be/vm6KfrRdQTs",
+              "mv": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "망울을 터뜨리다",
+              "ja": "爆ぜて咲く",
+              "en": "Bleeding Hearts"
+            },
+            "links": {
+              "audio": "https://youtu.be/YGkr5JE9xGY",
+              "mv": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 6,
+            "title": {
+              "ko": "여명을 꿰뚫다",
+              "ja": "黎明を穿つ",
+              "en": "Piercing the dawn of time"
+            },
+            "links": {
+              "audio": "https://youtu.be/6qoriw__gGo",
+              "mv": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 7,
+            "title": {
+              "ko": "극사적 극채색 앤서",
+              "ja": "極私的極彩色アンサー",
+              "en": "Answer to Extreme"
+            },
+            "links": {
+              "audio": "https://youtu.be/i-JcDUAwzqI",
+              "mv": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 8,
+            "title": {
+              "ko": "상처받고 상처주고 아파서 괴로워",
+              "ja": "傷つき傷つけ痛くて辛い",
+              "en": "Hurtful & Painful"
+            },
+            "links": {
+              "audio": "https://youtu.be/gLG7SCvceiQ",
+              "mv": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 9,
+            "title": {
+              "ko": "운명에 걸고 싶은 논리",
+              "ja": "運命に賭けたい論理",
+              "en": "Lonely fate to be destined"
+            },
+            "links": {
+              "audio": "https://youtu.be/WxUqv8t214E",
+              "mv": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+              "anime": null
+            }
+          },
+          {
+            "track_no": 10,
+            "title": {
+              "ko": "안녕 안녕 안녕",
+              "ja": "サヨナラサヨナラサヨナラ",
+              "en": "Underneath"
+            },
+            "links": {
+              "audio": "https://youtu.be/8vUnQuliaFM",
+              "mv": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+              "anime": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "toge_regular_02",
+        "release_date": "2024.08.28",
+        "album_type": "regular",
+        "album_tag": "2nd Album",
+        "title": {
+          "ko": "토게나시",
+          "ja": "棘ナシ",
+          "en": "Togenashi"
+        },
+        "cover_image": "images/discography/togenashitogeari/2nd_album.webp",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "혼잡한 길, 우리의 도시",
+              "ja": "雑踏、僕らの街",
+              "en": "Wrong World"
+            },
+            "links": {
+              "audio": "https://youtu.be/MSmfAa_oSqE",
+              "mv": null,
+              "anime": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7"
+            }
+          },
+          {
+            "track_no": 2,
+            "title": {
+              "ko": "누구도 될 수 없는 나니까",
+              "ja": "誰にもなれない私だから",
+              "en": "I'm Nobody"
+            },
+            "links": {
+              "audio": "https://youtu.be/dJottC7FmYc",
+              "mv": null,
+              "anime": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX"
+            }
+          },
+          {
+            "track_no": 3,
+            "title": {
+              "ko": "빈 상자(이세리 니나, 카와라기 모모카)",
+              "ja": "空の箱 (井芹仁菜、河原木桃香)",
+              "en": "VOID (Nina Iseri, Momoka Kawaragi)"
+            },
+            "links": {
+              "audio": "https://youtu.be/gpCHjSaetds",
+              "mv": null,
+              "anime": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K"
+            }
+          },
+          {
+            "track_no": 4,
+            "title": {
+              "ko": "목소리 없는 물고기 (신카와사키 (임시))",
+              "ja": "声なき魚 (新川崎（仮))",
+              "en": "Voiceless Fish (Shin Kawasaki (Temporary))"
+            },
+            "links": {
+              "audio": "https://youtu.be/uUUzZDlrt08",
+              "mv": null,
+              "anime": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT"
+            }
+          },
+          {
+            "track_no": 5,
+            "title": {
+              "ko": "시야 한구석 스러지는 소리 (신카와사키 (임시))",
+              "ja": "視界の隅 朽ちる音（新川崎（仮))",
+              "en": "What to raise (Shin Kawasaki (Temporary))"
+            },
+            "links": {
+              "audio": "https://youtu.be/swVEesI3StM",
+              "mv": null,
+              "anime": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8"
+            }
+          },
+          {
+            "track_no": 6,
+            "title": {
+              "ko": "심상적 프랙털 (beni-shouga)",
+              "ja": "心象的フラクタル (beni-shouga)",
+              "en": "Mind playing Fractal (beni-shouga)"
+            },
+            "links": {
+              "audio": "https://youtu.be/H_zV9w4rWm8",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 7,
+            "title": {
+              "ko": "공백과 카타르시스",
+              "ja": "空白とカタルシス",
+              "en": "Emptiness and Catharsis"
+            },
+            "links": {
+              "audio": "https://youtu.be/hwvAh7M3erc",
+              "mv": null,
+              "anime": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp"
+            }
+          },
+          {
+            "track_no": 8,
+            "title": {
+              "ko": "운명의 꽃",
+              "ja": "運命の華",
+              "en": "I'm here"
+            },
+            "links": {
+              "audio": "https://youtu.be/Nz-MAr3YPEA",
+              "mv": null,
+              "anime": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a"
+            }
+          },
+          {
+            "track_no": 9,
+            "title": {
+              "ko": "슬픔의 윤회",
+              "en": "Cycle Of Sorrow"
+            },
+            "links": {
+              "audio": "https://youtu.be/eCIPMjmOi4w",
+              "mv": null,
+              "anime": "https://youtu.be/UnIWvcARb8U?si=PVKhiImuX3EQ6vqI"
+            }
+          },
+          {
+            "track_no": 10,
+            "title": {
+              "ko": "ETERNAL FLAME ~빈 상자~",
+              "ja": "ETERNAL FLAME ～空の箱～",
+              "en": "ETERNAL FLAME (VOID)"
+            },
+            "links": {
+              "audio": "https://youtu.be/Yd_Y-Pjq1V0",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 11,
+            "title": {
+              "ko": "어둠에 녹아가다",
+              "ja": "闇に溶けてく",
+              "en": "melt into the dark"
+            },
+            "links": {
+              "audio": "https://youtu.be/BJushRLnajs",
+              "mv": null,
+              "anime": null
+            }
+          },
+          {
+            "track_no": 12,
+            "title": {
+              "ko": "나비에 엮은 붉은 실",
+              "ja": "蝶に結いた赤い糸",
+              "en": "Meant to be"
+            },
+            "links": {
+              "audio": "https://youtu.be/8SRJnOFicAM",
+              "mv": null,
+              "anime": null
+            }
+          }
+        ]
+      }
+    ],
+    "cannalily": [],
+    "f-272": []
+  }
+}
