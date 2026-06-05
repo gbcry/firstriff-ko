@@ -1,8 +1,8 @@
 // 메인 페이지 최신 뉴스 데이터
 async function initLatestNews() {
-  const newsListContainer = document.querySelector(".news-list");
+  const container = document.querySelector(".news-list");
 
-  if (!newsListContainer) return;
+  if (!container) return;
 
   const newsData = await fetchNewsData();
 
@@ -29,24 +29,24 @@ async function initLatestNews() {
 
   console.log(latestNewsHTML);
 
-  newsListContainer.innerHTML = latestNewsHTML;
+  container.innerHTML = latestNewsHTML;
 }
 
 // 뉴스 목록 / 뉴스 상세 서브 라우터
 async function initNews() {
-  const newsContainer = document.querySelector(".news-container");
+  const container = document.querySelector(".news-container");
 
-  if (!newsContainer) return;
+  if (!container) return;
 
   const hash = window.location.hash;
 
   if (!hash || hash === "#news") {
     // 뉴스 목록 렌더링
-    await renderNewsList(newsContainer);
+    await renderNewsList(container);
   } else if (hash.startsWith("#news/")) {
     // 뉴스 상세 렌더링
     const newsId = hash.split("/")[1];
-    await renderNewsDetail(newsContainer, newsId);
+    await renderNewsDetail(container, newsId);
   }
 }
 
