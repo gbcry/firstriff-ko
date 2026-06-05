@@ -42,7 +42,7 @@ async function handleRouting() {
   // 캐릭터 페이지
   else if (hash.startsWith("character")) {
     rootDiv.innerHTML = templates.character;
-    initCharacter();
+    await initCharacter();
   }
   // 음반 목록 페이지
   else if (hash.startsWith("discography")) {
