@@ -1,7 +1,7 @@
 async function initCharacter() {
-  const characterContainer = document.querySelector(".character-container");
+  const container = document.querySelector(".character-container");
 
-  if (!characterContainer) return;
+  if (!container) return;
 
   const hash = window.location.hash;
 
@@ -13,13 +13,13 @@ async function initCharacter() {
   const currentChar = characters.find((char) => char.id === characterId);
 
   if (!currentChar) {
-    characterContainer.innerHTML = "<h2>캐릭터 정보를 찾을 수 없습니다.</h2>";
+    container.innerHTML = "<h2>캐릭터 정보를 찾을 수 없습니다.</h2>";
     return;
   }
 
   const currentBand = bands.find((band) => band.id === currentChar.band_id);
 
-  renderCharacterView(characterContainer, currentChar, currentBand, characters, bands);
+  renderCharacterView(container, currentChar, currentBand, characters, bands);
 }
 
 async function renderCharacterView(container, currentChar, currentBand, characters, bands) {

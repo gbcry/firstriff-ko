@@ -1,7 +1,7 @@
 async function initBand() {
-  const bandContainer = document.querySelector(".band-container");
+  const container = document.querySelector(".band-container");
 
-  if (!bandContainer) return;
+  if (!container) return;
 
   const hash = window.location.hash;
 
@@ -15,11 +15,11 @@ async function initBand() {
   const currentBand = bands.find((band) => band.id === bandId);
 
   if (!currentBand) {
-    bandContainer.innerHTML = "<h2>밴드 정보를 찾을 수 없습니다.</h2>";
+    container.innerHTML = "<h2>밴드 정보를 찾을 수 없습니다.</h2>";
     return;
   }
 
-  renderBandView(bandContainer, bands, currentBand, characters);
+  renderBandView(container, bands, currentBand, characters);
 }
 
 async function renderBandView(container, bands, currentBand, characters) {
