@@ -52,7 +52,7 @@ async function handleRouting() {
   // 음반 상세 페이지
   else if (hash.startsWith("album")) {
     rootDiv.innerHTML = templates.album;
-    initAlbumDetail();
+    await initAlbumDetail();
   }
   // 메인 페이지
   else if (templates[hash]) {

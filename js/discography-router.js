@@ -21,120 +21,41 @@ async function initDiscography() {
   renderDiscographyList(container, bands, currentBand, bandAlbums);
 }
 
-function initAlbumDetail() {
-  const albumContainer = document.querySelector(".album-container");
+async function initAlbumDetail() {
+  const container = document.querySelector(".album-container");
 
-  if (!albumContainer) return;
+  if (!container) return;
 
-  const albumTemplate = `
-    <div class="discography-view">
-      <div class="section-title">DISCOGRAPHY</div>
+  const hash = window.location.hash;
+  const albumId = hash.split("/")[1];
 
-      <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.png" class="menu-bg-img">
+  if (!albumId) return;
 
-        <a href="#discography/togenashitogeari" class="band-tab active">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+  const bands = await fetchBandsData();
+  const discographyData = await fetchDiscographyData();
 
-        <a href="#discography/cannalily" class="band-tab">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+  let currentAlbum = null;
+  let currentBand = null;
 
-        <a href="#discography/f_272" class="band-tab">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-      </div>
+  // 앨범 id가 어느 밴드에 있는지 조회
+  for (const [bandId, albums] of Object.entries(discographyData)) {
+    if (Array.isArray(albums)) {
+      const foundAlbum = albums.find((album) => album.id === albumId);
 
-      <div class="discography-content">
-        <div class="album-filter-menu">
-          <button type="button" class="filter-btn active" data-filter="all">ALL</button>
-          <button type="button" class="filter-btn" data-filter="single">SINGLE</button>
-          <button type="button" class="filter-btn" data-filter="ep">EP</button>
-          <button type="button" class="filter-btn" data-filter="regular">REGULAR</button>
-        </div>
+      if (foundAlbum) {
+        currentAlbum = foundAlbum;
+        currentBand = bands.find((band) => band.id === bandId);
+        break;
+      }
+    }
+  }
 
-        <div class="album-detail-wrapper">
+  if (!currentAlbum || !currentBand) {
+    albumContainer.innerHTML = "<h2>앨범 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
 
-          <div class="album-header">
-            <div class="album-cover-box">
-              <img src="images/discography/togenashitogeari/1st_single.webp">
-            </div>
-
-            <div class="album-meta">
-              <div class="album-meta-text">
-                <div class="album-meta-tag">1st Single</div>
-                <div class="album-meta-title-main">이름 없는 모든 것</div>
-                <div class="album-meta-title-sub">名もなき何もかも | Nameless Name</div>
-              </div>
-
-              <div class="album-meta-release">2023.07.26</div>
-            </div>
-          </div>
-
-          <div class="tracklist-container">
-            <div class="track-row">
-              <div class="track-num">01</div>
-              <div class="track-text-group">
-                <div class="track-name-main">이름 없는 모든 것</div>
-                <div class="track-name-sub">(名もなき何もかも | Nameless Name)</div>
-              </div>
-              <a href="https://youtu.be/ve6SQ3V8BSw" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="track-row">
-              <div class="track-num">02</div>
-              <div class="track-text-group">
-                <div class="track-name-main">거짓된 법칙</div>
-                <div class="track-name-sub">(偽りの理 | no rhyme nor reason)</div>
-              </div>
-              <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="track-row">
-              <div class="track-num">03</div>
-              <div class="track-text-group">
-                <div class="track-name-main"">이름 없는 모든 것 (Instrumental)</div>
-              </div>
-              <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="track-row">
-              <div class="track-num">04</div>
-              <div class="track-text-group">
-                <div class="track-name-main"">거짓된 법칙 (Instrumental)</div>
-              </div>
-              <a href="https://youtu.be/-GkyvFiAJNg" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="section-title">OFFICIAL MEDIA</div>
-
-      <div class="official-media-content">
-        <a href="https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="images/discography/togenashitogeari/nameless_name_mv_thumb.jpg" class="official-media-thumb youtube">
-          <span class="official-media-text">이름 없는 모든 것 MV</span>
-        </a>
-        <a href="https://youtu.be/WrWga0k-fzE" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="images/discography/togenashitogeari/episode7_thumb.jpg" class="official-media-thumb youtube">
-          <span class="official-media-text">애니메이션 7화 라이브</span>
-        </a>
-        <a href="https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="images/discography/togenashitogeari/no_rhyme_nor_reason_mv_thumb.jpg"  class="official-media-thumb youtube">
-          <span class="official-media-text">거짓된 법칙 MV</span>
-        </a>
-      </div>
-
-      <div class="back-btn-wrapper">
-        <a href="#discography/togenashitogeari" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
-      </div>
-    </div>
-  `;
-
-  albumContainer.innerHTML = albumTemplate;
+  renderAlbumDetailView(container, bands, currentBand, currentAlbum);
 }
 
 async function renderDiscographyList(container, bands, currentBand, bandAlbums) {
@@ -175,10 +96,10 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums) 
 
     albumContentHTML = `
       <div class="album-filter-menu">
-        <button type="button" class="filter-btn active" data-filter="all">ALL</button>
-        <button type="button" class="filter-btn" data-filter="single">SINGLE</button>
-        <button type="button" class="filter-btn" data-filter="ep">EP</button>
-        <button type="button" class="filter-btn" data-filter="regular">REGULAR</button>
+        <a href="#discography/${currentBand.id}" class="filter-btn active" data-filter="all">ALL</a>
+        <a href="#discography/${currentBand.id}" class="filter-btn" data-filter="single">SINGLE</a>
+        <a href="#discography/${currentBand.id}" class="filter-btn" data-filter="ep">EP</a>
+        <a href="#discography/${currentBand.id}" class="filter-btn" data-filter="regular">REGULAR</a>
       </div>
       <div class="album-grid">
         ${albumCardsHTML}
@@ -227,4 +148,133 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums) 
       });
     });
   }
+}
+
+async function renderAlbumDetailView(container, bands, currentBand, currentAlbum) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#discography/${band.id}" class="band-tab ${isActive}">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 앨범 부제목
+  const subTitles = [];
+
+  if (currentAlbum.title.ja) subTitles.push(currentAlbum.title.ja);
+  if (currentAlbum.title.en) subTitles.push(currentAlbum.title.en);
+
+  const subTitleHTML = subTitles.length > 0 ? `<div class="album-meta-title-sub">${subTitles.join(" | ")}</div>` : "";
+
+  // 트랙 리스트 & 오피셜 미디어
+  let tracklistHTML = "";
+  let mediaHTML = "";
+
+  currentAlbum.tracklist.forEach((track) => {
+    const trackNum = String(track.track_no).padStart(2, "0");
+
+    // 트랙 부제목
+    const trackSub = [];
+
+    if (track.title.ja) trackSub.push(track.title.ja);
+    if (track.title.en) trackSub.push(track.title.en);
+
+    const trackSubHTML = trackSub.length > 0 ? `<div class="track-name-sub">(${trackSub.join(" | ")})</div>` : "";
+
+    // 유튜브 아이콘 유무 확인
+    const audioIconHTML = track.links && track.links.audio && track.links.audio.url ?
+      `<a href="${track.links.audio.url}" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>` : "";
+
+    tracklistHTML += `
+      <div class="track-row">
+        <div class="track-num">${trackNum}</div>
+        <div class="track-text-group">
+          <div class="track-name-main">${track.title.ko}</div>
+          ${trackSubHTML}
+        </div>
+        ${audioIconHTML}
+      </div>
+    `;
+
+    // 오피셜 미디어
+    if (track.links) {
+      if (track.links.mv && track.links.mv.url) {
+        mediaHTML += `
+          <a href="${track.links.mv.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+            <img src="${getYouTubeThumbnail(track.links.mv.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+            <span class="official-media-text">${track.links.mv.text}</span>
+          </a>
+        `;
+      }
+      if (track.links.anime && track.links.anime.url) {
+        mediaHTML += `
+          <a href="${track.links.anime.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+            <img src="${getYouTubeThumbnail(track.links.anime.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+            <span class="official-media-text">${track.links.anime.text}</span>
+          </a>
+        `;
+      }
+    }
+  });
+
+  container.innerHTML = `
+    <div class="discography-view">
+      <div class="section-title">DISCOGRAPHY</div>
+
+      <div class="band-tab-menu">
+        <img src="${currentBand.images.background}" class="menu-bg-img">
+        ${tabMenuHTML}
+      </div>
+
+      <div class="discography-content">
+        <div class="album-filter-menu">
+          <a href="#discography/${currentBand.id}" class="filter-btn">ALL</a>
+          <a href="#discography/${currentBand.id}" class="filter-btn">SINGLE</a>
+          <a href="#discography/${currentBand.id}" class="filter-btn">EP</a>
+          <a href="#discography/${currentBand.id}" class="filter-btn">REGULAR</a>
+        </div>
+
+        <div class="album-detail-wrapper">
+
+          <div class="album-header">
+            <div class="album-cover-box">
+              <img src="${currentAlbum.cover_image}">
+            </div>
+
+            <div class="album-meta">
+              <div class="album-meta-text">
+                <div class="album-meta-tag">${currentAlbum.album_tag}</div>
+                <div class="album-meta-title-main">${currentAlbum.title.ko}</div>
+                ${subTitleHTML}
+              </div>
+
+              <div class="album-meta-release">${currentAlbum.release_date}</div>
+            </div>
+          </div>
+
+          <div class="tracklist-container">
+            ${tracklistHTML}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-title">OFFICIAL MEDIA</div>
+
+      <div class="official-media-content">
+        ${mediaHTML}
+      </div>
+
+      <div class="back-btn-wrapper">
+        <a href="#discography/${currentBand.id}" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
+      </div>
+    </div>
+  `;
 }
