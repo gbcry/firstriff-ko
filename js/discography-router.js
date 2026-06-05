@@ -1,103 +1,24 @@
-function initDiscography() {
-  const discographyContainer = document.querySelector(".discography-container");
+async function initDiscography() {
+  const container = document.querySelector(".discography-container");
 
-  if (!discographyContainer) return;
+  if (!container) return;
 
-  const discographyTemplate = `
-    <div class="discography-view">
-      <div class="section-title">DISCOGRAPHY</div>
+  const hash = window.location.hash;
+  const bandId = hash.split("/")[1] || "togenashitogeari";
 
-      <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.png" class="menu-bg-img"">
+  const bands = await fetchBandsData();
+  const discographyData = await fetchDiscographyData();
 
-        <a href="#discography/togenashitogeari" class="band-tab active">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+  const currentBand = bands.find((band) => band.id === bandId);
 
-        <a href="#discography/cannalily" class="band-tab">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+  if (!currentBand) {
+    container.innerHTML = "<h2>음반 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
 
+  const bandAlbums = discographyData[currentBand.id] || [];
 
-        <a href="#discography/f_272" class="band-tab">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-      </div>
-
-      <div class="discography-content">
-
-        <div class="album-filter-menu">
-          <button type="button" class="filter-btn active" data-filter="all">ALL</button>
-          <button type="button" class="filter-btn" data-filter="single">SINGLE</button>
-          <button type="button" class="filter-btn" data-filter="ep">EP</button>
-          <button type="button" class="filter-btn" data-filter="regular">REGULAR</button>
-        </div>
-
-        <div class="album-grid">
-
-          <a href="#album/toge_single_01" class="album-card">
-            <div class="album-img-wrapper">
-              <img src="images/discography/togenashitogeari/1st_single.webp" class="album-cover">
-            </div>
-            <div class="album-info">
-              <div class="album-tag">1st Single</div>
-              <div class="album-name">이름 없는 모든 것</div>
-            </div>
-          </a>
-
-          <a href="#album/toge_single_02" class="album-card">
-            <div class="album-img-wrapper">
-              <img src="images/discography/togenashitogeari/2nd_single.webp" class="album-cover">
-            </div>
-            <div class="album-info">
-              <div class="album-tag">2nd Single</div>
-              <div class="album-name">우울, 흐려지다</div>
-            </div>
-          </a>
-
-          <a href="#album/toge_single_03" class="album-card">
-            <div class="album-img-wrapper">
-              <img src="images/discography/togenashitogeari/3rd_single.webp" class="album-cover">
-            </div>
-            <div class="album-info">
-              <div class="album-tag">3rd Single</div>
-              <div class="album-name">망울을 터뜨리다</div>
-            </div>
-          </a>
-
-          <a href="#album/toge_single_04" class="album-card">
-            <div class="album-img-wrapper">
-              <img src="images/discography/togenashitogeari/4th_single.webp" class="album-cover">
-            </div>
-            <div class="album-info">
-              <div class="album-tag">4th Single</div>
-              <div class="album-name">극사적 극채색 앤서</div>
-            </div>
-          </a>
-
-          <a href="#album/toge_ep_01" class="album-card">
-            <div class="album-img-wrapper">
-              <img src="images/discography/togenashitogeari/1st_ep.webp" class="album-cover">
-            </div>
-            <div class="album-info">
-              <div class="album-tag">1st EP</div>
-              <div class="album-name">새끼손가락 세우지 않을래요?</div>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="empty-state hidden">
-          <p class="empty-text">COMING SOON</p>
-        </div>
-      </div>
-    </div>
-  `;
-
-  discographyContainer.innerHTML = discographyTemplate;
+  renderDiscographyList(container, bands, currentBand, bandAlbums);
 }
 
 function initAlbumDetail() {
@@ -214,4 +135,96 @@ function initAlbumDetail() {
   `;
 
   albumContainer.innerHTML = albumTemplate;
+}
+
+async function renderDiscographyList(container, bands, currentBand, bandAlbums) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#discography/${band.id}" class="band-tab ${isActive}">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 앨범 목록 or 빈 화면
+  let albumContentHTML = "";
+  if (bandAlbums.length === 0) {
+    albumContentHTML = `
+      <div class="empty-state">
+        <p class="empty-text">COMING SOON</p>
+      </div>
+    `;
+  } else {
+    const albumCardsHTML = bandAlbums.map((album) => `
+      <a href="#album/${album.id}" class="album-card" data-type="${album.album_type}">
+        <div class="album-img-wrapper">
+          <img src="${album.cover_image}" class="album-cover">
+        </div>
+        <div class="album-info">
+          <div class="album-tag">${album.album_tag}</div>
+          <div class="album-name">${album.title.ko}</div>
+        </div>
+      </a>
+    `).join("");
+
+    albumContentHTML = `
+      <div class="album-filter-menu">
+        <button type="button" class="filter-btn active" data-filter="all">ALL</button>
+        <button type="button" class="filter-btn" data-filter="single">SINGLE</button>
+        <button type="button" class="filter-btn" data-filter="ep">EP</button>
+        <button type="button" class="filter-btn" data-filter="regular">REGULAR</button>
+      </div>
+      <div class="album-grid">
+        ${albumCardsHTML}
+      </div>
+    `;
+  }
+
+  container.innerHTML = `
+    <div class="discography-view">
+      <div class="section-title">DISCOGRAPHY</div>
+
+      <div class="band-tab-menu">
+        <img src="${currentBand.images.background}" class="menu-bg-img">
+        ${tabMenuHTML}
+      </div>
+
+      <div class="discography-content">
+        ${albumContentHTML}
+      </div>
+    </div>
+  `;
+
+  // 앨범 필터링
+  const filterBtns = container.querySelectorAll(".filter-btn");
+  const albumCards = container.querySelectorAll(".album-card");
+
+  if (filterBtns.length > 0 && albumCards.length > 0) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // 클릭한 버튼에만 active 추가
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // 클릭한 버튼의 필터값
+        const filterValue = btn.getAttribute("data-filter");
+
+        albumCards.forEach((card) => {
+          const albumType = card.getAttribute("data-type");
+
+          if (filterValue === "all" || filterValue === albumType) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
 }
