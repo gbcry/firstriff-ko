@@ -23,7 +23,7 @@ body {
   scrollbar-gutter: stable;
   line-height: 1.6;
   letter-spacing: -0.2px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #app {
@@ -72,9 +72,9 @@ a {
   border-left: clamp(4px, 0.8vw, 10px) solid var(--color-black);
   border-right: clamp(4px, 0.8vw, 10px) solid var(--color-black);
   color: var(--color-white);
-  font-weight: 900;
+  font-weight: 800;
   /* clamp(최소값, 가변값, 최대값) */
-  font-size: clamp(24px, 3.5vw, 34px);
+  font-size: clamp(20px, 3vw, 28px);
   letter-spacing: -0.5px;
   padding: 0 clamp(15px, 2.5vw, 30px);
   flex-shrink: 0;
@@ -91,8 +91,8 @@ a {
 }
 
 .nav-item {
-  font-weight: 900;
-  font-size: clamp(18px, 2vw, 25px);
+  font-weight: 700;
+  font-size: clamp(15px, 1.8vw, 21px);
   letter-spacing: -0.5px;
   text-transform: uppercase; /* 대문자 고정 */
   transition: color 0.2s ease;
@@ -125,8 +125,8 @@ a {
 
 .section-title {
   font-family: var(--font-main);
-  font-size: clamp(26px, 5vw, 56px);
-  font-weight: 900;
+  font-size: clamp(22px, 4.5vw, 48px);
+  font-weight: 800;
   color: var(--color-black);
   margin-top: clamp(15px, 4vw, 40px);
   margin-bottom: clamp(12px, 2.5vw, 24px);
@@ -154,12 +154,13 @@ a {
 }
 
 .official-media-link {
-  flex: 1 1 0;
-  min-width: 0;
+  width: calc(25% - 25px); 
   max-width: 280px;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: clamp(10px, 1.5vw, 15px);
   text-decoration: none;
   background-color: transparent;
@@ -189,8 +190,8 @@ a {
 
 .official-media-text {
   font-family: var(--font-main);
-  font-size: clamp(14px, 1.6vw, 22px);
-  font-weight: 800;
+  font-size: clamp(12px, 1.4vw, 18px);
+  font-weight: 700;
   color: var(--color-black);
   text-align: center;
   word-break: keep-all;
@@ -223,8 +224,8 @@ a {
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: var(--font-main);
-  font-size: clamp(15px, 1.6vw, 18px);
-  font-weight: 900;
+  font-size: clamp(13px, 1.4vw, 16px);
+  font-weight: 700;
   padding: clamp(12px, 1.5vw, 20px) clamp(30px, 4vw, 60px);
   border: clamp(2px, 0.3vw, 4px) solid var(--color-black);
   text-decoration: none;
@@ -232,7 +233,7 @@ a {
 }
 
 .back-to-list-btn i {
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(12px, 1.3vw, 16px);
   transition: transform 0.2s ease;
 }
 
@@ -291,14 +292,14 @@ a {
 
 .official-label {
   font-family: var(--font-main);
-  font-size: clamp(14px, 2vw, 22px);
+  font-size: clamp(12px, 1.8vw, 18px);
   color: var(--color-white);
   letter-spacing: 0.5px;
 }
 
 .update-date {
   font-family: var(--font-main);
-  font-size: clamp(11px, 1.5vw, 15px);
+  font-size: clamp(10px, 1.3vw, 13px);
   color: var(--color-white);
   opacity: 0.8;
 }
@@ -315,8 +316,8 @@ a {
   flex: 1;
   text-align: center;
   font-family: var(--font-main);
-  font-size: clamp(13px, 1.6vw, 20px);
-  font-weight: 800;
+  font-size: clamp(12px, 1.4vw, 17px);
+  font-weight: 600;
   color: var(--color-white);
   border: clamp(2px, 0.3vw, 3px) solid var(--color-white);
   padding: clamp(10px, 1.5vw, 18px) clamp(5px, 1vw, 20px);
@@ -345,8 +346,8 @@ a {
 
 .disclaimer {
   font-family: var(--font-main);
-  font-size: clamp(12px, 1.2vw, 14px);
-  font-weight: 400;
+  font-size: clamp(11px, 1vw, 13px);
+  font-weight: 300;
   color: var(--color-white);
   opacity: 0.7;
   word-break: keep-all;
@@ -355,7 +356,7 @@ a {
 
 .feedback-btn {
   font-family: var(--font-main);
-  font-size: clamp(13px, 1.2vw, 15px);
+  font-size: clamp(12px, 1vw, 14px);
   color: var(--color-black);
   background-color: var(--color-white);
   padding: clamp(8px, 1vw, 12px) clamp(16px, 2vw, 24px);
@@ -376,7 +377,7 @@ a {
   width: 100%;
   text-align: center;
   font-size: clamp(80px, 19vw, 280px);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: clamp(-2px, -0.5vw, -5px);
   color: var(--color-white);
   user-select: none; /* 드래그 방지 */
@@ -407,7 +408,7 @@ a {
     background: none;
     border: none;
     color: var(--color-black);
-    font-size: 26px;
+    font-size: 24px;
     cursor: pointer;
     z-index: 1001;
   }
@@ -460,7 +461,7 @@ a {
 
   .mobile-menu-label {
     font-family: var(--font-main);
-    font-size: clamp(11px, 3vw, 14px);
+    font-size: clamp(10px, 2.5vw, 12px);
     color: var(--color-point);
     margin: 10px 0 5px 0;
     padding-left: clamp(15px, 4vw, 40px);
@@ -480,8 +481,9 @@ a {
   .mobile-menu-links .nav-item,
   .mobile-menu-links .link-item {
     font-family: var(--font-main);
-    font-size: clamp(15px, 4.5vw, 20px);
-    font-weight: 800;
+
+    font-size: clamp(14px, 4vw, 18px);
+    font-weight: 700;
     color: var(--color-black) !important;
     width: 100%;
     padding: clamp(4px, 1.5vw, 8px) clamp(15px, 4vw, 40px);
@@ -503,8 +505,8 @@ a {
     width: 100%;
     text-align: center;
     font-family: var(--font-main);
-    font-size: clamp(30px, 8vw, 45px);
-    font-weight: 900;
+    font-size: clamp(26px, 7vw, 38px);
+    font-weight: 800;
     color: var(--color-point);
     letter-spacing: -1px;
     user-select: none;
@@ -557,7 +559,7 @@ a {
   }
 
   .disclaimer {
-    font-size: 11px;
+    font-size: 10px;
     opacity: 0.6;
   }
 
