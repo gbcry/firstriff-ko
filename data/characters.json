@@ -2,7 +2,7 @@
   "characters": [
     {
       "id": "subaru",
-      "band_id": "togenashi_togeari",
+      "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
         "ko": "아와 스바루",
@@ -52,7 +52,7 @@
     },
     {
       "id": "momoka",
-      "band_id": "togenashi_togeari",
+      "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
         "ko": "카와라기 모모카",
@@ -101,7 +101,7 @@
     },
     {
       "id": "nina",
-      "band_id": "togenashi_togeari",
+      "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
         "ko": "이세리 니나",
@@ -149,7 +149,7 @@
     },
     {
       "id": "tomo",
-      "band_id": "togenashi_togeari",
+      "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
         "ko": "에비즈카 토모",
@@ -198,7 +198,7 @@
     },
     {
       "id": "rupa",
-      "band_id": "togenashi_togeari",
+      "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
         "ko": "루파",
@@ -213,7 +213,8 @@
         "hobby": ["반주", "독서"],
         "specialty": null,
         "intro_text": [
-          "남아시아인 아버지와 일본인 어머니 사이에서 태어나, 약간 갈색빛이 도는 오리엔탈한 분위기를 풍기는 소녀.",
+          "남아시아인 아버지와 일본인 어머니 사이에서 태어나,",
+          "약간 갈색빛이 도는 오리엔탈한 분위기를 풍기는 소녀.",
           "예술적 센스가 넘치고 두뇌가 명석하다.",
           "이른바 천재형으로, 온화한 말투와 겸손한 태도 덕분에 모두에게 인정받는 인물이다.",
           "애주가라는 점과 배짱이 지나치게 두둑하다는 것이 옥에 티이다."
@@ -247,7 +248,7 @@
     },
     {
       "id": "shion",
-      "band_id": "canna_lily",
+      "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
         "ko": "사카키바라 시온",
@@ -295,7 +296,7 @@
     },
     {
       "id": "rindo",
-      "band_id": "canna_lily",
+      "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
         "ko": "치가사키 린도",
@@ -342,7 +343,7 @@
     },
     {
       "id": "ayame",
-      "band_id": "canna_lily",
+      "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
         "ko": "호시 아야메",
@@ -389,7 +390,7 @@
     },
     {
       "id": "kaede",
-      "band_id": "canna_lily",
+      "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
         "ko": "키츠타 카에데",
@@ -405,7 +406,8 @@
         "specialty": null,
         "intro_text": [
           "조금 엉뚱한 풋내기 보컬리스트.",
-          "꽃봉오리 같은 노랫소리가 「필사적인」 마음과 겹쳐질 때, 져버렸던 밴드는 내일을 되찾는다."
+          "꽃봉오리 같은 노랫소리가 「필사적인」 마음과 겹쳐질 때,",
+          "져버렸던 밴드는 내일을 되찾는다."
         ],
         "message": "......혼자서는 아무것도 못 하는건, 이제 싫으니까."
       },
@@ -436,7 +438,7 @@
     },
     {
       "id": "nazuna",
-      "band_id": "canna_lily",
+      "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
         "ko": "유키시마 나즈나",
@@ -501,7 +503,7 @@
           "인플루언서인 척하는 고등학교 2학년.",
           "좌절을 모르는 강인한 뉴커머."
         ],
-        "message": "그런 말은, 팔로와 수로 이기고 나서 해 주시겠어요ー?"
+        "message": "그런 말은, 팔로워 수로 이기고 나서 해 주시겠어요ー?"
       },
       "images": {
         "thumbnail": "images/character/f-272/ari_thumb.jpg",
@@ -546,7 +548,8 @@
         "specialty": "연주하기",
         "intro_text": [
           "거의 모습을 드러내지 않는 최하위 클래스의 단골 학생.",
-          "먹고, 자고, 연주한다. 기타를 짊어진 심플리스트."
+          "먹고, 자고, 연주한다.",
+          "기타를 짊어진 심플리스트."
         ],
         "message": "......"
       },

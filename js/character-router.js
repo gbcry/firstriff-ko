@@ -1,149 +1,161 @@
-function initCharacter() {
+async function initCharacter() {
   const characterContainer = document.querySelector(".character-container");
 
   if (!characterContainer) return;
 
-  const characterTemplate = `
+  const hash = window.location.hash;
+
+  const characterId = hash.split("/")[1] || "subaru";
+
+  const characters = await fetchCharactersData();
+  const bands = await fetchBandsData();
+
+  const currentChar = characters.find((char) => char.id === characterId);
+
+  if (!currentChar) {
+    characterContainer.innerHTML = "<h2>캐릭터 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
+
+  const currentBand = bands.find((band) => band.id === currentChar.band_id);
+
+  renderCharacterView(characterContainer, currentChar, currentBand, characters, bands);
+}
+
+async function renderCharacterView(container, currentChar, currentBand, characters, bands) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      return `
+        <a href="#band/${band.id}" class="band-tab">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 소개글
+  const introHTML = currentChar.profile.intro_text.map((text) => `<p>${text}</p>`).join("");
+
+  // 프로필 null 체크 & 포맷팅
+  const formatVal = (val) => {
+    if (val === null || val === undefined || val === "") return "미공개";
+    if (Array.isArray(val)) return val.join(" | ")
+    return val;
+  };
+
+  // 멤버 목록
+  const membersHTML = currentBand.member_ids.map((memberId) => {
+    const member = characters.find((char) => char.id === memberId);
+
+    const isActive = memberId === currentChar.id ? "active" : "";
+
+    // 방어 코드
+    const name = member ? member.name.ko : memberId;
+    const position = member ? member.position : "";
+    const thumb = member ? member.images.thumbnail : `images/character/${currentBand.id}/${memberId}_thumb.jpg`;
+
+    return `
+      <a href="#character/${memberId}" class="character-member-card ${isActive}">
+        <img src="${thumb}" class="character-member-img">
+        <div class="character-member-info">
+          <div class="character-member-part">${position}</div>
+          <div class="character-member-name">${name}</div>
+        </div>
+      </a>
+    `;
+  }).join("");
+
+  // 오피셜 미디어 목록
+  let mediaHTML = "";
+  Object.values(currentChar.links).forEach((link) => {
+    if (link && link.url) {
+      const isYoutube = link.url.includes("youtube.com") || link.url.includes("youtu.be");
+      const iconClass = isYoutube ? "youtube" : "sns";
+
+      // sns는 저장된 이미지 사용, 유튜브면 자동 추출
+      let thumbImg = link.thumbnail;
+      if (!thumbImg && isYoutube) {
+        thumbImg = getYouTubeThumbnail(link.url);
+      }
+
+      mediaHTML += `
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'">
+          <span class="official-media-text">${link.text}</span>
+        </a>
+      `;
+    }
+  });
+
+  container.innerHTML = `
     <div class="character-view">
-  
+
       <div class="section-title">CHARACTER</div>
 
       <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.png" class="menu-bg-img">
-
-        <a href="#band/togenashitogeari" class="band-tab">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-
-        <a href="#band/cannalily" class="band-tab">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-
-        <a href="#band/f-272" class="band-tab">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+        <img src="${currentBand.images.background}" class="menu-bg-img">
+        ${tabMenuHTML}
       </div>
 
       <div class="character-detail-content">
 
         <div class="character-visual-box">
-          <img src="images/character/togenashitogeari/subaru_full.webp" class="character-main-img">
+          <img src="${currentChar.images.full_body}" class="character-main-img">
         </div>
 
         <div class="character-info-box">
-        
+
           <div class="character-name-box">
-            <div class="character-part">Dr.</div>
-            <div class="character-name-kr">아와 스바루 <span class="character-name-jp">(安和 すばる)</span></div>
+            <div class="character-part">${currentChar.position}</div>
+            <div class="character-name-kr">${currentChar.name.ko} <span class="character-name-jp">(${currentChar.name.ja})</span></div>
           </div>
 
           <div class="character-desc-box">
-            <div class="character-quote">“거짓말하는 것도 쉬운 게 아니거든.”</div>
-            <p>연예인 학교에 다니는 여자아이.</p>
-            <p>유망주로 주목받으며 광고에도 출연하고 있다.</p>
-            <p>붙임성 좋고 사회성도 뛰어난 미소녀.</p>
-            <p>모델이라고 해도 손색없을 미모를 가졌지만,</p>
-            <p>실제 성격은 자존심이 강하고 지기 싫어하는 아가씨 타입이다.</p>
+            <div class="character-quote">“${currentChar.profile.message}”</div>
+            ${introHTML}
           </div>
 
           <div class="character-profile-box">
             <div class="profile-header">PROFILE</div>
+
             <div class="profile-table">
               <div class="profile-row">
                 <div class="profile-label">나이</div>
-                <div class="profile-value">17세</div>
+                <div class="profile-value">${formatVal(currentChar.profile.age)}</div>
               </div>
               <div class="profile-row">
                 <div class="profile-label">생일</div>
-                <div class="profile-value">4월 27일</div>
+                <div class="profile-value">${formatVal(currentChar.profile.birth)}</div>
               </div>
               <div class="profile-row">
                 <div class="profile-label">좋아하는 음식</div>
-                <div class="profile-value">고수 | 피망 | 레몬 | 새콤한 것들</div>
+                <div class="profile-value">${formatVal(currentChar.profile.favorite_food)}</div>
               </div>
               <div class="profile-row">
                 <div class="profile-label">취미 / 어필 포인트</div>
-                <div class="profile-value">인도어파 | 게임 | 인터넷 | 키보드 배틀</div>
+                <div class="profile-value">${formatVal(currentChar.profile.hobby)}</div>
               </div>
             </div>
-            <div class="profile-footer">CV. 미레이</div>
+
+            <div class="profile-footer">CV. ${currentChar.cv}</div>
           </div>
         </div>
       </div>
 
       <div class="section-title">MEMBER</div>
-
       <div class="character-members-wrapper">
-
         <div class="character-members-content">
-
-        <a href="#character/subaru" class="character-member-card active">
-            <img src="images/character/togenashitogeari/subaru_thumb.jpg" class="character-member-img">
-            <div class="character-member-info">
-              <div class="character-member-part">Dr.</div>
-              <div class="character-member-name">아와 스바루</div>
-            </div>
-          </a>
-
-          <a href="#character/momoka" class="character-member-card">
-            <img src="images/character/togenashitogeari/momoka_thumb.jpg" class="character-member-img">
-            <div class="character-member-info">
-              <div class="character-member-part">Gt.</div>
-              <div class="character-member-name">카와라기 모모카</div>
-            </div>
-          </a>
-
-          <a href="#character/nina" class="character-member-card">
-            <img src="images/character/togenashitogeari/nina_thumb.jpg" class="character-member-img">
-            <div class="character-member-info">
-              <div class="character-member-part">Vo.</div>
-              <div class="character-member-name">이세리 니나</div>
-            </div>
-          </a>
-
-          <a href="#character/tomo" class="character-member-card">
-            <img src="images/character/togenashitogeari/tomo_thumb.jpg" class="character-member-img">
-            <div class="character-member-info">
-              <div class="character-member-part">Key.</div>
-              <div class="character-member-name">에비즈카 토모</div>
-            </div>
-          </a>
-
-          <a href="#character/rupa" class="character-member-card">
-            <img src="images/character/togenashitogeari/rupa_thumb.jpg" class="character-member-img">
-            <div class="character-member-info">
-              <div class="character-member-part">Ba.</div>
-              <div class="character-member-name">루파</div>
-            </div>
-          </a>
+          ${membersHTML}
         </div>
       </div>
 
       <div class="section-title">OFFICIAL MEDIA</div>
       <div class="official-media-content">
-        <a href="https://www.youtube.com/watch?v=1VTyLjtuQ98" class="official-media-link">
-          <img src="images/character/togenashitogeari/subaru_pv_thumb.jpg" class="official-media-thumb youtube">
-          <span class="official-media-text">캐릭터 PV</span>
-        </a>
-        <a href="https://www.youtube.com/watch?v=6IiAfahrn2A" class="official-media-link">
-          <img src="images/character/togenashitogeari/subaru_intro_thumb.jpg" class="official-media-thumb youtube">
-          <span class="official-media-text">자기소개</span>
-        </a>
-        <a href="https://x.com/girlsbandcry/status/1664119579356938240?s=20" class="official-media-link">
-          <img src="images/band/togenashitogeari/gbc_sns_thumb.jpg" class="official-media-thumb sns">
-          <span class="official-media-text">캐릭터 소개</span>
-        </a>
-        <a href="https://x.com/mirei_togetoge/status/1684035814819504128?s=20" class="official-media-link">
-          <img src="images/character/togenashitogeari/mirei_thumb.jpg" class="official-media-thumb sns">
-          <span class="official-media-text">성우 코멘트</span>
-        </a>
+        ${mediaHTML}
       </div>
 
-</div>
+    </div>
   `;
-
-  characterContainer.innerHTML = characterTemplate;
-}
+} 
