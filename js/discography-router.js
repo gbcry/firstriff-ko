@@ -4,7 +4,9 @@ async function initDiscography() {
   if (!container) return;
 
   const hash = window.location.hash;
-  const bandId = hash.split("/")[1] || "togenashitogeari";
+  const parts = hash.replace("#", "").split("/");
+  const bandId = parts[1] || "togenashitogeari";
+  const initialFilter = parts[2] || "all";
 
   const bands = await fetchBandsData();
   const discographyData = await fetchDiscographyData();
@@ -18,7 +20,7 @@ async function initDiscography() {
 
   const bandAlbums = discographyData[currentBand.id] || [];
 
-  renderDiscographyList(container, bands, currentBand, bandAlbums);
+  renderDiscographyList(container, bands, currentBand, bandAlbums, initialFilter);
 }
 
 async function initAlbumDetail() {
@@ -58,7 +60,7 @@ async function initAlbumDetail() {
   renderAlbumDetailView(container, bands, currentBand, currentAlbum);
 }
 
-async function renderDiscographyList(container, bands, currentBand, bandAlbums) {
+async function renderDiscographyList(container, bands, currentBand, bandAlbums, initialFilter) {
   // 밴드 탭
   const tabMenuHTML = bands
     .map((band) => {
@@ -128,13 +130,18 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums) 
 
   if (filterBtns.length > 0 && albumCards.length > 0) {
     filterBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
         // 클릭한 버튼에만 active 추가
         filterBtns.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
 
         // 클릭한 버튼의 필터값
         const filterValue = btn.getAttribute("data-filter");
+
+        // 브라우저 주소창 url을 현재 필터에 맞춰서 변경
+        history.replaceState(null, null, `#discography/${currentBand.id}/${filterValue}`);
 
         albumCards.forEach((card) => {
           const albumType = card.getAttribute("data-type");
@@ -147,6 +154,12 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums) 
         });
       });
     });
+
+    // HTML 렌더링 후 필터와 일치하는 버튼으로 강제 클릭 이벤트 발생
+    const targetBtn = Array.from(filterBtns).find(btn => btn.getAttribute("data-filter") === initialFilter);
+    if (targetBtn) {
+      targetBtn.click();
+    }
   }
 }
 
@@ -224,6 +237,18 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
     }
   });
 
+  let officialMediaSection = "";
+
+  // 미디어 구역에 내용이 없으면 렌더링 x
+  if (mediaHTML.trim() !== "") {
+    officialMediaSection = `
+      <div class="section-title">OFFICIAL MEDIA</div>
+      <div class="official-media-content">
+        ${mediaHTML}
+      </div>
+    `;
+  }
+
   container.innerHTML = `
     <div class="discography-view">
       <div class="section-title">DISCOGRAPHY</div>
@@ -235,10 +260,10 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
 
       <div class="discography-content">
         <div class="album-filter-menu">
-          <a href="#discography/${currentBand.id}" class="filter-btn">ALL</a>
-          <a href="#discography/${currentBand.id}" class="filter-btn">SINGLE</a>
-          <a href="#discography/${currentBand.id}" class="filter-btn">EP</a>
-          <a href="#discography/${currentBand.id}" class="filter-btn">REGULAR</a>
+          <a href="#discography/${currentBand.id}/all" class="filter-btn">ALL</a>
+          <a href="#discography/${currentBand.id}/single" class="filter-btn">SINGLE</a>
+          <a href="#discography/${currentBand.id}/ep" class="filter-btn">EP</a>
+          <a href="#discography/${currentBand.id}/regular" class="filter-btn">REGULAR</a>
         </div>
 
         <div class="album-detail-wrapper">
@@ -266,11 +291,7 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
 
       </div>
 
-      <div class="section-title">OFFICIAL MEDIA</div>
-
-      <div class="official-media-content">
-        ${mediaHTML}
-      </div>
+      ${officialMediaSection}
 
       <div class="back-btn-wrapper">
         <a href="#discography/${currentBand.id}" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
