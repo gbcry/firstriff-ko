@@ -47,7 +47,7 @@ async function handleRouting() {
   // 음반 목록 페이지
   else if (hash.startsWith("discography")) {
     rootDiv.innerHTML = templates.discography;
-    initDiscography();
+    await initDiscography();
   }
   // 음반 상세 페이지
   else if (hash.startsWith("album")) {
