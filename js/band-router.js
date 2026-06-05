@@ -63,43 +63,29 @@ async function renderBandView(container, bands, currentBand, characters) {
 
   // 오피셜 미디어 목록
   let mediaHTML = "";
-  if (currentBand.links.official_sns) {
-    mediaHTML += currentBand.links.official_sns
-      .map(
-        (sns) => `
-          <a href="${sns.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="${sns.thumbnail}" class="official-media-thumb sns">
-            <span class="official-media-text">${sns.text}</span>
-          </a>
-        `,
-      )
-      .join("");
-  }
 
-  // 첫 생방송
-  if (
-    currentBand.links.first_streaming &&
-    currentBand.links.first_streaming.url
-  ) {
-    const ytThumb = getYouTubeThumbnail(currentBand.links.first_streaming.url);
-    mediaHTML += `
-      <a href="${currentBand.links.first_streaming.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-        <img src="${ytThumb}" class="official-media-thumb youtube" onerror="this.style.display='none'">
-        <span class="official-media-text">${currentBand.links.first_streaming.text}</span>
-      </a> 
-    `;
-  }
+  // 1차원 배열로 변환
+  const allLinks = Object.values(currentBand.links).flat();
 
-  // 데뷔 PV
-  if (currentBand.links.debut_pv && currentBand.links.debut_pv.url) {
-    const ytThumb = getYouTubeThumbnail(currentBand.links.debut_pv.url);
-    mediaHTML += `
-      <a href="${currentBand.links.debut_pv.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-        <img src="${ytThumb}" class="official-media-thumb youtube" onerror="this.style.display='none'">
-        <span class="official-media-text">${currentBand.links.debut_pv.text}</span>
-      </a> 
-    `;
-  }
+  allLinks.forEach((link) => {
+    if (link && link.url) {
+      const isYoutube = link.url.includes("youtube.com") || link.url.includes("youtu.be");
+      const iconClass = isYoutube ? "youtube" : "sns";
+
+      // sns는 저장된 이미지 사용, 유튜브면 자동 추출
+      let thumbImg = link.thumbnail;
+      if (!thumbImg && isYoutube) {
+        thumbImg = getYouTubeThumbnail(link.url);
+      }
+
+      mediaHTML += `
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'">
+          <span class="official-media-text">${link.text}</span>
+        </a>
+      `;
+    }
+  });
 
   container.innerHTML = `
     <div class="band-view">
