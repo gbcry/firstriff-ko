@@ -13,8 +13,18 @@
       "profile": {
         "age": "17세",
         "birth": "4월 27일",
-        "favorite_food": ["고수", "피망", "레몬", "새콤한 것들"],
-        "hobby": ["인도어파", "게임", "인터넷", "키보드 배틀"],
+        "favorite_food": [
+          "고수",
+          "피망",
+          "레몬",
+          "새콤한 것들"
+        ],
+        "hobby": [
+          "인도어파",
+          "게임",
+          "인터넷",
+          "키보드 배틀"
+        ],
         "specialty": null,
         "intro_text": [
           "연예인 학교에 다니는 여자아이.",
@@ -63,8 +73,14 @@
       "profile": {
         "age": "20세",
         "birth": "12월 9일",
-        "favorite_food": ["안미츠", "야키니쿠"],
-        "hobby": ["독서", "스포츠 관전"],
+        "favorite_food": [
+          "안미츠",
+          "야키니쿠"
+        ],
+        "hobby": [
+          "독서",
+          "스포츠 관전"
+        ],
         "specialty": null,
         "intro_text": [
           "20세의 스트리트 뮤지션.",
@@ -112,8 +128,16 @@
       "profile": {
         "age": "17세",
         "birth": "10월 24일",
-        "favorite_food": ["나물", "카페오레", "요구르트"],
-        "hobby": ["쇼와 마니아", "불상", "고슈인 모으기"],
+        "favorite_food": [
+          "나물",
+          "카페오레",
+          "요구르트"
+        ],
+        "hobby": [
+          "쇼와 마니아",
+          "불상",
+          "고슈인 모으기"
+        ],
         "specialty": null,
         "intro_text": [
           "조금 내성적인 평범한 여자아이.",
@@ -160,8 +184,15 @@
       "profile": {
         "age": "16세",
         "birth": "3월 22일",
-        "favorite_food": ["슈크림", "백미", "오챠즈케", "매실장아찌"],
-        "hobby": ["게코 도마뱀, 파충류 사육"],
+        "favorite_food": [
+          "슈크림",
+          "백미",
+          "오챠즈케",
+          "매실장아찌"
+        ],
+        "hobby": [
+          "게코 도마뱀, 파충류 사육"
+        ],
         "specialty": null,
         "intro_text": [
           "원래는 지역에서도 유명한 부잣집 가문의 아가씨.",
@@ -169,7 +200,7 @@
           "냉소적이며 세상을 비딱하게 바라본다.",
           "고슴도치처럼 경계심이 아주 강해서 좀처럼 마음을 열지 않는다."
         ],
-        "message": "넌 포기 안 할 거잖아...... 누가 뭐라 하든."
+        "message": "넌 포기 안 할 거잖아... 누가 뭐라 하든."
       },
       "images": {
         "thumbnail": "images/character/togenashitogeari/tomo_thumb.jpg",
@@ -209,8 +240,15 @@
       "profile": {
         "age": "22세",
         "birth": "6월 28일",
-        "favorite_food": ["파르페", "푸딩 아라모드", "햄버그"],
-        "hobby": ["반주", "독서"],
+        "favorite_food": [
+          "파르페",
+          "푸딩 아라모드",
+          "햄버그"
+        ],
+        "hobby": [
+          "반주",
+          "독서"
+        ],
         "specialty": null,
         "intro_text": [
           "남아시아인 아버지와 일본인 어머니 사이에서 태어나,",
@@ -260,14 +298,16 @@
         "age": "19세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["즐거운 일이라면 뭐든지 웰컴"],
+        "hobby": [
+          "즐거운 일이라면 뭐든지 웰컴"
+        ],
         "specialty": null,
         "intro_text": [
           "실력파 x 성격 나쁜 향락주의 베이시스트.",
           "즐거운가, 즐겁지 않은가──",
           "세상은 그게 전부이다."
         ],
-        "message": "즐거운 일은 즐거운 법...... 그러니까 즐기면 그만이야!"
+        "message": "즐거운 일은 즐거운 법... 그러니까 즐기면 그만이야!"
       },
       "images": {
         "thumbnail": "images/character/cannalily/shion_thumb.jpg",
@@ -308,7 +348,9 @@
         "age": "19세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["오토바이 (오빠가 물려준 것을 타고 있다.)"],
+        "hobby": [
+          "오토바이 (오빠가 물려준 것을 타고 있다.)"
+        ],
         "specialty": null,
         "intro_text": [
           "툭하면 혀를 차는 무뚝뚝한 광견 드러머.",
@@ -355,13 +397,17 @@
         "age": "16세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["빈티지 샵 순례", "야구 선수 흉내", "매운 음식"],
+        "hobby": [
+          "빈티지 샵 순례",
+          "야구 선수 흉내",
+          "매운 음식"
+        ],
         "specialty": null,
         "intro_text": [
           "한결같지만 서툰 기타리스트.",
           "멋 부릴 줄 모르는 그녀의 「필사적인」 소리가 시들어버린 밴드의 운명을 바꾼다."
         ],
-        "message": "필사적인...... 그게 나의, 소리......!"
+        "message": "필사적인... 그게 나의, 소리...!"
       },
       "images": {
         "thumbnail": "images/character/cannalily/ayame_thumb.jpg",
@@ -402,14 +448,17 @@
         "age": "16세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["피어싱", "우무문어 (인형 한정)"],
+        "hobby": [
+          "피어싱",
+          "우무문어 (인형 한정)"
+        ],
         "specialty": null,
         "intro_text": [
           "조금 엉뚱한 풋내기 보컬리스트.",
           "꽃봉오리 같은 노랫소리가 「필사적인」 마음과 겹쳐질 때,",
           "져버렸던 밴드는 내일을 되찾는다."
         ],
-        "message": "......혼자서는 아무것도 못 하는건, 이제 싫으니까."
+        "message": "...혼자서는 아무것도 못 하는건, 이제 싫으니까."
       },
       "images": {
         "thumbnail": "images/character/cannalily/kaede_thumb.jpg",
@@ -450,14 +499,18 @@
         "age": "17세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["정리정돈", "사용 설명서 정독", "홍차"],
+        "hobby": [
+          "정리정돈",
+          "사용 설명서 정독",
+          "홍차"
+        ],
         "specialty": null,
         "intro_text": [
           "중간관리직 키보디스트.",
           "동료들의 자유분방함에 골머리를 앓는, 일명 “진지충”.",
           "하루에 내뱉는 한숨은 건반 수보다도 많다."
         ],
-        "message": "......나는, 이곳에 피어있던 꽃과......마주하지 못했으니까......"
+        "message": "...나는, 이곳에 피어있던 꽃과...마주하지 못했으니까..."
       },
       "images": {
         "thumbnail": "images/character/cannalily/nazuna_thumb.jpg",
@@ -497,7 +550,9 @@
       "profile": {
         "age": "17세",
         "birth": null,
-        "hobby": ["여긴 아이돌용 프로필인가요??"],
+        "hobby": [
+          "여긴 아이돌용 프로필인가요??"
+        ],
         "specialty": "필압이 세다!!",
         "intro_text": [
           "인플루언서인 척하는 고등학교 2학년.",
@@ -544,14 +599,16 @@
         "age": "18세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["없어"],
+        "hobby": [
+          "없어"
+        ],
         "specialty": "연주하기",
         "intro_text": [
           "거의 모습을 드러내지 않는 최하위 클래스의 단골 학생.",
           "먹고, 자고, 연주한다.",
           "기타를 짊어진 심플리스트."
         ],
-        "message": "......"
+        "message": "..."
       },
       "images": {
         "thumbnail": "images/character/f-272/koto_thumb.jpg",
@@ -592,7 +649,9 @@
         "age": "15세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["연습"],
+        "hobby": [
+          "연습"
+        ],
         "specialty": "연습",
         "intro_text": [
           "미모와 실력을 겸비한 상위 클래스의 카리스마.",
@@ -639,13 +698,15 @@
         "age": "17세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["영화 감상과 디저트 찾기예요♪"],
+        "hobby": [
+          "영화 감상과 디저트 찾기예요♪"
+        ],
         "specialty": "화사한 러블리 메이크업",
         "intro_text": [
           "「잘못한 건 전부 회사야.」",
           "사키를 동경하며 남 탓을 일삼는 최하위 클래스의 단골 학생."
         ],
-        "message": "뭐죠......노력하고 싶어지기라도 한 건가요?"
+        "message": "뭐죠...노력하고 싶어지기라도 한 건가요?"
       },
       "images": {
         "thumbnail": "images/character/f-272/momono_thumb.jpg",
@@ -686,7 +747,10 @@
         "age": "19세",
         "birth": null,
         "favorite_food": null,
-        "hobby": ["화장품 리뷰", "밤샘 노래방"],
+        "hobby": [
+          "화장품 리뷰",
+          "밤샘 노래방"
+        ],
         "specialty": "노래",
         "intro_text": [
           "최하위 클래스로 강등된 지도 벌써 수년째.",
