@@ -37,6 +37,11 @@
 }
 
 .filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
   background-color: var(--color-point);
   border: clamp(2px, 0.3vw, 3px) solid var(--color-point);
   color: var(--color-white);
