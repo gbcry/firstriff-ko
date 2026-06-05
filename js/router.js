@@ -33,19 +33,29 @@ async function handleRouting() {
   if (hash.startsWith("news")) {
     rootDiv.innerHTML = templates.news;
     await initNews();
-  } else if (hash.startsWith("band")) {
+  }
+  // 밴드 페이지
+  else if (hash.startsWith("band")) {
     rootDiv.innerHTML = templates.band;
-    initBand();
-  } else if (hash.startsWith("character")) {
+    await initBand();
+  }
+  // 캐릭터 페이지
+  else if (hash.startsWith("character")) {
     rootDiv.innerHTML = templates.character;
     initCharacter();
-  } else if (hash.startsWith("discography")) {
+  }
+  // 음반 목록 페이지
+  else if (hash.startsWith("discography")) {
     rootDiv.innerHTML = templates.discography;
     initDiscography();
-  } else if (hash.startsWith("album")) {
+  }
+  // 음반 상세 페이지
+  else if (hash.startsWith("album")) {
     rootDiv.innerHTML = templates.album;
     initAlbumDetail();
-  } else if (templates[hash]) {
+  }
+  // 메인 페이지
+  else if (templates[hash]) {
     rootDiv.innerHTML = templates[hash];
 
     if (hash === "home") {
