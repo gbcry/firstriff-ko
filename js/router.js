@@ -32,7 +32,7 @@ async function handleRouting() {
   // 뉴스 페이지 (목록 || 상세)
   if (hash.startsWith("news")) {
     rootDiv.innerHTML = templates.news;
-    initNews();
+    await initNews();
   } else if (hash.startsWith("band")) {
     rootDiv.innerHTML = templates.band;
     initBand();
