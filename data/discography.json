@@ -388,7 +388,7 @@
           {
             "track_no": 2,
             "title": {
-              "ko": "빈 상자(이세리 니나, 카와라기 모모카)",
+              "ko": "빈 상자 (이세리 니나, 카와라기 모모카)",
               "ja": "空の箱 (井芹仁菜、河原木桃香)",
               "en": "VOID (Nina Iseri, Momoka Kawaragi)"
             },
@@ -407,7 +407,7 @@
           {
             "track_no": 3,
             "title": {
-              "ko": "빈 상자(Vo.카와라기 모모카)",
+              "ko": "빈 상자 (Vo.카와라기 모모카)",
               "ja": null,
               "en": null
             },
@@ -701,7 +701,7 @@
           {
             "track_no": 2,
             "title": {
-              "ko": "",
+              "ko": "날 수 없는 나비는 꿈을 꾼다",
               "ja": "飛べない蝶は夢を見る",
               "en": "Belle papillon"
             },
@@ -959,7 +959,7 @@
         "album_type": "ep",
         "album_tag": "2nd EP",
         "title": {
-          "ko": "다 드러내고 살아 주겠어!",
+          "ko": "전부를 드러내고 살아 주겠어!",
           "ja": "全部をさらして生きてやる",
           "en": "I'll live with my heart on my sleeve!"
         },
@@ -984,7 +984,7 @@
           {
             "track_no": 2,
             "title": {
-              "ko": "살아갈 이유를 줘",
+              "ko": "생명을 줘",
               "ja": "命をくれよ",
               "en": "Give Me Life"
             },
@@ -1000,7 +1000,7 @@
           {
             "track_no": 3,
             "title": {
-              "en": "arrow"
+              "ko": "arrow"
             },
             "links": {
               "audio": {
@@ -1044,7 +1044,7 @@
           {
             "track_no": 6,
             "title": {
-              "ko": "살아갈 이유를 줘 (Instrumental)"
+              "ko": "생명을 줘 (Instrumental)"
             },
             "links": {
               "audio": {
@@ -1058,7 +1058,7 @@
           {
             "track_no": 7,
             "title": {
-              "en": "arrow (Instrumental)"
+              "ko": "arrow (Instrumental)"
             },
             "links": {
               "audio": {
@@ -1072,9 +1072,7 @@
           {
             "track_no": 8,
             "title": {
-              "ko": "가시덤불의 장미 (Instrumental)",
-              "ja": "荊の薔薇",
-              "en": "Roses in Thorns"
+              "ko": "가시덤불의 장미 (Instrumental)"
             },
             "links": {
               "audio": {
@@ -1347,7 +1345,7 @@
           {
             "track_no": 3,
             "title": {
-              "ko": "빈 상자(이세리 니나, 카와라기 모모카)",
+              "ko": "빈 상자 (이세리 니나, 카와라기 모모카)",
               "ja": "空の箱 (井芹仁菜、河原木桃香)",
               "en": "VOID (Nina Iseri, Momoka Kawaragi)"
             },
