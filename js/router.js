@@ -19,7 +19,6 @@ const templates = {
   band: `<div class="band-container"></div>`,
   character: `<div class="character-container"></div>`,
   discography: `<div class="discography-container"></div>`,
-  album: `<div class="album-container"></div>`,
   live: `<div class="live-container"></div>`
 };
 
@@ -52,8 +51,13 @@ async function handleRouting() {
   }
   // 음반 상세 페이지
   else if (hash.startsWith("album")) {
-    rootDiv.innerHTML = templates.album;
+    rootDiv.innerHTML = templates.discography;
     await initAlbumDetail();
+  }
+  // 라이브 상세 페이지
+  else if (hash.startsWith("live_detail")) {
+    rootDiv.innerHTML = templates.live;
+    await initLiveDetail();
   }
   // 라이브 목록 페이지
   else if (hash.startsWith("live")) {
