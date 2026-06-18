@@ -97,7 +97,7 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
     `).join("");
 
     albumContentHTML = `
-      <div class="album-filter-menu">
+      <div class="filter-menu">
         <a href="#discography/${currentBand.id}" class="filter-btn active" data-filter="all">ALL</a>
         <a href="#discography/${currentBand.id}" class="filter-btn" data-filter="single">SINGLE</a>
         <a href="#discography/${currentBand.id}" class="filter-btn" data-filter="ep">EP</a>
@@ -259,7 +259,7 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
       </div>
 
       <div class="discography-content">
-        <div class="album-filter-menu">
+        <div class="filter-menu">
           <a href="#discography/${currentBand.id}/all" class="filter-btn">ALL</a>
           <a href="#discography/${currentBand.id}/single" class="filter-btn">SINGLE</a>
           <a href="#discography/${currentBand.id}/ep" class="filter-btn">EP</a>
