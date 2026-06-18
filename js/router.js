@@ -20,6 +20,7 @@ const templates = {
   character: `<div class="character-container"></div>`,
   discography: `<div class="discography-container"></div>`,
   album: `<div class="album-container"></div>`,
+  live: `<div class="live-container"></div>`
 };
 
 // 화면 교체 라우터
@@ -53,6 +54,11 @@ async function handleRouting() {
   else if (hash.startsWith("album")) {
     rootDiv.innerHTML = templates.album;
     await initAlbumDetail();
+  }
+  // 라이브 목록 페이지
+  else if (hash.startsWith("live")) {
+    rootDiv.innerHTML = templates.live;
+    await initLiveEvent();
   }
   // 메인 페이지
   else if (templates[hash]) {

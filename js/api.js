@@ -51,6 +51,19 @@ async function fetchDiscographyData() {
   }
 }
 
+// 라이브 데이터
+async function fetchLiveData() {
+  try {
+    const response = await fetch("./data/lives.json");
+    const data = await response.json();
+
+    return Array.isArray(data) ? data : (data.lives || []);
+  } catch (error) {
+    console.error("라이브 데이터를 불러오는데 실패했습니다:", error);
+    return [];
+  }
+}
+
 // 유튜브 썸네일 자동 추출
 function getYouTubeThumbnail(url) {
   if (!url) return null;
