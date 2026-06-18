@@ -25,6 +25,7 @@
                     "date": "2023.09.14 (木)",
                     "venue": "다이칸야마 SPACE ODD",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -99,6 +100,7 @@
                     "date": "2024.03.16 (土)",
                     "venue": "요코하마・1000 CLUB",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -223,6 +225,7 @@
                     "date": "2024.09.13 (金)",
                     "venue": "카와사키・CLUB CITTA",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -403,6 +406,7 @@
                     "date": "2024.11.02 (土)",
                     "venue": "TOKYO DOME CITY HALL",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -590,6 +594,7 @@
                     "date": "2024.12.14 (土)",
                     "venue": "반다이 남코 상하이 문화센터 드림시어터",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -721,6 +726,7 @@
                     "date": "2024.12.15 (日)",
                     "venue": "반다이 남코 상하이 문화센터 드림시어터",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -873,6 +879,7 @@
                     "date": "2024.12.20 (金)",
                     "venue": "토요스 PIT",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1067,6 +1074,7 @@
                     "date": "2025.02.07 (金)",
                     "venue": "퍼시피코 요코하마 국립대홀",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1247,6 +1255,7 @@
                     "date": "2025.08.10 (日)",
                     "venue": "Legacy TERA (타이베이)",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1406,6 +1415,7 @@
                     "date": "2025.09.23 (火·공휴일)",
                     "venue": "일본 무도관",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1608,6 +1618,7 @@
                     "date": "2026.02.11 (水·공휴일)",
                     "venue": "KT Zepp Yokohama",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1767,6 +1778,7 @@
                     "date": "2026.02.14 (土)",
                     "venue": "Zepp Fukuoka",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -1925,6 +1937,7 @@
                     "date": "2026.02.23 (月·공휴일)",
                     "venue": "Zepp Nagoya",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2084,6 +2097,7 @@
                     "date": "2026.02.28 (土)",
                     "venue": "Zepp Sapporo",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2242,6 +2256,7 @@
                     "date": "2026.03.08 (日)",
                     "venue": "Zepp Osaka Bayside",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2401,6 +2416,7 @@
                     "date": "2026.03.13 (金)",
                     "venue": "Zepp DiverCity (TOKYO)",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2559,6 +2575,7 @@
                     "date": "2026.03.14 (土)",
                     "venue": "Zepp DiverCity (TOKYO)",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2739,6 +2756,7 @@
                     "date": "2026.04.18 (土)",
                     "venue": "예스24 라이브홀",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -2890,6 +2908,7 @@
                     "date": "2026.04.19 (日)",
                     "venue": "예스24 라이브홀",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -3062,6 +3081,7 @@
                     "date": "2026.05.01 (金)",
                     "venue": "TOKYO GARDEN THEATER",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -3255,21 +3275,21 @@
                     "day_name": "방콕",
                     "date": "2026.08.14 (金)",
                     "venue": "Ambient Space",
-                    "setlist": {}
+                    "setlist": null
                 },
                 {
                     "day_id": "jakarta",
                     "day_name": "자카르타",
                     "date": "2026.08.16 (日)",
                     "venue": "AFA Indonesia",
-                    "setlist": {}
+                    "setlist": null
                 },
                 {
                     "day_id": "singapore",
                     "day_name": "싱가포르",
                     "date": "2026.08.19 (水)",
                     "venue": "Capitol Theatre",
-                    "setlist": {}
+                    "setlist": null
                 }
             ]
         },
@@ -3294,6 +3314,7 @@
                     "date": "2023.11.10 (金)",
                     "venue": "아카바네 ReNY alpha",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -3373,6 +3394,7 @@
                     "date": "2025.01.12 (日)",
                     "venue": "TOKYO DOME CITY HALL",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -3565,6 +3587,7 @@
                     "date": "2025.04.27 (日)",
                     "venue": "Kanadevia Hall",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -3964,6 +3987,7 @@
                     "date": "2025.12.07 (日)",
                     "venue": "케이오 아레나 TOKYO",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4192,11 +4216,8 @@
                     "date": "2023.10.09 (土)",
                     "venue": "카와사키 루프론 1F",
                     "setlist": {
+                        "note": "※ 세트리스트 정보 없음",
                         "regular": [
-                            {
-                                "list_no": 0,
-                                "title": "※ 세트리스트 정보 없음"
-                            },
                             {
                                 "list_no": "1",
                                 "title": {
@@ -4244,6 +4265,7 @@
                     "date": "2023.12.20 (水)",
                     "venue": "카와사키・세르비안 나이트",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4328,6 +4350,7 @@
                     "date": "2024.06.29 (土)",
                     "venue": "카와사키・토도로키 야구장",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4397,6 +4420,7 @@
                     "date": "2024.08.30 (金)",
                     "venue": "사이타마 슈퍼 아레나",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4438,6 +4462,7 @@
                     "date": "2024.09.15 (日)",
                     "venue": "카와사키 치도리 공원",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4528,6 +4553,7 @@
                     "date": "2024.11.08 (金)",
                     "venue": "한국・KINTEX HALL",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4625,6 +4651,7 @@
                     "date": "2024.12.29 (日)",
                     "venue": "마쿠하리 멧세 국제전시장",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4708,6 +4735,7 @@
                     "date": "2025.03.22 (土)",
                     "venue": "고베 월드 기념홀",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -4805,11 +4833,8 @@
                     "date": "2025.05.18 (日)",
                     "venue": "중국·상하이 국제 스피드웨이",
                     "setlist": {
+                        "note": "※ 세트리스트 정보 없음",
                         "regular": [
-                            {
-                                "list_no": 0,
-                                "title": "※ 세트리스트 정보 없음"
-                            },
                             {
                                 "list_no": "1",
                                 "title": {
@@ -4920,11 +4945,8 @@
                     "date": "2025.07.03 (木)",
                     "venue": "로스앤젤레스 Peacock Theater",
                     "setlist": {
+                        "note": "※ 세트리스트 정보 없음",
                         "regular": [
-                            {
-                                "list_no": 0,
-                                "title": "※ 세트리스트 정보 없음"
-                            },
                             {
                                 "list_no": "1",
                                 "title": {
@@ -5007,6 +5029,7 @@
                     "date": "2025.07.11 (金)",
                     "venue": "상하이 국가회전 중심·홍관 EH",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -5063,11 +5086,8 @@
                     "date": "2025.08.05 (火)",
                     "venue": "카와사키 SUPERNOVA",
                     "setlist": {
+                        "note": null,
                         "regular": [
-                            {
-                                "list_no": 0,
-                                "title": "※ 방송에 송출된 세트리로 실제와 다름"
-                            },
                             {
                                 "list_no": "1",
                                 "title": {
@@ -5186,6 +5206,7 @@
                     "date": "2025.11.03 (月·공휴일)",
                     "venue": "일본 공학원 전문 학교 일본 공학원 아레나",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -5340,6 +5361,7 @@
                     "date": "2025.12.27 (土)",
                     "venue": "마쿠하리 멧세 국제전시장",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -5436,6 +5458,7 @@
                     "date": "2026.04.04 (土)",
                     "venue": "홍콩·AsiaWorld-Expo",
                     "setlist": {
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
