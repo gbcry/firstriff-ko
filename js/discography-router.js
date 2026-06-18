@@ -24,7 +24,7 @@ async function initDiscography() {
 }
 
 async function initAlbumDetail() {
-  const container = document.querySelector(".album-container");
+  const container = document.querySelector(".discography-container");
 
   if (!container) return;
 
