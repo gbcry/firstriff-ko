@@ -1,84 +1,145 @@
-function initLiveEvent() {
-  const liveContainer = document.querySelector(".live-container");
+async function initLiveEvent() {
+  const container = document.querySelector(".live-container");
 
-  if (!liveContainer) return;
+  if (!container) return;
 
-  const liveTemplate = `
-      <div class="live-view">
-          <div class="section-title">LIVE</div>
-          <div class="band-tab-menu">
-            <img src="images/band/togenashitogeari/background.png" class="menu-bg-img">
+  const hash = window.location.hash;
+  const parts = hash.replace("#", "").split("/");
 
-            <a href="#live/togenashitogeari" class="band-tab active">
-              <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-              <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-            </a>
+  const bandId = parts[1] || "togenashitogeari";
+  const initialFilter = parts[2] || "all";
 
-            <a href="#live/cannalily" class="band-tab">
-              <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-              <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-            </a>
+  const bands = await fetchBandsData();
+  const liveData = await fetchLiveData();
 
-            <a href="#live/f_272" class="band-tab">
-              <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-              <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-            </a>
-          </div>
+  const currentBand = bands.find((band) => band.id === bandId);
 
-          <div class="live-content">
-            <div class="filter-menu">
-              <button type="button" class="filter-btn active" data-filter="all">ALL</button>
-              <button type="button" class="filter-btn" data-filter="one-man">ONE-MAN</button>
-              <button type="button" class="filter-btn" data-filter="taiban">대반</button>
-              <button type="button" class="filter-btn" data-filter="etc">etc.</button>
-            </div>
+  if (!currentBand) {
+    container.innerHTML = "<h2>밴드 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
 
-            <div class="live-grid">
+  // 현재 밴드가 참여한 라이브만 필터링
+  const bandLives = liveData.filter((live) => live.participate.includes(currentBand.id));
 
-              <div class="live-card" data-band="togenashitogeari" data-type="one-man">
-                <div class="live-img-box">
-                  <img src="images/live/live_toge_promotion.webp" class="live-kv-img">
-                </div>
-                <div class="live-info-box">
-                  <span class="live-date">2023.09.14 (木)</span>
-                  <h3 class="live-title">토게나시 토게아리 수행 중! 공개 연습 라이브</h3>
-                </div>
-              </div>
+  // 날짜 오름차순 정렬 (첫 번째 일정 기준)
+  bandLives.sort((a, b) => {
+    const dateA = a.schedules[0]?.date || "9999.99.99";
+    const dateB = b.schedules[0]?.date || "9999.99.99";
+    return dateA.localeCompare(dateB);
+  });
 
-              <div class="live-card" data-band="togenashitogeari" data-type="one-man">
-                <div class="live-img-box">
-                  <img src="images/live/live_toge_1st.webp" class="live-kv-img">
-                </div>
-                <div class="live-info-box">
-                  <span class="live-date">2024.03.16 (土)</span>
-                  <h3 class="live-title">토게나시 토게아리 1st ONE-MAN LIVE “박명의 서주”</h3>
-                </div>
-              </div>
+  renderLiveList(container, bands, currentBand, bandLives, initialFilter);
+}
 
-              <div class="live-card" data-band="cannalily" data-type="one-man">
-                <div class="live-img-box">
-                  <img src="images/live/live_cannalily_1st.jpeg" class="live-kv-img">
-                </div>
-                <div class="live-info-box">
-                  <span class="live-date">2026.06.26 (金)</span>
-                  <h3 class="live-title">Canna Lily 1st ONE-MAN LIVE「새벽녘에 피는 꽃」</h3>
-                </div>
-              </div>
+async function renderLiveList(container, bands, currentBand, bandLives, initialFilter) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
 
-              <div class="live-card" data-band="f-272" data-type="one-man">
-                <div class="live-img-box">
-                  <div class="no-img-placeholder">NO IMAGE</div>
-                </div>
-                <div class="live-info-box">
-                  <span class="live-date">2026.07.20 (月・공휴일)</span>
-                  <h3 class="live-title">F-272 1st ONE-MAN LIVE The Dissonant “I DOLL“</h3>
-                </div>
-              </div>
+      return `
+        <a href="#live/${band.id}" class="band-tab ${isActive}">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
 
-            </div>
-          </div>
+  // 라이브 목록 or 빈 화면
+  let liveContentHTML = "";
+  if (bandLives.length === 0) {
+    liveContentHTML = `
+      <div class="empty-state">
+        <p class="empty-text">COMING SOON</p>
       </div>
     `;
+  } else {
+    const liveCardsHTML = bandLives.map((live) => {
+      const imgHTML = live.key_visual
+        ? `<img src="${live.key_visual}" class="live-kv-img">`
+        : `<div class="no-img-placeholder">NO IMAGE</div>`;
 
-  liveContainer.innerHTML = liveTemplate;
+      const firstDate = live.schedules[0]?.date || "일정 미정";
+
+      return `
+        <a href="#live_detail/${live.id}" class="live-card" data-type="${live.type}">
+          <div class="live-img-box">
+            ${imgHTML}
+          </div>
+          <div class="live-info-box">
+            <span class="live-date">${firstDate}</span>
+            <h3 class="live-title">${live.title.ko}</h3>
+          </div>
+        </a>
+      `;
+    }).join("");
+
+    liveContentHTML = `
+      <div class="filter-menu">
+        <a href="#live/${currentBand.id}" class="filter-btn active" data-filter="all">ALL</a>
+        <a href="#live/${currentBand.id}" class="filter-btn" data-filter="one-man">ONE-MAN</a>
+        <a href="#live/${currentBand.id}" class="filter-btn" data-filter="taiban">대반</a>
+        <a href="#live/${currentBand.id}" class="filter-btn" data-filter="etc">etc.</a>
+      </div>
+      <div class="live-grid">
+        ${liveCardsHTML}
+      </div>
+    `;
+  }
+
+  container.innerHTML = `
+    <div class="live-view">
+      <div class="section-title">LIVE</div>
+
+      <div class="band-tab-menu">
+        <img src="${currentBand.images.background}" class="menu-bg-img">
+        ${tabMenuHTML}
+      </div>
+
+      <div class="live-content">
+        ${liveContentHTML}
+      </div>
+    </div>
+  `;
+
+  // 필터링 로직
+  const filterBtns = container.querySelectorAll(".filter-btn");
+  const liveCards = container.querySelectorAll(".live-card");
+
+  // 라이브 정보가 없는 경우도 있음
+  if (filterBtns.length > 0 && liveCards.length > 0) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        // 클릭한 버튼에만 active 추가
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // 클릭한 버튼의 필터값 추출
+        const filterValue = btn.getAttribute("data-filter");
+
+        // 브라우저 주소창 url을 현재 필터에 맞춰서 변경
+        history.replaceState(null, null, `#live/${currentBand.id}/${filterValue}`)
+
+        liveCards.forEach((card) => {
+          const liveType = card.getAttribute("data-type");
+
+          if (filterValue === "all" || filterValue === liveType) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // HTML 렌더링 후 필터와 일치하는 버튼으로 강제 클릭 이벤트 발생
+    const targetBtn = Array.from(filterBtns).find(btn => btn.getAttribute("data-filter") === initialFilter);
+    if (targetBtn) {
+      targetBtn.click();
+    }
+  }
 }

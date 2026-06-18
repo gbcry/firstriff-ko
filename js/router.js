@@ -58,7 +58,7 @@ async function handleRouting() {
   // 라이브 목록 페이지
   else if (hash.startsWith("live")) {
     rootDiv.innerHTML = templates.live;
-    initLiveEvent();
+    await initLiveEvent();
   }
   // 메인 페이지
   else if (templates[hash]) {

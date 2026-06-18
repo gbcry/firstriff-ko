@@ -1,8 +1,8 @@
 {
-    "live": [
+    "lives": [
         {
             "id": "live_toge_promotion",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 수행 중! 공개 연습 라이브",
                 "ja": "トゲナシトゲアリ修行中！公開練習ライブ"
@@ -77,7 +77,7 @@
         },
         {
             "id": "live_toge_1st",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 1st ONE-MAN LIVE “박명의 서주”",
                 "ja": "トゲナシトゲアリ 1st ONE-MAN LIVE “薄明の序奏”"
@@ -202,7 +202,7 @@
         },
         {
             "id": "live_toge_2nd",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 2nd ONE-MAN LIVE “린네의 이치”",
                 "ja": "トゲナシトゲアリ 2nd ONE-MAN LIVE “凛音の理”"
@@ -383,7 +383,7 @@
         },
         {
             "id": "live_toge_3rd",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 3rd ONE-MAN LIVE “포효의 연주”",
                 "ja": "トゲナシトゲアリ 3rd ONE-MAN LIVE “咆哮の奏”"
@@ -571,7 +571,7 @@
         },
         {
             "id": "live_toge_shanghai",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "TOGENASHI TOGEARI LIVE IN SHANGHAI “린네의 이치”",
                 "ja": "TOGENASHI TOGEARI LIVE IN SHANGHAI “凛音の理”"
@@ -856,7 +856,7 @@
         },
         {
             "id": "live_toge_4th",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 4th ONE-MAN LIVE “협주의 울림”",
                 "ja": "トゲナシトゲアリ 4th ONE-MAN LIVE “協奏の響”"
@@ -1051,7 +1051,7 @@
         },
         {
             "id": "live_toge_5th",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 5th ONE-MAN LIVE “울림의 순간”",
                 "ja": "トゲナシトゲアリ 5th ONE-MAN LIVE “鳴動の刻”"
@@ -1232,7 +1232,7 @@
         },
         {
             "id": "live_toge_taipei",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "TOGENASHI TOGEARI LIVE IN TAIPEI “린네의 이치”",
                 "ja": "TOGENASHI TOGEARI LIVE IN TAIPEI “凛音の理”"
@@ -1392,7 +1392,7 @@
         },
         {
             "id": "live_toge_budokan",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 LIVE in 일본 무도관 “격주의 외침”",
                 "ja": "トゲナシトゲアリ LIVE in 日本武道館 “奏檄の叫”"
@@ -1594,7 +1594,7 @@
         },
         {
             "id": "live_toge_zepp_tour",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 Zepp Tour 2026 “박동의 미래”",
                 "ja": "トゲナシトゲアリ ZEPP Tour 2026 “拍動の未来”"
@@ -2733,7 +2733,7 @@
         },
         {
             "id": "live_toge_korea",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 Live in SEOUL “린네의 이치”",
                 "ja": "トゲナシトゲアリ LIVE in SEOUL “凛音の理”"
@@ -3058,7 +3058,7 @@
         },
         {
             "id": "live_toge_zepp_encore",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 TOUR 2026 FINAL “박동의 미래 -ENCORE-”",
                 "ja": "トゲナシトゲアリ TOUR 2026 FINAL “拍動の未来 -ENCORE-”"
@@ -3259,7 +3259,7 @@
         },
         {
             "id": "live_toge_asia_tour",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "토게나시 토게아리 “린네의 이치” SOUTHEAST ASIA TOUR 2026",
                 "ja": "トゲナシトゲアリ “凛音の理” SOUTHEAST ASIA TOUR 2026"
@@ -5593,7 +5593,7 @@
         },
         {
             "id": "live_cannalily_1st",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "Canna Lily 1st ONE-MAN LIVE「새벽녘에 피는 꽃」",
                 "ja": "Canna Lily 1st ONE-MAN LIVE「未明に咲く花」"
@@ -5621,7 +5621,7 @@
         },
         {
             "id": "live_f-272_1st",
-            "type": "one_man",
+            "type": "one-man",
             "title": {
                 "ko": "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL“"
             },
