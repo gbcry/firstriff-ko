@@ -123,6 +123,10 @@ a {
   flex-direction: column;
 }
 
+/* =========================================
+   Common Components - Section Title
+========================================= */
+
 .section-title {
   font-family: var(--font-main);
   font-size: clamp(22px, 4.5vw, 48px);
@@ -137,7 +141,7 @@ a {
 }
 
 /* =========================================
-   Official Media
+   Common Components - Official Media
 ========================================= */
 
 .official-media-content {
@@ -208,6 +212,10 @@ a {
   color: var(--color-point);
 }
 
+/* =========================================
+   Common Components : Back To List Button
+========================================= */
+
 .back-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -246,6 +254,116 @@ a {
 .back-to-list-btn:hover i {
   transform: translateX(-4px);
 }
+
+
+/* =========================================
+   Common Components : Band Tab
+========================================= */
+
+.band-tab-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  padding: clamp(20px, 4vw, 40px) 0;
+  overflow: hidden;
+}
+
+.menu-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.band-tab {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: clamp(120px, 25vw, 250px);
+  aspect-ratio: 250 / 80;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black); /* 기본 */
+  transition: background-color 0.2s ease;
+}
+
+.band-tab:hover,
+.band-tab.active {
+  background-color: var(--color-white); /* 호버/활성 */
+}
+
+/* 로고 이미지 스위칭 */
+.tab-logo-default,
+.tab-logo-hover {
+  position: absolute;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+}
+
+.tab-logo-default {
+  opacity: 1;
+}
+
+.tab-logo-hover {
+  opacity: 0;
+}
+
+.band-tab:hover .tab-logo-default,
+.band-tab.active .tab-logo-default {
+  opacity: 0;
+}
+.band-tab:hover .tab-logo-hover,
+.band-tab.active .tab-logo-hover {
+  opacity: 1;
+}
+
+/* =========================================
+   Common Components : Filter Menu
+========================================= */
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 20px);
+  margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: var(--color-point);
+  border: clamp(2px, 0.3vw, 3px) solid var(--color-point);
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: clamp(12px, 1.3vw, 15px);
+  font-weight: 600;
+  width: clamp(90px, 12vw, 130px);
+  padding: clamp(8px, 1vw, 12px) 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-black);
+  border-color: var(--color-point);
+  color: var(--color-white);
+}
+
 
 /* =========================================
    Footer

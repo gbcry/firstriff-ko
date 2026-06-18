@@ -25,44 +25,6 @@
 }
 
 /* =========================================
-   Album Filter Menu
-========================================= */
-
-.album-filter-menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: clamp(10px, 2vw, 20px);
-  margin-bottom: clamp(20px, 3vw, 40px);
-}
-
-.filter-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  text-decoration: none;
-  background-color: var(--color-point);
-  border: clamp(2px, 0.3vw, 3px) solid var(--color-point);
-  color: var(--color-white);
-  font-family: var(--font-main);
-  font-size: clamp(12px, 1.3vw, 15px);
-  font-weight: 600;
-  width: clamp(90px, 12vw, 130px);
-  padding: clamp(8px, 1vw, 12px) 0;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  background-color: var(--color-black);
-  border-color: var(--color-point);
-  color: var(--color-white);
-}
-
-/* =========================================
    Album Grid & Card
 ========================================= */
 
