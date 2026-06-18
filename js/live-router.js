@@ -86,6 +86,9 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
       <div class="live-grid">
         ${liveCardsHTML}
       </div>
+      <div class="empty-state filter-empty-state" style="display: none;">
+        <p class="empty-text">COMING SOON</p>
+      </div>
     `;
   }
 
@@ -107,6 +110,7 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
   // 필터링 로직
   const filterBtns = container.querySelectorAll(".filter-btn");
   const liveCards = container.querySelectorAll(".live-card");
+  const filterEmptyState = container.querySelector(".filter-empty-state");
 
   // 라이브 정보가 없는 경우도 있음
   if (filterBtns.length > 0 && liveCards.length > 0) {
@@ -124,15 +128,27 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
         // 브라우저 주소창 url을 현재 필터에 맞춰서 변경
         history.replaceState(null, null, `#live/${currentBand.id}/${filterValue}`)
 
+        // 카드 필터링
+        let visibleCount = 0;
         liveCards.forEach((card) => {
           const liveType = card.getAttribute("data-type");
 
           if (filterValue === "all" || filterValue === liveType) {
-            card.style.display = "";
+            card.style.display = ""; // 카드 보여주기
+            visibleCount++;
           } else {
-            card.style.display = "none";
+            card.style.display = "none"; // 카드 숨기기
           }
         });
+
+        // 노출된 카드가 0개인 경우
+        if (filterEmptyState) {
+          if (visibleCount === 0) {
+            filterEmptyState.style.display = "flex";
+          } else {
+            filterEmptyState.style.display = "none";
+          }
+        }
       });
     });
 
