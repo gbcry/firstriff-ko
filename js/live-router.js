@@ -37,138 +37,31 @@ async function initLiveDetail() {
 
   if (!container) return;
 
-  const templates = `
-    <div class="live-view">
-      <div class="section-title">LIVE</div>
+  const hash = window.location.hash;
+  const parts = hash.replace("#", "").split("/");
+  const liveId = parts[1];
 
-      <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.png" class="menu-bg-img">
-        
-        <a href="#live/togenashitogeari" class="band-tab active">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-        <a href="#live/cannalily" class="band-tab">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-        <a href="#live/f-272" class="band-tab">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-      </div>
+  if (!liveId) {
+    container.innerHTML = "<h2>라이브 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
 
-      <div class="live-content">
+  const bands = await fetchBandsData();
+  const liveData = await fetchLiveData();
 
-        <div class="filter-menu">
-          <a href="#live/togenashitogeari/all" class="filter-btn active">ALL</a>
-          <a href="#live/togenashitogeari/one-man" class="filter-btn">ONE-MAN</a>
-          <a href="#live/togenashitogeari/taiban" class="filter-btn">대반</a>
-          <a href="#live/togenashitogeari/etc" class="filter-btn">etc.</a>
-        </div>
-        
-        <div class="live-hero-banner">
-          <img src="images/live/live_toge_1st.webp" class="live-hero-img">
-        </div>
+  // 현재 라이브 데이터 찾기
+  const currentLive = liveData.find((live) => live.id === liveId);
 
-        <div class="live-detail-info">
-          <h2 class="live-detail-title-main">토게나시 토게아리 1st ONE-MAN LIVE “박명의 서주”</h2>
-          <div class="live-detail-title-sub">トゲナシトゲアリ 1st ONE-MAN LIVE “薄明の序奏”</div>
-          
-          <div class="live-cast-box">
-            <div class="cast-label">CAST</div>
-            <div class="cast-group">
-              <div class="cast-band-name"><i class="fa-solid fa-diamond"></i> 토게나시 토게아리</div>
-              <div class="cast-list">리나 (이세리 니나 役) / 유리 (카와라기 모모카 役) / 미레이 (아와 스바루 役) / 나츠 (에비즈카 토모 役) / 슈리 (루파 役)</div>
-            </div>
-          </div>
-        </div>
+  if (!currentLive) {
+    container.innerHTML = "<h2>라이브 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
 
-        <div class="setlist-wrapper">
+  // 참여 밴드 찾기 (밴드가 여럿일 경우 첫 번째 밴드를 기준으로)
+  const currentBandId = currentLive.participate[0];
+  const currentBand = bands.find((band) => band.id === currentBandId) || bands[0];
 
-          <div class="filter-menu schedule-tab-menu">
-            <button class="filter-btn active">Day 1</button>
-            <button class="filter-btn">Day 2</button>
-          </div>
-
-          <div class="setlist-content-box">
-            
-            <div class="schedule-meta-info">
-              <div class="meta-item"><i class="fa-regular fa-calendar"></i> 2024.03.16 (土)</div>
-              <div class="meta-item"><i class="fa-solid fa-location-dot"></i> KT Zepp Yokohama</div>
-            </div>
-
-            <h3 class="setlist-label">SETLIST</h3>
-
-            <div class="setlist-container">
-              <div class="setlist-row">
-                <div class="setlist-num">01</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">이름 없는 모든 것</div>
-                  <div class="setlist-name-sub">名もなき何もかも</div>
-                </div>
-              </div>
-
-              <div class="setlist-row">
-                <div class="setlist-num">02</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">거짓된 법칙</div>
-                  <div class="setlist-name-sub">偽りの理</div>
-                </div>
-              </div>
-
-              <div class="setlist-row">
-                <div class="setlist-num">03</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">상처받고 상처주고 아파서 괴로워</div>
-                  <div class="setlist-name-sub">傷つき傷つけ痛くて辛い</div>
-                </div>
-              </div>
-
-              <div class="setlist-row">
-                <div class="setlist-num">04</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">이상적 패러독스란</div>
-                  <div class="setlist-name-sub">理想的パラドクスとは</div>
-                </div>
-              </div>
-
-              <div class="setlist-row">
-                <div class="setlist-num">05</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">여명을 꿰뚫다</div>
-                  <div class="setlist-name-sub">黎明を穿つ</div>
-                </div>
-              </div>
-
-              <div class="setlist-row">
-                <div class="setlist-num">앙코르 1</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">누구도 될 수 없는 나니까</div>
-                  <div class="setlist-name-sub">誰にもなれない私だから</div>
-                </div>
-              </div>
-              
-              <div class="setlist-row">
-                <div class="setlist-num">앙코르 2</div>
-                <div class="setlist-text-group">
-                  <div class="setlist-name-main">이름 없는 모든 것</div>
-                  <div class="setlist-name-sub">名もなき何もかも</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="back-btn-wrapper">
-        <a href="#live/togenashitogeari" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
-      </div>
-    </div>
-  `;
-
-  container.innerHTML = templates;
+  renderLiveDetailView(container, bands, currentBand, currentLive);
 }
 
 async function renderLiveList(container, bands, currentBand, bandLives, initialFilter) {
@@ -296,5 +189,197 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
     if (targetBtn) {
       targetBtn.click();
     }
+  }
+}
+
+async function renderLiveDetailView(container, bands, currentBand, currentLive) {
+  // 밴드 탭
+  const tabMenuHTML = bands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#live/${band.id}" class="band-tab ${isActive}">
+          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 캐스트 영역 (캐스트가 미정인 경우도 있음)
+  let castHTML = "";
+  if (currentLive.cast && currentLive.cast.length > 0) {
+    const castGroups = currentLive.cast
+      .map((group) => `
+        <div class="cast-group">
+          <div class="cast-band-name"><i class="fa-solid fa-diamond"></i> ${group.band}</div>
+          <div class="cast-list">${group.members.join(" / ")}</div>
+        </div>
+      `).join("");
+
+    castHTML = `
+      <div class="live-cast-box">
+        <div class="cast-label">CAST</div>
+        ${castGroups}
+      </div>
+    `;
+  }
+
+  // 다중 일정 탭 (일정이 2개 이상일 때만 표시)
+  let scheduleTabsHTML = "";
+  if (currentLive.schedules && currentLive.schedules.length > 1) {
+    scheduleTabsHTML = `
+        <div class="filter-menu schedule-tab-menu">
+          ${currentLive.schedules
+        .map((sch, idx) => `
+              <button class="filter-btn sub-tab-btn ${idx === 0 ? "active" : ""}" data-id="${sch.day_id}">
+                ${sch.day_name}
+              </button>
+            `).join("")}
+        </div>
+      `;
+  }
+
+  const liveDetailContentHTML = `
+    <div class="filter-menu">
+      <a href="#live/${currentBand.id}/all" class="filter-btn active" data-filter="all">ALL</a>
+      <a href="#live/${currentBand.id}/one-man" class="filter-btn" data-filter="one-man">ONE-MAN</a>
+      <a href="#live/${currentBand.id}/taiban" class="filter-btn" data-filter="taiban">대반</a>
+      <a href="#live/${currentBand.id}/etc" class="filter-btn" data-filter="etc">etc.</a>
+    </div>
+    <div class="live-detail-wrapper">
+      
+      <div class="live-hero-banner">
+        ${currentLive.key_visual
+      ? `<img src="${currentLive.key_visual}" class="live-hero-img">`
+      : `<div class="no-img-placeholder">NO IMAGE</div>`}
+      </div>
+      <div class="live-detail-info">
+        <h2 class="live-detail-title-main">${currentLive.title.ko}</h2>
+        ${currentLive.title.ja ? `<div class="live-detail-title-sub">${currentLive.title.ja}</div>` : ""}
+        ${castHTML}  
+      </div>
+      <div class="setlist-wrapper">
+        ${scheduleTabsHTML}
+        <div class="setlist-content-box" id="setlist-display-area"></div>
+      </div>
+
+    </div>
+  `;
+
+  container.innerHTML = `
+      <div class="live-view">
+        <div class="section-title">LIVE</div>
+
+        <div class="band-tab-menu">
+          <img src="${currentBand.images.background}" class="menu-bg-img">
+          ${tabMenuHTML}
+        </div>
+
+        <div class="live-detail-content">
+          ${liveDetailContentHTML}
+        </div>
+
+        <div class="back-btn-wrapper">
+          <a href="#live/${currentBand.id}" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
+        </div>
+      </div>
+    `;
+
+  // 스케쥴 교체 탭, 세트리스트
+  const displayArea = document.getElementById("setlist-display-area");
+  const tabBtns = container.querySelectorAll(".sub-tab-btn");
+
+  const renderScheduleData = (schedule) => {
+    if (!schedule) return;
+
+    let setlistHTML = "";
+    let setlistNoteHTML = "";
+
+    if (schedule.setlist?.note) {
+      setlistNoteHTML = `<span class="setlist-note">${schedule.setlist.note}</span>`;
+    }
+
+    const hasRegular = schedule.setlist?.regular && schedule.setlist.regular.length > 0;
+    const hasEncore = schedule.setlist?.encore && schedule.setlist.encore.length > 0;
+
+    // 세트리스트 정보가 아예 없는 경우
+    if (!hasRegular && !hasEncore) {
+      setlistHTML = `
+          <div class="empty-state"">
+            <p class="empty-text">COMING SOON</p>
+          </div>
+        `;
+    } else {
+      const createTrackHTML = (track) => {
+        const listNo = isNaN(track.list_no) ? track.list_no : String(track.list_no).padStart(2, "0");
+        const subTitles = [];
+
+        if (track.title?.ja) subTitles.push(track.title.ja);
+        if (track.title?.en) subTitles.push(track.title.en);
+
+        const subTitleHTML = subTitles.length > 0 ? `<div class="setlist-name-sub">(${subTitles.join(" | ")})</div>` : "";
+
+        return `
+          <div class="setlist-row">
+            <div class="setlist-num">${listNo}</div>
+            <div class="setlist-text-group">
+              <div class="setlist-name-main">${track.title.ko}</div>
+              ${subTitleHTML}
+            </div>
+          </div>
+          `;
+      }
+
+      // 세트리스트 정보가 있으면 추가
+      if (hasRegular) {
+        setlistHTML += schedule.setlist.regular.map(createTrackHTML).join("");
+      }
+
+      if (hasEncore) {
+        setlistHTML += schedule.setlist.encore.map(createTrackHTML).join("");
+      }
+    }
+
+    displayArea.innerHTML = `
+      <div class="schedule-meta-info">
+        <div class="meta-item"><i class="fa-regular fa-calendar"></i> ${schedule.date || "일정 미정"}</div>
+        <div class="meta-item"><i class="fa-solid fa-location-dot"></i> ${schedule.venue || "장소 미정"}</div>
+      </div>
+
+      <div class="setlist-header">
+        <h3 class="setlist-label">SETLIST</h3>
+        ${setlistNoteHTML}
+      </div>
+
+      <div class="setlist-container">
+        ${setlistHTML}
+      </div>
+    `;
+
+  };
+
+  if (tabBtns.length > 0) {
+    tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // 클릭한 버튼에만 active 추가
+        tabBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active")
+
+        // 전체 일정 배열에서 day_id가 일치하는 스케쥴 찾기
+        const targetDayId = btn.getAttribute("data-id");
+        const targetSchedule = currentLive.schedules.find((sch) => sch.day_id === targetDayId);
+
+        if (targetSchedule) {
+          renderScheduleData(targetSchedule);
+        }
+      });
+    });
+  }
+
+  // 초기 렌더링
+  if (currentLive.schedules && currentLive.schedules.length > 0) {
+    renderScheduleData(currentLive.schedules[0]);
   }
 }
