@@ -2926,7 +2926,7 @@
                 },
                 {
                     "day_id": "tokyo_day2",
-                    "day_name": " Day 2",
+                    "day_name": "도쿄 Day 2",
                     "date": "2026.03.14 (土)",
                     "venue": "Zepp DiverCity (TOKYO)",
                     "setlist": {
@@ -3715,7 +3715,12 @@
             "participate": [
                 "togenashitogeari"
             ],
-            "cast": [],
+            "cast": [
+                {
+                    "band": "토게나시 토게아리",
+                    "members": []
+                }
+            ],
             "schedules": [
                 {
                     "day_id": "bangkok",
@@ -4740,7 +4745,16 @@
                 "togenashitogeari",
                 "diamonddust"
             ],
-            "cast": [],
+            "cast": [
+                {
+                    "band": "토게나시 토게아리",
+                    "members": []
+                },
+                {
+                    "band": "다이아몬드 더스트",
+                    "members": []
+                }
+            ],
             "schedules": [
                 {
                     "day_id": null,

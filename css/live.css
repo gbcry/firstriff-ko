@@ -153,6 +153,13 @@
   display: block;
 }
 
+.live-hero-banner .no-img-placeholder {
+  min-height: clamp(200px, 30vw, 400px); 
+  background-color: var(--color-black);
+  font-size: clamp(28px, 4vw, 56px); 
+  letter-spacing: 2px;
+}
+
 /* =========================================
    Live Detail - Info Area
 ========================================= */
@@ -273,15 +280,31 @@
    Live Detail - SETLIST
 ========================================= */
 
+.setlist-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;
+  padding-bottom: clamp(8px, 1vw, 12px);
+  margin-bottom: 0;
+  border-bottom: 3px solid var(--color-point);
+}
+
 .setlist-label {
   font-family: var(--font-main);
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: 800;
   color: var(--color-black);
-  margin: 0;
   padding-left: clamp(8px, 1vw, 12px);
-  padding-bottom: clamp(8px, 1vw, 12px);
-  border-bottom: 3px solid var(--color-point);
+}
+
+.setlist-note {
+  font-family: var(--font-main);
+  font-size: clamp(12px, 1.3vw, 14px);
+  font-weight: 600;
+  color: var(--color-point);
+  margin: 0;
+  padding-right: clamp(8px, 1vw, 12px);
+  word-break: keep-all;
 }
 
 .setlist-container {
