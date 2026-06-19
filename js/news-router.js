@@ -134,11 +134,13 @@ async function renderNewsDetail(container, newsId) {
         </div>
 
         <div class="detail-body">
-          <img src="${news.details.news_image}" class="detail-image">
-          <div class="news-detail-content">
-            ${descriptionHTML}
-            <br>
-            ${infoListHTML}
+          <div class="news-detail-wrapper">
+            <img src="${news.details.news_image}" class="detail-image">
+            <div class="news-detail-content">
+              ${descriptionHTML}
+              <br>
+              ${infoListHTML}
+            </div>
           </div>
         </div>
 
