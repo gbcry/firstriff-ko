@@ -1522,7 +1522,38 @@
         ]
       }
     ],
-    "cannalily": [],
+    "cannalily": [
+      {
+        "id": "canna_single_01",
+        "release_date": "2026.06.19",
+        "album_type": "single",
+        "album_tag": "Digital Single",
+        "title": {
+          "ko": "잔상의 고동",
+          "ja": "残像の高鳴り",
+          "en": null
+        },
+        "cover_image": "images/discography/cannalily/1st_digital_single.jpg",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "잔상의 고동",
+              "ja": "残像の高鳴り",
+              "en": "ZANZOUNOTAKANARI"
+            },
+            "links": {
+              "audio": null,
+              "mv": {
+                "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
+                "text": "잔상의 고동 MV"
+              },
+              "anime": null
+            }
+          }
+        ]
+      }
+    ],
     "f-272": []
   }
 }
