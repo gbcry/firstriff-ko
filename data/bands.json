@@ -18,7 +18,13 @@
         },
         "background": "images/band/togenashitogeari/background.png"
       },
-      "member_ids": ["subaru", "momoka", "nina", "tomo", "rupa"],
+      "member_ids": [
+        "subaru",
+        "momoka",
+        "nina",
+        "tomo",
+        "rupa"
+      ],
       "links": {
         "official_sns": [
           {
@@ -62,12 +68,23 @@
         },
         "background": "images/band/cannalily/background.png"
       },
-      "member_ids": ["shion", "rindo", "ayame", "kaede", "nazuna"],
+      "member_ids": [
+        "shion",
+        "rindo",
+        "ayame",
+        "kaede",
+        "nazuna"
+      ],
       "links": {
         "official_sns": [
           {
             "url": "https://x.com/CannaLily_GBC",
             "text": "Canna Lily 공식 X",
+            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          },
+          {
+            "url": "https://cannalily-official.com/",
+            "text": "Canna Lily 공식 사이트",
             "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
           }
         ],
@@ -101,7 +118,13 @@
         },
         "background": "images/band/f-272/background.png"
       },
-      "member_ids": ["ari", "koto", "hazuki", "momono", "saki"],
+      "member_ids": [
+        "ari",
+        "koto",
+        "hazuki",
+        "momono",
+        "saki"
+      ],
       "links": {
         "official_sns": [
           {

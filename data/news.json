@@ -15,7 +15,7 @@
           {
             "label": "■ 개최 일정",
             "value": [
-              "2026년 3월 28일(土) ~ 29일(日) 9:00 ~ 17:00"
+              "2026년 3월 28일 (土) ~ 29일 (日) 9:00 ~ 17:00"
             ],
             "link": null
           },
@@ -24,10 +24,12 @@
             "value": [
               "티켓 예매 정보는 공식 사이트를 확인해 주시기 바랍니다."
             ],
-            "link": {
-              "url": "https://anime-japan.jp/tickets/",
-              "text": "AnimeJapan 공식 사이트 바로가기"
-            }
+            "link": [
+              {
+                "url": "https://anime-japan.jp/tickets/",
+                "text": "AnimeJapan 공식 사이트 바로가기"
+              }
+            ]
           }
         ]
       }
@@ -45,7 +47,7 @@
           {
             "label": "■ 개최 일정",
             "value": [
-              "2026년 6월 26일(金) 입장 18:00 / 시작 19:00"
+              "2026년 6월 26일 (金) 입장 18:00 / 개연 19:00"
             ],
             "link": null
           },
@@ -60,22 +62,26 @@
             "label": "■ 티켓 정보",
             "value": [
               "선행 추첨 판매를 실시합니다.",
-              "접수 기간: 2026년 3월 22일(日) 21:00 ~ 4월 1일(水) 23:59"
+              "접수 기간: 2026년 3월 22일 (日) 21:00 ~ 4월 1일 (水) 23:59"
             ],
-            "link": {
-              "url": "https://livepocket.jp/e/cannalily_0626live",
-              "text": "LivePocket 예매 페이지 바로가기"
-            }
+            "link": [
+              {
+                "url": "https://livepocket.jp/e/cannalily_0626live",
+                "text": "LivePocket 예매 페이지 바로가기"
+              }
+            ]
           },
           {
             "label": "■ Canna Lily 공식 SNS",
             "value": [
               "라이브 관련 최신 정보는 Canna Lily 공식 X를 통해 확인해 주시기 바랍니다."
             ],
-            "link": {
-              "url": "https://x.com/CannaLily_GBC",
-              "text": "Canna Lily 공식 X"
-            }
+            "link": [
+              {
+                "url": "https://x.com/CannaLily_GBC",
+                "text": "Canna Lily 공식 X"
+              }
+            ]
           }
         ]
       }
@@ -94,7 +100,7 @@
           {
             "label": "■ 개최 일정",
             "value": [
-              "2026년 7월 20일(月·공휴일) 입장 16:00 / 시작 17:00"
+              "2026년 7월 20일 (月·공휴일) 입장 16:00 / 개연 17:00"
             ],
             "link": null
           },
@@ -109,36 +115,42 @@
             "label": "■ 티켓 정보 (일반 판매)",
             "value": [
               "취소분 티켓 소량을 일반 판매합니다.",
-              "접수 기간: 2026년 5월 24일(日) 10:00 ~ (소진 시 종료)",
+              "접수 기간: 2026년 5월 24일 (日) 10:00 ~ (소진 시 종료)",
               "※ 티켓 신청을 위해서는 Musing 회원가입(무료)이 필요합니다.",
               "※ 티켓 판매는 선착순으로 진행됩니다.",
               "※ 소량만 판매되는 점 미리 양해 부탁드립니다."
             ],
-            "link": {
-              "url": "https://musing.jp/ticket/F272_1st_FCFS/",
-              "text": "Musing 추가 판매 페이지 바로가기"
-            }
+            "link": [
+              {
+                "url": "https://musing.jp/ticket/F272_1st_FCFS/",
+                "text": "Musing 추가 판매 페이지 바로가기"
+              }
+            ]
           },
           {
             "label": "■ 티켓 정보 (선행 추첨 판매)",
             "value": [
               "선행 추첨 판매를 실시합니다.",
-              "접수 기간: 2026년 4월 18일(土) 21:00 ~ 4월 30일(木) 23:59"
+              "접수 기간: 2026년 4월 18일 (土) 21:00 ~ 4월 30일 (木) 23:59"
             ],
-            "link": {
-              "url": "https://musing.jp/ticket/F272_1st/",
-              "text": "Musing 예매 페이지 바로가기"
-            }
+            "link": [
+              {
+                "url": "https://musing.jp/ticket/F272_1st/",
+                "text": "Musing 예매 페이지 바로가기"
+              }
+            ]
           },
           {
             "label": "■ F-272 공식 SNS",
             "value": [
               "라이브 관련 최신 정보는 F-272 공식 X를 통해 확인해 주시기 바랍니다."
             ],
-            "link": {
-              "url": "https://x.com/F_272_GBC",
-              "text": "F-272 공식 X"
-            }
+            "link": [
+              {
+                "url": "https://x.com/F_272_GBC",
+                "text": "F-272 공식 X"
+              }
+            ]
           }
         ]
       }
@@ -158,7 +170,7 @@
           {
             "label": "■ 사전 판매 기간",
             "value": [
-              "2026년 6월 3일(水) 18:00 ~ 2026년 6월 11일(木) 23:59"
+              "2026년 6월 3일 (水) 18:00 ~ 2026년 6월 11일 (木) 23:59"
             ],
             "link": null
           },
@@ -175,12 +187,137 @@
               "※ 구매를 위해서는 Musing 회원가입이 필요합니다.",
               "※ 구매 및 배송에 관한 자세한 사항은 Musing에서 확인해 주시기 바랍니다."
             ],
-            "link": {
-              "url": "https://musing.jp/shop/F-272/",
-              "text": "Musing 상품 판매 페이지 바로가기"
-            }
+            "link": [
+              {
+                "url": "https://musing.jp/shop/F-272/",
+                "text": "Musing 상품 판매 페이지 바로가기"
+              }
+            ]
           }
         ]
+      }
+    },
+    {
+      "id": "20260626_01",
+      "date": "2026.06.26",
+      "title": "Canna Lily Official Website OPEN",
+      "details": {
+        "news_image": null,
+        "description": [
+          "Canna Lily 공식 사이트를 오픈했습니다.",
+          "라이브 및 발매 정보 등, 최신 소식을 전해드릴 예정입니다.",
+          "앞으로도 많은 관심과 성원 부탁드립니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ Canna Lily 공식 사이트",
+            "value": null,
+            "link": [
+              {
+                "url": "https://cannalily-official.com/",
+                "text": "Canna Lily 공식 사이트"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260626_02",
+      "date": "2026.06.26",
+      "title": "Canna Lily 1st Single 「잔상의 고동」 Release",
+      "details": {
+        "news_image": "images/news/20260626_02.png",
+        "description": [
+          "Canna Lily 1st Single 「잔상의 고동」이 2026년 6월 19일 (金)부터 드디어 발매 개시!"
+        ],
+        "info_list": [
+          {
+            "label": "■ 앨범 정보 ",
+            "value": null,
+            "link": [
+              {
+                "url": "https://cannalily-official.com/discography/zanzou",
+                "text": "1st Single 상세 페이지 바로가기"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260626_03",
+      "date": "2026.06.26",
+      "title": "Canna Lily 2nd ONE-MAN LIVE「시든 노래의 정경」 개최 결정!",
+      "details": {
+        "news_image": "images/news/20260626_03.png",
+        "description": [
+          "Canna Lily 2nd ONE-MAN LIVE「시든 노래의 정경」의 개최가 결정되었습니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": [
+              "2026년 9월 5일 (土)",
+              "1부: 입장 14:00 / 개연 15:00",
+              "2부: 입장 18:30 / 개연 19:30"
+            ],
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": [
+              "WWW X"
+            ],
+            "link": [
+              {
+                "url": "https://www-shibuya.jp/schedule/#www_x",
+                "text": "WWW X 공연 일정 페이지 바로가기"
+              }
+            ]
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": [
+              "선행 추첨 판매를 실시합니다.",
+              "접수 기간: 2026년 6월 26일 (金) 21:00 ~ 7월 5일 (日) 23:59"
+            ],
+            "link": [
+              {
+                "url": "https://w.pia.jp/t/canna-lily-t/",
+                "text": "피아 티켓 판매 페이지 바로가기"
+              }
+            ]
+          },
+          {
+            "label": "■ Canna Lily 공식 SNS",
+            "value": [
+              "라이브 관련 최신 정보는 F-272 공식 X를 통해 확인해 주시기 바랍니다."
+            ],
+            "link": [
+              {
+                "url": "https://cannalily-official.com/",
+                "text": "Canna Lily 공식 사이트"
+              },
+              {
+                "url": "https://x.com/CannaLily_GBC",
+                "text": "Canna Lily 공식 X"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260626_04",
+      "date": "2026.06.26",
+      "title": "Canna Lily 1st ONE-MAN LIVE 「새벽녘에 피는 꽃」 LIVE GOODS EC 판매 결정!",
+      "details": {
+        "news_image": "images/news/20260626_04.png",
+        "description": [
+          "Canna Lily 1st ONE-MAN LIVE 「새벽녘에 피는 꽃」의 라이브 굿즈 온라인 판매가 2026년 7월 1일 (水) 13:00부터 개시됩니다."
+        ],
+        "info_list": null
       }
     }
   ]

@@ -164,6 +164,7 @@
 }
 
 .info-value-box p {
+  margin-top: clamp(4px, 1vw, 8px);
   color: var(--color-black);
 }
 

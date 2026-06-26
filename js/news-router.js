@@ -97,18 +97,25 @@ async function renderNewsDetail(container, newsId) {
   }
 
   // description
-  const descriptionHTML = news.details.description
+  const descriptionHTML = (news.details.description || [])
     .map((text) => `<p>${text}</p>`)
     .join("");
 
   // info_list
-  const infoListHTML = news.details.info_list
+  const infoListHTML = (news.details.info_list || [])
     .map((info) => {
-      const valueHTML = info.value.map((text) => `<p>${text}</p>`).join("");
+      const valueHTML = info.value ?
+        info.value.map((text) => `<p>${text}</p>`).join("")
+        : "";
 
       // 링크가 있으면 <a> 태그 사용
-      const linkHTML = info.link
-        ? `<br><p><a href="${info.link.url}" target="_blank" rel="noopener noreferrer" class="detail-link">${info.link.text}</a></p>`
+      const linkHTML = info.link && info.link.length > 0
+        ? info.link
+          .map(
+            (linkItem) =>
+              `<p><a href="${linkItem.url}" target="_blank" rel="noopener noreferrer" class="detail-link">${linkItem.text}</a></p>`
+          )
+          .join("")
         : "";
 
       return `
@@ -123,6 +130,10 @@ async function renderNewsDetail(container, newsId) {
     })
     .join("");
 
+  const imageHTML = news.details.news_image
+    ? `<img src="${news.details.news_image}" class="detail-image">`
+    : "";
+
   container.innerHTML = `
     <div class="news-detail-view">
 
@@ -135,7 +146,7 @@ async function renderNewsDetail(container, newsId) {
 
         <div class="detail-body">
           <div class="news-detail-wrapper">
-            <img src="${news.details.news_image}" class="detail-image">
+            ${imageHTML}
             <div class="news-detail-content">
               ${descriptionHTML}
               <br>
