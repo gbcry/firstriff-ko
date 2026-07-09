@@ -272,16 +272,20 @@
           "※ 구매 방법이나 상품의 상세 정보는 토에이 애니메이션 오피셜 스토어의 상품 상세 페이지를 확인해 주시기 바랍니다.",
           "※ 상품은 준비된 수량이 한정되어 있습니다. 준비 수량에 달하는 대로 판매를 종료합니다."
         ],
-        "info_list": {
-          "label": "■ 판매 사이트: 토에이 애니메이션 오피셜 스토어",
-          "value": null,
-          "link": [
-            {
-              "url": "https://store.toei-anim.co.jp/shop/pages/girlsbandcry.aspx",
-              "text": "오피셜 스토어 바로가기"
-            }
-          ]
-        }
+        "info_list": [
+          {
+            "label": "■ 판매 사이트",
+            "value": [
+              "토에이 애니메이션 오피셜 스토어"
+            ],
+            "link": [
+              {
+                "url": "https://store.toei-anim.co.jp/shop/pages/girlsbandcry.aspx",
+                "text": "상품 판매 페이지 바로가기"
+              }
+            ]
+          }
+        ]
       }
     }
   ]
