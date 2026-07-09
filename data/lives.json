@@ -3758,7 +3758,19 @@
             ],
             "cast": [
                 {
-                    "band": "토게나시 토게아리 외 다수",
+                    "band": "703호실",
+                    "members": []
+                },
+                {
+                    "band": "토게나시 토게아리",
+                    "members": []
+                },
+                {
+                    "band": "EMANON",
+                    "members": []
+                },
+                {
+                    "band": "후메이요(浮迷夜)",
                     "members": []
                 }
             ],
@@ -3769,7 +3781,7 @@
                     "date": "2023.11.10 (金)",
                     "venue": "아카바네 ReNY alpha",
                     "setlist": {
-                        "note": null,
+                        "note": "※ 토게토게 세트리스트만 작성",
                         "regular": [
                             {
                                 "list_no": "1",
