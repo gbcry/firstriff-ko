@@ -3746,6 +3746,33 @@
             ]
         },
         {
+            "id": "live_toge_hongkong",
+            "type": "one-man",
+            "title": {
+                "ko": "토게나시 토게아리 Live in HONG KONG “린네의 이치”",
+                "ja": "トゲナシトゲアリ Live in HONG KONG “凛音の理”"
+            },
+            "key_visual": "images/live/live_toge_hongkong.jpeg",
+            "participate": [
+                "togenashitogeari"
+            ],
+            "cast": [
+                {
+                    "band": "토게나시 토게아리",
+                    "members": []
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": "hongkong",
+                    "day_name": "홍콩",
+                    "date": "2026.10.02 (金)",
+                    "venue": "AsiaWorld-Summit (아시아월드-엑스포 2호관)",
+                    "setlist": null
+                }
+            ]
+        },
+        {
             "id": "live_taiban_01",
             "type": "taiban",
             "title": {
@@ -6468,7 +6495,7 @@
             "title": {
                 "ko": "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL“"
             },
-            "key_visual": null,
+            "key_visual": "images/live/live_f-272_1st.jpeg",
             "participate": [
                 "f-272"
             ],
@@ -6490,7 +6517,54 @@
                     "day_name": null,
                     "date": "2026.07.20 (月・공휴일)",
                     "venue": "다이칸야마 UNIT",
-                    "setlist": null
+                    "setlist": {
+                        "note": "※ 더블 앙코르 진행",
+                        "regular": [
+                            {
+                                "list_no": "1",
+                                "title": {
+                                    "ko": "Diorama"
+                                }
+                            },
+                            {
+                                "list_no": "2",
+                                "title": {
+                                    "ko": "A Tragic Mirage"
+                                }
+                            },
+                            {
+                                "list_no": "3",
+                                "title": {
+                                    "ko": "Neverland"
+                                }
+                            },
+                            {
+                                "list_no": "4",
+                                "title": {
+                                    "ko": "Sanctuary (Instrumental)"
+                                }
+                            },
+                            {
+                                "list_no": "5",
+                                "title": {
+                                    "ko": "UNDEAD"
+                                }
+                            },
+                            {
+                                "list_no": "6",
+                                "title": {
+                                    "ko": "Shallow"
+                                }
+                            },
+                            {
+                                "list_no": "7",
+                                "title": {
+                                    "ko": "Ghost note"
+                                }
+                            }
+                        ],
+                        "encore": null
+                    }
                 }
             ]
         }

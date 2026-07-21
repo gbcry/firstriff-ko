@@ -1554,6 +1554,33 @@
         ]
       }
     ],
-    "f-272": []
+    "f-272": [
+      {
+        "id": "f-272_single_01",
+        "release_date": "2026.07.13",
+        "album_type": "single",
+        "album_tag": "Digital Single",
+        "title": {
+          "ko": "Diorama"
+        },
+        "cover_image": "images/discography/f-272/1st_digital_single.jpg",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "Diorama"
+            },
+            "links": {
+              "audio": null,
+              "mv": {
+                "url": "https://youtu.be/3cbYPipPqb4?si=NdG8XJTC6hEvnTpw",
+                "text": "Diorama MV"
+              },
+              "anime": null
+            }
+          }
+        ]
+      }
+    ]
   }
 }

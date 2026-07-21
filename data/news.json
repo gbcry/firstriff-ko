@@ -219,7 +219,7 @@
           {
             "label": "■ 장소",
             "value": [
-              "WWW X"
+              "도쿄·WWW X"
             ],
             "link": [
               {
@@ -242,9 +242,9 @@
             ]
           },
           {
-            "label": "■ Canna Lily 공식 SNS",
+            "label": "■ Canna Lily 공식 HP/SNS",
             "value": [
-              "라이브 관련 최신 정보는 F-272 공식 X를 통해 확인해 주시기 바랍니다."
+              "라이브 관련 최신 정보는 Canna Lily 공식 HP 또는 X를 통해 확인해 주시기 바랍니다."
             ],
             "link": [
               {
@@ -282,6 +282,55 @@
               {
                 "url": "https://store.toei-anim.co.jp/shop/pages/girlsbandcry.aspx",
                 "text": "상품 판매 페이지 바로가기"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260720_01",
+      "date": "2026.07.20",
+      "title": "F-272 NEXT ONE-MAN LIVE 개최 결정!",
+      "details": {
+        "news_image": null,
+        "description": [
+          "F-272 NEXT ONE-MAN LIVE의 개최가 결정되었습니다.",
+          "티켓 정보 등의 자세한 사항은 추후 공개될 예정입니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": [
+              "2027년 1월 29일 (金)"
+            ],
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": [
+              "CLUB CITTA' KAWASAKI"
+            ],
+            "link": [
+              {
+                "url": "https://clubcitta.co.jp/",
+                "text": "CLUB CITTA' KAWASAKI 공식 사이트"
+              }
+            ]
+          },
+          {
+            "label": "■ F-272 공식 HP/SNS",
+            "value": [
+              "라이브 관련 최신 정보는 F-272 공식 HP 또는 X를 통해 확인해 주시기 바랍니다."
+            ],
+            "link": [
+              {
+                "url": "https://f-272.bzone.co.jp/",
+                "text": "F-272 공식 사이트"
+              },
+              {
+                "url": "https://x.com/F_272_GBC",
+                "text": "F-272 공식 X"
               }
             ]
           }

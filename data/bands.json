@@ -36,6 +36,11 @@
             "url": "https://www.instagram.com/toge0toge1/",
             "text": "토게나시 토게아리 공식 인스타",
             "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          },
+          {
+            "url": "https://ageha.agehasprings.com/archives/artist/togenashitogeari",
+            "text": "토게나시 토게아리 공식 사이트",
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
           }
         ],
         "debut_pv": {
@@ -129,7 +134,12 @@
         "official_sns": [
           {
             "url": "https://x.com/F_272_GBC",
-            "text": "F-272 OFFICIAL X",
+            "text": "F-272 공식 X",
+            "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          },
+          {
+            "url": "https://f-272.bzone.co.jp/",
+            "text": "F-272 공식 사이트",
             "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
           }
         ],
