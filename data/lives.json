@@ -6518,7 +6518,7 @@
                     "date": "2026.07.20 (月・공휴일)",
                     "venue": "다이칸야마 UNIT",
                     "setlist": {
-                        "note": "※ 더블 앙코르 진행",
+                        "note": null,
                         "regular": [
                             {
                                 "list_no": "1",
@@ -6563,8 +6563,47 @@
                                 }
                             }
                         ],
-                        "encore": null
+                        "encore": [
+                            {
+                                "list_no": "앙코르 1",
+                                "title": {
+                                    "ko": "Diorama"
+                                }
+                            }
+                        ]
                     }
+                }
+            ]
+        },
+        {
+            "id": "live_f-272_2nd",
+            "type": "one-man",
+            "title": {
+                "ko": "F-272 2nd ONE-MAN LIVE"
+            },
+            "key_visual": null,
+            "participate": [
+                "f-272"
+            ],
+            "cast": [
+                {
+                    "band": "F-272",
+                    "members": [
+                        "YOSHI (나카무라 아리 役)",
+                        "MIYU (쿠로미야 하즈키 役)",
+                        "TOWA (우다가와 코토 役)",
+                        "HINANO (아사이 모모노 役)",
+                        "LUCA (카토 사키 役)"
+                    ]
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": null,
+                    "day_name": null,
+                    "date": "2027.01.29 (金)",
+                    "venue": "카와사키・CLUB CITTA",
+                    "setlist": null
                 }
             ]
         }
