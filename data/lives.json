@@ -6576,6 +6576,46 @@
             ]
         },
         {
+            "id": "live_cannalily_2nd",
+            "type": "one-man",
+            "title": {
+                "ko": "Canna Lily 2nd ONE-MAN LIVE「시든 노래의 정경」",
+                "ja": "Canna Lily 2nd ONE-MAN LIVE「枯れ歌の情景」"
+            },
+            "key_visual": null,
+            "participate": [
+                "cannalily"
+            ],
+            "cast": [
+                {
+                    "band": "Canna Lily",
+                    "members": [
+                        "하야사카 리네 (호시 아야메 役)",
+                        "야노 유와 (키츠타 카에데 役)",
+                        "시이나 아루네 (치가사키 린도 役)",
+                        "사노 사쿠라 (유키시마 나즈나 役)",
+                        "시노츠키 키사키 (사카키바라 시온 役)"
+                    ]
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": "part1",
+                    "day_name": "1부",
+                    "date": "2026.09.05 (土)",
+                    "venue": "도쿄·WWW X",
+                    "setlist": null
+                },
+                {
+                    "day_id": "part2",
+                    "day_name": "2부",
+                    "date": "2026.09.05 (土)",
+                    "venue": "도쿄·WWW X",
+                    "setlist": null
+                }
+            ]
+        },
+        {
             "id": "live_f-272_2nd",
             "type": "one-man",
             "title": {
