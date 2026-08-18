@@ -3718,7 +3718,13 @@
             "cast": [
                 {
                     "band": "토게나시 토게아리",
-                    "members": []
+                    "members": [
+                        "리나 (이세리 니나 役)",
+                        "유리 (카와라기 모모카 役)",
+                        "슈리 (루파 役)",
+                        "미야우치 사야 (드럼 서포트)",
+                        "스즈키 카즈하 (키보드 서포트)"
+                    ]
                 }
             ],
             "schedules": [
@@ -3727,14 +3733,182 @@
                     "day_name": "방콕",
                     "date": "2026.08.14 (金)",
                     "venue": "Ambient Space",
-                    "setlist": null
+                    "setlist": {
+                        "note": "※ 세트리스트 정보 없음",
+                        "regular": [],
+                        "encore": []
+                    }
                 },
                 {
                     "day_id": "jakarta",
                     "day_name": "자카르타",
                     "date": "2026.08.16 (日)",
                     "venue": "AFA Indonesia",
-                    "setlist": null
+                    "setlist": {
+                        "note": null,
+                        "regular": [
+                            {
+                                "list_no": "1",
+                                "title": {
+                                    "ko": "혼잡한 길, 우리의 도시",
+                                    "ja": "雑踏、僕らの街",
+                                    "en": "Wrong World"
+                                }
+                            },
+                            {
+                                "list_no": "2",
+                                "title": {
+                                    "ko": "빈 상자",
+                                    "ja": "空の箱",
+                                    "en": "VOID"
+                                }
+                            },
+                            {
+                                "list_no": "3",
+                                "title": {
+                                    "ko": "목소리 없는 물고기",
+                                    "ja": "声なき魚",
+                                    "en": "Voiceless Fish"
+                                }
+                            },
+                            {
+                                "list_no": "4",
+                                "title": {
+                                    "ko": "시야 한구석 스러지는 소리",
+                                    "ja": "視界の隅 朽ちる音",
+                                    "en": "What to raise"
+                                }
+                            },
+                            {
+                                "list_no": "5",
+                                "title": {
+                                    "ko": "이름 없는 모든 것",
+                                    "ja": "名もなき何もかも",
+                                    "en": "Nameless Name"
+                                }
+                            },
+                            {
+                                "list_no": "6",
+                                "title": {
+                                    "ko": "공백과 카타르시스",
+                                    "ja": "空白とカタルシス",
+                                    "en": "Emptiness and Catharsis"
+                                }
+                            },
+                            {
+                                "list_no": "7",
+                                "title": {
+                                    "ko": "이상적 패러독스란",
+                                    "ja": "理想的パラドクスとは",
+                                    "en": "Ideal Paradox"
+                                }
+                            },
+                            {
+                                "list_no": "8",
+                                "title": {
+                                    "ko": "우울, 흐려지다",
+                                    "ja": "気鬱、白濁す",
+                                    "en": "white drizzle in gloom"
+                                }
+                            },
+                            {
+                                "list_no": "9",
+                                "title": {
+                                    "ko": "신기루에게 묻다",
+                                    "ja": "蜃気楼ニ問フ",
+                                    "en": "Mirage of the mind"
+                                }
+                            },
+                            {
+                                "list_no": "10",
+                                "title": {
+                                    "ko": "어둠에 녹아가다",
+                                    "ja": "闇に溶けてく",
+                                    "en": "melt into the dark"
+                                }
+                            },
+                            {
+                                "list_no": "11",
+                                "title": {
+                                    "ko": "나비에 엮은 붉은 실",
+                                    "ja": "蝶に結いた赤い糸",
+                                    "en": "Meant to be"
+                                }
+                            },
+                            {
+                                "list_no": "12",
+                                "title": {
+                                    "ko": "안녕 안녕 안녕",
+                                    "ja": "サヨナラサヨナラサヨナラ",
+                                    "en": "Underneath"
+                                }
+                            },
+                            {
+                                "list_no": "13",
+                                "title": {
+                                    "ko": "아무도",
+                                    "ja": "ダレモ",
+                                    "en": "No one"
+                                }
+                            },
+                            {
+                                "list_no": "14",
+                                "title": {
+                                    "ko": "arrow"
+                                }
+                            },
+                            {
+                                "list_no": "15",
+                                "title": {
+                                    "ko": "극사적 극채색 앤서",
+                                    "ja": "極私的極彩色アンサー",
+                                    "en": "Answer to Extreme"
+                                }
+                            },
+                            {
+                                "list_no": "16",
+                                "title": {
+                                    "ko": "망울을 터뜨리다",
+                                    "ja": "爆ぜて咲く",
+                                    "en": "Bleeding Hearts"
+                                }
+                            },
+                            {
+                                "list_no": "17",
+                                "title": {
+                                    "ko": "운명의 꽃",
+                                    "ja": "運命の華",
+                                    "en": "I'm here"
+                                }
+                            },
+                            {
+                                "list_no": "18",
+                                "title": {
+                                    "ko": "누구도 될 수 없는 나니까",
+                                    "ja": "誰にもなれない私だから",
+                                    "en": "I'm Nobody"
+                                }
+                            }
+                        ],
+                        "encore": [
+                            {
+                                "list_no": "앙코르 1",
+                                "title": {
+                                    "ko": "더는 아무것도 필요 없는 미래",
+                                    "ja": "もう何もいらない未来",
+                                    "en": "Against All Answers"
+                                }
+                            },
+                            {
+                                "list_no": "앙코르 2",
+                                "title": {
+                                    "ko": "생명을 줘",
+                                    "ja": "命をくれよ",
+                                    "en": "Give Me Life"
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
                     "day_id": "singapore",
@@ -3764,8 +3938,15 @@
             ],
             "schedules": [
                 {
-                    "day_id": "hongkong",
-                    "day_name": "홍콩",
+                    "day_id": "special_edition_plus",
+                    "day_name": "Special Edition+",
+                    "date": "2026.09.30 (水)",
+                    "venue": "AsiaWorld-Summit (아시아월드-엑스포 2호관)",
+                    "setlist": null
+                },
+                {
+                    "day_id": "special_edition",
+                    "day_name": "Special Edition",
                     "date": "2026.10.02 (金)",
                     "venue": "AsiaWorld-Summit (아시아월드-엑스포 2호관)",
                     "setlist": null

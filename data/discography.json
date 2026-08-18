@@ -1527,7 +1527,7 @@
         "id": "canna_single_01",
         "release_date": "2026.06.19",
         "album_type": "single",
-        "album_tag": "Digital Single",
+        "album_tag": "1st Digital Single",
         "title": {
           "ko": "잔상의 고동",
           "ja": "残像の高鳴り",
@@ -1543,13 +1543,39 @@
               "en": "ZANZOUNOTAKANARI"
             },
             "links": {
-              "audio": null,
+              "audio": {
+                "url": "https://youtu.be/qCgv2CoQNeo?si=YnyINolz3jc8Fo_I",
+                "text": null
+              },
               "mv": {
                 "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
                 "text": "잔상의 고동 MV"
               },
               "anime": null
             }
+          }
+        ]
+      },
+      {
+        "id": "canna_single_02",
+        "release_date": "2026.08.28",
+        "album_type": "single",
+        "album_tag": "2nd Digital Single",
+        "title": {
+          "ko": "변하지 않는 세계와 노래",
+          "ja": "変わらない世界と歌",
+          "en": "The Unchanging World and the Song"
+        },
+        "cover_image": "images/discography/cannalily/2nd_digital_single.jpeg",
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "변하지 않는 세계와 노래",
+              "ja": "変わらない世界と歌",
+              "en": "The Unchanging World and the Song"
+            },
+            "links": null
           }
         ]
       }
