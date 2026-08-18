@@ -90,8 +90,8 @@
             "id": "live_toge_1st",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 1st ONE-MAN LIVE “박명의 서주”",
-                "ja": "トゲナシトゲアリ 1st ONE-MAN LIVE “薄明の序奏”"
+                "ko": "1st ONE-MAN LIVE “박명의 서주”",
+                "ja": "1st ONE-MAN LIVE “薄明の序奏”"
             },
             "key_visual": "images/live/live_toge_1st.webp",
             "participate": [
@@ -233,8 +233,8 @@
             "id": "live_toge_2nd",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 2nd ONE-MAN LIVE “린네의 이치”",
-                "ja": "トゲナシトゲアリ 2nd ONE-MAN LIVE “凛音の理”"
+                "ko": "2nd ONE-MAN LIVE “린네의 이치”",
+                "ja": "2nd ONE-MAN LIVE “凛音の理”"
             },
             "key_visual": "images/live/live_toge_2nd.webp",
             "participate": [
@@ -440,8 +440,8 @@
             "id": "live_toge_3rd",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 3rd ONE-MAN LIVE “포효의 연주”",
-                "ja": "トゲナシトゲアリ 3rd ONE-MAN LIVE “咆哮の奏”"
+                "ko": "3rd ONE-MAN LIVE “포효의 연주”",
+                "ja": "3rd ONE-MAN LIVE “咆哮の奏”"
             },
             "key_visual": "images/live/live_toge_3rd.webp",
             "participate": [
@@ -655,8 +655,8 @@
             "id": "live_toge_shanghai",
             "type": "one-man",
             "title": {
-                "ko": "TOGENASHI TOGEARI LIVE IN SHANGHAI “린네의 이치”",
-                "ja": "TOGENASHI TOGEARI LIVE IN SHANGHAI “凛音の理”"
+                "ko": "“린네의 이치” LIVE IN SHANGHAI",
+                "ja": "“凛音の理” LIVE IN SHANGHAI"
             },
             "key_visual": "images/live/live_toge_shanghai.jpg",
             "participate": [
@@ -979,8 +979,8 @@
             "id": "live_toge_4th",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 4th ONE-MAN LIVE “협주의 울림”",
-                "ja": "トゲナシトゲアリ 4th ONE-MAN LIVE “協奏の響”"
+                "ko": "4th ONE-MAN LIVE “협주의 울림”",
+                "ja": "4th ONE-MAN LIVE “協奏の響”"
             },
             "key_visual": "images/live/live_toge_4th.webp",
             "participate": [
@@ -1202,8 +1202,8 @@
             "id": "live_toge_5th",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 5th ONE-MAN LIVE “울림의 순간”",
-                "ja": "トゲナシトゲアリ 5th ONE-MAN LIVE “鳴動の刻”"
+                "ko": "5th ONE-MAN LIVE “울림의 순간”",
+                "ja": "5th ONE-MAN LIVE “鳴動の刻”"
             },
             "key_visual": "images/live/live_toge_5th.webp",
             "participate": [
@@ -1409,8 +1409,8 @@
             "id": "live_toge_taipei",
             "type": "one-man",
             "title": {
-                "ko": "TOGENASHI TOGEARI LIVE IN TAIPEI “린네의 이치”",
-                "ja": "TOGENASHI TOGEARI LIVE IN TAIPEI “凛音の理”"
+                "ko": "“린네의 이치” LIVE IN TAIPEI",
+                "ja": "“凛音の理” LIVE IN TAIPEI"
             },
             "key_visual": "images/live/live_toge_taipei.jpg",
             "participate": [
@@ -1592,8 +1592,8 @@
             "id": "live_toge_budokan",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 LIVE in 일본 무도관 “격주의 외침”",
-                "ja": "トゲナシトゲアリ LIVE in 日本武道館 “奏檄の叫”"
+                "ko": "“격주의 외침” LIVE in 일본 무도관",
+                "ja": "“奏檄の叫” LIVE in 日本武道館"
             },
             "key_visual": "images/live/live_toge_budokan.webp",
             "participate": [
@@ -1823,8 +1823,8 @@
             "id": "live_toge_zepp_tour",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 Zepp Tour 2026 “박동의 미래”",
-                "ja": "トゲナシトゲアリ ZEPP Tour 2026 “拍動の未来”"
+                "ko": "Zepp Tour 2026 “박동의 미래”",
+                "ja": "ZEPP Tour 2026 “拍動の未来”"
             },
             "key_visual": "images/live/live_toge_zepp_tour.webp",
             "participate": [
@@ -3111,8 +3111,8 @@
             "id": "live_toge_korea",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 Live in SEOUL “린네의 이치”",
-                "ja": "トゲナシトゲアリ LIVE in SEOUL “凛音の理”"
+                "ko": "“린네의 이치” Live in SEOUL",
+                "ja": "“凛音の理” LIVE in SEOUL"
             },
             "key_visual": "images/live/live_toge_korea.webp",
             "participate": [
@@ -3479,8 +3479,8 @@
             "id": "live_toge_zepp_encore",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 TOUR 2026 FINAL “박동의 미래 -ENCORE-”",
-                "ja": "トゲナシトゲアリ TOUR 2026 FINAL “拍動の未来 -ENCORE-”"
+                "ko": "“박동의 미래 -ENCORE-” TOUR 2026 FINAL",
+                "ja": "“拍動の未来 -ENCORE-” TOUR 2026 FINAL"
             },
             "key_visual": "images/live/live_toge_zepp_encore.webp",
             "participate": [
@@ -3708,8 +3708,8 @@
             "id": "live_toge_asia_tour",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 “린네의 이치” SOUTHEAST ASIA TOUR 2026",
-                "ja": "トゲナシトゲアリ “凛音の理” SOUTHEAST ASIA TOUR 2026"
+                "ko": "“린네의 이치” SOUTHEAST ASIA TOUR 2026",
+                "ja": "“凛音の理” SOUTHEAST ASIA TOUR 2026"
             },
             "key_visual": "images/live/live_toge_asia_tour.jpeg",
             "participate": [
@@ -3923,8 +3923,8 @@
             "id": "live_toge_hongkong",
             "type": "one-man",
             "title": {
-                "ko": "토게나시 토게아리 Live in HONG KONG “린네의 이치”",
-                "ja": "トゲナシトゲアリ Live in HONG KONG “凛音の理”"
+                "ko": "“린네의 이치” Live in HONG KONG",
+                "ja": "“凛音の理” Live in HONG KONG"
             },
             "key_visual": "images/live/live_toge_hongkong.jpeg",
             "participate": [
@@ -4957,8 +4957,8 @@
             "id": "live_taiban_06",
             "type": "taiban",
             "title": {
-                "ko": "걸즈 밴드 크라이 Special LIVE “적색의 향제”",
-                "ja": "ガールズバンドクライ Special LIVE “赤色の響祭”"
+                "ko": "『걸즈 밴드 크라이』 Special LIVE “적색의 향제”",
+                "ja": "『ガールズバンドクライ』 Special LIVE “赤色の響祭”"
             },
             "key_visual": "images/live/live_taiban_06.webp",
             "participate": [
@@ -6566,8 +6566,8 @@
             "id": "live_cannalily_1st",
             "type": "one-man",
             "title": {
-                "ko": "Canna Lily 1st ONE-MAN LIVE「새벽녘에 피는 꽃」",
-                "ja": "Canna Lily 1st ONE-MAN LIVE「未明に咲く花」"
+                "ko": "1st ONE-MAN LIVE「새벽녘에 피는 꽃」",
+                "ja": "1st ONE-MAN LIVE「未明に咲く花」"
             },
             "key_visual": "images/live/live_cannalily_1st.jpeg",
             "participate": [
@@ -6671,10 +6671,50 @@
             ]
         },
         {
+            "id": "live_cannalily_2nd",
+            "type": "one-man",
+            "title": {
+                "ko": "2nd ONE-MAN LIVE「시든 노래의 정경」",
+                "ja": "2nd ONE-MAN LIVE「枯れ歌の情景」"
+            },
+            "key_visual": null,
+            "participate": [
+                "cannalily"
+            ],
+            "cast": [
+                {
+                    "band": "Canna Lily",
+                    "members": [
+                        "하야사카 리네 (호시 아야메 役)",
+                        "야노 유와 (키츠타 카에데 役)",
+                        "시이나 아루네 (치가사키 린도 役)",
+                        "사노 사쿠라 (유키시마 나즈나 役)",
+                        "시노츠키 키사키 (사카키바라 시온 役)"
+                    ]
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": "part1",
+                    "day_name": "1부",
+                    "date": "2026.09.05 (土)",
+                    "venue": "도쿄·WWW X",
+                    "setlist": null
+                },
+                {
+                    "day_id": "part2",
+                    "day_name": "2부",
+                    "date": "2026.09.05 (土)",
+                    "venue": "도쿄·WWW X",
+                    "setlist": null
+                }
+            ]
+        },
+        {
             "id": "live_f-272_1st",
             "type": "one-man",
             "title": {
-                "ko": "F-272 1st ONE-MAN LIVE The Dissonant “I DOLL“"
+                "ko": "1st ONE-MAN LIVE The Dissonant “I DOLL“"
             },
             "key_visual": "images/live/live_f-272_1st.jpeg",
             "participate": [
@@ -6757,50 +6797,10 @@
             ]
         },
         {
-            "id": "live_cannalily_2nd",
-            "type": "one-man",
-            "title": {
-                "ko": "Canna Lily 2nd ONE-MAN LIVE「시든 노래의 정경」",
-                "ja": "Canna Lily 2nd ONE-MAN LIVE「枯れ歌の情景」"
-            },
-            "key_visual": null,
-            "participate": [
-                "cannalily"
-            ],
-            "cast": [
-                {
-                    "band": "Canna Lily",
-                    "members": [
-                        "하야사카 리네 (호시 아야메 役)",
-                        "야노 유와 (키츠타 카에데 役)",
-                        "시이나 아루네 (치가사키 린도 役)",
-                        "사노 사쿠라 (유키시마 나즈나 役)",
-                        "시노츠키 키사키 (사카키바라 시온 役)"
-                    ]
-                }
-            ],
-            "schedules": [
-                {
-                    "day_id": "part1",
-                    "day_name": "1부",
-                    "date": "2026.09.05 (土)",
-                    "venue": "도쿄·WWW X",
-                    "setlist": null
-                },
-                {
-                    "day_id": "part2",
-                    "day_name": "2부",
-                    "date": "2026.09.05 (土)",
-                    "venue": "도쿄·WWW X",
-                    "setlist": null
-                }
-            ]
-        },
-        {
             "id": "live_f-272_2nd",
             "type": "one-man",
             "title": {
-                "ko": "F-272 2nd ONE-MAN LIVE"
+                "ko": "2nd ONE-MAN LIVE"
             },
             "key_visual": null,
             "participate": [
