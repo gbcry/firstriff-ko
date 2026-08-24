@@ -1,0 +1,879 @@
+{
+    "artists": [
+        {
+            "id": "mirei",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "미레이",
+                "sub": "美怜"
+            },
+            "character": "아와 스바루",
+            "position": "Dr.",
+            "profile": {
+                "birth": "2003년 11월 7일",
+                "hometown": "카나가와",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "맛있어 보이는 식당 찾기"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "찾은 식당이 대체로 맛있는 것"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "험브레더스",
+                            "King Gnu"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "원피스",
+                            "주술회전",
+                            "BANANA FISH",
+                            "강철의 연금술사",
+                            "FAIRY TAIL",
+                            "약속의 네버랜드",
+                            "장송의 프리렌"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "단 것",
+                            "고기"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/mirei.webp",
+            "sns": {
+                "x": "https://twitter.com/mirei_togetoge",
+                "instagram": "https://www.instagram.com/mirei_togetoge/"
+            }
+        },
+        {
+            "id": "yuri",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "유리",
+                "sub": "⼣莉"
+            },
+            "character": "카와라기 모모카",
+            "position": "Gt.",
+            "profile": {
+                "birth": "2000년 9월 26일",
+                "hometown": "이바라키",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "고양이와 놀기"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "테니스"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "도쿄지헨",
+                            "아카이코엔"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "NANA",
+                            "여학교의 별"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "쟈가리코 매실맛",
+                            "풋콩"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/yuri.webp",
+            "sns": {
+                "x": "https://twitter.com/yuri_togetoge",
+                "instagram": "https://www.instagram.com/yuri_togetoge/"
+            }
+        },
+        {
+            "id": "rina",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "리나",
+                "sub": "理名"
+            },
+            "character": "이세리 니나",
+            "position": "Vo.",
+            "profile": {
+                "birth": "2007년 11월 13일",
+                "hometown": "히로시마",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "그림 그리기"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "수면"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "Mrs.GREEN APPLE",
+                            "녹황색사회"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "우마무스메"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "연어"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/rina.webp",
+            "sns": {
+                "x": "https://twitter.com/rina_togetoge",
+                "instagram": "https://www.instagram.com/rina_togetoge/",
+                "weibo": "https://weibo.com/u/7954369926",
+                "bilibili": "https://space.bilibili.com/3546795598678698"
+            }
+        },
+        {
+            "id": "natsu",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "나츠",
+                "sub": "凪都"
+            },
+            "character": "에비즈카 토모",
+            "position": "Key.",
+            "profile": {
+                "birth": "2001년 8월 23일",
+                "hometown": "카나가와",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "스포츠 관전",
+                            "라이브 직관"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "탭댄스"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "sumika",
+                            "요루시카",
+                            "SUPER BEAVER"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "바다를 달리는 엔딩 크레딧",
+                            "노다메 칸타빌레",
+                            "나의 히어로 아카데미아",
+                            "겁쟁이 페달",
+                            "뱅드림",
+                            "진격의 거인"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "쌀밥",
+                            "고기",
+                            "말차 계열 음식"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/natsu.webp",
+            "sns": {
+                "x": "https://twitter.com/natsu_togetoge",
+                "instagram": "https://www.instagram.com/natsu_togetoge/"
+            }
+        },
+        {
+            "id": "shuri",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "슈리",
+                "sub": "朱李"
+            },
+            "character": "루파",
+            "position": "Ba.",
+            "profile": {
+                "birth": "2003년 12월 22일",
+                "hometown": "치바",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "야구 관전",
+                            "동물 관찰"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "야키니쿠 부위 맞추기",
+                            "소프트아이스트림 예쁘게 짜기"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "사카낙션",
+                            "요루시카",
+                            "Suspended 4th",
+                            "나카무라 타케야(야구선수)"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "BANANA FISH",
+                            "블랙잭",
+                            "기생수",
+                            "기동무투전 G 건담, 메트로폴리스",
+                            "프리큐어 시리즈",
+                            "우주보다 먼 곳",
+                            "마법소녀 마도카 마기카",
+                            "쓰르라미 울 적에"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "오이",
+                            "우설",
+                            "카무카무 젤리 포도맛"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/shuri.webp",
+            "sns": {
+                "x": "https://twitter.com/shuri_togetoge",
+                "instagram": "https://www.instagram.com/shuri_togetoge/"
+            }
+        },
+        {
+            "id": "kisaki",
+            "band_id": "cannalily",
+            "band_name": "Canna Lily",
+            "name": {
+                "main": "시노츠키 키사키",
+                "sub": "紫乃月 姫咲"
+            },
+            "character": "사카키바라 시온",
+            "position": "Ba.",
+            "profile": {
+                "birth": "2003년 10월 9일",
+                "hometown": "도쿄",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "게임",
+                            "코스프레"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "포커딜러",
+                            "어디서든 잘 수 있음"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "Ave Mujica",
+                            "Roselia",
+                            "SEKAI NO OWARI",
+                            "CLAN QUEEN",
+                            "츠쿠요미",
+                            "카사무라 토타"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "Ave Mujica",
+                            "바이올렛 에버가든",
+                            "카케구루이"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "샐러드 맛 쟈가리코",
+                            "도넛"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/cannalily/kisaki.webp",
+            "sns": {
+                "x": "https://x.com/KisakiCannaLily"
+            }
+        },
+        {
+            "id": "arune",
+            "band_id": "cannalily",
+            "band_name": "Canna Lily",
+            "name": {
+                "main": "시이나 아루네",
+                "sub": "椎名 在音"
+            },
+            "character": "치가사키 린도",
+            "position": "Dr.",
+            "profile": {
+                "birth": "2004년 3월 15일",
+                "hometown": "교토",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "봉제인형",
+                            "빈티지샵 돌기"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "무에타이",
+                            "모르는 곡을 알고 있는 것처럼 노래하기"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "tricot",
+                            "Red Hot Chili Peppers",
+                            "MAN WITH A MISSION",
+                            "히츠지분가쿠"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "청의 엑소시스트",
+                            "흑집사",
+                            "우라미치 오빠",
+                            "은혼"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "복어회",
+                            "츠케멘",
+                            "지육과자(포핀쿠킨)"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/cannalily/arune.webp",
+            "sns": {
+                "x": "https://x.com/AruneCannaLily"
+            }
+        },
+        {
+            "id": "yuwa",
+            "band_id": "cannalily",
+            "band_name": "Canna Lily",
+            "name": {
+                "main": "야노 유와",
+                "sub": "箭野 結羽"
+            },
+            "character": "키츠타 카에데",
+            "position": "Vo.",
+            "profile": {
+                "birth": "2004년 1월 16일",
+                "hometown": "도쿄",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "먹기",
+                            "게임"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "댄스",
+                            "리듬천국"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "BiSH",
+                            "≒JOY",
+                            "문예천국",
+                            "스가와라 케이",
+                            "PEOPLE 1",
+                            "DUSTCELL"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "호리미야",
+                            "그 비스크 돌은 사랑을 한다",
+                            "NANA",
+                            "조조의 기묘한 모엄",
+                            "지.-지구의 운동에 대하여-",
+                            "손끝과 연연"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "생햄",
+                            "쇠고기 육포",
+                            "감바스",
+                            "우메보시",
+                            "연어알 주먹밥",
+                            "이에케이 라멘"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/cannalily/yuwa.webp",
+            "sns": {
+                "x": "https://x.com/YuwaCannaLily"
+            }
+        },
+        {
+            "id": "rine",
+            "band_id": "cannalily",
+            "band_name": "Canna Lily",
+            "name": {
+                "main": "하야사카 리네",
+                "sub": "早坂 莉寧"
+            },
+            "character": "호시 아야메",
+            "position": "Gt.",
+            "profile": {
+                "birth": "2007년 11월 14일",
+                "hometown": "도쿄",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "산책",
+                            "노래방"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "몇 시간이든 자는 것"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "FEMM",
+                            "FlowBack",
+                            "비케블랑카",
+                            "Mrs.GREEN APPLE",
+                            "Dios"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "마티네와 소와레",
+                            "네오캣",
+                            "마법과 고교의 열등생",
+                            "아이돌마스터 SideM"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "몽블랑",
+                            "감자칩"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/cannalily/rine.webp",
+            "sns": {
+                "x": "https://x.com/RineCannaLily"
+            }
+        },
+        {
+            "id": "sakura",
+            "band_id": "cannalily",
+            "band_name": "Canna Lily",
+            "name": {
+                "main": "사노 사쿠라",
+                "sub": "佐野 櫻"
+            },
+            "character": "유키시마 나즈나",
+            "position": "Key.",
+            "profile": {
+                "birth": "2006년 4월 5일",
+                "hometown": "카나가와",
+                "details": [
+                    {
+                        "label": "취미",
+                        "value": [
+                            "음악 감상",
+                            "노래방"
+                        ]
+                    },
+                    {
+                        "label": "특기",
+                        "value": [
+                            "첫 대면에서도 공통점을 3개 찾아내는 것"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 아티스트",
+                        "value": [
+                            "Kizuna AI",
+                            "subnne Da Arc",
+                            "Acid Black Cherry",
+                            "오오모리 세이코",
+                            "감각피에로",
+                            "긴난보이즈"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 애니/만화",
+                        "value": [
+                            "케이온",
+                            "나츠메 우인장",
+                            "사랑은 정말"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 음식",
+                        "value": [
+                            "네기토로동",
+                            "오야코동",
+                            "가츠동"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/cannalily/rine.webp",
+            "sns": {
+                "x": "https://x.com/SakuraCannaLily"
+            }
+        },
+        {
+            "id": "yoshi",
+            "band_id": "f-272",
+            "band_name": "F-272",
+            "name": {
+                "main": "YOSHI",
+                "sub": null
+            },
+            "character": "나카무라 아리",
+            "position": "Dr.",
+            "profile": {
+                "birth": "2007년 11월 30일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "취미/특기",
+                        "value": [
+                            "여행"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 장르",
+                        "value": [
+                            "록",
+                            "라우드록"
+                        ]
+                    },
+                    {
+                        "label": "싫어하는 음식",
+                        "value": [
+                            "여주",
+                            "참치캔"
+                        ]
+                    },
+                    {
+                        "label": "못하는 것",
+                        "value": [
+                            "스포츠",
+                            "정리정돈"
+                        ]
+                    },
+                    {
+                        "label": "MBTI",
+                        "value": [
+                            "ESTP"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/f-272/yoshi.webp",
+            "sns": {
+                "x": "https://x.com/yoshi_F272"
+            }
+        },
+        {
+            "id": "miyu",
+            "band_id": "f-272",
+            "band_name": "F-272",
+            "name": {
+                "main": "MIYU",
+                "sub": null
+            },
+            "character": "쿠로미야 하즈키",
+            "position": "Gt.",
+            "profile": {
+                "birth": "2006년 10월 20일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "취미/특기",
+                        "value": [
+                            "웹 서핑"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 장르",
+                        "value": [
+                            "시티팝",
+                            "재즈",
+                            "퓨전"
+                        ]
+                    },
+                    {
+                        "label": "싫어하는 음식",
+                        "value": [
+                            "딱히 없음"
+                        ]
+                    },
+                    {
+                        "label": "못하는 것",
+                        "value": [
+                            "배고플 때 물 마시기"
+                        ]
+                    },
+                    {
+                        "label": "MBTI",
+                        "value": [
+                            "ENFP"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/f-272/miyu.webp",
+            "sns": {
+                "x": "https://x.com/miyu_F272"
+            }
+        },
+        {
+            "id": "towa",
+            "band_id": "f-272",
+            "band_name": "F-272",
+            "name": {
+                "main": "TOWA",
+                "sub": null
+            },
+            "character": "우다가와 코토",
+            "position": "Gt.",
+            "profile": {
+                "birth": "????년 ??월 ??일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "취미/특기",
+                        "value": [
+                            "???"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 장르",
+                        "value": [
+                            "???"
+                        ]
+                    },
+                    {
+                        "label": "싫어하는 음식",
+                        "value": [
+                            "???"
+                        ]
+                    },
+                    {
+                        "label": "못하는 것",
+                        "value": [
+                            "???"
+                        ]
+                    },
+                    {
+                        "label": "MBTI",
+                        "value": [
+                            "???"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/f-272/towa.webp",
+            "sns": {
+                "x": "https://x.com/towa_F272"
+            }
+        },
+        {
+            "id": "hinano",
+            "band_id": "f-272",
+            "band_name": "F-272",
+            "name": {
+                "main": "HINANO",
+                "sub": null
+            },
+            "character": "아사이 모모노",
+            "position": "Ba.",
+            "profile": {
+                "birth": "2006년 8월 24일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "취미/특기",
+                        "value": [
+                            "DJ"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 장르",
+                        "value": [
+                            "메탈",
+                            "힙합"
+                        ]
+                    },
+                    {
+                        "label": "싫어하는 음식",
+                        "value": [
+                            "버섯 전부",
+                            "절임 음식"
+                        ]
+                    },
+                    {
+                        "label": "못하는 것",
+                        "value": [
+                            "벌레",
+                            "공부"
+                        ]
+                    },
+                    {
+                        "label": "MBTI",
+                        "value": [
+                            "ENFP"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/f-272/miyu.webp",
+            "sns": {
+                "x": "https://x.com/hinano_F272"
+            }
+        },
+        {
+            "id": "luca",
+            "band_id": "f-272",
+            "band_name": "F-272",
+            "name": {
+                "main": "LUCA",
+                "sub": null
+            },
+            "character": "카토 사키",
+            "position": "Vo.",
+            "profile": {
+                "birth": "2005년 7월 12일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "취미/특기",
+                        "value": [
+                            "게임"
+                        ]
+                    },
+                    {
+                        "label": "좋아하는 장르",
+                        "value": [
+                            "보컬로이드 (모든 장르)"
+                        ]
+                    },
+                    {
+                        "label": "싫어하는 음식",
+                        "value": [
+                            "낫토",
+                            "고수"
+                        ]
+                    },
+                    {
+                        "label": "못하는 것",
+                        "value": [
+                            "진달래",
+                            "종이 빨대",
+                            "습기"
+                        ]
+                    },
+                    {
+                        "label": "MBTI",
+                        "value": [
+                            "INFP"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/f-272/luca.webp",
+            "sns": {
+                "x": "https://x.com/luca_F272"
+            }
+        }
+    ]
+}

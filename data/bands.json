@@ -33,6 +33,11 @@
             "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
           },
           {
+            "url": "https://www.youtube.com/@girlsbandcry",
+            "text": "걸즈 밴드 크라이 공식 유튜브",
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
+          },
+          {
             "url": "https://www.instagram.com/toge0toge1/",
             "text": "토게나시 토게아리 공식 인스타",
             "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
@@ -141,6 +146,11 @@
             "url": "https://f-272.bzone.co.jp/",
             "text": "F-272 공식 사이트",
             "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
+          },
+          {
+            "url": "https://www.youtube.com/@f272official",
+            "text": "F-272 공식 유튜브",
+            "thumbnail": "images/band/f-272/f-272_youtube_thumb.webp"
           }
         ],
         "debut_pv": {
