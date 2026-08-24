@@ -12,6 +12,28 @@
           "en": "Nameless Name"
         },
         "cover_image": "images/discography/togenashitogeari/1st_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+            "text": "[MV] 이름 없는 모든 것"
+          },
+          {
+            "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
+            "text": "[Anime] 7화"
+          },
+          {
+            "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+            "text": "[MV] 거짓된 법칙"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=v3y50OyXYRc",
+            "text": "[4th Live] 이름 없는 모든 것"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=wsvWRYUsFxA&pp=0gcJCRMMAYcqIYzv",
+            "text": "[5th Live] 거짓된 법칙"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -20,20 +42,7 @@
               "ja": "名もなき何もかも",
               "en": "Nameless Name"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/ve6SQ3V8BSw",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
-                "text": "이름 없는 모든 것 MV"
-              },
-              "anime": {
-                "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
-                "text": "애니메이션 7화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/ve6SQ3V8BSw"
           },
           {
             "track_no": 2,
@@ -42,17 +51,7 @@
               "ja": "偽りの理",
               "en": "no rhyme nor reason"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/-GkyvFiAJNg",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
-                "text": "거짓된 법칙 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/-GkyvFiAJNg"
           },
           {
             "track_no": 3,
@@ -61,7 +60,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -70,7 +69,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -85,6 +84,24 @@
           "en": "white drizzle in gloom"
         },
         "cover_image": "images/discography/togenashitogeari/2nd_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+            "text": "[MV] 우울, 흐려지다"
+          },
+          {
+            "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+            "text": "[MV] 이상적 패러독스란"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=-0gxFwIRbRY",
+            "text": "[4th Live] 우울, 흐려지다"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5PW7qVqYuGk",
+            "text": "[5th Live] 이상적 패러독스란"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -93,17 +110,7 @@
               "ja": "気鬱、白濁す",
               "en": "white drizzle in gloom"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/3l3yLmFEzi8",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
-                "text": "우울, 흐려지다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/3l3yLmFEzi8"
           },
           {
             "track_no": 2,
@@ -112,17 +119,7 @@
               "ja": "理想的パラドクスとは",
               "en": "Ideal Paradox"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/vm6KfrRdQTs",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
-                "text": "이상적 패러독스란 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/vm6KfrRdQTs"
           },
           {
             "track_no": 3,
@@ -131,7 +128,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -140,7 +137,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -155,6 +152,20 @@
           "en": "Bleeding Hearts"
         },
         "cover_image": "images/discography/togenashitogeari/3rd_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+            "text": "[MV] 망울을 터뜨리다"
+          },
+          {
+            "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+            "text": "[MV] 여명을 꿰뚫다"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=cErW6BX2Fu0",
+            "text": "[1st Live] 망울을 터뜨리다"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -163,17 +174,7 @@
               "ja": "爆ぜて咲く",
               "en": "Bleeding Hearts"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/YGkr5JE9xGY",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
-                "text": "망울을 터뜨리다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/YGkr5JE9xGY"
           },
           {
             "track_no": 2,
@@ -182,17 +183,7 @@
               "ja": "黎明を穿つ",
               "en": "Piercing the dawn of time"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/6qoriw__gGo",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
-                "text": "여명을 꿰뚫다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/6qoriw__gGo"
           },
           {
             "track_no": 3,
@@ -201,7 +192,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -210,7 +201,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -225,6 +216,20 @@
           "en": "Answer to Extreme"
         },
         "cover_image": "images/discography/togenashitogeari/4th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+            "text": "[MV] 극사적 극채색 앤서"
+          },
+          {
+            "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+            "text": "[MV] 상처받고 상처주고 아파서 괴로워"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=iXB0Vn10dWs",
+            "text": "[1st Live] 극사적 극채색 앤서"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -233,17 +238,7 @@
               "ja": "極私的極彩色アンサー",
               "en": "Answer to Extreme"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/i-JcDUAwzqI",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
-                "text": "극사적 극채색 앤서 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/i-JcDUAwzqI"
           },
           {
             "track_no": 2,
@@ -252,17 +247,7 @@
               "ja": "傷つき傷つけ痛くて辛い",
               "en": "Hurtful & Painful"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/gLG7SCvceiQ",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
-                "text": "상처받고 상처주고 아파서 괴로워 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/gLG7SCvceiQ"
           },
           {
             "track_no": 3,
@@ -271,7 +256,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -280,7 +265,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -295,6 +280,16 @@
           "en": "Lonely fate to be destined"
         },
         "cover_image": "images/discography/togenashitogeari/5th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+            "text": "[MV] 운명에 걸고 싶은 논리"
+          },
+          {
+            "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+            "text": "[MV] 안녕 안녕 안녕"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -303,17 +298,7 @@
               "ja": "運命に賭けたい論理",
               "en": "Lonely fate to be destined"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/WxUqv8t214E",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
-                "text": "운명에 걸고 싶은 논리 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/WxUqv8t214E"
           },
           {
             "track_no": 2,
@@ -322,17 +307,7 @@
               "ja": "サヨナラサヨナラサヨナラ",
               "en": "Underneath"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/8vUnQuliaFM",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
-                "text": "안녕 안녕 안녕 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/8vUnQuliaFM"
           },
           {
             "track_no": 3,
@@ -341,7 +316,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -350,7 +325,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -365,6 +340,20 @@
           "en": "Wrong World"
         },
         "cover_image": "images/discography/togenashitogeari/6th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
+            "text": "[Anime] 오프닝"
+          },
+          {
+            "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
+            "text": "[Anime] 1화"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=XRgMRKk6Kd8&pp=0gcJCRMMAYcqIYzv",
+            "text": "[1st Live] 혼잡한 길, 우리의 도시"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -373,17 +362,7 @@
               "ja": "雑踏、僕らの街",
               "en": "Wrong World"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/MSmfAa_oSqE",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
-                "text": "애니메이션 오프닝"
-              }
-            }
+            "audio": "https://youtu.be/MSmfAa_oSqE"
           },
           {
             "track_no": 2,
@@ -392,17 +371,7 @@
               "ja": "空の箱 (井芹仁菜、河原木桃香)",
               "en": "VOID (Nina Iseri, Momoka Kawaragi)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/gpCHjSaetds",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
-                "text": "애니메이션 1화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/gpCHjSaetds"
           },
           {
             "track_no": 3,
@@ -411,7 +380,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -420,7 +389,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 5,
@@ -429,7 +398,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -444,6 +413,20 @@
           "en": "I'm Nobody"
         },
         "cover_image": "images/discography/togenashitogeari/7th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
+            "text": "[Anime] 엔딩"
+          },
+          {
+            "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
+            "text": "[Anime] 3화"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=0qiqkY8fSvM",
+            "text": "[4th Live] 누구도 될 수 없는 나니까"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -452,17 +435,7 @@
               "ja": "誰にもなれない私だから",
               "en": "I'm Nobody"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/dJottC7FmYc",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
-                "text": "애니메이션 엔딩"
-              }
-            }
+            "audio": "https://youtu.be/dJottC7FmYc"
           },
           {
             "track_no": 2,
@@ -471,17 +444,7 @@
               "ja": "声なき魚 (新川崎 (仮)",
               "en": "Voiceless Fish (Shin Kawasaki (Temporary))"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/uUUzZDlrt08",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
-                "text": "애니메이션 3화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/uUUzZDlrt08"
           },
           {
             "track_no": 3,
@@ -490,7 +453,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -499,7 +462,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 5,
@@ -508,7 +471,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -523,6 +486,16 @@
           "en": "What to raise"
         },
         "cover_image": "images/discography/togenashitogeari/8th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
+            "text": "[Anime] 5화"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=qLLOWnk602c&pp=0gcJCRMMAYcqIYzv",
+            "text": "[5th Live] 시야 한구석 스러지는 소리"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -531,17 +504,7 @@
               "ja": "視界の隅 朽ちる音 (新川崎 (仮))",
               "en": "What to raise (Shin Kawasaki (Temporary))"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/swVEesI3StM",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
-                "text": "애니메이션 5화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/swVEesI3StM"
           },
           {
             "track_no": 2,
@@ -550,14 +513,7 @@
               "ja": "心象的フラクタル (beni-shouga)",
               "en": "Mind playing Fractal (beni-shouga)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/H_zV9w4rWm8",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/H_zV9w4rWm8"
           },
           {
             "track_no": 3,
@@ -566,7 +522,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -575,7 +531,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 5,
@@ -584,7 +540,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -599,6 +555,24 @@
           "en": "Emptiness and Catharsis"
         },
         "cover_image": "images/discography/togenashitogeari/9th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
+            "text": "[Anime] 11화"
+          },
+          {
+            "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
+            "text": "[Anime] 13화"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=P5B0E5ZjfnM",
+            "text": "[2nd Live] 공백과 카타르시스"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=NqPiy6ca0i0",
+            "text": "[3rd Live] 운명의 꽃"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -607,17 +581,7 @@
               "ja": "空白とカタルシス",
               "en": "Emptiness and Catharsis"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/hwvAh7M3erc",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
-                "text": "애니메이션 11화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/hwvAh7M3erc"
           },
           {
             "track_no": 2,
@@ -626,17 +590,7 @@
               "ja": "運命の華",
               "en": "I'm here"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/Nz-MAr3YPEA",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
-                "text": "애니메이션 13화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/Nz-MAr3YPEA"
           },
           {
             "track_no": 3,
@@ -645,7 +599,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 4,
@@ -654,7 +608,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           },
           {
             "track_no": 5,
@@ -663,7 +617,7 @@
               "ja": null,
               "en": null
             },
-            "links": null
+            "audio": null
           }
         ]
       },
@@ -678,6 +632,16 @@
           "en": "No one"
         },
         "cover_image": "images/discography/togenashitogeari/10th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/egoue2V-TAk?si=UIN8Rz3ntKOTnTur",
+            "text": "[MV] 아무도"
+          },
+          {
+            "url": "https://youtu.be/TuaqYVDguXM?si=yYT9r8Wtco49c1i2",
+            "text": "[MV] 날 수 없는 나비는 꿈을 꾼다"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -686,17 +650,7 @@
               "ja": "ダレモ",
               "en": "No one"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/6KuAgqO9oFY",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/egoue2V-TAk?si=UIN8Rz3ntKOTnTur",
-                "text": "아무도 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/6KuAgqO9oFY"
           },
           {
             "track_no": 2,
@@ -705,45 +659,21 @@
               "ja": "飛べない蝶は夢を見る",
               "en": "Belle papillon"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/MH4VzK2S-Ug",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/TuaqYVDguXM?si=yYT9r8Wtco49c1i2",
-                "text": "날 수 없는 나비는 꿈을 꾼다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/MH4VzK2S-Ug"
           },
           {
             "track_no": 3,
             "title": {
               "ko": "아무도 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/avNSGXX9eks",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/avNSGXX9eks"
           },
           {
             "track_no": 4,
             "title": {
               "ko": "날 수 없는 나비는 꿈을 꾼다 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/xwjRJrv-jyQ",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/xwjRJrv-jyQ"
           }
         ]
       },
@@ -758,6 +688,16 @@
           "en": "Fragile Violet"
         },
         "cover_image": "images/discography/togenashitogeari/11th_single.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/-etkkmuzZmM?si=Rw0IxZvfa2FXFZiw",
+            "text": "[MV] 박채 디스플레이"
+          },
+          {
+            "url": "https://youtu.be/L_32Cn1ViIA?si=EXFxXarsnh46Xy1N",
+            "text": "[MV] 신기루에게 묻다"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -766,17 +706,7 @@
               "ja": "薄采ディスプレイ",
               "en": "Fragile Violet"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/urIe9fv3xgg",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/-etkkmuzZmM?si=Rw0IxZvfa2FXFZiw",
-                "text": "박채 디스플레이 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/urIe9fv3xgg"
           },
           {
             "track_no": 2,
@@ -785,45 +715,21 @@
               "ja": "蜃気楼ニ問フ",
               "en": "Mirage of the mind"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/SbpUV-4KHaM",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/L_32Cn1ViIA?si=EXFxXarsnh46Xy1N",
-                "text": "신기루에게 묻다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/SbpUV-4KHaM"
           },
           {
             "track_no": 3,
             "title": {
               "ko": "박채 디스플레이 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/avNSGXX9eks",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/avNSGXX9eks"
           },
           {
             "track_no": 4,
             "title": {
               "ko": "신기루에게 묻다 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/xwjRJrv-jyQ",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/xwjRJrv-jyQ"
           }
         ]
       },
@@ -838,6 +744,7 @@
           "en": "Let's give them the pinky finger"
         },
         "cover_image": "images/discography/togenashitogeari/1st_ep.webp",
+        "media_links": null,
         "tracklist": [
           {
             "track_no": 1,
@@ -846,14 +753,7 @@
               "ja": "碧いif",
               "en": "What if"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/LIkC911e8II",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/LIkC911e8II"
           },
           {
             "track_no": 2,
@@ -862,14 +762,7 @@
               "ja": "無知のち私",
               "en": "Me renewed"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/GxjsKvg-seM",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/GxjsKvg-seM"
           },
           {
             "track_no": 3,
@@ -878,14 +771,7 @@
               "ja": "渇く、憂う",
               "en": "Thirsty, Anxiety"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/Cl7NmX97eTk",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/Cl7NmX97eTk"
           },
           {
             "track_no": 4,
@@ -894,14 +780,7 @@
               "ja": "吹き消した灯火",
               "en": "Puff of Smoke"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/pyDw-dW0wvE",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/pyDw-dW0wvE"
           },
           {
             "track_no": 5,
@@ -910,14 +789,7 @@
               "ja": "​生きて生きてゆく",
               "en": "Creep"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/9k1MGMSDaSs",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/9k1MGMSDaSs"
           },
           {
             "track_no": 6,
@@ -926,14 +798,7 @@
               "ja": "臆病な白夜",
               "en": "Drowin' Loneliness"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/I9g-Y0ACFDo",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/I9g-Y0ACFDo"
           },
           {
             "track_no": 7,
@@ -942,14 +807,7 @@
               "ja": "最期の禱り",
               "en": "White Lie"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/ealSZAVyEG8",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/ealSZAVyEG8"
           }
         ]
       },
@@ -964,6 +822,7 @@
           "en": "I'll live with my heart on my sleeve!"
         },
         "cover_image": "images/discography/togenashitogeari/2nd_ep.webp",
+        "media_links": null,
         "tracklist": [
           {
             "track_no": 1,
@@ -972,14 +831,7 @@
               "ja": "もう何もいらない未来",
               "en": "Against All Answers"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/BzOXySDldDE",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/BzOXySDldDE"
           },
           {
             "track_no": 2,
@@ -988,28 +840,14 @@
               "ja": "命をくれよ",
               "en": "Give Me Life"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/aUPvnBZzb34",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/aUPvnBZzb34"
           },
           {
             "track_no": 3,
             "title": {
               "ko": "arrow"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/h3lyEYW8uio",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/h3lyEYW8uio"
           },
           {
             "track_no": 4,
@@ -1018,70 +856,35 @@
               "ja": "荊の薔薇",
               "en": "Roses in Thorns"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/NoJinP58X8Q",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/NoJinP58X8Q"
           },
           {
             "track_no": 5,
             "title": {
               "ko": "더는 아무것도 필요 없는 미래 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/v85-YFfTt7Y",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/v85-YFfTt7Y"
           },
           {
             "track_no": 6,
             "title": {
               "ko": "생명을 줘 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/9Ar2AwGLvFs",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/9Ar2AwGLvFs"
           },
           {
             "track_no": 7,
             "title": {
               "ko": "arrow (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/9ctwEgQbtAs",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/9ctwEgQbtAs"
           },
           {
             "track_no": 8,
             "title": {
               "ko": "가시덤불의 장미 (Instrumental)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/vjGv_tJV8A8",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/vjGv_tJV8A8"
           }
         ]
       },
@@ -1096,6 +899,52 @@
           "en": "Togeari"
         },
         "cover_image": "images/discography/togenashitogeari/1st_album.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+            "text": "[MV] 이름 없는 모든 것"
+          },
+          {
+            "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
+            "text": "[Anime] 7화"
+          },
+          {
+            "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+            "text": "[MV] 거짓된 법칙"
+          },
+          {
+            "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+            "text": "[MV] 우울, 흐려지다"
+          },
+          {
+            "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+            "text": "[MV] 이상적 패러독스란"
+          },
+          {
+            "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+            "text": "[MV] 망울을 터뜨리다"
+          },
+          {
+            "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+            "text": "[MV] 여명을 꿰뚫다"
+          },
+          {
+            "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+            "text": "[MV] 극사적 극채색 앤서"
+          },
+          {
+            "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+            "text": "[MV] 상처받고 상처주고 아파서 괴로워"
+          },
+          {
+            "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+            "text": "[MV] 운명에 걸고 싶은 논리"
+          },
+          {
+            "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+            "text": "[MV] 안녕 안녕 안녕"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -1104,20 +953,7 @@
               "ja": "名もなき何もかも",
               "en": "Nameless Name"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/ve6SQ3V8BSw",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
-                "text": "이름 없는 모든 것 MV"
-              },
-              "anime": {
-                "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
-                "text": "애니메이션 7화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/ve6SQ3V8BSw"
           },
           {
             "track_no": 2,
@@ -1126,17 +962,7 @@
               "ja": "偽りの理",
               "en": "no rhyme nor reason"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/-GkyvFiAJNg",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
-                "text": "거짓된 법칙 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/-GkyvFiAJNg"
           },
           {
             "track_no": 3,
@@ -1145,17 +971,7 @@
               "ja": "気鬱、白濁す",
               "en": "white drizzle in gloom"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/3l3yLmFEzi8",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
-                "text": "우울, 흐려지다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/3l3yLmFEzi8"
           },
           {
             "track_no": 4,
@@ -1164,17 +980,7 @@
               "ja": "理想的パラドクスとは",
               "en": "Ideal Paradox"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/vm6KfrRdQTs",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
-                "text": "이상적 패러독스란 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/vm6KfrRdQTs"
           },
           {
             "track_no": 5,
@@ -1183,17 +989,7 @@
               "ja": "爆ぜて咲く",
               "en": "Bleeding Hearts"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/YGkr5JE9xGY",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
-                "text": "망울을 터뜨리다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/YGkr5JE9xGY"
           },
           {
             "track_no": 6,
@@ -1202,17 +998,7 @@
               "ja": "黎明を穿つ",
               "en": "Piercing the dawn of time"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/6qoriw__gGo",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
-                "text": "여명을 꿰뚫다 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/6qoriw__gGo"
           },
           {
             "track_no": 7,
@@ -1221,17 +1007,7 @@
               "ja": "極私的極彩色アンサー",
               "en": "Answer to Extreme"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/i-JcDUAwzqI",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
-                "text": "극사적 극채색 앤서 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/i-JcDUAwzqI"
           },
           {
             "track_no": 8,
@@ -1240,17 +1016,7 @@
               "ja": "傷つき傷つけ痛くて辛い",
               "en": "Hurtful & Painful"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/gLG7SCvceiQ",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
-                "text": "상처받고 상처주고 아파서 괴로워 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/gLG7SCvceiQ"
           },
           {
             "track_no": 9,
@@ -1259,17 +1025,7 @@
               "ja": "運命に賭けたい論理",
               "en": "Lonely fate to be destined"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/WxUqv8t214E",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
-                "text": "운명에 걸고 싶은 논리 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/WxUqv8t214E"
           },
           {
             "track_no": 10,
@@ -1278,17 +1034,7 @@
               "ja": "サヨナラサヨナラサヨナラ",
               "en": "Underneath"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/8vUnQuliaFM",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
-                "text": "안녕 안녕 안녕 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/8vUnQuliaFM"
           }
         ]
       },
@@ -1303,6 +1049,40 @@
           "en": "Togenashi"
         },
         "cover_image": "images/discography/togenashitogeari/2nd_album.webp",
+        "media_links": [
+          {
+            "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
+            "text": "[Anime] 오프닝"
+          },
+          {
+            "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
+            "text": "[Anime] 엔딩"
+          },
+          {
+            "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
+            "text": "[Anime] 1화"
+          },
+          {
+            "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
+            "text": "[Anime] 3화"
+          },
+          {
+            "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
+            "text": "[Anime] 5화"
+          },
+          {
+            "url": "https://youtu.be/UnIWvcARb8U?si=PVKhiImuX3EQ6vqI",
+            "text": "[Anime] 11화 (다이더스)"
+          },
+          {
+            "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
+            "text": "[Anime] 11화 (토게토게)"
+          },
+          {
+            "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
+            "text": "[Anime] 13화"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -1311,17 +1091,7 @@
               "ja": "雑踏、僕らの街",
               "en": "Wrong World"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/MSmfAa_oSqE",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
-                "text": "애니메이션 오프닝"
-              }
-            }
+            "audio": "https://youtu.be/MSmfAa_oSqE"
           },
           {
             "track_no": 2,
@@ -1330,17 +1100,7 @@
               "ja": "誰にもなれない私だから",
               "en": "I'm Nobody"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/dJottC7FmYc",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
-                "text": "애니메이션 엔딩"
-              }
-            }
+            "audio": "https://youtu.be/dJottC7FmYc"
           },
           {
             "track_no": 3,
@@ -1349,17 +1109,7 @@
               "ja": "空の箱 (井芹仁菜、河原木桃香)",
               "en": "VOID (Nina Iseri, Momoka Kawaragi)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/gpCHjSaetds",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
-                "text": "애니메이션 1화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/gpCHjSaetds"
           },
           {
             "track_no": 4,
@@ -1368,17 +1118,7 @@
               "ja": "声なき魚 (新川崎（仮))",
               "en": "Voiceless Fish (Shin Kawasaki (Temporary))"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/uUUzZDlrt08",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
-                "text": "애니메이션 3화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/uUUzZDlrt08"
           },
           {
             "track_no": 5,
@@ -1387,17 +1127,7 @@
               "ja": "視界の隅 朽ちる音（新川崎（仮))",
               "en": "What to raise (Shin Kawasaki (Temporary))"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/swVEesI3StM",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
-                "text": "애니메이션 5화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/swVEesI3StM"
           },
           {
             "track_no": 6,
@@ -1406,14 +1136,7 @@
               "ja": "心象的フラクタル (beni-shouga)",
               "en": "Mind playing Fractal (beni-shouga)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/H_zV9w4rWm8",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/H_zV9w4rWm8"
           },
           {
             "track_no": 7,
@@ -1422,17 +1145,7 @@
               "ja": "空白とカタルシス",
               "en": "Emptiness and Catharsis"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/hwvAh7M3erc",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
-                "text": "애니메이션 11화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/hwvAh7M3erc"
           },
           {
             "track_no": 8,
@@ -1441,17 +1154,7 @@
               "ja": "運命の華",
               "en": "I'm here"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/Nz-MAr3YPEA",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
-                "text": "애니메이션 13화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/Nz-MAr3YPEA"
           },
           {
             "track_no": 9,
@@ -1459,17 +1162,7 @@
               "ko": "슬픔의 윤회",
               "en": "Cycle Of Sorrow"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/eCIPMjmOi4w",
-                "text": null
-              },
-              "mv": null,
-              "anime": {
-                "url": "https://youtu.be/UnIWvcARb8U?si=PVKhiImuX3EQ6vqI",
-                "text": "애니메이션 11화 라이브"
-              }
-            }
+            "audio": "https://youtu.be/eCIPMjmOi4w"
           },
           {
             "track_no": 10,
@@ -1478,14 +1171,7 @@
               "ja": "ETERNAL FLAME ～空の箱～",
               "en": "ETERNAL FLAME (VOID)"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/Yd_Y-Pjq1V0",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/Yd_Y-Pjq1V0"
           },
           {
             "track_no": 11,
@@ -1494,14 +1180,7 @@
               "ja": "闇に溶けてく",
               "en": "melt into the dark"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/BJushRLnajs",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/BJushRLnajs"
           },
           {
             "track_no": 12,
@@ -1510,14 +1189,7 @@
               "ja": "蝶に結いた赤い糸",
               "en": "Meant to be"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/8SRJnOFicAM",
-                "text": null
-              },
-              "mv": null,
-              "anime": null
-            }
+            "audio": "https://youtu.be/8SRJnOFicAM"
           }
         ]
       }
@@ -1534,6 +1206,12 @@
           "en": null
         },
         "cover_image": "images/discography/cannalily/1st_digital_single.jpg",
+        "media_links": [
+          {
+            "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
+            "text": "[MV] 잔상의 고동"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
@@ -1542,17 +1220,7 @@
               "ja": "残像の高鳴り",
               "en": "ZANZOUNOTAKANARI"
             },
-            "links": {
-              "audio": {
-                "url": "https://youtu.be/qCgv2CoQNeo?si=YnyINolz3jc8Fo_I",
-                "text": null
-              },
-              "mv": {
-                "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
-                "text": "잔상의 고동 MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/qCgv2CoQNeo?si=YnyINolz3jc8Fo_I"
           }
         ]
       },
@@ -1567,6 +1235,7 @@
           "en": "The Unchanging World and the Song"
         },
         "cover_image": "images/discography/cannalily/2nd_digital_single.jpeg",
+        "media_links": null,
         "tracklist": [
           {
             "track_no": 1,
@@ -1575,7 +1244,7 @@
               "ja": "変わらない世界と歌",
               "en": "The Unchanging World and the Song"
             },
-            "links": null
+            "audio": null
           }
         ]
       }
@@ -1590,20 +1259,23 @@
           "ko": "Diorama"
         },
         "cover_image": "images/discography/f-272/1st_digital_single.jpg",
+        "media_links": [
+          {
+            "url": "https://youtu.be/3cbYPipPqb4?si=NdG8XJTC6hEvnTpw",
+            "text": "[MV] Diorama"
+          },
+          {
+            "url": "https://youtu.be/t604Tyc-kvU?si=L57uY_D8c-_33BOe",
+            "text": "[1st Live] Diorama"
+          }
+        ],
         "tracklist": [
           {
             "track_no": 1,
             "title": {
               "ko": "Diorama"
             },
-            "links": {
-              "audio": null,
-              "mv": {
-                "url": "https://youtu.be/3cbYPipPqb4?si=NdG8XJTC6hEvnTpw",
-                "text": "Diorama MV"
-              },
-              "anime": null
-            }
+            "audio": "https://youtu.be/5SdFQOmF3SA?si=2XuGozuhUeNQk-aU"
           }
         ]
       }

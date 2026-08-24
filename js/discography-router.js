@@ -186,9 +186,8 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
 
   const subTitleHTML = subTitles.length > 0 ? `<div class="album-meta-title-sub">${subTitles.join(" | ")}</div>` : "";
 
-  // 트랙 리스트 & 오피셜 미디어
+  // 트랙 리스트
   let tracklistHTML = "";
-  let mediaHTML = "";
 
   currentAlbum.tracklist.forEach((track) => {
     const trackNum = String(track.track_no).padStart(2, "0");
@@ -202,8 +201,8 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
     const trackSubHTML = trackSub.length > 0 ? `<div class="track-name-sub">(${trackSub.join(" | ")})</div>` : "";
 
     // 유튜브 아이콘 유무 확인
-    const audioIconHTML = track.links && track.links.audio && track.links.audio.url ?
-      `<a href="${track.links.audio.url}" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>` : "";
+    const audioIconHTML = track.audio ?
+      `<a href="${track.audio}" target="_blank" rel="noopener noreferrer" class="track-icon"><i class="fa-brands fa-youtube"></i></a>` : "";
 
     tracklistHTML += `
       <div class="track-row">
@@ -215,27 +214,19 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
         ${audioIconHTML}
       </div>
     `;
-
-    // 오피셜 미디어
-    if (track.links) {
-      if (track.links.mv && track.links.mv.url) {
-        mediaHTML += `
-          <a href="${track.links.mv.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="${getYouTubeThumbnail(track.links.mv.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
-            <span class="official-media-text">${track.links.mv.text}</span>
-          </a>
-        `;
-      }
-      if (track.links.anime && track.links.anime.url) {
-        mediaHTML += `
-          <a href="${track.links.anime.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="${getYouTubeThumbnail(track.links.anime.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
-            <span class="official-media-text">${track.links.anime.text}</span>
-          </a>
-        `;
-      }
-    }
   });
+
+  // 오피셜 미디어
+  let mediaHTML = "";
+
+  if (currentAlbum.media_links && Array.isArray(currentAlbum.media_links)) {
+    mediaHTML += currentAlbum.media_links.map((link) => `
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
+            <img src="${getYouTubeThumbnail(link.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+            <span class="official-media-text">${link.text}</span>
+          </a>
+      `).join("");
+  }
 
   let officialMediaSection = "";
 
