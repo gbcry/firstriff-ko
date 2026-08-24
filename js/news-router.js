@@ -59,10 +59,21 @@ async function renderNewsList(container) {
     (a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id),
   );
 
-  // TODO) 페이지네이션 추가
-  const listHTML = sortedNews
-    .map(
-      (news) => `
+  const itemsPerPage = 5; // 한 페이지에 보여줄 뉴스 개수
+  const pagesPerBlock = 5; // 한 페이지에 보여줄 버튼 개수
+
+  // 목록 페이지 그리기
+  function renderPage(currentPage) {
+    const totalItems = sortedNews.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+    const currentNews = sortedNews.slice(startIndex, endIndex);
+
+    const listHTML = currentNews
+      .map(
+        (news) => `
         <div class="news-item">
           <a href="#news/${news.id}" class="news-link">
               <div class="news-date">${news.date}</div>
@@ -70,20 +81,53 @@ async function renderNewsList(container) {
           </a>
         </div>
       `,
-    )
-    .join("");
+      )
+      .join("");
 
-  container.innerHTML = `
+    const currentBlock = Math.ceil(currentPage / pagesPerBlock);
+    const startPage = (currentBlock - 1) * pagesPerBlock + 1;
+    const endPage = Math.min(startPage + pagesPerBlock - 1, totalPages);
+
+    let paginationHTML = "";
+
+    // 이전 블록으로 가기
+    if (startPage > 1) {
+      paginationHTML += `<button class="page-btn prev-page" data-page="${startPage - 1}"><i class="fa-solid fa-angle-left"></i></button>`;
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      const isActive = i === currentPage ? "active" : "";
+      paginationHTML += `<button class="page-btn ${isActive}" data-page="${i}">${i}</button>`;
+    }
+
+    // 다음 블록으로 가기
+    if (endPage < totalPages) {
+      paginationHTML += `<button class="page-btn next-page" data-page="${endPage + 1}"><i class="fa-solid fa-angle-right"></i></button>`;
+    }
+
+    container.innerHTML = `
     <div class="news-list-view">
-    
       <div class="section-title">NEWS</div>
-
       <div class="news-list">
         ${listHTML}
       </div>
-
+      <div class="pagination">
+        ${paginationHTML}
+      </div>
     </div>
   `;
+
+    const pageBtns = container.querySelectorAll(".page-btn");
+    pageBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        const targetPage = parseInt(e.currentTarget.getAttribute("data-page"));
+        renderPage(targetPage); // 클릭한 페이지로 다시 그리기
+        window.scrollTo(0, 0);
+      });
+    });
+  }
+
+  renderPage(1); // 초기 페이지 렌더링
 }
 
 // 뉴스 상세 렌더링
