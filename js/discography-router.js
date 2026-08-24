@@ -1,5 +1,5 @@
 async function initDiscography() {
-  const container = document.querySelector(".discography-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -24,7 +24,7 @@ async function initDiscography() {
 }
 
 async function initAlbumDetail() {
-  const container = document.querySelector(".discography-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -110,7 +110,7 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
   }
 
   container.innerHTML = `
-    <div class="discography-view">
+    <div class="page-view">
       <div class="section-title">DISCOGRAPHY</div>
 
       <div class="band-tab-menu">
@@ -250,8 +250,8 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
   }
 
   container.innerHTML = `
-    <div class="discography-view">
-      <div class="section-title">DISCOGRAPHY</div>
+    <div class="page-view">
+      <div class="section-title">${currentAlbum.album_type.toUpperCase()}</div>
 
       <div class="band-tab-menu">
         <img src="${currentBand.images.background}" class="menu-bg-img">

@@ -1,5 +1,5 @@
 async function initBand() {
-  const container = document.querySelector(".band-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -22,6 +22,7 @@ async function initBand() {
   renderBandView(container, bands, currentBand, characters);
 }
 
+// 밴드 소개
 async function renderBandView(container, bands, currentBand, characters) {
   // 밴드 탭
   const tabMenuHTML = bands
@@ -88,7 +89,7 @@ async function renderBandView(container, bands, currentBand, characters) {
   });
 
   container.innerHTML = `
-    <div class="band-view">
+    <div class="page-view">
 
       <div class="section-title">BAND</div>
       

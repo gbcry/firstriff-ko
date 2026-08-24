@@ -1,5 +1,5 @@
 async function initCharacter() {
-  const container = document.querySelector(".character-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -90,7 +90,7 @@ async function renderCharacterView(container, currentChar, currentBand, characte
   });
 
   container.innerHTML = `
-    <div class="character-view">
+    <div class="page-view">
 
       <div class="section-title">CHARACTER</div>
 
