@@ -249,37 +249,37 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
         ${tabMenuHTML}
       </div>
 
-      <div class="discography-content">
+      <div class="discography-detail-content">
         <div class="filter-menu">
-          <a href="#discography/${currentBand.id}/all" class="filter-btn">ALL</a>
-          <a href="#discography/${currentBand.id}/single" class="filter-btn">SINGLE</a>
-          <a href="#discography/${currentBand.id}/ep" class="filter-btn">EP</a>
-          <a href="#discography/${currentBand.id}/regular" class="filter-btn">REGULAR</a>
+          <a href="#discography/${currentBand.id}/all" class="filter-btn active" data-filter="all">ALL</a>
+          <a href="#discography/${currentBand.id}/single" class="filter-btn" data-filter="single">SINGLE</a>
+          <a href="#discography/${currentBand.id}/ep" class="filter-btn" data-filter="ep">EP</a>
+          <a href="#discography/${currentBand.id}/regular" class="filter-btn" data-filter="regular">REGULAR</a>
         </div>
 
         <div class="album-detail-wrapper">
+          
+          <div class="album-hero-banner">
+            <img src="${currentAlbum.cover_image}" class="album-hero-img">
+          </div>
 
-          <div class="album-header">
-            <div class="album-cover-box">
-              <img src="${currentAlbum.cover_image}">
+          <div class="album-detail-info">
+            <div class="album-meta-tag">${currentAlbum.album_tag}</div>
+            <h2 class="album-detail-title-main">${currentAlbum.title.ko}</h2>
+            ${subTitleHTML}
+            <div class="album-meta-release"><i class="fa-regular fa-calendar"></i> ${currentAlbum.release_date}</div>
+          </div>
+
+          <div class="tracklist-wrapper">
+            <div class="tracklist-header">
+              <h3 class="tracklist-label">TRACKLIST</h3>
             </div>
-
-            <div class="album-meta">
-              <div class="album-meta-text">
-                <div class="album-meta-tag">${currentAlbum.album_tag}</div>
-                <div class="album-meta-title-main">${currentAlbum.title.ko}</div>
-                ${subTitleHTML}
-              </div>
-
-              <div class="album-meta-release">${currentAlbum.release_date}</div>
+            <div class="tracklist-container">
+              ${tracklistHTML}
             </div>
           </div>
 
-          <div class="tracklist-container">
-            ${tracklistHTML}
-          </div>
         </div>
-
       </div>
 
       ${officialMediaSection}
