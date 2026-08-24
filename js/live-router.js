@@ -22,14 +22,43 @@ async function initLiveEvent() {
   // 현재 밴드가 참여한 라이브만 필터링
   const bandLives = liveData.filter((live) => live.participate.includes(currentBand.id));
 
-  // 날짜 오름차순 정렬 (첫 번째 일정 기준)
-  bandLives.sort((a, b) => {
+  // 오늘 날짜
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  const todayStr = `${year}.${month}.${day}`; // "2026.08.24"
+
+  // 예정된 라이브와 종료된 라이브 배열 분리
+  const upcomingLives = [];
+  const pastLives = [];
+
+  bandLives.forEach((live) => {
+    // 요일 제외 날짜만 오늘과 비교
+    const firstScheduleDate = live.schedules[0]?.date?.substring(0, 10) || "9999.99.99";
+
+    if (firstScheduleDate > todayStr) {
+      upcomingLives.push(live);
+    } else {
+      pastLives.push(live);
+    }
+  });
+
+  // 예정된 라이브 오름차순 정렬
+  upcomingLives.sort((a, b) => {
     const dateA = a.schedules[0]?.date || "9999.99.99";
     const dateB = b.schedules[0]?.date || "9999.99.99";
     return dateA.localeCompare(dateB);
   });
 
-  renderLiveList(container, bands, currentBand, bandLives, initialFilter);
+  // 종료된 라이브 내림차순 정렬
+  pastLives.sort((a, b) => {
+    const dateA = a.schedules[0]?.date || "0000.00.00";
+    const dateB = b.schedules[0]?.date || "0000.00.00";
+    return dateB.localeCompare(dateA);
+  });
+
+  renderLiveList(container, bands, currentBand, upcomingLives, pastLives, initialFilter);
 }
 
 async function initLiveDetail() {
@@ -64,7 +93,7 @@ async function initLiveDetail() {
   renderLiveDetailView(container, bands, currentBand, currentLive);
 }
 
-async function renderLiveList(container, bands, currentBand, bandLives, initialFilter) {
+async function renderLiveList(container, bands, currentBand, upcomingLives, pastLives, initialFilter) {
   // 밴드 탭
   const tabMenuHTML = bands
     .map((band) => {
@@ -79,23 +108,15 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
     })
     .join("");
 
-  // 라이브 목록 or 빈 화면
-  let liveContentHTML = "";
-  if (bandLives.length === 0) {
-    liveContentHTML = `
-      <div class="empty-state">
-        <p class="empty-text">COMING SOON</p>
-      </div>
-    `;
-  } else {
-    const liveCardsHTML = bandLives.map((live) => {
-      const imgHTML = live.key_visual
-        ? `<img src="${live.key_visual}" class="live-kv-img" loading="lazy">`
-        : `<div class="no-img-placeholder">NO IMAGE</div>`;
+  // 개별 라이브 카드 생성
+  const createCardHTML = (live) => {
+    const imgHTML = live.key_visual
+      ? `<img src="${live.key_visual}" class="live-kv-img" loading="lazy">`
+      : `<div class="no-img-placeholder">NO IMAGE</div>`;
 
-      const firstDate = live.schedules[0]?.date || "일정 미정";
+    const firstDate = live.schedules[0]?.date || "일정 미정";
 
-      return `
+    return `
         <a href="#live_detail/${live.id}" class="live-card" data-type="${live.type}">
           <div class="live-img-box">
             ${imgHTML}
@@ -106,7 +127,40 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
           </div>
         </a>
       `;
-    }).join("");
+  };
+
+  // 라이브 목록 or 빈 화면
+  let liveContentHTML = "";
+  if (upcomingLives.length === 0 && pastLives.length === 0) {
+    liveContentHTML = `
+      <div class="empty-state">
+        <p class="empty-text">COMING SOON</p>
+      </div>
+    `;
+  } else {
+    let sectionsHTML = "";
+
+    if (upcomingLives.length > 0) {
+      sectionsHTML += `
+        <div class="live-section">
+          <h3 class="status-label">UPCOMING</h3>
+          <div class="live-grid">
+            ${upcomingLives.map(createCardHTML).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    if (pastLives.length > 0) {
+      sectionsHTML += `
+        <div class="live-section">
+          <h3 class="status-label past-label">PAST</h3>
+          <div class="live-grid">
+            ${pastLives.map(createCardHTML).join("")}
+          </div>
+        </div>
+      `;
+    }
 
     liveContentHTML = `
       <div class="filter-menu">
@@ -115,8 +169,8 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
         <a href="#live/${currentBand.id}" class="filter-btn" data-filter="taiban">대반</a>
         <a href="#live/${currentBand.id}" class="filter-btn" data-filter="etc">etc.</a>
       </div>
-      <div class="live-grid">
-        ${liveCardsHTML}
+      <div class="live-sections-wrapper">
+        ${sectionsHTML}
       </div>
       <div class="empty-state filter-empty-state" style="display: none;">
         <p class="empty-text">COMING SOON</p>
@@ -141,11 +195,11 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
 
   // 필터링 로직
   const filterBtns = container.querySelectorAll(".filter-btn");
-  const liveCards = container.querySelectorAll(".live-card");
+  const liveSections = container.querySelectorAll(".live-section");
   const filterEmptyState = container.querySelector(".filter-empty-state");
 
   // 라이브 정보가 없는 경우도 있음
-  if (filterBtns.length > 0 && liveCards.length > 0) {
+  if (filterBtns.length > 0 && liveSections.length > 0) {
     filterBtns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -161,21 +215,34 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
         history.replaceState(null, null, `#live/${currentBand.id}/${filterValue}`)
 
         // 카드 필터링
-        let visibleCount = 0;
-        liveCards.forEach((card) => {
-          const liveType = card.getAttribute("data-type");
+        let totalVisibleCount = 0;
+        liveSections.forEach((section) => {
+          const cards = section.querySelectorAll(".live-card");
+          let sectionVisibleCount = 0;
 
-          if (filterValue === "all" || filterValue === liveType) {
-            card.style.display = ""; // 카드 보여주기
-            visibleCount++;
+          cards.forEach((card) => {
+            const liveType = card.getAttribute("data-type");
+
+            if (filterValue === "all" || filterValue === liveType) {
+              card.style.display = ""; // 카드 보여주기
+              sectionVisibleCount++;
+              totalVisibleCount++;
+            } else {
+              card.style.display = "none"; // 카드 숨기기
+            }
+          });
+
+          // (upcoming or past)섹션 노출 카드가 0개인 경우 라벨 포함 섹션 전체 숨김
+          if (sectionVisibleCount === 0) {
+            section.style.display = "none";
           } else {
-            card.style.display = "none"; // 카드 숨기기
+            section.style.display = "";
           }
         });
 
-        // 노출된 카드가 0개인 경우
+        // 전체 라이브가 0개인 경우 comming soon 표시
         if (filterEmptyState) {
-          if (visibleCount === 0) {
+          if (totalVisibleCount === 0) {
             filterEmptyState.style.display = "flex";
           } else {
             filterEmptyState.style.display = "none";
