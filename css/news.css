@@ -71,6 +71,50 @@
 }
 
 /* =========================================
+   Pagination
+========================================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(4px, 1vw, 8px);
+  margin-top: clamp(20px, 4vw, 40px);
+  width: 100%;
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(30px, 3.5vw, 40px);
+  height: clamp(30px, 3.5vw, 40px);
+  font-family: var(--font-main);
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-weight: 700;
+  color: var(--color-black);
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  color: var(--color-point);
+}
+
+.page-btn.active {
+  background-color: var(--color-point);
+  color: var(--color-white);
+  border-color: var(--color-point);
+}
+
+.page-btn i {
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+
+/* =========================================
    News Detail
 ========================================= */
 
