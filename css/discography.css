@@ -113,7 +113,20 @@
 /* =========================================
    Album Detail
 ========================================= */
+/* 라이브의 .live-detail-content 와 동일 역할 */
+.discography-detail-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(20px, 3vw, 40px) clamp(10px, 2vw, 25px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray);
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
+  box-sizing: border-box;
+  margin-bottom: clamp(12px, 2.5vw, 24px);
+}
 
+/* 하얀색 배경의 상세 정보 캔버스 (테두리 포함) */
 .album-detail-wrapper {
   display: flex;
   flex-direction: column;
@@ -122,87 +135,101 @@
   margin: 0 auto;
   margin-bottom: clamp(20px, 3vw, 40px);
   border: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  background-color: var(--color-white);
 }
 
-.album-header {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  background-color: var(--color-black);
-  border-bottom: clamp(3px, 0.5vw, 5px) solid var(--color-black);
-}
-
-.album-cover-box {
-  flex-shrink: 0;
-  width: clamp(160px, 25vw, 300px);
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-}
-
-.album-cover-box img {
+/* =========================================
+   Album Detail 
+========================================= */
+.album-hero-banner {
   width: 100%;
-  height: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-hero-img {
+  width: clamp(200px, 35vw, 450px);
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
 }
 
-.album-meta {
+.album-detail-info {
+  padding: clamp(30px, 5vw, 50px) clamp(15px, 4vw, 40px) clamp(20px, 3vw, 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: clamp(15px, 5vw, 20px);
-  padding: 0;
-  flex: 1;
-}
-
-.album-meta-text {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(4px, 0.8vw, 10px);
-  width: 100%;
-  margin: auto 0;
-}
-
-.album-meta-tag,
-.album-meta-title-main,
-.album-meta-title-sub {
-  padding: 0 clamp(10px, 2vw, 20px);
 }
 
 .album-meta-tag {
   font-family: var(--font-main);
-  font-size: clamp(15px, 1.6vw, 20px);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-point);
+  font-size: clamp(14px, 1.5vw, 16px);
+  letter-spacing: 1px;
+  margin-bottom: clamp(6px, 1vw, 10px);
 }
 
-.album-meta-title-main {
+.album-detail-title-main {
   font-family: var(--font-main);
   font-size: clamp(26px, 3vw, 42px);
   font-weight: 800;
-  color: var(--color-white);
-  line-height: 1.2;
+  color: var(--color-black);
   word-break: keep-all;
+  line-height: 1.3;
+  margin-bottom: clamp(6px, 1vw, 10px);
 }
 
 .album-meta-title-sub {
   font-family: var(--font-main);
   font-size: clamp(15px, 1.6vw, 20px);
   font-weight: 600;
-  color: var(--color-white);
-  line-height: 1.4;
-  word-break: break-all;
-}
+  color: #999;
+  margin-bottom: clamp(6px, 1vw, 10px);}
 
 .album-meta-release {
   font-family: var(--font-main);
   font-size: clamp(15px, 1.6vw, 20px);
   font-weight: 600;
-  color: #999;
-  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.album-meta-release i {
+  color: var(--color-point);
+  margin-right: 6px;
+}
+
+.tracklist-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: clamp(8px, 1.2vw, 12px) 0;
+  max-width: 1100px;
+  margin: 0 auto; /* 중앙 정렬 */
+  background-color: var(--color-white);
+  padding: 0  clamp(15px, 4vw, 40px) clamp(20px, 4vw, 40px);
+  box-sizing: border-box;
+}
+
+.tracklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: clamp(8px, 1vw, 12px);
+  margin-bottom: 0;
+  border-bottom: 3px solid var(--color-point);
+}
+
+.tracklist-label {
+  font-family: var(--font-main);
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 800;
+  color: var(--color-black);
+  padding-left: clamp(8px, 1vw, 12px);
 }
 
 .tracklist-container {
@@ -213,15 +240,11 @@
 .track-row {
   display: flex;
   align-items: center;
-  gap: clamp(10px, 1.5vw, 20px);
+  gap: clamp(15px, 3vw, 30px);
   padding: clamp(10px, 1.5vw, 18px) clamp(12px, 2vw, 24px);
   border-bottom: 2px solid #cccccc;
   background-color: var(--color-white);
   transition: background-color 0.2s ease;
-}
-
-.track-row:last-child {
-  border-bottom: none;
 }
 
 .track-row:hover {
@@ -229,11 +252,12 @@
 }
 
 .track-num {
-  width: clamp(20px, 2.5vw, 35px);
+  width: clamp(30px, 4vw, 50px);
   font-size: clamp(12px, 1.4vw, 18px);
   font-weight: 800;
   color: var(--color-point);
   flex-shrink: 0;
+  text-align: center;
 }
 
 .track-text-group {
@@ -257,7 +281,8 @@
   font-size: clamp(11px, 1.2vw, 14px);
   font-weight: 600;
   color: #999;
-  word-break: break-all;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .track-icon {
@@ -273,26 +298,4 @@
 
 .track-icon:hover {
   transform: scale(1.15);
-}
-
-.discography-view .official-media-content {
-  margin-bottom: clamp(30px, 4vw, 50px);
-}
-
-@media screen and (max-width: 768px) {
-  .album-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .album-header {
-    flex-direction: column;
-  }
-
-  .album-cover-box {
-    width: 100%;
-  }
-
-  .album-meta {
-    padding: clamp(15px, 3vw, 20px) 0 0 0;
-  }
 }
