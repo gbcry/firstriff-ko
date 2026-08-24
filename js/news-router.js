@@ -34,7 +34,7 @@ async function initLatestNews() {
 
 // 뉴스 목록 / 뉴스 상세 서브 라우터
 async function initNews() {
-  const container = document.querySelector(".news-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -106,7 +106,7 @@ async function renderNewsList(container) {
     }
 
     container.innerHTML = `
-    <div class="news-list-view">
+    <div class="page-view">
       <div class="section-title">NEWS</div>
       <div class="news-list">
         ${listHTML}

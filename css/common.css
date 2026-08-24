@@ -124,7 +124,7 @@ a {
 }
 
 /* =========================================
-   Common Components - Section Title
+   Common Components
 ========================================= */
 
 .section-title {
@@ -139,10 +139,6 @@ a {
   text-align: left;
   width: 100%;
 }
-
-/* =========================================
-   Common Components - Official Media
-========================================= */
 
 .official-media-content {
   display: flex;
@@ -212,16 +208,12 @@ a {
   color: var(--color-point);
 }
 
-/* =========================================
-   Common Components : Back To List Button
-========================================= */
-
 .back-btn-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: clamp(20px, 4vw, 40px);
-  margin-bottom: clamp(30px, 5vw, 60px);
+  margin-top: clamp(15px, 4vw, 40px);
+  margin-bottom: clamp(12px, 2.5vw, 24px);
 }
 
 .back-to-list-btn {
@@ -254,10 +246,6 @@ a {
 .back-to-list-btn:hover i {
   transform: translateX(-4px);
 }
-
-/* =========================================
-   Common Components : Band Tab
-========================================= */
 
 .band-tab-menu {
   position: relative;
@@ -325,10 +313,6 @@ a {
   opacity: 1;
 }
 
-/* =========================================
-   Common Components : Filter Menu
-========================================= */
-
 .filter-menu {
   display: flex;
   justify-content: center;
@@ -363,6 +347,22 @@ a {
   color: var(--color-white);
 }
 
+/* 서브 페이지 전체를 감싸는 컨테이너 */
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-view {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 60px) clamp(15px, 4vw, 40px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
 
 /* =========================================
    Footer

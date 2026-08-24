@@ -1,3 +1,4 @@
+const subPageTemplate = `<div class="page-container"></div>`;
 const templates = {
   home: `
     <div id="band-slider">
@@ -9,17 +10,15 @@ const templates = {
 
     <div id="latest-news">
       <div class="section-title">NEWS</div>
-
       <div class="news-list"></div>
-
       <a href="#news" class="view-more-btn">VIEW MORE <i class="fa-solid fa-plus"></i></a>
     </div>
   `,
-  news: `<div class="news-container"></div>`,
-  band: `<div class="band-container"></div>`,
-  character: `<div class="character-container"></div>`,
-  discography: `<div class="discography-container"></div>`,
-  live: `<div class="live-container"></div>`
+  news: subPageTemplate,
+  band: subPageTemplate,
+  character: subPageTemplate,
+  discography: subPageTemplate,
+  live: subPageTemplate
 };
 
 // 화면 교체 라우터
