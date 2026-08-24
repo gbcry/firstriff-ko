@@ -110,6 +110,12 @@
   letter-spacing: clamp(1px, 0.3vw, 4px);
 }
 
+@media screen and (max-width: 768px) {
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* =========================================
    Album Detail
 ========================================= */
