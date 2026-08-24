@@ -1,5 +1,5 @@
 async function initLiveEvent() {
-  const container = document.querySelector(".live-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -33,7 +33,7 @@ async function initLiveEvent() {
 }
 
 async function initLiveDetail() {
-  const container = document.querySelector(".live-container");
+  const container = document.querySelector(".page-container");
 
   if (!container) return;
 
@@ -125,7 +125,7 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
   }
 
   container.innerHTML = `
-    <div class="live-view">
+    <div class="page-view">
       <div class="section-title">LIVE</div>
 
       <div class="band-tab-menu">
@@ -269,7 +269,7 @@ async function renderLiveDetailView(container, bands, currentBand, currentLive) 
   `;
 
   container.innerHTML = `
-      <div class="live-view">
+      <div class="page-view">
         <div class="section-title">LIVE</div>
 
         <div class="band-tab-menu">
