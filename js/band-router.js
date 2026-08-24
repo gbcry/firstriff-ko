@@ -55,7 +55,7 @@ async function renderBandView(container, bands, currentBand, characters) {
 
       return `
         <a href="#character/${memberId}" class="member-card">
-          <img src="${thumbImg}" class="member-img">
+          <img src="${thumbImg}" class="member-img" loading="lazy">
           <div class="member-name">${krName}</div>
         </a>
       `;
@@ -81,7 +81,7 @@ async function renderBandView(container, bands, currentBand, characters) {
 
       mediaHTML += `
         <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'">
+          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'" loading="lazy">
           <span class="official-media-text">${link.text}</span>
         </a>
       `;

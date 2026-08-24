@@ -36,7 +36,7 @@
         "message": "거짓말하는 것도 쉬운 게 아니거든."
       },
       "images": {
-        "thumbnail": "images/character/togenashitogeari/subaru_thumb.jpg",
+        "thumbnail": "images/character/togenashitogeari/subaru_thumb.webp",
         "full_body": "images/character/togenashitogeari/subaru_full.webp"
       },
       "links": {
@@ -51,12 +51,12 @@
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664119579356938240?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/mirei_togetoge/status/1684035814819504128?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/mirei_thumb.jpg"
+          "thumbnail": "images/character/togenashitogeari/mirei_thumb.webp"
         }
       }
     },
@@ -91,7 +91,7 @@
         "message": "나도 너도, 이런 곳에서 멈춰 서 있을 때가 아니야."
       },
       "images": {
-        "thumbnail": "images/character/togenashitogeari/momoka_thumb.jpg",
+        "thumbnail": "images/character/togenashitogeari/momoka_thumb.webp",
         "full_body": "images/character/togenashitogeari/momoka_full.webp"
       },
       "links": {
@@ -106,12 +106,12 @@
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1663742101362814976?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/yuri_togetoge/status/1684035823031791616?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/yuri_thumb.jpg"
+          "thumbnail": "images/character/togenashitogeari/yuri_thumb.webp"
         }
       }
     },
@@ -147,7 +147,7 @@
         "message": "저, 믿고 있어요... 모모카 씨의 노래를요."
       },
       "images": {
-        "thumbnail": "images/character/togenashitogeari/nina_thumb.jpg",
+        "thumbnail": "images/character/togenashitogeari/nina_thumb.webp",
         "full_body": "images/character/togenashitogeari/nina_full.webp"
       },
       "links": {
@@ -162,12 +162,12 @@
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1663409904948764672?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/rina_togetoge/status/1684035814722879492?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/rina_thumb.jpg"
+          "thumbnail": "images/character/togenashitogeari/rina_thumb.webp"
         }
       }
     },
@@ -203,7 +203,7 @@
         "message": "넌 포기 안 할 거잖아... 누가 뭐라 하든."
       },
       "images": {
-        "thumbnail": "images/character/togenashitogeari/tomo_thumb.jpg",
+        "thumbnail": "images/character/togenashitogeari/tomo_thumb.webp",
         "full_body": "images/character/togenashitogeari/tomo_full.webp"
       },
       "links": {
@@ -218,12 +218,12 @@
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664466868651053058?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/natsu_togetoge/status/1684035820141809664?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/natsu_thumb.jpg"
+          "thumbnail": "images/character/togenashitogeari/natsu_thumb.webp"
         }
       }
     },
@@ -260,7 +260,7 @@
         "message": "그렇게 마음에 안 드신다면, 한번 싸워보는 건 어떨까요?"
       },
       "images": {
-        "thumbnail": "images/character/togenashitogeari/rupa_thumb.jpg",
+        "thumbnail": "images/character/togenashitogeari/rupa_thumb.webp",
         "full_body": "images/character/togenashitogeari/rupa_full.webp"
       },
       "links": {
@@ -275,12 +275,12 @@
         "x_intro": {
           "url": "https://x.com/girlsbandcry/status/1664832455663300609?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+          "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/shuri_togetoge/status/1684035823874998273?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/shuri_thumb.jpg"
+          "thumbnail": "images/character/togenashitogeari/shuri_thumb.webp"
         }
       }
     },
@@ -310,7 +310,7 @@
         "message": "즐거운 일은 즐거운 법... 그러니까 즐기면 그만이야!"
       },
       "images": {
-        "thumbnail": "images/character/cannalily/shion_thumb.jpg",
+        "thumbnail": "images/character/cannalily/shion_thumb.webp",
         "full_body": "images/character/cannalily/shion_full.webp"
       },
       "links": {
@@ -325,12 +325,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2037001602444542279?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/KisakiCannaLily/status/2035683697631052136?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/kisaki_thumb.jpg"
+          "thumbnail": "images/character/cannalily/kisaki_thumb.webp"
         }
       }
     },
@@ -359,7 +359,7 @@
         "message": "어떤 녀석이든 상관없어, 활짝 피어난대도 좋단 말이야── 그런 록을 하고 싶어."
       },
       "images": {
-        "thumbnail": "images/character/cannalily/rindo_thumb.jpg",
+        "thumbnail": "images/character/cannalily/rindo_thumb.webp",
         "full_body": "images/character/cannalily/rindo_full.webp"
       },
       "links": {
@@ -374,12 +374,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036639206458495174?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/AruneCannaLily/status/2035684017765503123?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/arune_thumb.jpg"
+          "thumbnail": "images/character/cannalily/arune_thumb.webp"
         }
       }
     },
@@ -410,7 +410,7 @@
         "message": "필사적인... 그게 나의, 소리...!"
       },
       "images": {
-        "thumbnail": "images/character/cannalily/ayame_thumb.jpg",
+        "thumbnail": "images/character/cannalily/ayame_thumb.webp",
         "full_body": "images/character/cannalily/ayame_full.webp"
       },
       "links": {
@@ -425,12 +425,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036276829565362653?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/RineCannaLily/status/2035682465919180926?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/rine_thumb.jpg"
+          "thumbnail": "images/character/cannalily/rine_thumb.webp"
         }
       }
     },
@@ -461,7 +461,7 @@
         "message": "...혼자서는 아무것도 못 하는건, 이제 싫으니까."
       },
       "images": {
-        "thumbnail": "images/character/cannalily/kaede_thumb.jpg",
+        "thumbnail": "images/character/cannalily/kaede_thumb.webp",
         "full_body": "images/character/cannalily/kaede_full.webp"
       },
       "links": {
@@ -476,12 +476,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036382515259421056?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/YuwaCannaLily/status/2035684186624074162?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/yuwa_thumb.jpg"
+          "thumbnail": "images/character/cannalily/yuwa_thumb.webp"
         }
       }
     },
@@ -513,7 +513,7 @@
         "message": "...나는, 이곳에 피어있던 꽃과...마주하지 못했으니까..."
       },
       "images": {
-        "thumbnail": "images/character/cannalily/nazuna_thumb.jpg",
+        "thumbnail": "images/character/cannalily/nazuna_thumb.webp",
         "full_body": "images/character/cannalily/nazuna_full.webp"
       },
       "links": {
@@ -528,12 +528,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2036744903267348496?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+          "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/SakuraCannaLily/status/2035684248909496399?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/sakura_thumb.jpg"
+          "thumbnail": "images/character/cannalily/sakura_thumb.webp"
         }
       }
     },
@@ -561,7 +561,7 @@
         "message": "그런 말은, 팔로워 수로 이기고 나서 해 주시겠어요ー?"
       },
       "images": {
-        "thumbnail": "images/character/f-272/ari_thumb.jpg",
+        "thumbnail": "images/character/f-272/ari_thumb.webp",
         "full_body": "images/character/f-272/ari_full.webp"
       },
       "links": {
@@ -576,12 +576,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046170978162712643?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/yoshi_F272/status/2045811164572242077?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/yoshi_thumb.jpg"
+          "thumbnail": "images/character/f-272/yoshi_thumb.webp"
         }
       }
     },
@@ -611,7 +611,7 @@
         "message": "..."
       },
       "images": {
-        "thumbnail": "images/character/f-272/koto_thumb.jpg",
+        "thumbnail": "images/character/f-272/koto_thumb.webp",
         "full_body": "images/character/f-272/koto_full.webp"
       },
       "links": {
@@ -626,12 +626,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046906117419405518?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/towa_F272/status/2045460964829802862?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/towa_thumb.jpg"
+          "thumbnail": "images/character/f-272/towa_thumb.webp"
         }
       }
     },
@@ -660,7 +660,7 @@
         "message": "불쌍한 건, 당신들 아니야?"
       },
       "images": {
-        "thumbnail": "images/character/f-272/hazuki_thumb.jpg",
+        "thumbnail": "images/character/f-272/hazuki_thumb.webp",
         "full_body": "images/character/f-272/hazuki_full.webp"
       },
       "links": {
@@ -675,12 +675,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2046529551833219473?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/miyu_F272/status/2045462726504546730?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/miyu_thumb.jpg"
+          "thumbnail": "images/character/f-272/miyu_thumb.webp"
         }
       }
     },
@@ -709,7 +709,7 @@
         "message": "뭐죠...노력하고 싶어지기라도 한 건가요?"
       },
       "images": {
-        "thumbnail": "images/character/f-272/momono_thumb.jpg",
+        "thumbnail": "images/character/f-272/momono_thumb.webp",
         "full_body": "images/character/f-272/momono_full.webp"
       },
       "links": {
@@ -724,12 +724,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2047254434833629568?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/hinano_F272/status/2045463037499646093?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/hinano_thumb.jpg"
+          "thumbnail": "images/character/f-272/hinano_thumb.webp"
         }
       }
     },
@@ -759,7 +759,7 @@
         "message": "여긴 여기만의 규칙이 있거든. 지킬 자신 있어?"
       },
       "images": {
-        "thumbnail": "images/character/f-272/saki_thumb.jpg",
+        "thumbnail": "images/character/f-272/saki_thumb.webp",
         "full_body": "images/character/f-272/saki_full.webp"
       },
       "links": {
@@ -774,12 +774,12 @@
         "x_intro": {
           "url": "https://x.com/gbc_firstriff/status/2047616554540704006?s=20",
           "text": "캐릭터 소개",
-          "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+          "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
         },
         "cv_comment": {
           "url": "https://x.com/luca_F272/status/2045463726623756681?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/luca_thumb.jpg"
+          "thumbnail": "images/character/f-272/luca_thumb.webp"
         }
       }
     }

@@ -87,7 +87,7 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
     const albumCardsHTML = bandAlbums.map((album) => `
       <a href="#album/${album.id}" class="album-card" data-type="${album.album_type}">
         <div class="album-img-wrapper">
-          <img src="${album.cover_image}" class="album-cover">
+          <img src="${album.cover_image}" class="album-cover" loading="lazy">
         </div>
         <div class="album-info">
           <div class="album-tag">${album.album_tag}</div>
@@ -222,7 +222,7 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
   if (currentAlbum.media_links && Array.isArray(currentAlbum.media_links)) {
     mediaHTML += currentAlbum.media_links.map((link) => `
         <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="${getYouTubeThumbnail(link.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'">
+            <img src="${getYouTubeThumbnail(link.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'" loading="lazy">
             <span class="official-media-text">${link.text}</span>
           </a>
       `).join("");

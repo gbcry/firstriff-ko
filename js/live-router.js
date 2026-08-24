@@ -90,7 +90,7 @@ async function renderLiveList(container, bands, currentBand, bandLives, initialF
   } else {
     const liveCardsHTML = bandLives.map((live) => {
       const imgHTML = live.key_visual
-        ? `<img src="${live.key_visual}" class="live-kv-img">`
+        ? `<img src="${live.key_visual}" class="live-kv-img" loading="lazy">`
         : `<div class="no-img-placeholder">NO IMAGE</div>`;
 
       const firstDate = live.schedules[0]?.date || "일정 미정";

@@ -58,7 +58,7 @@ async function renderCharacterView(container, currentChar, currentBand, characte
 
     return `
       <a href="#character/${memberId}" class="character-member-card ${isActive}">
-        <img src="${thumb}" class="character-member-img">
+        <img src="${thumb}" class="character-member-img" loading="lazy">
         <div class="character-member-info">
           <div class="character-member-part">${position}</div>
           <div class="character-member-name">${name}</div>
@@ -82,7 +82,7 @@ async function renderCharacterView(container, currentChar, currentBand, characte
 
       mediaHTML += `
         <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'">
+          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'" loading="lazy">
           <span class="official-media-text">${link.text}</span>
         </a>
       `;

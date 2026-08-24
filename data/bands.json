@@ -10,13 +10,13 @@
       ],
       "images": {
         "main_visual": "images/band/togenashitogeari/main_visual.webp",
-        "band_main": "images/band/togenashitogeari/band_main.png",
-        "band_logo": "images/band/togenashitogeari/band_logo.png",
+        "band_main": "images/band/togenashitogeari/band_main.webp",
+        "band_logo": "images/band/togenashitogeari/band_logo.webp",
         "tab_logo": {
           "default": "images/band/togenashitogeari/tab_logo_default.webp",
           "hover": "images/band/togenashitogeari/tab_logo_hover.webp"
         },
-        "background": "images/band/togenashitogeari/background.png"
+        "background": "images/band/togenashitogeari/background.webp"
       },
       "member_ids": [
         "subaru",
@@ -30,17 +30,17 @@
           {
             "url": "https://x.com/girlsbandcry",
             "text": "걸즈 밴드 크라이 공식 X",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
           },
           {
             "url": "https://www.instagram.com/toge0toge1/",
             "text": "토게나시 토게아리 공식 인스타",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
           },
           {
             "url": "https://ageha.agehasprings.com/archives/artist/togenashitogeari",
             "text": "토게나시 토게아리 공식 사이트",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.jpg"
+            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
           }
         ],
         "debut_pv": {
@@ -65,13 +65,13 @@
       ],
       "images": {
         "main_visual": "images/band/cannalily/main_visual.webp",
-        "band_main": "images/band/cannalily/band_main.png",
-        "band_logo": "images/band/cannalily/band_logo.png",
+        "band_main": "images/band/cannalily/band_main.webp",
+        "band_logo": "images/band/cannalily/band_logo.webp",
         "tab_logo": {
           "default": "images/band/cannalily/tab_logo_default.webp",
           "hover": "images/band/cannalily/tab_logo_hover.webp"
         },
-        "background": "images/band/cannalily/background.png"
+        "background": "images/band/cannalily/background.webp"
       },
       "member_ids": [
         "shion",
@@ -85,12 +85,12 @@
           {
             "url": "https://x.com/CannaLily_GBC",
             "text": "Canna Lily 공식 X",
-            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
           },
           {
             "url": "https://cannalily-official.com/",
             "text": "Canna Lily 공식 사이트",
-            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.jpg"
+            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
           }
         ],
         "debut_pv": {
@@ -115,13 +115,13 @@
       ],
       "images": {
         "main_visual": "images/band/f-272/main_visual.webp",
-        "band_main": "images/band/f-272/band_main.png",
-        "band_logo": "images/band/f-272/band_logo.png",
+        "band_main": "images/band/f-272/band_main.webp",
+        "band_logo": "images/band/f-272/band_logo.webp",
         "tab_logo": {
           "default": "images/band/f-272/tab_logo_default.webp",
           "hover": "images/band/f-272/tab_logo_hover.webp"
         },
-        "background": "images/band/f-272/background.png"
+        "background": "images/band/f-272/background.webp"
       },
       "member_ids": [
         "ari",
@@ -135,12 +135,12 @@
           {
             "url": "https://x.com/F_272_GBC",
             "text": "F-272 공식 X",
-            "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+            "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
           },
           {
             "url": "https://f-272.bzone.co.jp/",
             "text": "F-272 공식 사이트",
-            "thumbnail": "images/band/f-272/f-272_sns_thumb.jpg"
+            "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
           }
         ],
         "debut_pv": {
