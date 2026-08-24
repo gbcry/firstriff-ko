@@ -134,8 +134,12 @@ async function renderCharacterView(container, currentChar, currentBand, characte
                 <div class="profile-value">${formatVal(currentChar.profile.favorite_food)}</div>
               </div>
               <div class="profile-row">
-                <div class="profile-label">취미 / 어필 포인트</div>
+                <div class="profile-label">취미</div>
                 <div class="profile-value">${formatVal(currentChar.profile.hobby)}</div>
+              </div>
+              <div class="profile-row">
+                <div class="profile-label">특기 / 어필 포인트</div>
+                <div class="profile-value">${formatVal(currentChar.profile.specialty)}</div>
               </div>
             </div>
 
