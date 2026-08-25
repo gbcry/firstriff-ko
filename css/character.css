@@ -110,15 +110,15 @@
   background-color: var(--color-gray);
   padding: clamp(15px, 2.5vw, 30px);
   border-radius: 8px;
-  font-style: italic; 
 }
 
 .character-quote {
   font-family: var(--font-main);
   font-size: clamp(18px, 2.2vw, 24px);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 15px;
   color: var(--color-black);
+  font-style: italic; 
 }
 
 .character-desc-box p {
