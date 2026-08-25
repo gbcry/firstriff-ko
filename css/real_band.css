@@ -1,0 +1,291 @@
+/* =========================================
+   Real Band Detail Layout (이중 배경 구조)
+========================================= */
+.real-band-detail-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(20px, 3vw, 40px) clamp(10px, 2vw, 25px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray);
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
+  box-sizing: border-box;
+  margin-bottom: clamp(40px, 6vw, 80px);
+}
+
+.real-band-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  background-color: var(--color-white);
+}
+
+.real-band-hero-banner {
+  width: 100%;
+  display: flex;
+}
+
+.real-band-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   Real Band Content & Meta
+========================================= */
+.real-band-intro-content {
+  width: 100%;
+  padding: clamp(30px, 6vw, 80px) clamp(15px, 4vw, 40px);
+  box-sizing: border-box;
+}
+
+.real-band-meta-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(10px, 1.5vw, 15px);
+  margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.real-band-name {
+  font-family: var(--font-main);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  color: var(--color-black);
+  word-break: keep-all;
+}
+
+.real-band-meta-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(15px, 3vw, 25px);
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-weight: 500;
+  color: #444;
+}
+
+.real-meta-label {
+  font-weight: 700;
+  margin-right: 5px;
+  color: var(--color-point);
+}
+
+.real-band-sns-group,
+.real-support-sns-group {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 15px);
+}
+
+.real-sns-btn {
+  font-size: clamp(22px, 3vw, 28px);
+  color: var(--color-black);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.real-sns-btn:hover {
+  color: var(--color-point);
+  transform: scale(1.1);
+}
+
+/* =========================================
+   Sections & Members Grid
+========================================= */
+.real-section-subtitle {
+  font-family: var(--font-main);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--color-black);
+  border-bottom: clamp(3px, 0.5vw, 5px) solid var(--color-point);
+  padding-bottom: clamp(8px, 1.5vw, 12px);
+  margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+.real-band-members-section {
+  margin-bottom: clamp(50px, 7vw, 80px);
+}
+
+.real-band-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 15vw, 180px), 1fr));
+  gap: clamp(15px, 3vw, 25px);
+  justify-content: center;
+}
+
+.real-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: clamp(8px, 1.2vw, 12px);
+  transition: transform 0.2s ease;
+}
+
+.real-member-thumb-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  border: clamp(2px, 0.4vw, 4px) solid var(--color-black);
+  transition: border-color 0.2s ease;
+}
+
+.real-member-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.2s ease;
+}
+
+.real-member-name {
+  font-size: clamp(14px, 1.6vw, 20px);
+  font-weight: 700;
+  color: var(--color-black);
+  transition: transform 0.2s ease;
+}
+
+.real-member-card:hover .real-member-thumb-box {
+  border-color: var(--color-point); 
+}
+
+.real-member-card:hover .real-member-img {
+  transform: scale(1.05); 
+}
+
+.real-member-card:hover .real-member-name {
+  color: var(--color-point);
+}
+
+/* =========================================
+   Support Members (Vertical List)
+========================================= */
+.real-support-members-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vw, 30px);
+}
+
+.real-support-card {
+  display: flex;
+  padding: clamp(15px, 2.5vw, 30px);
+  gap: clamp(15px, 3vw, 30px);
+  align-items: flex-start;
+}
+
+.real-support-img-box {
+  flex: 0 0 clamp(120px, 18vw, 200px);
+  aspect-ratio: 1 / 1;
+  border: clamp(2px, 0.4vw, 4px) solid var(--color-black);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.real-support-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.real-support-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.real-support-name-row {
+  display: flex;
+  justify-content: space-between; /* 이름은 왼쪽, SNS는 오른쪽 끝으로 배치 */
+  align-items: center;
+  margin-bottom: 5px;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.real-support-name-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.real-support-band-tag {
+  font-weight: 800;
+  color: var(--color-point);
+ font-size: clamp(13px, 1.5vw, 16px);
+  margin-bottom: clamp(4px, 0.8vw, 8px);
+}
+
+.real-support-name-kr {
+  font-family: var(--font-main);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--color-black);
+  margin-right: clamp(10px, 1.5vw, 20px);
+}
+
+.real-support-name-jp {
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-weight: 700;
+  color: #777;
+}
+
+.real-support-position {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: clamp(15px, 3vw, 30px);
+}
+
+.real-support-profile {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.2vw, 12px);
+  margin-bottom: clamp(15px, 3vw, 25px);
+  flex: 1;
+}
+
+.real-profile-row {
+  display: flex;
+  align-items: flex-start;
+  font-size: clamp(13px, 1.5vw, 16px);
+  line-height: 1.6;
+}
+
+.real-profile-row .real-label {
+  flex: 0 0 clamp(80px, 10vw, 120px);
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.real-profile-row .real-value {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+  word-break: keep-all;
+}
+
+.real-live-list {
+  padding-left: clamp(15px, 2vw, 25px);
+  margin: 0;
+}
+
+/* =========================================
+   Mobile Responsiveness
+========================================= */
+@media screen and (max-width: 768px) {
+  .real-support-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .real-support-img-box {
+    width: 100%;
+    max-width: 180px;
+  }
+}
