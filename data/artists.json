@@ -8,7 +8,10 @@
                 "main": "미레이",
                 "sub": "美怜"
             },
-            "character": "아와 스바루",
+            "character": {
+                "id": "subaru",
+                "name": "아와 스바루"
+            },
             "position": "Dr.",
             "profile": {
                 "birth": "2003년 11월 7일",
@@ -68,7 +71,10 @@
                 "main": "유리",
                 "sub": "⼣莉"
             },
-            "character": "카와라기 모모카",
+            "character": {
+                "id": "momoka",
+                "name": "카와라기 모모카"
+            },
             "position": "Gt.",
             "profile": {
                 "birth": "2000년 9월 26일",
@@ -123,7 +129,10 @@
                 "main": "리나",
                 "sub": "理名"
             },
-            "character": "이세리 니나",
+            "character": {
+                "id": "nina",
+                "name": "이세리 니나"
+            },
             "position": "Vo.",
             "profile": {
                 "birth": "2007년 11월 13일",
@@ -178,7 +187,10 @@
                 "main": "나츠",
                 "sub": "凪都"
             },
-            "character": "에비즈카 토모",
+            "character": {
+                "id": "tomo",
+                "name": "에비즈카 토모"
+            },
             "position": "Key.",
             "profile": {
                 "birth": "2001년 8월 23일",
@@ -240,7 +252,10 @@
                 "main": "슈리",
                 "sub": "朱李"
             },
-            "character": "루파",
+            "character": {
+                "id": "rupa",
+                "name": "루파"
+            },
             "position": "Ba.",
             "profile": {
                 "birth": "2003년 12월 22일",
@@ -438,7 +453,10 @@
                 "main": "시노츠키 키사키",
                 "sub": "紫乃月 姫咲"
             },
-            "character": "사카키바라 시온",
+            "character": {
+                "id": "shion",
+                "name": "사카키바라 시온"
+            },
             "position": "Ba.",
             "profile": {
                 "birth": "2003년 10월 9일",
@@ -499,7 +517,10 @@
                 "main": "시이나 아루네",
                 "sub": "椎名 在音"
             },
-            "character": "치가사키 린도",
+            "character": {
+                "id": "rindo",
+                "name": "치가사키 린도"
+            },
             "position": "Dr.",
             "profile": {
                 "birth": "2004년 3월 15일",
@@ -560,7 +581,10 @@
                 "main": "야노 유와",
                 "sub": "箭野 結羽"
             },
-            "character": "키츠타 카에데",
+            "character": {
+                "id": "kaede",
+                "name": "키츠타 카에데"
+            },
             "position": "Vo.",
             "profile": {
                 "birth": "2004년 1월 16일",
@@ -628,7 +652,10 @@
                 "main": "하야사카 리네",
                 "sub": "早坂 莉寧"
             },
-            "character": "호시 아야메",
+            "character": {
+                "id": "ayame",
+                "name": "호시 아야메"
+            },
             "position": "Gt.",
             "profile": {
                 "birth": "2007년 11월 14일",
@@ -688,7 +715,10 @@
                 "main": "사노 사쿠라",
                 "sub": "佐野 櫻"
             },
-            "character": "유키시마 나즈나",
+            "character": {
+                "id": "nazuna",
+                "name": "유키시마 나즈나"
+            },
             "position": "Key.",
             "profile": {
                 "birth": "2006년 4월 5일",
@@ -749,7 +779,10 @@
                 "main": "YOSHI",
                 "sub": null
             },
-            "character": "나카무라 아리",
+            "character": {
+                "id": "ari",
+                "name": "나카무라 아리"
+            },
             "position": "Dr.",
             "profile": {
                 "birth": "2007년 11월 30일",
@@ -803,7 +836,10 @@
                 "main": "MIYU",
                 "sub": null
             },
-            "character": "쿠로미야 하즈키",
+            "character": {
+                "id": "hazuki",
+                "name": "쿠로미야 하즈키"
+            },
             "position": "Gt.",
             "profile": {
                 "birth": "2006년 10월 20일",
@@ -856,7 +892,10 @@
                 "main": "TOWA",
                 "sub": null
             },
-            "character": "우다가와 코토",
+            "character": {
+                "id": "koto",
+                "name": "우다가와 코토"
+            },
             "position": "Gt.",
             "profile": {
                 "birth": "????년 ??월 ??일",
@@ -907,7 +946,10 @@
                 "main": "HINANO",
                 "sub": null
             },
-            "character": "아사이 모모노",
+            "character": {
+                "id": "momono",
+                "name": "아사이 모모노"
+            },
             "position": "Ba.",
             "profile": {
                 "birth": "2006년 8월 24일",
@@ -948,7 +990,7 @@
                     }
                 ]
             },
-            "image": "images/artist/f-272/miyu.webp",
+            "image": "images/artist/f-272/hinano.webp",
             "sns": {
                 "x": "https://x.com/hinano_F272"
             }
@@ -961,7 +1003,10 @@
                 "main": "LUCA",
                 "sub": null
             },
-            "character": "카토 사키",
+            "character": {
+                "id": "saki",
+                "name": "카토 사키"
+            },
             "position": "Vo.",
             "profile": {
                 "birth": "2005년 7월 12일",

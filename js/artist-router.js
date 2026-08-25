@@ -3,16 +3,98 @@ async function initArtist() {
 
   if (!container) return;
 
-  const templates = `
+  // 기본값 미레이
+  const hash = window.location.hash;
+  const artistId = hash.split("/")[1] || "mirei";
+
+  const realBands = await fetchRealBandsData();
+  const artists = await fetchArtistsData();
+
+  // 현재 주소와 일치하는 아티스트 데이터 찾기
+  const currentArtist = artists.find((artist) => artist.id === artistId)
+
+  if (!currentArtist) {
+    container.innerHTML = "<h2>아티스트 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
+
+  const currentBand = realBands.find((band) => band.id === currentArtist.band_id);
+
+  renderArtistView(container, currentArtist, currentBand, artists, realBands)
+}
+
+async function renderArtistView(container, currentArtist, currentBand, artists, realBands) {
+  // sns 아이콘 매핑
+  const snsConfig = {
+    official_site: "fa-solid fa-link",
+    x: "fa-brands fa-x-twitter",
+    youtube: "fa-brands fa-youtube",
+    instagram: "fa-brands fa-instagram",
+    weibo: "fa-brands fa-weibo",
+    bilibili: "fa-brands fa-bilibili"
+  };
+
+  // 밴드 탭
+  const tabMenuHTML = realBands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#real_band/${band.id}" class="band-tab ${isActive}">
+          <img src="images/band/${band.id}/tab_logo_default.webp" class="tab-logo-default">
+          <img src="images/band/${band.id}/tab_logo_hover.webp" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 아티스트 sns 링크
+  let artistSnsHTML = "";
+  if (currentArtist.sns) {
+    artistSnsHTML = Object.entries(currentArtist.sns)
+      .filter(([key, url]) => url) // url이 null이 아닌 것만
+      .map(([key, url]) => {
+        const iconClass = snsConfig[key] || "fa-solid fa-link";
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="sns-btn"><i class="${iconClass}"></i></a>`
+      }).join("")
+  }
+
+  // 밴드 멤버
+  const membersHTML = currentBand.member_ids.map((memberId) => {
+    const artist = artists.find((a) => a.id === memberId);
+    if (!artist) return "";
+    return `
+      <a href="#artist/${artist.id}" class="member-card">
+        <div class="member-thumb-box"><img src="${artist.image}" class="member-img"></div>
+        <div class="member-name">${artist.name.main}</div>
+      </a>
+    `;
+  }).join("")
+
+  const jpNameHTML = currentArtist.name.sub ? `<span class="artist-name-sub">${currentArtist.name.sub}</span>` : "";
+
+  // 프로필
+  const detailsHTML = currentArtist.profile.details && currentArtist.profile.details.length > 0
+    ? currentArtist.profile.details.map((detail) => {
+      const valueStr = Array.isArray(detail.value)
+        ? detail.value.join(" | ")
+        : detail.value;
+      return `
+        <div class="profile-row">
+          <span class="label">${detail.label}</span><span class="value">${valueStr}</span>
+        </div>
+      `;
+    }).join("")
+    : "";
+
+  // 최종 렌더링
+  container.innerHTML = `
     <div class="page-view">
       <div class="section-title">ARTIST</div>
 
       <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.webp" class="menu-bg-img">
-        <a href="#real_band/togenashitogeari" class="band-tab active">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+        <img src="images/band/${currentBand.id}/background.webp" class="menu-bg-img">
+        ${tabMenuHTML}
       </div>
 
       <div class="band-detail-content">
@@ -20,42 +102,37 @@ async function initArtist() {
 
           <div class="artist-profile-layout">
             <div class="artist-visual-box">
-              <img src="images/artist/togenashitogeari/mirei.webp" class="artist-main-img">
+              <img src="${currentArtist.image}" class="artist-main-img">
             </div>
 
             <div class="artist-info-box">
               <div class="artist-name-header">
                 <div class="artist-band-row">
-                  <div class="artist-band-tag">토게나시 토게아리</div>
-                  <div class="artist-position">Dr.</div>
+                  <div class="artist-band-tag">${currentArtist.band_name}</div>
+                  <div class="artist-position">${currentArtist.position}</div>
                 </div>
 
                 <div class="artist-name-row">
                   <div class="artist-name-box">
-                    <span class="artist-name-main">미레이</span>
-                    <span class="artist-name-sub">美怜</span>
+                    <span class="artist-name-main">${currentArtist.name.main}</span>
+                    ${jpNameHTML}
                   </div>
                   
                   <div class="artist-sns-group">
-                    <a href="https://twitter.com/mirei_togetoge" target="_blank" rel="noopener noreferrer" class="sns-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/mirei_togetoge/" target="_blank" rel="noopener noreferrer" class="sns-btn"><i class="fa-brands fa-instagram"></i></a>
+                    ${artistSnsHTML}
                   </div>
                 </div>
               </div>
 
-              <a href="#character/subaru" class="artist-character-link">
+              <a href="#character/${currentArtist.character.id}" class="artist-character-link">
                 <span class="link-label">담당 캐릭터</span>
-                <span class="link-value">아와 스바루 <i class="fa-solid fa-chevron-right"></i></span>
+                <span class="link-value">${currentArtist.character.name} <i class="fa-solid fa-chevron-right"></i></span>
               </a>
 
               <div class="artist-profile-details">
-                <div class="profile-row"><span class="label">생일</span><span class="value">2003년 11월 7일</span></div>
-                <div class="profile-row"><span class="label">출신지</span><span class="value">카나가와</span></div>
-                <div class="profile-row"><span class="label">취미</span><span class="value">맛있어 보이는 식당 찾기</span></div>
-                <div class="profile-row"><span class="label">특기</span><span class="value">찾은 식당이 대체로 맛있는 것</span></div>
-                <div class="profile-row"><span class="label">좋아하는 아티스트</span><span class="value">험브레더스 | King Gnu</span></div>
-                <div class="profile-row"><span class="label">좋아하는 애니/만화</span><span class="value">원피스 | 주술회전 | BANANA FISH | 강철의 연금술사 | FAIRY TAIL | 약속의 네버랜드 | 장송의 프리렌</span></div>
-                <div class="profile-row"><span class="label">좋아하는 음식</span><span class="value">단 것 | 고기</span></div>
+                <div class="profile-row"><span class="label">생일</span><span class="value">${currentArtist.profile.birth}</span></div>
+                <div class="profile-row"><span class="label">출신지</span><span class="value">${currentArtist.profile.hometown || "미공개"}</span></div>
+                ${detailsHTML}
               </div>
 
             </div>
@@ -64,16 +141,7 @@ async function initArtist() {
           <div class="artist-members-section">
             <div class="section-subtitle">MEMBER</div>
             <div class="band-members-grid">
-              <!-- 멤버 카드 예시 -->
-              <a href="#artist/mirei" class="member-card">
-                <div class="member-thumb-box"><img src="images/artist/togenashitogeari/mirei.webp" class="member-img"></div>
-                <div class="member-name">미레이</div>
-              </a>
-              <a href="#artist/yuri" class="member-card">
-                <div class="member-thumb-box"><img src="images/artist/togenashitogeari/yuri.webp" class="member-img"></div>
-                <div class="member-name">유리</div>
-              </a>
-              <!-- 나머지 멤버 생략 -->
+              ${membersHTML}
             </div>
           </div>
 
@@ -81,6 +149,4 @@ async function initArtist() {
       </div>
     </div>
   `;
-
-  container.innerHTML = templates;
 }

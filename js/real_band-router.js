@@ -30,8 +30,6 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     x: "fa-brands fa-x-twitter",
     youtube: "fa-brands fa-youtube",
     instagram: "fa-brands fa-instagram",
-    weibo: "fa-brands fa-weibo",
-    bilibili: "fa-brands fa-bilibili"
   };
 
   // 밴드 탭
