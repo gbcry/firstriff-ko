@@ -238,22 +238,20 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
 
   if (currentAlbum.media_links && Array.isArray(currentAlbum.media_links)) {
     mediaHTML += currentAlbum.media_links.map((link) => `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="album-media-link">
-          <img src="${getYouTubeThumbnail(link.url)}" class="album-media-thumb" onerror="this.style.display='none'" loading="lazy">
-          <span class="album-media-text">${link.text}</span>
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="video-link">
+          <img src="${getYouTubeThumbnail(link.url)}" class="video-thumb" onerror="this.style.display='none'" loading="lazy">
+          <span class="video-text">${link.text}</span>
         </a>
     `).join("");
   }
 
-  let albumMediaSection = "";
+  let videoSection = "";
 
   // 미디어 구역에 내용이 없으면 렌더링 x
   if (mediaHTML.trim() !== "") {
-    albumMediaSection = `
-      <div class="album-section-header media-spacing">
-        <h3 class="album-section-label">VIDEO</h3>
-      </div>
-      <div class="album-media-grid">
+    videoSection = `
+      <div class="section-subtitle">VIDEO</div>
+      <div class="video-grid">
         ${mediaHTML}
       </div>
     `;
@@ -297,7 +295,7 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
               ${tracklistHTML}
             </div>
 
-            ${albumMediaSection}
+            ${videoSection}
           </div>
         </div>
       </div>

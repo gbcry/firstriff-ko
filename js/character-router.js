@@ -9,6 +9,7 @@ async function initCharacter() {
 
   const characters = await fetchCharactersData();
   const bands = await fetchBandsData();
+  const artists = await fetchArtistsData();
 
   const currentChar = characters.find((char) => char.id === characterId);
 
@@ -19,147 +20,176 @@ async function initCharacter() {
 
   const currentBand = bands.find((band) => band.id === currentChar.band_id);
 
-  renderCharacterView(container, currentChar, currentBand, characters, bands);
+  renderCharacterView(container, currentChar, currentBand, characters, bands, artists);
 }
 
-async function renderCharacterView(container, currentChar, currentBand, characters, bands) {
+async function renderCharacterView(container, currentChar, currentBand, characters, bands, artists) {
   // 밴드 탭
   const tabMenuHTML = bands
     .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
       return `
-        <a href="#band/${band.id}" class="band-tab">
-          <img src="${band.images.tab_logo.default}" class="tab-logo-default">
-          <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
-        </a>
-      `;
+          <a href="#band/${band.id}" class="band-tab ${isActive}">
+            <img src="${band.images.tab_logo.default}" class="tab-logo-default">
+            <img src="${band.images.tab_logo.hover}" class="tab-logo-hover">
+          </a>
+        `;
     })
     .join("");
 
-  // 소개글
+  // 캐릭터 기본 정보 & 소개글
+  const jpNameHTML = currentChar.name.sub ? `<span class="character-name-sub">${currentChar.name.sub}</span>` : "";
   const introHTML = currentChar.profile.intro_text.map((text) => `<p>${text}</p>`).join("");
 
-  // 프로필 null 체크 & 포맷팅
-  const formatVal = (val) => {
-    if (val === null || val === undefined || val === "") return "미공개";
-    if (Array.isArray(val)) return val.join(" | ")
-    return val;
-  };
+  // 프로필
+  const detailsHTML = currentChar.profile.details && currentChar.profile.details.length > 0
+    ? currentChar.profile.details.map((detail) => {
+      const valueStr = Array.isArray(detail.value)
+        ? detail.value.join(" | ")
+        : detail.value;
+      return `
+        <div class="profile-row">
+          <span class="label">${detail.label}</span><span class="value">${valueStr}</span>
+        </div>
+      `;
+    }).join("")
+    : "";
 
-  // 멤버 목록
+  // 밴드 멤버
   const membersHTML = currentBand.member_ids.map((memberId) => {
     const member = characters.find((char) => char.id === memberId);
-
-    const isActive = memberId === currentChar.id ? "active" : "";
-
-    // 방어 코드
-    const name = member ? member.name.main : memberId;
-    const position = member ? member.position : "";
-    const thumb = member ? member.images.thumbnail : `images/character/${currentBand.id}/${memberId}_thumb.jpg`;
-
+    if (!member) return "";
     return `
-      <a href="#character/${memberId}" class="character-member-card ${isActive}">
-        <img src="${thumb}" class="character-member-img" loading="lazy">
-        <div class="character-member-info">
-          <div class="character-member-part">${position}</div>
-          <div class="character-member-name">${name}</div>
-        </div>
+      <a href="#character/${memberId}" class="member-card">
+        <div class="member-thumb-box"><img src="${member.images.thumbnail}" class="member-img" loading="lazy"></div>
+        <div class="member-name">${member.name.main}</div>
       </a>
     `;
-  }).join("");
+  }).join("")
 
   // 오피셜 미디어 목록
   let mediaHTML = "";
-  Object.values(currentChar.links).forEach((link) => {
-    if (link && link.url) {
-      const isYoutube = link.url.includes("youtube.com") || link.url.includes("youtu.be");
-      const iconClass = isYoutube ? "youtube" : "sns";
-
-      // sns는 저장된 이미지 사용, 유튜브면 자동 추출
-      let thumbImg = link.thumbnail;
-      if (!thumbImg && isYoutube) {
-        thumbImg = getYouTubeThumbnail(link.url);
+  if (currentChar.links) {
+    Object.values(currentChar.links).forEach((link) => {
+      if (link && link.url) {
+        mediaHTML += `
+          <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="video-link">
+            <img src="${getYouTubeThumbnail(link.url)}" class="video-thumb" onerror="this.style.display='none'" loading="lazy">
+            <span class="video-text">${link.text}</span>
+          </a>
+        `;
       }
+    });
+  }
 
-      mediaHTML += `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'" loading="lazy">
-          <span class="official-media-text">${link.text}</span>
-        </a>
-      `;
-    }
-  });
+  let videoSection = "";
+
+  // 미디어 구역에 내용이 없으면 렌더링 x
+  if (mediaHTML.trim() !== "") {
+    videoSection = `
+    <div class="character-videos-section">
+      <div class="section-subtitle">VIDEO</div>
+      <div class="video-grid">
+        ${mediaHTML}
+      </div>
+      </div>
+    `;
+  }
 
   container.innerHTML = `
     <div class="page-view">
-
       <div class="section-title">CHARACTER</div>
-
       <div class="band-tab-menu">
         <img src="${currentBand.images.background}" class="menu-bg-img">
         ${tabMenuHTML}
       </div>
 
-      <div class="character-detail-content">
+      <div class="band-detail-content">
+        <div class="band-detail-wrapper">
+          <div class="character-profile-layout">
 
-        <div class="character-visual-box">
-          <img src="${currentChar.images.full_body}" class="character-main-img">
-        </div>
-
-        <div class="character-info-box">
-
-          <div class="character-name-box">
-            <div class="character-part">${currentChar.position}</div>
-            <div class="character-name-main">${currentChar.name.main} <span class="character-name-sub">(${currentChar.name.sub})</span></div>
-          </div>
-
-          <div class="character-desc-box">
-            <div class="character-quote">“${currentChar.profile.message}”</div>
-            ${introHTML}
-          </div>
-
-          <div class="character-profile-box">
-            <div class="profile-header">PROFILE</div>
-
-            <div class="profile-table">
-              <div class="profile-row">
-                <div class="profile-label">나이</div>
-                <div class="profile-value">${formatVal(currentChar.profile.age)}</div>
+            <div class="character-top-row">
+              <div class="character-visual-box">
+                <div class="character-img-wrapper">
+                  <img src="${currentChar.images.thumbnail}" class="character-main-img">
+                  <button class="img-expand-btn" id="expand-img-btn">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
               </div>
-              <div class="profile-row">
-                <div class="profile-label">생일</div>
-                <div class="profile-value">${formatVal(currentChar.profile.birth)}</div>
+
+              <div class="character-info-box">
+                <div class="character-name-header">
+                  <div class="character-band-row">
+                    <div class="character-band-tag">${currentChar.band_name}</div>
+                    <div class="character-position">${currentChar.position}</div>
+                  </div>
+
+                  <div class="character-name-row">
+                    <div class="character-name-box">
+                      <span class="character-name-main">${currentChar.name.main}</span>
+                      ${jpNameHTML}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="character-desc-box">
+                  <div class="character-quote">${currentChar.profile.message}</div>
+                  ${introHTML}
+                </div>
+
+                <a href="#artist/${currentChar.cv.id}" class="character-cv-link">
+                  <span class="link-label">CV.</span>
+                  <span class="link-value">${currentChar.cv.name} <i class="fa-solid fa-chevron-right"></i></span>
+                </a>
               </div>
-              <div class="profile-row">
-                <div class="profile-label">좋아하는 음식</div>
-                <div class="profile-value">${formatVal(currentChar.profile.favorite_food)}</div>
-              </div>
-              <div class="profile-row">
-                <div class="profile-label">취미</div>
-                <div class="profile-value">${formatVal(currentChar.profile.hobby)}</div>
-              </div>
-              <div class="profile-row">
-                <div class="profile-label">특기 / 어필 포인트</div>
-                <div class="profile-value">${formatVal(currentChar.profile.specialty)}</div>
-              </div>
+              
             </div>
 
-            <div class="profile-footer">CV. ${currentChar.cv}</div>
+          <div class="character-profile-details">
+            <div class="profile-row"><span class="label">나이</span><span class="value">${currentChar.profile.age}</span></div>
+            <div class="profile-row"><span class="label">생일</span><span class="value">${currentChar.profile.birth || "미공개"}</span></div>
+            ${detailsHTML}
           </div>
         </div>
-      </div>
 
-      <div class="section-title">MEMBER</div>
-      <div class="character-members-wrapper">
-        <div class="character-members-content">
-          ${membersHTML}
+        <div class="character-members-section">
+          <div class="section-subtitle">MEMBER</div>
+          <div class="band-members-grid">
+            ${membersHTML}
+          </div>
+        </div>
+
+        ${videoSection}
+
         </div>
       </div>
+    </div>
 
-      <div class="section-title">OFFICIAL MEDIA</div>
-      <div class="official-media-content">
-        ${mediaHTML}
-      </div>
-
+    <div class="image-modal" id="character-image-modal">
+      <div class="modal-close-btn" id="close-image-modal"><i class="fa-solid fa-xmark"></i></div>
+      <img src="${currentChar.images.full_body}" class="modal-full-img" loading="lazy">
     </div>
   `;
+
+  const expandBtn = container.querySelector("#expand-img-btn");
+  const imageModal = container.querySelector("#character-image-modal");
+  const closeBtn = container.querySelector("#close-image-modal");
+
+  if (expandBtn && imageModal && closeBtn) {
+    expandBtn.addEventListener("click", () => {
+      imageModal.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      imageModal.classList.remove("active");
+    });
+
+    // 배경 클릭 시 닫기
+    imageModal.addEventListener("click", (e) => {
+      if (e.target === imageModal) {
+        imageModal.classList.remove("active");
+      }
+    });
+  }
 } 

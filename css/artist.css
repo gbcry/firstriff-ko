@@ -135,14 +135,7 @@
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 1.2vw, 15px);
-  padding: 0 clamp(30px, 4vw, 50px) clamp(30px, 4vw, 50px) clamp(30px, 4vw, 50px);
-}
-
-.profile-row {
-  display: flex;
-  align-items: flex-start;
-  font-size: clamp(14px, 1.6vw, 18px);
-  line-height: 1.6;
+  padding: 0 clamp(30px, 4vw, 50px);
 }
 
 .profile-row .label {
@@ -230,6 +223,7 @@
   max-height: 90%;
   object-fit: contain;
   border: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  background-color: var(--color-white);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   animation: modalPopUp 0.3s ease forwards;
 }

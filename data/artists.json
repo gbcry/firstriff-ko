@@ -57,7 +57,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/togenashitogeari/mirei.webp",
                 "thumbnail": "images/artist/togenashitogeari/mirei_thumb.webp"
             },
@@ -118,7 +118,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/togenashitogeari/yuri.webp",
                 "thumbnail": "images/artist/togenashitogeari/yuri_thumb.webp"
             },
@@ -177,7 +177,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/togenashitogeari/rina.webp",
                 "thumbnail": "images/artist/togenashitogeari/rina_thumb.webp"
             },
@@ -247,7 +247,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/togenashitogeari/natsu.webp",
                 "thumbnail": "images/artist/togenashitogeari/natsu_thumb.webp"
             },
@@ -319,7 +319,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/togenashitogeari/shuri.webp",
                 "thumbnail": "images/artist/togenashitogeari/shuri_thumb.webp"
             },
@@ -350,7 +350,7 @@
                     }
                 ]
             },
-            "image": "images/artist/togenashitogeari/saya.webp",
+            "images": "images/artist/togenashitogeari/saya.webp",
             "sns": {
                 "x": "https://x.com/deco538"
             }
@@ -393,7 +393,7 @@
                     }
                 ]
             },
-            "image": "images/artist/togenashitogeari/ena.webp",
+            "images": "images/artist/togenashitogeari/ena.webp",
             "sns": {
                 "x": "https://x.com/apple_na_chi"
             }
@@ -422,7 +422,7 @@
                     }
                 ]
             },
-            "image": "images/artist/togenashitogeari/shoko.webp",
+            "images": "images/artist/togenashitogeari/shoko.webp",
             "sns": {
                 "x": "https://x.com/pon_de_shoko",
                 "instagram": "https://www.instagram.com/pon_de_shoko/"
@@ -454,7 +454,7 @@
                     }
                 ]
             },
-            "image": "images/artist/togenashitogeari/kazuha.webp",
+            "images": "images/artist/togenashitogeari/kazuha.webp",
             "sns": {
                 "x": "https://x.com/Kazuha18key",
                 "instagram": "https://www.instagram.com/kazuha8key?igsh=MXNjNHhwdGJzaHV3bQ%3D%3D&utm_source=qr"
@@ -519,7 +519,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/cannalily/kisaki.webp",
                 "thumbnail": "images/artist/cannalily/kisaki_thumb.webp"
             },
@@ -586,7 +586,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/cannalily/arune.webp",
                 "thumbnail": "images/artist/cannalily/arune_thumb.webp"
             },
@@ -660,7 +660,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/cannalily/yuwa.webp",
                 "thumbnail": "images/artist/cannalily/yuwa_thumb.webp"
             },
@@ -726,7 +726,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/cannalily/rine.webp",
                 "thumbnail": "images/artist/cannalily/rine_thumb.webp"
             },
@@ -793,7 +793,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/cannalily/sakura.webp",
                 "thumbnail": "images/artist/cannalily/sakura_thumb.webp"
             },
@@ -853,7 +853,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/f-272/yoshi.webp",
                 "thumbnail": "images/artist/f-272/yoshi_thumb.webp"
             },
@@ -912,7 +912,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/f-272/miyu.webp",
                 "thumbnail": "images/artist/f-272/miyu_thumb.webp"
             },
@@ -969,7 +969,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/f-272/towa.webp",
                 "thumbnail": "images/artist/f-272/towa_thumb.webp"
             },
@@ -1029,7 +1029,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/f-272/hinano.webp",
                 "thumbnail": "images/artist/f-272/hinano_thumb.webp"
             },
@@ -1089,7 +1089,7 @@
                     }
                 ]
             },
-            "image": {
+            "images": {
                 "main_visual": "images/artist/f-272/luca.webp",
                 "thumbnail": "images/artist/f-272/luca_thumb.webp"
             },

@@ -65,7 +65,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
     if (!artist) return "";
     return `
       <a href="#artist/${artist.id}" class="member-card">
-        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img" loading="lazy"></div>
+        <div class="member-thumb-box"><img src="${artist.images.thumbnail}" class="member-img" loading="lazy"></div>
         <div class="member-name">${artist.name.main}</div>
       </a>
     `;
@@ -87,7 +87,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
     }).join("")
     : "";
 
-  const visualImageSrc = currentArtist.image.main_visual || currentArtist.image.thumbnail;
+  const visualImageSrc = currentArtist.images.main_visual || currentArtist.images.thumbnail;
 
   // 최종 렌더링
   container.innerHTML = `
@@ -106,7 +106,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
             <div class="artist-top-row">
               <div class="artist-visual-box">
                 <div class="artist-img-wrapper">
-                  <img src="${currentArtist.image.thumbnail}" class="artist-main-img">
+                  <img src="${currentArtist.images.thumbnail}" class="artist-main-img">
                   <button class="img-expand-btn" id="expand-img-btn" a>
                     <i class="fa-solid fa-expand"></i>
                   </button>

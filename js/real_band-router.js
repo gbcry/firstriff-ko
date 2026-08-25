@@ -63,7 +63,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     if (!artist) return "";
     return `
       <a href="#artist/${artist.id}" class="member-card">
-        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img" loading="lazy"></div>
+        <div class="member-thumb-box"><img src="${artist.images.thumbnail}" class="member-img" loading="lazy"></div>
         <div class="member-name">${artist.name.main}</div>
       </a>
     `;
@@ -96,7 +96,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
       return `
         <div class="support-card">
           <div class="support-img-box">
-            <img src="${support.image}" class="support-img" loading="lazy">
+            <img src="${support.images}" class="support-img" loading="lazy">
           </div>
           <div class="support-info">
             <div class="support-band-row">
