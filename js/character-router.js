@@ -52,7 +52,7 @@ async function renderCharacterView(container, currentChar, currentBand, characte
     const isActive = memberId === currentChar.id ? "active" : "";
 
     // 방어 코드
-    const name = member ? member.name.ko : memberId;
+    const name = member ? member.name.main : memberId;
     const position = member ? member.position : "";
     const thumb = member ? member.images.thumbnail : `images/character/${currentBand.id}/${memberId}_thumb.jpg`;
 
@@ -109,7 +109,7 @@ async function renderCharacterView(container, currentChar, currentBand, characte
 
           <div class="character-name-box">
             <div class="character-part">${currentChar.position}</div>
-            <div class="character-name-kr">${currentChar.name.ko} <span class="character-name-jp">(${currentChar.name.ja})</span></div>
+            <div class="character-name-main">${currentChar.name.main} <span class="character-name-sub">(${currentChar.name.sub})</span></div>
           </div>
 
           <div class="character-desc-box">

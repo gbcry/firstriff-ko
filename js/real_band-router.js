@@ -55,7 +55,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
       .filter(([key, url]) => url) // url이 null이 아닌 것만
       .map(([key, url]) => {
         const iconClass = snsConfig[key] || "fa-solid fa-link";
-        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="real-sns-btn"><i class="${iconClass}"></i></a>`
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="sns-btn"><i class="${iconClass}"></i></a>`
       }).join("")
   }
 
@@ -64,9 +64,9 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     const artist = artists.find((a) => a.id === memberId);
     if (!artist) return "";
     return `
-      <a href="#artist/${artist.id}" class="real-member-card">
-        <div class="real-member-thumb-box"><img src="${artist.image}" class="real-member-img"></div>
-        <div class="real-member-name">${artist.name.main}</div>
+      <a href="#artist/${artist.id}" class="member-card">
+        <div class="member-thumb-box"><img src="${artist.image}" class="member-img"></div>
+        <div class="member-name">${artist.name.main}</div>
       </a>
     `;
   }).join("")
@@ -85,7 +85,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
           .filter(([key, url]) => url) // url이 null이 아닌 것만
           .map(([key, url]) => {
             const iconClass = snsConfig[key] || "fa-solid fa-link";
-            return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="real-sns-btn"><i class="${iconClass}"></i></a>`
+            return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="sns-btn"><i class="${iconClass}"></i></a>`
           }).join("")
       }
 
@@ -93,31 +93,31 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
       const liveDetail = support.profile.details.find((d) => d.label === "참여 라이브");
       const liveListHTML = liveDetail ? liveDetail.value.map((v) => `<li>${v}</li>`).join("") : "";
 
-      const jpNameHTML = support.name.sub ? `<span class="real-support-name-jp">${support.name.sub}</span>` : "";
+      const jpNameHTML = support.name.sub ? `<span class="support-name-sub">${support.name.sub}</span>` : "";
 
       return `
-        <div class="real-support-card">
-          <div class="real-support-img-box">
-            <img src="${support.image}" class="real-support-img">
+        <div class="support-card">
+          <div class="support-img-box">
+            <img src="${support.image}" class="support-img">
           </div>
-          <div class="real-support-info">
-            <div class="real-support-band-tag">${support.band_name}</div>
-            <div class="real-support-name-row">
-              <div class="real-support-name-box">
-                <span class="real-support-name-kr">${support.name.main}</span>
+          <div class="support-info">
+            <div class="support-band-tag">${support.band_name}</div>
+            <div class="support-name-row">
+              <div class="support-name-box">
+                <span class="support-name-main">${support.name.main}</span>
                 ${jpNameHTML}
               </div>
-              <div class="real-support-sns-group">
+              <div class="support-sns-group">
                 ${supportSnsHTML}
               </div>
             </div>
-            <div class="real-support-position">${support.position}</div>
-            <div class="real-support-profile">
-              <div class="real-profile-row"><span class="real-label">생일</span><span class="real-value">${support.profile.birth}</span></div>
-              <div class="real-profile-row"><span class="real-label">출신지</span><span class="real-value">${support.profile.hometown || "미공개"}</span></div>
-              <div class="real-profile-row real-live-row">
-                <span class="real-label">참여 라이브</span>
-                <ul class="real-value real-live-list">
+            <div class="support-position">${support.position}</div>
+            <div class="support-profile">
+              <div class="support-profile-row"><span class="support-label">생일</span><span class="support-value">${support.profile.birth}</span></div>
+              <div class="support-profile-row"><span class="support-label">출신지</span><span class="support-value">${support.profile.hometown || "미공개"}</span></div>
+              <div class="support-profile-row support-live-row">
+                <span class="support-label">참여 라이브</span>
+                <ul class="support-value support-live-list">
                   ${liveListHTML}
                 </ul>
               </div>
@@ -128,10 +128,10 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     }).join("");
 
     supportSectionHTML = `
-      <div class="real-support-members-section">
-        <div class="real-section-subtitle">SUPPORT MEMBER</div>
+      <div class="support-members-section">
+        <div class="section-subtitle">SUPPORT MEMBER</div>
 
-        <div class="real-support-members-list">
+        <div class="support-members-list">
           ${supportListHTML}
         </div>
       </div>
@@ -148,33 +148,33 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
         ${tabMenuHTML}
       </div>
 
-      <div class="real-band-detail-content">
-        <div class="real-band-detail-wrapper">
+      <div class="band-detail-content">
+        <div class="band-detail-wrapper">
           
-          <div class="real-band-hero-banner">
-            <img src="${currentBand.band_image}" class="real-band-hero-img">
+          <div class="band-hero-banner">
+            <img src="${currentBand.band_image}" class="band-hero-img">
           </div>
 
-          <div class="real-band-intro-content">
+          <div class="band-intro-content">
             <!-- 밴드 기본 정보 -->
-            <div class="real-band-meta-header">
-              <div class="real-band-name">${currentBand.band_name}</div>
+            <div class="band-meta-header">
+              <div class="band-name">${currentBand.band_name}</div>
 
-              <div class="real-band-meta-info">
-                <span class="real-meta-item"><span class="real-meta-label">DEBUT:</span> ${currentBand.debut}</span>
-                <span class="real-meta-item"><span class="real-meta-label">AGENCY:</span> ${currentBand.agency}</span>
+              <div class="artist-meta-info">
+                <span class="artist-meta-item"><span class="artist-meta-label">DEBUT:</span> ${currentBand.debut}</span>
+                <span class="artist-meta-item"><span class="artist-meta-label">AGENCY:</span> ${currentBand.agency}</span>
               </div>
 
-              <div class="real-band-sns-group">
+              <div class="artist-sns-group">
                 ${bandSnsHTML}
               </div>
             </div>
 
             <!-- 밴드 멤버 -->
-            <div class="real-band-members-section">
-              <div class="real-section-subtitle">MEMBER</div>
+            <div class="band-members-section">
+              <div class="section-subtitle">MEMBER</div>
 
-              <div class="real-band-members-grid">
+              <div class="band-members-grid">
                 ${membersHTML}
               </div>
             </div>

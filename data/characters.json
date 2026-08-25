@@ -5,8 +5,8 @@
       "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
-        "ko": "아와 스바루",
-        "ja": "安和 すばる"
+        "main": "아와 스바루",
+        "sub": "安和 すばる"
       },
       "cv": "미레이",
       "position": "Dr.",
@@ -65,8 +65,8 @@
       "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
-        "ko": "카와라기 모모카",
-        "ja": "河原木 桃香"
+        "main": "카와라기 모모카",
+        "sub": "河原木 桃香"
       },
       "cv": "유리",
       "position": "Gt.",
@@ -120,8 +120,8 @@
       "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
-        "ko": "이세리 니나",
-        "ja": "井芹 仁菜"
+        "main": "이세리 니나",
+        "sub": "井芹 仁菜"
       },
       "cv": "리나",
       "position": "Vo.",
@@ -176,8 +176,8 @@
       "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
-        "ko": "에비즈카 토모",
-        "ja": "海老塚 智"
+        "main": "에비즈카 토모",
+        "sub": "海老塚 智"
       },
       "cv": "나츠",
       "position": "Key.",
@@ -232,8 +232,8 @@
       "band_id": "togenashitogeari",
       "band_name": "토게나시 토게아리",
       "name": {
-        "ko": "루파",
-        "ja": "ルパ"
+        "main": "루파",
+        "sub": "ルパ"
       },
       "cv": "슈리",
       "position": "Ba.",
@@ -289,8 +289,8 @@
       "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
-        "ko": "사카키바라 시온",
-        "ja": "榊原 紫苑"
+        "main": "사카키바라 시온",
+        "sub": "榊原 紫苑"
       },
       "cv": "시노츠키 키사키",
       "position": "Ba.",
@@ -339,8 +339,8 @@
       "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
-        "ko": "치가사키 린도",
-        "ja": "千ヶ崎 竜胆"
+        "main": "치가사키 린도",
+        "sub": "千ヶ崎 竜胆"
       },
       "cv": "시이나 아루네",
       "position": "Dr.",
@@ -388,8 +388,8 @@
       "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
-        "ko": "호시 아야메",
-        "ja": "星 亜矢芽"
+        "main": "호시 아야메",
+        "sub": "星 亜矢芽"
       },
       "cv": "하야사카 리네",
       "position": "Gt.",
@@ -439,8 +439,8 @@
       "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
-        "ko": "키츠타 카에데",
-        "ja": "橘田 楓"
+        "main": "키츠타 카에데",
+        "sub": "橘田 楓"
       },
       "cv": "야노 유와",
       "position": "Vo.",
@@ -490,8 +490,8 @@
       "band_id": "cannalily",
       "band_name": "Canna Lily",
       "name": {
-        "ko": "유키시마 나즈나",
-        "ja": "雪志摩 ナズナ"
+        "main": "유키시마 나즈나",
+        "sub": "雪志摩 ナズナ"
       },
       "cv": "사노 사쿠라",
       "position": "Key.",
@@ -542,8 +542,8 @@
       "band_id": "f-272",
       "band_name": "F-272",
       "name": {
-        "ko": "나카무라 아리",
-        "ja": "中村 有"
+        "main": "나카무라 아리",
+        "sub": "中村 有"
       },
       "cv": "YOSHI",
       "position": "Dr.",
@@ -590,8 +590,8 @@
       "band_id": "f-272",
       "band_name": "F-272",
       "name": {
-        "ko": "우다가와 코토",
-        "ja": "宇田川 琴"
+        "main": "우다가와 코토",
+        "sub": "宇田川 琴"
       },
       "cv": "TOWA",
       "position": "Gt.",
@@ -640,8 +640,8 @@
       "band_id": "f-272",
       "band_name": "F-272",
       "name": {
-        "ko": "쿠로미야 하즈키",
-        "ja": "黒宮 八月"
+        "main": "쿠로미야 하즈키",
+        "sub": "黒宮 八月"
       },
       "cv": "MIYU",
       "position": "Gt.",
@@ -689,8 +689,8 @@
       "band_id": "f-272",
       "band_name": "F-272",
       "name": {
-        "ko": "아사이 모모노",
-        "ja": "浅井 萌々乃"
+        "main": "아사이 모모노",
+        "sub": "浅井 萌々乃"
       },
       "cv": "HINANO",
       "position": "Ba.",
@@ -738,8 +738,8 @@
       "band_id": "f-272",
       "band_name": "F-272",
       "name": {
-        "ko": "카토 사키",
-        "ja": "加藤 嗄生"
+        "main": "카토 사키",
+        "sub": "加藤 嗄生"
       },
       "cv": "LUCA",
       "position": "Vo.",

@@ -25,48 +25,36 @@
         "tomo",
         "rupa"
       ],
-      "links": {
-        "official_sns": [
-          {
-            "url": "https://x.com/girlsbandcry",
-            "text": "걸즈 밴드 크라이 공식 X",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
-          },
-          {
-            "url": "https://www.youtube.com/@girlsbandcry",
-            "text": "걸즈 밴드 크라이 공식 유튜브",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
-          },
-          {
-            "url": "https://www.instagram.com/toge0toge1/",
-            "text": "토게나시 토게아리 공식 인스타",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
-          },
-          {
-            "url": "https://ageha.agehasprings.com/archives/artist/togenashitogeari",
-            "text": "토게나시 토게아리 공식 사이트",
-            "thumbnail": "images/band/togenashitogeari/gbc_sns_thumb.webp"
-          }
-        ],
-        "debut_pv": {
-          "url": null,
-          "text": null
+      "links": [
+        {
+          "url": "https://x.com/girlsbandcry",
+          "text": "걸즈 밴드 크라이 공식 X"
         },
-        "first_streaming": {
+        {
+          "url": "https://www.youtube.com/@girlsbandcry",
+          "text": "걸즈 밴드 크라이 공식 유튜브"
+        },
+        {
+          "url": "https://www.instagram.com/toge0toge1/",
+          "text": "토게나시 토게아리 공식 인스타"
+        },
+        {
+          "url": "https://ageha.agehasprings.com/archives/artist/togenashitogeari",
+          "text": "토게나시 토게아리 공식 사이트"
+        },
+        {
           "url": "https://www.youtube.com/live/UF_8DR9-9cY?si=aW7YklHHOeAo_Sc6",
           "text": "토게나시 토게아리 첫 생방송"
         }
-      }
+      ]
     },
     {
       "id": "cannalily",
       "name": "Canna Lily",
       "introduction": [
         "「필사적인」 발자취에서 피어난 록큰롤 밴드.",
-        "마음이 시드는 운명에 농락당할지라도,",
-        "끈질기게 발을 내딛는 기개를 갖추고 있다.",
-        "그런 볼품없는 꽃잎들이 투박하게 연주한 충동은,",
-        "머지않아 화려한 꽃이 된다."
+        "마음이 시드는 운명에 농락당할지라도, 끈질기게 발을 내딛는 기개를 갖추고 있다.",
+        "그런 볼품없는 꽃잎들이 투박하게 연주한 충동은, 머지않아 화려한 꽃이 된다."
       ],
       "images": {
         "main_visual": "images/band/cannalily/main_visual.webp",
@@ -85,28 +73,24 @@
         "kaede",
         "nazuna"
       ],
-      "links": {
-        "official_sns": [
-          {
-            "url": "https://x.com/CannaLily_GBC",
-            "text": "Canna Lily 공식 X",
-            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
-          },
-          {
-            "url": "https://cannalily-official.com/",
-            "text": "Canna Lily 공식 사이트",
-            "thumbnail": "images/band/cannalily/cannalily_sns_thumb.webp"
-          }
-        ],
-        "debut_pv": {
+      "links": [
+        {
+          "url": "https://x.com/CannaLily_GBC",
+          "text": "Canna Lily 공식 X"
+        },
+        {
+          "url": "https://cannalily-official.com/",
+          "text": "Canna Lily 공식 사이트"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=irshMXtKQjo",
           "text": "Canna Lily 데뷔 PV"
         },
-        "first_streaming": {
+        {
           "url": "https://www.youtube.com/live/cFCkNSK6LV4?si=ZeYGYR942uIAaTFV",
           "text": "Canna Lily 첫 생방송"
         }
-      }
+      ]
     },
     {
       "id": "f-272",
@@ -135,33 +119,28 @@
         "momono",
         "saki"
       ],
-      "links": {
-        "official_sns": [
-          {
-            "url": "https://x.com/F_272_GBC",
-            "text": "F-272 공식 X",
-            "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
-          },
-          {
-            "url": "https://f-272.bzone.co.jp/",
-            "text": "F-272 공식 사이트",
-            "thumbnail": "images/band/f-272/f-272_sns_thumb.webp"
-          },
-          {
-            "url": "https://www.youtube.com/@f272official",
-            "text": "F-272 공식 유튜브",
-            "thumbnail": "images/band/f-272/f-272_youtube_thumb.webp"
-          }
-        ],
-        "debut_pv": {
+      "links": [
+        {
+          "url": "https://x.com/F_272_GBC",
+          "text": "F-272 공식 X"
+        },
+        {
+          "url": "https://f-272.bzone.co.jp/",
+          "text": "F-272 공식 사이트"
+        },
+        {
+          "url": "https://www.youtube.com/@f272official",
+          "text": "F-272 공식 유튜브"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=U3YpdxjD0n8",
           "text": "F-272 DEBUT PV"
         },
-        "first_streaming": {
+        {
           "url": "https://www.youtube.com/live/Jxx1WMFcK-U?si=7uP9B_38G_gxEknM",
           "text": "F-272 첫 생방송"
         }
-      }
+      ]
     }
   ]
 }
