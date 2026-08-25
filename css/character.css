@@ -53,14 +53,14 @@
   color: var(--color-point);
 }
 
-.character-name-kr {
+.character-name-main {
   font-family: var(--font-main);
   font-size: clamp(26px, 3.5vw, 50px);
   font-weight: 800;
   color: var(--color-black);
 }
 
-.character-name-jp {
+.character-name-sub {
   font-size: clamp(20px, 2vw, 28px);
   color: #999;
   font-weight: 500;

@@ -47,16 +47,17 @@ async function renderBandView(container, bands, currentBand, characters) {
   const membersHTML = currentBand.member_ids
     .map((memberId) => {
       const charInfo = characters.find((char) => char.id === memberId);
-
-      const krName = charInfo ? charInfo.name.ko : memberId;
+      const mainName = charInfo ? charInfo.name.main : memberId;
       const thumbImg = charInfo
         ? charInfo.images.thumbnail
         : `images/character/${currentBand.id}/${memberId}_thumb.jpg`;
 
       return `
         <a href="#character/${memberId}" class="member-card">
-          <img src="${thumbImg}" class="member-img" loading="lazy">
-          <div class="member-name">${krName}</div>
+          <div class="member-thumb-box">
+            <img src="${thumbImg}" class="member-img" loading="lazy">
+          </div>
+          <div class="member-name">${mainName}</div>
         </a>
       `;
     })
@@ -65,24 +66,23 @@ async function renderBandView(container, bands, currentBand, characters) {
   // 오피셜 미디어 목록
   let mediaHTML = "";
 
-  // 1차원 배열로 변환
-  const allLinks = Object.values(currentBand.links).flat();
+  const allLinks = currentBand.links || [];
+
+  // url에 따라 아이콘 매핑
+  const getIconClass = (url) => {
+    if (url.includes("youtube.com") || url.includes("youtu.be")) return "fa-brands fa-youtube";
+    if (url.includes("x.com") || url.includes("twitter.com")) return "fa-brands fa-x-twitter";
+    if (url.includes("instagram.com")) return "fa-brands fa-instagram";
+    return "fa-solid fa-link"; // 기본 아이콘
+  }
 
   allLinks.forEach((link) => {
     if (link && link.url) {
-      const isYoutube = link.url.includes("youtube.com") || link.url.includes("youtu.be");
-      const iconClass = isYoutube ? "youtube" : "sns";
-
-      // sns는 저장된 이미지 사용, 유튜브면 자동 추출
-      let thumbImg = link.thumbnail;
-      if (!thumbImg && isYoutube) {
-        thumbImg = getYouTubeThumbnail(link.url);
-      }
-
+      const iconClass = getIconClass(link.url);
       mediaHTML += `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-          <img src="${thumbImg}" class="official-media-thumb ${iconClass}" onerror="this.style.display='none'" loading="lazy">
-          <span class="official-media-text">${link.text}</span>
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="band-media-btn">
+          <i class="${iconClass}"></i>
+          <span class="band-media-text">${link.text}</span>
         </a>
       `;
     }
@@ -90,7 +90,6 @@ async function renderBandView(container, bands, currentBand, characters) {
 
   container.innerHTML = `
     <div class="page-view">
-
       <div class="section-title">BAND</div>
       
       <div class="band-tab-menu">
@@ -99,32 +98,37 @@ async function renderBandView(container, bands, currentBand, characters) {
       </div>
 
       <div class="band-detail-content">
+        <div class="band-detail-wrapper">
 
-        <div class="band-visual-box">
-          <img src="${currentBand.images.band_main}" class="band-main-img">
-          <img src="${currentBand.images.band_logo}" class="band-logo">
-        </div>
-
-        <div class="band-info-box">
-          <div class="band-name">${currentBand.name}</div>
-          <div class="band-description">
-            ${introHTML}
+          <div class="band-hero-banner">
+            <img src="${currentBand.images.main_visual}" class="band-hero-img">
+            <img src="${currentBand.images.band_logo}" class="band-hero-logo">
           </div>
 
-          <div class="band-members">
-            <div class="member-label">MEMBER</div>
-            ${membersHTML}
+          <div class="band-intro-content">
+            <div class="band-meta-header">
+              <div class="band-name">${currentBand.name}</div>
+              <div class="band-description">
+                ${introHTML}
+              </div>
+            </div>
+
+            <div class="band-members-section">
+              <div class="section-subtitle">MEMBER</div>
+              <div class="band-members-grid">
+                ${membersHTML}
+              </div>
+            </div>
+
+            <div class="band-media-section">
+              <div class="section-subtitle">OFFICIAL MEDIA</div>
+              <div class="band-media-group">
+                ${mediaHTML}
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
-
-      <div class="section-title">OFFICIAL MEDIA</div>
-
-      <div class="official-media-content">        
-        ${mediaHTML}
-      </div>
-      
     </div>
   `;
 }

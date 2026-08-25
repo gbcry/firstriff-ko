@@ -3,213 +3,215 @@
 ========================================= */
 
 .band-detail-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(20px, 3vw, 40px) clamp(10px, 2vw, 25px);
   display: flex;
-  align-items: stretch;
-  gap: clamp(5px, 1vw, 10px);
+  flex-direction: column;
+  background-color: var(--color-gray);
+  border-bottom: clamp(5px, 1vw, 10px) solid var(--color-black);
+  box-sizing: border-box;
   margin-bottom: clamp(12px, 2.5vw, 24px);
+}
+
+.band-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: clamp(20px, 3vw, 40px);
+  border: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  background-color: var(--color-white);
+}
+
+.band-hero-banner {
+  position: relative;
   width: 100%;
   background-color: var(--color-black);
-  padding: clamp(5px, 1vw, 10px);
-  box-sizing: border-box;
-}
-
-.band-visual-box {
-  flex: 1;
-  width: 50%;
-  position: relative;
-  box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.band-main-img {
+.band-hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: clamp(300px, 45vw, 600px); 
+  object-fit: contain;
   display: block;
 }
 
-.band-logo {
+.band-hero-logo {
   position: absolute;
   bottom: clamp(10px, 2vw, 15px);
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(150px, 50%, 380px);
+  width: clamp(100px, 30%, 350px);
   object-fit: contain;
+  pointer-events: none;
 }
 
-.band-info-box {
-  flex: 1;
-  width: 50%;
+/* =========================================
+   Band Content & Meta
+========================================= */
+
+.band-intro-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: clamp(30px, 5vw, 50px) clamp(15px, 4vw, 40px) clamp(20px, 3vw, 30px);
+  box-sizing: border-box;
+}
+
+.band-meta-header {
   display: flex;
   flex-direction: column;
-  gap: clamp(5px, 1vw, 10px);
+  align-items: center;
+  text-align: center;
+  gap: clamp(15px, 2.5vw, 30px);
+  margin-bottom: clamp(30px, 5vw, 60px);
 }
 
 .band-name {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--color-white);
-  padding: clamp(15px, 2vw, 20px);
-  box-sizing: border-box;
   font-family: var(--font-main);
-  font-size: clamp(20px, 3vw, 38px);
+  font-size: clamp(28px, 4vw, 48px);
   font-weight: 800;
   color: var(--color-black);
+  word-break: keep-all;
 }
 
 .band-description {
-  flex: 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--color-white);
-  padding: clamp(20px, 4vw, 40px) clamp(15px, 3vw, 20px);
-  box-sizing: border-box;
-  font-family: var(--font-main);
   font-size: clamp(14px, 1.6vw, 18px);
-  line-height: clamp(1.6, 2.2vw, 2.8);
-  color: var(--color-black);
+  line-height: clamp(1.6, 2vw, 1.8);
+  font-weight: 500;
+  color: #333;
+  word-break: keep-all;
+  max-width: 800px;
+  background-color: var(--color-gray);
+  padding: clamp(15px, 2.5vw, 30px);
+  border-radius: 8px;
+  font-style: italic; 
 }
 
-.band-members {
-  flex: 2;
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(5px, 1vw, 10px);
-  padding: clamp(5px, 1vw, 10px);
-  box-sizing: border-box;
+.band-description p {
+  margin-bottom: 10px;
 }
 
-.member-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
+.band-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   Sections & Members Grid
+========================================= */
+
+.section-subtitle {
   font-family: var(--font-main);
-  font-size: clamp(16px, 1.8vw, 20px);
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: clamp(2px, 0.5vw, 5px);
-  user-select: none;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 800;
+  color: var(--color-black);
+  border-bottom: clamp(3px, 0.5vw, 4px) solid var(--color-point);
+  padding-bottom: clamp(8px, 1.5vw, 12px);
+  margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+.band-members-section {
+  margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+.band-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(80px, 12vw, 140px), 1fr));
+  gap: clamp(15px, 3vw, 25px);
+  justify-content: center;
 }
 
 .member-card {
-  flex: 1;
-  min-width: clamp(50px, 8vw, 100px);
   display: flex;
   flex-direction: column;
-  gap: clamp(4px, 0.8vw, 8px);
-  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  gap:clamp(10px, 2vw, 18px);
+  transition: transform 0.2s ease;
+}
+
+.member-thumb-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  border: clamp(2px, 0.4vw, 4px) solid var(--color-black);
+  transition: border-color 0.2s ease;
 }
 
 .member-img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   object-fit: cover;
-  border: clamp(2px, 0.4vw, 3px) solid var(--color-black);
-  transition: border-color 0.2s ease;
-}
-
-.member-card:hover .member-img {
-  border-color: var(--color-point);
+  object-position: top;
+  transition: transform 0.2s ease;
 }
 
 .member-name {
-  font-size: clamp(11px, 1.2vw, 14px);
-  font-weight: 600;
-  text-align: center;
-  color: var(--color-white);
-  word-break: keep-all;
-  transition: color 0.2s ease;
+  font-size: clamp(14px, 1.6vw, 20px);
+  font-weight: 700;
+  color: var(--color-black);
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover .member-thumb-box {
+  border-color: var(--color-point); 
+}
+
+.member-card:hover .member-img {
+  transform: scale(1.05); 
 }
 
 .member-card:hover .member-name {
   color: var(--color-point);
 }
 
-@media screen and (max-width: 1200px) {
-  /* =========================================
-     Band Tab Menu
-  ========================================= */
+/* =========================================
+   Official Media Section 
+========================================= */
 
-  .band-tab-menu {
-    padding: clamp(20px, 4vw, 40px) 15px;
-    gap: 10px;
-  }
+.band-media-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(10px, 1.5vw, 20px);
+}
 
-  .band-tab {
-    flex: 1;
-    width: 100%;
-    max-width: 180px;
-  }
+.band-media-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: clamp(12px, 2vw, 16px) clamp(20px, 3vw, 30px);
+  background-color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
 
-  /* =========================================
-    Band Detail Content
-  ========================================= */
+.band-media-btn i {
+  font-size: clamp(26px, 3.5vw, 36px);
+  color: var(--color-black);
+  transition: color 0.2s ease;
+}
 
-  .band-detail-content {
-    flex-direction: column;
-  }
+.band-media-text {
+  font-family: var(--font-main);
+  font-size: clamp(14px, 1.6vw, 18px);
+  font-weight: 700;
+  color: var(--color-black);
+  transition: color 0.2s ease;
+}
 
-  .band-visual-box,
-  .band-info-box {
-    width: 100%;
-  }
+.band-media-btn:hover {
+  transform: translateY(-3px);
+}
 
-  .band-visual-box {
-    aspect-ratio: 4 / 3;
-  }
-
-  .band-logo {
-    width: clamp(200px, 40%, 300px);
-  }
-
-  .band-info-box {
-    aspect-ratio: auto;
-    min-height: auto;
-    height: auto;
-  }
-
-  .band-name,
-  .band-description,
-  .band-members {
-    flex: none;
-  }
-
-  .band-description p {
-    padding: 6px 0;
-  }
-
-  .band-members {
-    justify-content: center;
-  }
-
-  /* =========================================
-    Band Media Content
-  ========================================= */
-
-  .band-media-content {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .media-link {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .media-thumb.youtube {
-    width: 85%;
-  }
-
-  .media-thumb.sns {
-    width: 45%;
-    max-width: 130px;
-  }
+.band-media-btn:hover,
+.band-media-btn:hover .band-media-text {
+  color: var(--color-point);
 }
