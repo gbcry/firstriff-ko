@@ -221,20 +221,22 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
 
   if (currentAlbum.media_links && Array.isArray(currentAlbum.media_links)) {
     mediaHTML += currentAlbum.media_links.map((link) => `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="official-media-link">
-            <img src="${getYouTubeThumbnail(link.url)}" class="official-media-thumb youtube" onerror="this.style.display='none'" loading="lazy">
-            <span class="official-media-text">${link.text}</span>
-          </a>
-      `).join("");
+        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="album-media-link">
+          <img src="${getYouTubeThumbnail(link.url)}" class="album-media-thumb" onerror="this.style.display='none'" loading="lazy">
+          <span class="album-media-text">${link.text}</span>
+        </a>
+    `).join("");
   }
 
-  let officialMediaSection = "";
+  let albumMediaSection = "";
 
   // 미디어 구역에 내용이 없으면 렌더링 x
   if (mediaHTML.trim() !== "") {
-    officialMediaSection = `
-      <div class="section-title">OFFICIAL MEDIA</div>
-      <div class="official-media-content">
+    albumMediaSection = `
+      <div class="album-section-header media-spacing">
+        <h3 class="album-section-label">VIDEO</h3>
+      </div>
+      <div class="album-media-grid">
         ${mediaHTML}
       </div>
     `;
@@ -270,19 +272,18 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
             <div class="album-meta-release"><i class="fa-regular fa-calendar"></i> ${currentAlbum.release_date}</div>
           </div>
 
-          <div class="tracklist-wrapper">
-            <div class="tracklist-header">
-              <h3 class="tracklist-label">TRACKLIST</h3>
+          <div class="album-content-wrapper">
+            <div class="album-section-header">
+              <h3 class="album-section-label">TRACKLIST</h3>
             </div>
             <div class="tracklist-container">
               ${tracklistHTML}
             </div>
-          </div>
 
+            ${albumMediaSection}
+          </div>
         </div>
       </div>
-
-      ${officialMediaSection}
 
       <div class="back-btn-wrapper">
         <a href="#discography/${currentBand.id}" class="back-to-list-btn"><i class="fa-solid fa-chevron-left"></i>목록으로 돌아가기</a>
