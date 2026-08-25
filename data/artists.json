@@ -299,6 +299,138 @@
             }
         },
         {
+            "id": "saya",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "미야우치 사야",
+                "sub": "宮内沙弥"
+            },
+            "character": null,
+            "position": "Support Dr.",
+            "profile": {
+                "birth": "3월 31일",
+                "hometown": "치바",
+                "details": [
+                    {
+                        "label": "참여 라이브",
+                        "value": [
+                            "미레이의 활동 중지 이후, 2024년 카와사키 100 페스 라이브부터 모든 토게토게 라이브에 서포트 멤버로 참여"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/saya.webp",
+            "sns": {
+                "x": "https://x.com/deco538"
+            }
+        },
+        {
+            "id": "ena",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "스즈키 에나",
+                "sub": "鈴木栄奈"
+            },
+            "character": null,
+            "position": "Support Key.",
+            "profile": {
+                "birth": "11월 19일",
+                "hometown": "아오모리",
+                "details": [
+                    {
+                        "label": "참여 라이브",
+                        "value": [
+                            "Animelo Summer Live 2024 -Stargazer-",
+                            "2nd ONE-MAN LIVE “린네의 이치”",
+                            "ATF 25th presents BAYCAMP 2024",
+                            "3rd ONE-MAN LIVE “포효의 연주”",
+                            "“린네의 이치” LIVE IN SHANGHAI",
+                            "rockin’on presents COUNTDOWN JAPAN 24/25",
+                            "MyGO!!!!! x 토게나시 토게아리 「Avoid Note」",
+                            "MEGA VEGAS 2025",
+                            "『걸즈 밴드 크라이』 2nd Anniversary LIVE",
+                            "She is Legend x 토게나시 토게아리 「SOUL&CRY」",
+                            "“격주의 외침” LIVE in 일본 무도관",
+                            "나탈리 x 일본 공학원 카마타 마츠리 School Festival LIVE",
+                            "RAISE A SUILEN x 토게나시 토게아리 「RAISE MY CATHARSIS」",
+                            "rockin’on presents COUNTDOWN JAPAN 25/26",
+                            "Zepp Tour 2026 “박동의 미래” (후쿠오카 제외)",
+                            "“린네의 이치” Live in SEOUL",
+                            "“박동의 미래 -ENCORE-” TOUR 2026 FINAL"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/ena.webp",
+            "sns": {
+                "x": "https://x.com/apple_na_chi"
+            }
+        },
+        {
+            "id": "shoko",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "나가사키 쇼코",
+                "sub": "長﨑祥子"
+            },
+            "character": null,
+            "position": "Support Key.",
+            "profile": {
+                "birth": "7월 3일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "참여 라이브",
+                        "value": [
+                            "4th ONE-MAN LIVE “협주의 울림”",
+                            "5th ONE-MAN LIVE “울림의 순간”",
+                            "“린네의 이치” LIVE IN TAIPEI"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/shoko.webp",
+            "sns": {
+                "x": "https://x.com/pon_de_shoko",
+                "instagram": "https://www.instagram.com/pon_de_shoko/"
+            }
+        },
+        {
+            "id": "kazuha",
+            "band_id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "name": {
+                "main": "스즈키 카즈하",
+                "sub": "鈴木 一葉"
+            },
+            "character": null,
+            "position": "Support Key.",
+            "profile": {
+                "birth": "3월 18일",
+                "hometown": null,
+                "details": [
+                    {
+                        "label": "참여 라이브",
+                        "value": [
+                            "WONDERLIVET 2024",
+                            "J-POP SOUND CAPSULE @AX2025 〜Anisong World Matsuri Returns〜",
+                            "Zepp Tour 2026 “박동의 미래” 후쿠오카",
+                            "CON-CON HONG KONG 2026",
+                            "“린네의 이치” SOUTHEAST ASIA TOUR 2026"
+                        ]
+                    }
+                ]
+            },
+            "image": "images/character/togenashitogeari/shoko.webp",
+            "sns": {
+                "x": "https://x.com/Kazuha18key",
+                "instagram": "https://www.instagram.com/kazuha8key?igsh=MXNjNHhwdGJzaHV3bQ%3D%3D&utm_source=qr"
+            }
+        },
+        {
             "id": "kisaki",
             "band_id": "cannalily",
             "band_name": "Canna Lily",
