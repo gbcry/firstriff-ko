@@ -101,7 +101,10 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
             <img src="${support.image}" class="support-img">
           </div>
           <div class="support-info">
-            <div class="support-band-tag">${support.band_name}</div>
+            <div class="support-band-row">
+              <div class="support-band-tag">${support.band_name}</div>
+              <div class="support-position">${support.position}</div>
+            </div>
             <div class="support-name-row">
               <div class="support-name-box">
                 <span class="support-name-main">${support.name.main}</span>
@@ -111,7 +114,6 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
                 ${supportSnsHTML}
               </div>
             </div>
-            <div class="support-position">${support.position}</div>
             <div class="support-profile">
               <div class="support-profile-row"><span class="support-label">생일</span><span class="support-value">${support.profile.birth}</span></div>
               <div class="support-profile-row"><span class="support-label">출신지</span><span class="support-value">${support.profile.hometown || "미공개"}</span></div>

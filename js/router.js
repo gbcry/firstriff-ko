@@ -48,11 +48,12 @@ async function handleRouting() {
   // 실제 밴드 페이지
   else if (hash.startsWith("real_band")) {
     rootDiv.innerHTML = templates.real_band;
-    initRealBand();
+    await initRealBand();
   }
   // 성우 페이지
   else if (hash.startsWith("artist")) {
     rootDiv.innerHTML = templates.artist;
+    await initArtist();
   }
   // 음반 목록 페이지
   else if (hash.startsWith("discography")) {
