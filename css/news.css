@@ -76,7 +76,6 @@
   color: var(--color-black);
   background-color: transparent;
   border: 2px solid transparent;
-  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
