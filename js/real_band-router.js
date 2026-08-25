@@ -1,53 +1,172 @@
-function initRealBand() {
+async function initRealBand() {
   const container = document.querySelector(".page-container");
 
   if (!container) return;
 
-  const realBandTemplate = `
+  // 기본값 토게토게
+  const hash = window.location.hash;
+  const bandId = hash.split("/")[1] || "togenashitogeari";
+
+  const realBands = await fetchRealBandsData();
+  const artists = await fetchArtistsData();
+
+  // 현재 주소와 일치하는 밴드 데이터 찾기
+  const currentBand = realBands.find((band) => band.id === bandId)
+
+  if (!currentBand) {
+    container.innerHTML = "<h2>밴드 정보를 찾을 수 없습니다.</h2>";
+    return;
+  }
+
+  renderRealBandView(container, realBands, currentBand, artists)
+}
+
+// 밴드 소개
+async function renderRealBandView(container, realBands, currentBand, artists) {
+
+  // sns 아이콘 매핑
+  const snsConfig = {
+    official_site: "fa-solid fa-link",
+    x: "fa-brands fa-x-twitter",
+    youtube: "fa-brands fa-youtube",
+    instagram: "fa-brands fa-instagram",
+    weibo: "fa-brands fa-weibo",
+    bilibili: "fa-brands fa-bilibili"
+  };
+
+  // 밴드 탭
+  const tabMenuHTML = realBands
+    .map((band) => {
+      const isActive = band.id === currentBand.id ? "active" : "";
+
+      return `
+        <a href="#real_band/${band.id}" class="band-tab ${isActive}">
+          <img src="images/band/${band.id}/tab_logo_default.webp" class="tab-logo-default">
+          <img src="images/band/${band.id}/tab_logo_hover.webp" class="tab-logo-hover">
+        </a>
+      `;
+    })
+    .join("");
+
+  // 밴드 공식 sns 링크
+  let bandSnsHTML = "";
+  if (currentBand.links) {
+    bandSnsHTML = Object.entries(currentBand.links)
+      .filter(([key, url]) => url) // url이 null이 아닌 것만
+      .map(([key, url]) => {
+        const iconClass = snsConfig[key] || "fa-solid fa-link";
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="real-sns-btn"><i class="${iconClass}"></i></a>`
+      }).join("")
+  }
+
+  // 밴드 멤버
+  const membersHTML = currentBand.member_ids.map((memberId) => {
+    const artist = artists.find((a) => a.id === memberId);
+    if (!artist) return "";
+    return `
+      <a href="#artist/${artist.id}" class="real-member-card">
+        <div class="real-member-thumb-box"><img src="${artist.image}" class="real-member-img"></div>
+        <div class="real-member-name">${artist.name.main}</div>
+      </a>
+    `;
+  }).join("")
+
+  // 서포트 멤버 (데이터가 있는 경우에만 생성 -> 까나리, 에프니나는 생성 x)
+  let supportSectionHTML = "";
+  if (currentBand.support_member_ids && currentBand.support_member_ids.length > 0) {
+    const supportListHTML = currentBand.support_member_ids.map((supportId) => {
+      const support = artists.find((a) => a.id === supportId);
+      if (!support) return "";
+
+      // 서포트 멤버 sns
+      let supportSnsHTML = "";
+      if (support.sns) {
+        supportSnsHTML = Object.entries(support.sns)
+          .filter(([key, url]) => url) // url이 null이 아닌 것만
+          .map(([key, url]) => {
+            const iconClass = snsConfig[key] || "fa-solid fa-link";
+            return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="real-sns-btn"><i class="${iconClass}"></i></a>`
+          }).join("")
+      }
+
+      // 참여 라이브 리스트
+      const liveDetail = support.profile.details.find((d) => d.label === "참여 라이브");
+      const liveListHTML = liveDetail ? liveDetail.value.map((v) => `<li>${v}</li>`).join("") : "";
+
+      const jpNameHTML = support.name.sub ? `<span class="real-support-name-jp">${support.name.sub}</span>` : "";
+
+      return `
+        <div class="real-support-card">
+          <div class="real-support-img-box">
+            <img src="${support.image}" class="real-support-img">
+          </div>
+          <div class="real-support-info">
+            <div class="real-support-band-tag">${support.band_name}</div>
+            <div class="real-support-name-row">
+              <div class="real-support-name-box">
+                <span class="real-support-name-kr">${support.name.main}</span>
+                ${jpNameHTML}
+              </div>
+              <div class="real-support-sns-group">
+                ${supportSnsHTML}
+              </div>
+            </div>
+            <div class="real-support-position">${support.position}</div>
+            <div class="real-support-profile">
+              <div class="real-profile-row"><span class="real-label">생일</span><span class="real-value">${support.profile.birth}</span></div>
+              <div class="real-profile-row"><span class="real-label">출신지</span><span class="real-value">${support.profile.hometown || "미공개"}</span></div>
+              <div class="real-profile-row real-live-row">
+                <span class="real-label">참여 라이브</span>
+                <ul class="real-value real-live-list">
+                  ${liveListHTML}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    supportSectionHTML = `
+      <div class="real-support-members-section">
+        <div class="real-section-subtitle">SUPPORT MEMBER</div>
+
+        <div class="real-support-members-list">
+          ${supportListHTML}
+        </div>
+      </div>
+    `;
+  }
+
+  // 최종 렌더링
+  container.innerHTML = `
     <div class="page-view">
       <div class="section-title">ARTIST</div>
       
-      <!-- 밴드 탭 메뉴 -->
       <div class="band-tab-menu">
-        <img src="images/band/togenashitogeari/background.webp" class="menu-bg-img">
-        <a href="#real_band/togenashitogeari" class="band-tab active">
-          <img src="images/band/togenashitogeari/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/togenashitogeari/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-        <img src="images/band/cannalily/background.webp" class="menu-bg-img">
-        <a href="#real_band/cannalily" class="band-tab">
-          <img src="images/band/cannalily/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/cannalily/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
-        <img src="images/band/f-272/background.webp" class="menu-bg-img">
-        <a href="#real_band/f-272" class="band-tab">
-          <img src="images/band/f-272/tab_logo_default.webp" class="tab-logo-default">
-          <img src="images/band/f-272/tab_logo_hover.webp" class="tab-logo-hover">
-        </a>
+        <img src="images/band/${currentBand.id}/background.webp" class="menu-bg-img">
+        ${tabMenuHTML}
       </div>
 
-      <!-- 밴드 소개 구역 (이중 배경) -->
       <div class="real-band-detail-content">
         <div class="real-band-detail-wrapper">
           
           <div class="real-band-hero-banner">
-            <img src="images/artist/togenashitogeari/band_main.webp" class="real-band-hero-img">
+            <img src="${currentBand.band_image}" class="real-band-hero-img">
           </div>
 
           <div class="real-band-intro-content">
             <!-- 밴드 기본 정보 -->
             <div class="real-band-meta-header">
-              <div class="real-band-name">토게나시 토게아리</div>
+              <div class="real-band-name">${currentBand.band_name}</div>
 
               <div class="real-band-meta-info">
-                <span class="real-meta-item"><span class="real-meta-label">DEBUT:</span> 2023년 5월 29일</span>
-                <span class="real-meta-item"><span class="real-meta-label">AGENCY:</span> agehasprings</span>
+                <span class="real-meta-item"><span class="real-meta-label">DEBUT:</span> ${currentBand.debut}</span>
+                <span class="real-meta-item"><span class="real-meta-label">AGENCY:</span> ${currentBand.agency}</span>
               </div>
 
               <div class="real-band-sns-group">
-                <a href="https://ageha.agehasprings.com/archives/artist/togenashitogeari" target="_blank" class="real-sns-btn"><i class="fa-solid fa-link"></i></a>
-                <a href="https://x.com/girlsbandcry" target="_blank" class="real-sns-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.youtube.com/@girlsbandcry" target="_blank" class="real-sns-btn"><i class="fa-brands fa-youtube"></i></a>
+                ${bandSnsHTML}
               </div>
             </div>
 
@@ -56,112 +175,15 @@ function initRealBand() {
               <div class="real-section-subtitle">MEMBER</div>
 
               <div class="real-band-members-grid">
-                <a href="#member/mirei" class="real-member-card">
-                  <div class="real-member-thumb-box"><img src="images/artist/togenashitogeari/mirei.webp" class="real-member-img"></div>
-                  <div class="real-member-name">미레이</div>
-                </a>
-                <a href="#member/yuri" class="real-member-card">
-                  <div class="real-member-thumb-box"><img src="images/artist/togenashitogeari/yuri.webp" class="real-member-img"></div>
-                  <div class="real-member-name">유리</div>
-                </a>
-                <a href="#member/rina" class="real-member-card">
-                  <div class="real-member-thumb-box"><img src="images/artist/togenashitogeari/rina.webp" class="real-member-img"></div>
-                  <div class="real-member-name">리나</div>
-                </a>
-                <a href="#member/natsu" class="real-member-card">
-                  <div class="real-member-thumb-box"><img src="images/artist/togenashitogeari/natsu.webp" class="real-member-img"></div>
-                  <div class="real-member-name">나츠</div>
-                </a>
-                <a href="#member/shuri" class="real-member-card">
-                  <div class="real-member-thumb-box"><img src="images/artist/togenashitogeari/shuri.webp" class="real-member-img"></div>
-                  <div class="real-member-name">슈리</div>
-                </a>
+                ${membersHTML}
               </div>
             </div>
 
-            <!-- 토게토게 서포트 멤버 -->
-            <div class="real-support-members-section">
-              <div class="real-section-subtitle">SUPPORT MEMBER</div>
-
-              <div class="real-support-members-list">
-                  
-                <!-- 서포트 멤버 1: 사야 -->
-                <div class="real-support-card">
-                  <div class="real-support-img-box">
-                    <img src="images/artist/togenashitogeari/saya.webp" class="real-support-img">
-                  </div>
-
-                  <div class="real-support-info">
-                    <div class="real-support-band-tag">토게나시 토게아리</div>
-
-                    <div class="real-support-name-row">
-                      <div class="real-support-name-box">
-                        <span class="real-support-name-kr">미야우치 사야</span>
-                        <span class="real-support-name-jp">宮内沙弥</span>
-                      </div>
-
-                      <div class="real-support-sns-group">
-                        <a href="https://x.com/deco538" target="_blank" class="real-sns-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                      </div>
-                    </div>
-                    <div class="real-support-position">Support Dr.</div>
-
-                    <div class="real-support-profile">
-                      <div class="real-profile-row"><span class="real-label">생일</span><span class="real-value">3월 31일</span></div>
-                      <div class="real-profile-row"><span class="real-label">출신지</span><span class="real-value">치바</span></div>
-                      <div class="real-profile-row real-live-row">
-                        <span class="real-label">참여 라이브</span>
-                        <ul class="real-value real-live-list">
-                          <li>미레이의 활동 중단 이후, 2024년 '카와사키 100 페스'부터 토게나시 토게아리의 전(全) 라이브 일정에 서포트 멤버로 참여</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 서포트 멤버 2: 쇼코 -->
-                <div class="real-support-card">
-                  <div class="real-support-img-box">
-                    <img src="images/artist/togenashitogeari/shoko.webp" class="real-support-img" alt="나가사키 쇼코">
-                  </div>
-
-                  <div class="real-support-info">
-                    <div class="real-support-band-tag">토게나시 토게아리</div>
-                    <div class="real-support-name-row">
-                      <div class="real-support-name-box">
-                        <span class="real-support-name-kr">나가사키 쇼코</span>
-                        <span class="real-support-name-jp">長﨑祥子</span>
-                      </div>
-
-                      <div class="real-support-sns-group">
-                        <a href="https://x.com/pon_de_shoko" target="_blank" class="real-sns-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/pon_de_shoko/" target="_blank" class="real-sns-btn"><i class="fa-brands fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div class="real-support-position">Support Key.</div>
-
-                    <div class="real-support-profile">
-                      <div class="real-profile-row"><span class="real-label">생일</span><span class="real-value">7월 3일</span></div>
-                      <div class="real-profile-row"><span class="real-label">출신지</span><span class="real-value">오사카</span></div>
-                      <div class="real-profile-row real-live-row">
-                        <span class="real-label">참여 라이브</span>
-                        <ul class="real-value real-live-list">
-                          <li>4th ONE-MAN LIVE “협주의 울림”</li>
-                          <li>5th ONE-MAN LIVE “울림의 순간”</li>
-                          <li>“린네의 이치” LIVE IN TAIPEI</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+            <!-- 서포트 멤버 -->
+            ${supportSectionHTML}
           </div>
         </div>
       </div>
     </div>
   `;
-
-  container.innerHTML = realBandTemplate;
 }

@@ -54,7 +54,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/mirei.webp",
+            "image": "images/artist/togenashitogeari/mirei.webp",
             "sns": {
                 "x": "https://twitter.com/mirei_togetoge",
                 "instagram": "https://www.instagram.com/mirei_togetoge/"
@@ -109,7 +109,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/yuri.webp",
+            "image": "images/artist/togenashitogeari/yuri.webp",
             "sns": {
                 "x": "https://twitter.com/yuri_togetoge",
                 "instagram": "https://www.instagram.com/yuri_togetoge/"
@@ -162,7 +162,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/rina.webp",
+            "image": "images/artist/togenashitogeari/rina.webp",
             "sns": {
                 "x": "https://twitter.com/rina_togetoge",
                 "instagram": "https://www.instagram.com/rina_togetoge/",
@@ -226,7 +226,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/natsu.webp",
+            "image": "images/artist/togenashitogeari/natsu.webp",
             "sns": {
                 "x": "https://twitter.com/natsu_togetoge",
                 "instagram": "https://www.instagram.com/natsu_togetoge/"
@@ -292,7 +292,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/shuri.webp",
+            "image": "images/artist/togenashitogeari/shuri.webp",
             "sns": {
                 "x": "https://twitter.com/shuri_togetoge",
                 "instagram": "https://www.instagram.com/shuri_togetoge/"
@@ -320,7 +320,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/saya.webp",
+            "image": "images/artist/togenashitogeari/saya.webp",
             "sns": {
                 "x": "https://x.com/deco538"
             }
@@ -363,7 +363,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/ena.webp",
+            "image": "images/artist/togenashitogeari/ena.webp",
             "sns": {
                 "x": "https://x.com/apple_na_chi"
             }
@@ -392,7 +392,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/shoko.webp",
+            "image": "images/artist/togenashitogeari/shoko.webp",
             "sns": {
                 "x": "https://x.com/pon_de_shoko",
                 "instagram": "https://www.instagram.com/pon_de_shoko/"
@@ -404,7 +404,7 @@
             "band_name": "토게나시 토게아리",
             "name": {
                 "main": "스즈키 카즈하",
-                "sub": "鈴木 一葉"
+                "sub": "鈴木一葉"
             },
             "character": null,
             "position": "Support Key.",
@@ -424,7 +424,7 @@
                     }
                 ]
             },
-            "image": "images/character/togenashitogeari/shoko.webp",
+            "image": "images/artist/togenashitogeari/kazuha.webp",
             "sns": {
                 "x": "https://x.com/Kazuha18key",
                 "instagram": "https://www.instagram.com/kazuha8key?igsh=MXNjNHhwdGJzaHV3bQ%3D%3D&utm_source=qr"
@@ -486,7 +486,7 @@
                     }
                 ]
             },
-            "image": "images/character/cannalily/kisaki.webp",
+            "image": "images/artist/cannalily/kisaki.webp",
             "sns": {
                 "x": "https://x.com/KisakiCannaLily"
             }
@@ -547,7 +547,7 @@
                     }
                 ]
             },
-            "image": "images/character/cannalily/arune.webp",
+            "image": "images/artist/cannalily/arune.webp",
             "sns": {
                 "x": "https://x.com/AruneCannaLily"
             }
@@ -615,7 +615,7 @@
                     }
                 ]
             },
-            "image": "images/character/cannalily/yuwa.webp",
+            "image": "images/artist/cannalily/yuwa.webp",
             "sns": {
                 "x": "https://x.com/YuwaCannaLily"
             }
@@ -675,7 +675,7 @@
                     }
                 ]
             },
-            "image": "images/character/cannalily/rine.webp",
+            "image": "images/artist/cannalily/rine.webp",
             "sns": {
                 "x": "https://x.com/RineCannaLily"
             }
@@ -736,7 +736,7 @@
                     }
                 ]
             },
-            "image": "images/character/cannalily/rine.webp",
+            "image": "images/artist/cannalily/sakura.webp",
             "sns": {
                 "x": "https://x.com/SakuraCannaLily"
             }
@@ -790,7 +790,7 @@
                     }
                 ]
             },
-            "image": "images/character/f-272/yoshi.webp",
+            "image": "images/artist/f-272/yoshi.webp",
             "sns": {
                 "x": "https://x.com/yoshi_F272"
             }
@@ -843,7 +843,7 @@
                     }
                 ]
             },
-            "image": "images/character/f-272/miyu.webp",
+            "image": "images/artist/f-272/miyu.webp",
             "sns": {
                 "x": "https://x.com/miyu_F272"
             }
@@ -894,7 +894,7 @@
                     }
                 ]
             },
-            "image": "images/character/f-272/towa.webp",
+            "image": "images/artist/f-272/towa.webp",
             "sns": {
                 "x": "https://x.com/towa_F272"
             }
@@ -948,7 +948,7 @@
                     }
                 ]
             },
-            "image": "images/character/f-272/miyu.webp",
+            "image": "images/artist/f-272/miyu.webp",
             "sns": {
                 "x": "https://x.com/hinano_F272"
             }
@@ -1002,7 +1002,7 @@
                     }
                 ]
             },
-            "image": "images/character/f-272/luca.webp",
+            "image": "images/artist/f-272/luca.webp",
             "sns": {
                 "x": "https://x.com/luca_F272"
             }
