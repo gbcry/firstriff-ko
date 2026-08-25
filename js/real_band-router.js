@@ -96,7 +96,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
       return `
         <div class="support-card">
           <div class="support-img-box">
-            <img src="${support.image}" class="support-img">
+            <img src="${support.image}" class="support-img" loading="lazy">
           </div>
           <div class="support-info">
             <div class="support-band-row">
