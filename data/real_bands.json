@@ -1,0 +1,67 @@
+{
+    "real_bands": [
+        {
+            "id": "togenashitogeari",
+            "band_name": "토게나시 토게아리",
+            "debut": "2023년 5월 29일",
+            "agency": "agehasprings",
+            "band_image": "images/artist/togenashitogeari/band_main.webp",
+            "links": {
+                "official_site": "https://ageha.agehasprings.com/archives/artist/togenashitogeari",
+                "x": "https://x.com/girlsbandcry",
+                "youtube": "https://www.youtube.com/@girlsbandcry"
+            },
+            "member_ids": [
+                "mirei",
+                "yuri",
+                "rina",
+                "natsu",
+                "shuri"
+            ],
+            "support_member_ids": [
+                "saya",
+                "ena",
+                "shoko",
+                "kazuha"
+            ]
+        },
+        {
+            "id": "cannalily",
+            "band_name": "Canna Lily",
+            "debut": "2026년 3월 22일",
+            "agency": "ASOBISYSTEM",
+            "band_image": "images/artist/cannalily/band_main.webp",
+            "links": {
+                "official_site": "https://cannalily-official.com/",
+                "x": "https://x.com/CannaLily_GBC",
+                "youtube": null
+            },
+            "member_ids": [
+                "kisaki",
+                "arune",
+                "yuwa",
+                "rine",
+                "sakura"
+            ]
+        },
+        {
+            "id": "f-272",
+            "band_name": "F-272",
+            "debut": "2026년 4월 18일",
+            "agency": "B ZONE GROUP",
+            "band_image": "images/artist/f-272/band_main.webp",
+            "links": {
+                "official_site": "https://f-272.bzone.co.jp/",
+                "x": "https://x.com/F_272_GBC",
+                "youtube": "https://www.youtube.com/@f272official"
+            },
+            "member_ids": [
+                "yoshi",
+                "miyu",
+                "towa",
+                "hinano",
+                "luca"
+            ]
+        }
+    ]
+}

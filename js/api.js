@@ -38,6 +38,32 @@ async function fetchCharactersData() {
   }
 }
 
+// 실제 밴드 데이터
+async function fetchRealBandsData() {
+  try {
+    const response = await fetch("./data/real_bands.json");
+    const data = await response.json();
+
+    return Array.isArray(data) ? data : data.real_bands || [];
+  } catch (error) {
+    console.error("밴드 데이터를 불러오는데 실패했습니다:", error);
+    return [];
+  }
+}
+
+// 성우 데이터
+async function fetchArtistsData() {
+  try {
+    const response = await fetch("./data/artists.json");
+    const data = await response.json();
+
+    return Array.isArray(data) ? data : data.artists || [];
+  } catch (error) {
+    console.error("성우 데이터를 불러오는데 실패했습니다:", error);
+    return [];
+  }
+}
+
 // 음반 데이터
 async function fetchDiscographyData() {
   try {

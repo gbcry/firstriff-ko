@@ -17,6 +17,8 @@ const templates = {
   news: subPageTemplate,
   band: subPageTemplate,
   character: subPageTemplate,
+  real_band: subPageTemplate,
+  artist: subPageTemplate,
   discography: subPageTemplate,
   live: subPageTemplate
 };
@@ -42,6 +44,15 @@ async function handleRouting() {
   else if (hash.startsWith("character")) {
     rootDiv.innerHTML = templates.character;
     await initCharacter();
+  }
+  // 실제 밴드 페이지
+  else if (hash.startsWith("real_band")) {
+    rootDiv.innerHTML = templates.real_band;
+    initRealBand();
+  }
+  // 성우 페이지
+  else if (hash.startsWith("artist")) {
+    rootDiv.innerHTML = templates.artist;
   }
   // 음반 목록 페이지
   else if (hash.startsWith("discography")) {
