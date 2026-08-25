@@ -30,8 +30,6 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     x: "fa-brands fa-x-twitter",
     youtube: "fa-brands fa-youtube",
     instagram: "fa-brands fa-instagram",
-    weibo: "fa-brands fa-weibo",
-    bilibili: "fa-brands fa-bilibili"
   };
 
   // 밴드 탭
@@ -65,7 +63,7 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
     if (!artist) return "";
     return `
       <a href="#artist/${artist.id}" class="member-card">
-        <div class="member-thumb-box"><img src="${artist.image}" class="member-img"></div>
+        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img"></div>
         <div class="member-name">${artist.name.main}</div>
       </a>
     `;
@@ -101,7 +99,10 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
             <img src="${support.image}" class="support-img">
           </div>
           <div class="support-info">
-            <div class="support-band-tag">${support.band_name}</div>
+            <div class="support-band-row">
+              <div class="support-band-tag">${support.band_name}</div>
+              <div class="support-position">${support.position}</div>
+            </div>
             <div class="support-name-row">
               <div class="support-name-box">
                 <span class="support-name-main">${support.name.main}</span>
@@ -111,7 +112,6 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
                 ${supportSnsHTML}
               </div>
             </div>
-            <div class="support-position">${support.position}</div>
             <div class="support-profile">
               <div class="support-profile-row"><span class="support-label">생일</span><span class="support-value">${support.profile.birth}</span></div>
               <div class="support-profile-row"><span class="support-label">출신지</span><span class="support-value">${support.profile.hometown || "미공개"}</span></div>

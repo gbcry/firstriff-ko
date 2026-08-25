@@ -1,0 +1,154 @@
+/* =========================================
+   Artist Profile (4:6 레이아웃)
+========================================= */
+.artist-profile-layout {
+  display: flex;
+  align-items: stretch;
+}
+
+/* 좌측 이미지 (40%) */
+.artist-visual-box {
+  width: 40%;
+  border-right: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray);
+  box-sizing: border-box;
+}
+
+.artist-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 우측 정보 (60%) */
+.artist-info-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(30px, 4vw, 50px);
+  box-sizing: border-box;
+  gap: clamp(15px, 2.5vw, 25px);
+}
+
+.artist-band-row {
+  display: flex;
+  align-items: center; /* 텍스트 수직 중앙 정렬 */
+  gap: clamp(10px, 1.5vw, 20px); /* 밴드명과 포지션 사이 간격 */
+  margin-bottom: clamp(5px, 1vw, 10px);
+}
+
+.artist-band-tag {
+  font-weight: 800;
+  color: var(--color-point);
+  font-size: clamp(14px, 1.6vw, 18px);
+  margin-bottom: 0;
+}
+
+.artist-position {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 800;
+  color: var(--color-black);
+  margin-bottom: 0;
+}
+
+.artist-name-row {
+  display: flex;
+  justify-content: space-between; /* 양 끝으로 밀어내기 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 5px;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.artist-name-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.artist-name-main {
+  font-family: var(--font-main);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: var(--color-black);
+  margin-right: clamp(10px, 1.5vw, 20px);
+}
+
+.artist-name-sub {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 700;
+  color: #777;
+}
+
+.artist-sns-group {
+  display: flex;
+  gap: clamp(12px, 1.5vw, 20px);
+}
+
+/* 담당 캐릭터 링크 버튼 */
+.artist-character-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-black);
+  padding: clamp(12px, 1.5vw, 16px) clamp(20px, 2vw, 30px);
+  text-decoration: none;
+  width: fit-content;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.artist-character-link .link-label {
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-weight: 700;
+  color: #bbb;
+}
+
+.artist-character-link .link-value {
+  font-family: var(--font-main);
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.artist-character-link:hover {
+  background-color: var(--color-point);
+  transform: translateY(-3px);
+}
+
+/* 프로필 디테일 목록 */
+.artist-profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.2vw, 15px);
+  flex: 1;
+}
+
+.profile-row {
+  display: flex;
+  align-items: flex-start;
+  font-size: clamp(14px, 1.6vw, 18px);
+  line-height: 1.6;
+}
+
+.profile-row .label {
+  flex: 0 0 clamp(120px, 15vw, 150px);
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.profile-row .value {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+  word-break: keep-all;
+}
+
+/* =========================================
+   Artist Members Section (하단 리스트)
+========================================= */
+.artist-members-section {
+  padding: clamp(30px, 4vw, 50px);
+}
