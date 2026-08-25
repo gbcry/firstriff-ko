@@ -106,6 +106,10 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
       <div class="album-grid">
         ${albumCardsHTML}
       </div>
+
+      <div class="empty-state hidden" id="filter-empty-state">
+        <p class="empty-text">COMING SOON</p>
+      </div>
     `;
   }
 
@@ -127,6 +131,7 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
   // 앨범 필터링
   const filterBtns = container.querySelectorAll(".filter-btn");
   const albumCards = container.querySelectorAll(".album-card");
+  const filterEmptyState = container.querySelector("#filter-empty-state");
 
   if (filterBtns.length > 0 && albumCards.length > 0) {
     filterBtns.forEach((btn) => {
@@ -143,15 +148,27 @@ async function renderDiscographyList(container, bands, currentBand, bandAlbums, 
         // 브라우저 주소창 url을 현재 필터에 맞춰서 변경
         history.replaceState(null, null, `#discography/${currentBand.id}/${filterValue}`);
 
+        let visibleCount = 0;
+
         albumCards.forEach((card) => {
           const albumType = card.getAttribute("data-type");
 
           if (filterValue === "all" || filterValue === albumType) {
             card.style.display = "";
+            visibleCount++;
           } else {
             card.style.display = "none";
           }
         });
+
+        // 노출된 카드가 0개인 경우 빈 화면 상태 관리
+        if (filterEmptyState) {
+          if (visibleCount === 0) {
+            filterEmptyState.classList.remove("hidden");
+          } else {
+            filterEmptyState.classList.add("hidden");
+          }
+        }
       });
     });
 

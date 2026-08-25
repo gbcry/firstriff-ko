@@ -361,14 +361,19 @@
 ========================================= */
 @media screen and (max-width: 768px) {
   .album-media-grid {
-    /* 모바일에서는 2열로 자동 변경 */
-    grid-template-columns: repeat(2, 1fr);
+    /* 모바일에서는 4열로 자동 변경 */
+    grid-template-columns: repeat(4, 1fr);
   }
   
+  .album-media-link {
+    /* 각 링크가 2칸씩 차지하게 하여 2열 배치 효과 적용 */
+    grid-column: span 2;
+  }
+
   /* 아이템이 홀수 개일 때 마지막 항목을 정중앙에 배치 */
   .album-media-link:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 80%; /* 모바일 중앙 배치 시 너무 커지지 않도록 조절 */
+    grid-column: 2 / 4;
+    justify-self: stretch;
+    width: 100%; 
   }
 }

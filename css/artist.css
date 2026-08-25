@@ -249,3 +249,26 @@
   color: var(--color-point);
   transform: scale(1.1);
 }
+
+/* =========================================
+   Mobile Responsiveness
+========================================= */
+@media screen and (max-width: 768px) {
+  .artist-top-row {
+    flex-direction: column;
+  }
+
+  .artist-visual-box {
+    width: 100%;
+    padding: clamp(20px, 5vw, 40px);
+  }
+
+  .artist-info-box {
+    width: 100%;
+    padding: 0 clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
+  }
+
+  .artist-profile-details {
+    padding: 0 clamp(20px, 5vw, 40px) clamp(30px, 6vw, 50px);
+  }
+}
