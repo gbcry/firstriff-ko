@@ -65,7 +65,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
     if (!artist) return "";
     return `
       <a href="#artist/${artist.id}" class="member-card">
-        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img"></div>
+        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img" loading="lazy"></div>
         <div class="member-name">${artist.name.main}</div>
       </a>
     `;
@@ -101,40 +101,41 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
         <div class="band-detail-wrapper">
 
           <div class="artist-profile-layout">
-            <div class="artist-visual-box">
-              <img src="${currentArtist.image.main_visual}" class="artist-main-img">
-            </div>
-
-            <div class="artist-info-box">
-              <div class="artist-name-header">
-                <div class="artist-band-row">
-                  <div class="artist-band-tag">${currentArtist.band_name}</div>
-                  <div class="artist-position">${currentArtist.position}</div>
-                </div>
-
-                <div class="artist-name-row">
-                  <div class="artist-name-box">
-                    <span class="artist-name-main">${currentArtist.name.main}</span>
-                    ${jpNameHTML}
-                  </div>
-                  
-                  <div class="artist-sns-group">
-                    ${artistSnsHTML}
-                  </div>
-                </div>
+            <div class="artist-top-row">
+              <div class="artist-visual-box">
+                <img src="${currentArtist.image.thumbnail}" class="artist-main-img">
               </div>
 
-              <a href="#character/${currentArtist.character.id}" class="artist-character-link">
-                <span class="link-label">담당 캐릭터</span>
-                <span class="link-value">${currentArtist.character.name} <i class="fa-solid fa-chevron-right"></i></span>
-              </a>
+              <div class="artist-info-box">
+                <div class="artist-name-header">
+                  <div class="artist-band-row">
+                    <div class="artist-band-tag">${currentArtist.band_name}</div>
+                    <div class="artist-position">${currentArtist.position}</div>
+                  </div>
 
-              <div class="artist-profile-details">
+                  <div class="artist-name-row">
+                    <div class="artist-name-box">
+                      <span class="artist-name-main">${currentArtist.name.main}</span>
+                      ${jpNameHTML}
+                    </div>
+
+                    <div class="artist-sns-group">
+                      ${artistSnsHTML}
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#character/${currentArtist.character.id}" class="artist-character-link">
+                  <span class="link-label">담당 캐릭터</span>
+                  <span class="link-value">${currentArtist.character.name} <i class="fa-solid fa-chevron-right"></i></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="artist-profile-details">
                 <div class="profile-row"><span class="label">생일</span><span class="value">${currentArtist.profile.birth}</span></div>
                 <div class="profile-row"><span class="label">출신지</span><span class="value">${currentArtist.profile.hometown || "미공개"}</span></div>
                 ${detailsHTML}
-              </div>
-
             </div>
           </div>
 
