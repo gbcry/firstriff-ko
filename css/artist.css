@@ -168,3 +168,84 @@
   padding: clamp(30px, 5vw, 50px) clamp(15px, 4vw, 40px) clamp(20px, 3vw, 30px);
   box-sizing: border-box;
 }
+
+/* =========================================
+   Artist Image Wrapper & Expand Button
+========================================= */
+.artist-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.img-expand-btn {
+  position: absolute;
+  bottom: clamp(10px, 2vw, 15px);
+  right: clamp(10px, 2vw, 15px);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  width: clamp(35px, 4vw, 45px);
+  height: clamp(35px, 4vw, 45px);
+  border-radius: 50%;
+  font-size: clamp(16px, 2vw, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.img-expand-btn:hover {
+  background-color: var(--color-point);
+  transform: scale(1.1);
+}
+
+/* =========================================
+   Image Modal 
+========================================= */
+.image-modal {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85); /* 반투명 검정 배경 */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-full-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border: clamp(3px, 0.5vw, 5px) solid var(--color-black);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: modalPopUp 0.3s ease forwards;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: clamp(20px, 4vw, 40px);
+  right: clamp(20px, 4vw, 40px);
+  color: var(--color-black);
+  font-size: clamp(30px, 5vw, 45px);
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  z-index: 10000;
+}
+
+.modal-close-btn:hover {
+  color: var(--color-point);
+  transform: scale(1.1);
+}

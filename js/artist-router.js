@@ -87,6 +87,8 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
     }).join("")
     : "";
 
+  const visualImageSrc = currentArtist.image.main_visual || currentArtist.image.thumbnail;
+
   // 최종 렌더링
   container.innerHTML = `
     <div class="page-view">
@@ -103,7 +105,12 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
           <div class="artist-profile-layout">
             <div class="artist-top-row">
               <div class="artist-visual-box">
-                <img src="${currentArtist.image.thumbnail}" class="artist-main-img">
+                <div class="artist-img-wrapper">
+                  <img src="${currentArtist.image.thumbnail}" class="artist-main-img">
+                  <button class="img-expand-btn" id="expand-img-btn" a>
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
               </div>
 
               <div class="artist-info-box">
@@ -149,5 +156,38 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
         </div>
       </div>
     </div>
+
+    <div class="image-modal" id="artist-image-modal">
+      <div class="modal-close-btn" id="close-image-modal"><i class="fa-solid fa-xmark"></i></div>
+      <img src="${visualImageSrc}" class="modal-full-img" loading="lazy">
+    </div>
   `;
+
+  // 모달 동작
+  const expandBtn = container.querySelector("#expand-img-btn");
+  const imageModal = container.querySelector("#artist-image-modal");
+  const closeBtn = container.querySelector("#close-image-modal");
+
+  // 확대 버튼 클릭 시 모달 열기
+  if (expandBtn) {
+    expandBtn.addEventListener("click", () => {
+      imageModal.classList.add("active");
+    });
+  }
+
+  // 닫기 버튼 클릭 시 모달 닫기
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      imageModal.classList.remove("active");
+    });
+  }
+
+  // 바깥 배경 클릭 시 모달 닫기
+  if (imageModal) {
+    imageModal.addEventListener("click", (e) => {
+      if (e.target === imageModal) {
+        imageModal.classList.remove("active")
+      }
+    });
+  }
 }
