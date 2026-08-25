@@ -65,7 +65,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
     if (!artist) return "";
     return `
       <a href="#artist/${artist.id}" class="member-card">
-        <div class="member-thumb-box"><img src="${artist.image}" class="member-img"></div>
+        <div class="member-thumb-box"><img src="${artist.image.thumbnail}" class="member-img"></div>
         <div class="member-name">${artist.name.main}</div>
       </a>
     `;
@@ -102,7 +102,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
 
           <div class="artist-profile-layout">
             <div class="artist-visual-box">
-              <img src="${currentArtist.image}" class="artist-main-img">
+              <img src="${currentArtist.image.main_visual}" class="artist-main-img">
             </div>
 
             <div class="artist-info-box">

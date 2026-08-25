@@ -56,7 +56,7 @@
         "cv_comment": {
           "url": "https://x.com/mirei_togetoge/status/1684035814819504128?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/mirei_thumb.webp"
+          "thumbnail": "images/artist/togenashitogeari/mirei_thumb.webp"
         }
       }
     },
@@ -111,7 +111,7 @@
         "cv_comment": {
           "url": "https://x.com/yuri_togetoge/status/1684035823031791616?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/yuri_thumb.webp"
+          "thumbnail": "images/artist/togenashitogeari/yuri_thumb.webp"
         }
       }
     },
@@ -167,7 +167,7 @@
         "cv_comment": {
           "url": "https://x.com/rina_togetoge/status/1684035814722879492?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/rina_thumb.webp"
+          "thumbnail": "images/artist/togenashitogeari/rina_thumb.webp"
         }
       }
     },
@@ -223,7 +223,7 @@
         "cv_comment": {
           "url": "https://x.com/natsu_togetoge/status/1684035820141809664?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/natsu_thumb.webp"
+          "thumbnail": "images/artist/togenashitogeari/natsu_thumb.webp"
         }
       }
     },
@@ -280,7 +280,7 @@
         "cv_comment": {
           "url": "https://x.com/shuri_togetoge/status/1684035823874998273?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/togenashitogeari/shuri_thumb.webp"
+          "thumbnail": "images/artist/togenashitogeari/shuri_thumb.webp"
         }
       }
     },
@@ -330,7 +330,7 @@
         "cv_comment": {
           "url": "https://x.com/KisakiCannaLily/status/2035683697631052136?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/kisaki_thumb.webp"
+          "thumbnail": "images/artist/cannalily/kisaki_thumb.webp"
         }
       }
     },
@@ -379,7 +379,7 @@
         "cv_comment": {
           "url": "https://x.com/AruneCannaLily/status/2035684017765503123?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/arune_thumb.webp"
+          "thumbnail": "images/artist/cannalily/arune_thumb.webp"
         }
       }
     },
@@ -430,7 +430,7 @@
         "cv_comment": {
           "url": "https://x.com/RineCannaLily/status/2035682465919180926?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/rine_thumb.webp"
+          "thumbnail": "images/artist/cannalily/rine_thumb.webp"
         }
       }
     },
@@ -481,7 +481,7 @@
         "cv_comment": {
           "url": "https://x.com/YuwaCannaLily/status/2035684186624074162?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/yuwa_thumb.webp"
+          "thumbnail": "images/artist/cannalily/yuwa_thumb.webp"
         }
       }
     },
@@ -533,7 +533,7 @@
         "cv_comment": {
           "url": "https://x.com/SakuraCannaLily/status/2035684248909496399?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/cannalily/sakura_thumb.webp"
+          "thumbnail": "images/artist/cannalily/sakura_thumb.webp"
         }
       }
     },
@@ -581,7 +581,7 @@
         "cv_comment": {
           "url": "https://x.com/yoshi_F272/status/2045811164572242077?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/yoshi_thumb.webp"
+          "thumbnail": "images/artist/f-272/yoshi_thumb.webp"
         }
       }
     },
@@ -631,7 +631,7 @@
         "cv_comment": {
           "url": "https://x.com/towa_F272/status/2045460964829802862?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/towa_thumb.webp"
+          "thumbnail": "images/artist/f-272/towa_thumb.webp"
         }
       }
     },
@@ -680,7 +680,7 @@
         "cv_comment": {
           "url": "https://x.com/miyu_F272/status/2045462726504546730?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/miyu_thumb.webp"
+          "thumbnail": "images/artist/f-272/miyu_thumb.webp"
         }
       }
     },
@@ -729,7 +729,7 @@
         "cv_comment": {
           "url": "https://x.com/hinano_F272/status/2045463037499646093?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/hinano_thumb.webp"
+          "thumbnail": "images/artist/f-272/hinano_thumb.webp"
         }
       }
     },
@@ -779,7 +779,7 @@
         "cv_comment": {
           "url": "https://x.com/luca_F272/status/2045463726623756681?s=20",
           "text": "성우 코멘트",
-          "thumbnail": "images/character/f-272/luca_thumb.webp"
+          "thumbnail": "images/artist/f-272/luca_thumb.webp"
         }
       }
     }

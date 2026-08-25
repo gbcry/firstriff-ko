@@ -134,7 +134,7 @@
 }
 
 .profile-row .label {
-  flex: 0 0 clamp(120px, 15vw, 140px);
+  flex: 0 0 clamp(120px, 15vw, 150px);
   font-weight: 700;
   color: var(--color-black);
 }
