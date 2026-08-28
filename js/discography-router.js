@@ -234,27 +234,50 @@ async function renderAlbumDetailView(container, bands, currentBand, currentAlbum
   });
 
   // 오피셜 미디어
-  let mediaHTML = "";
-
-  if (currentAlbum.media_links && Array.isArray(currentAlbum.media_links)) {
-    mediaHTML += currentAlbum.media_links.map((link) => `
-        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="video-link">
-          <img src="${getYouTubeThumbnail(link.url)}" class="video-thumb" onerror="this.style.display='none'" loading="lazy">
-          <span class="video-text">${link.text}</span>
-        </a>
-    `).join("");
-  }
-
   let videoSection = "";
 
-  // 미디어 구역에 내용이 없으면 렌더링 x
-  if (mediaHTML.trim() !== "") {
-    videoSection = `
-      <div class="section-subtitle">VIDEO</div>
-      <div class="video-grid">
-        ${mediaHTML}
-      </div>
-    `;
+  if (currentAlbum.media_links) {
+    const mediaEntries = Object.entries(currentAlbum.media_links);
+
+    if (mediaEntries.length > 0) {
+      let groupedMediaHTML = "";
+
+      mediaEntries.forEach(([type, links]) => {
+        // 영상이 없으면 건너뛰기
+        if (!links || links.length === 0) return;
+
+        const typeUpper = type.toUpperCase();
+        let typeLinksHTML = "";
+
+        links.forEach((link) => {
+          typeLinksHTML += `
+            <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="video-link">
+              <img src="${getYouTubeThumbnail(link.url)}" class="video-thumb" onerror="this.style.display='none'" loading="lazy">
+              <span class="video-text">${link.text}</span>
+            </a>
+          `
+        });
+
+        groupedMediaHTML += `
+          <div class="media-type-group">
+            <h4 class="media-type-subtitle">${typeUpper}</h4>
+            <div class="video-grid">
+              ${typeLinksHTML}
+            </div>
+          </div>
+        `
+      });
+
+      if (groupedMediaHTML.trim() !== "") {
+        videoSection = `
+          <div class="section-subtitle">VIDEO</div>
+            <div class="video-section-wrapper">
+              ${groupedMediaHTML}
+            </div>
+          </div>
+        `;
+      }
+    }
   }
 
   container.innerHTML = `

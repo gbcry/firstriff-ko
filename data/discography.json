@@ -12,28 +12,34 @@
           "en": "Nameless Name"
         },
         "cover_image": "images/discography/togenashitogeari/1st_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
-            "text": "[MV] 이름 없는 모든 것"
-          },
-          {
-            "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
-            "text": "[Anime] 7화"
-          },
-          {
-            "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
-            "text": "[MV] 거짓된 법칙"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=v3y50OyXYRc",
-            "text": "[4th Live] 이름 없는 모든 것"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=wsvWRYUsFxA&pp=0gcJCRMMAYcqIYzv",
-            "text": "[5th Live] 거짓된 법칙"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+              "text": "[MV] 이름 없는 모든 것"
+            },
+            {
+              "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+              "text": "[MV] 거짓된 법칙"
+            }
+          ],
+          "anime": [
+            {
+              "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
+              "text": "[Anime] 7화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=v3y50OyXYRc",
+              "text": "[4th Live] 이름 없는 모든 것"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=wsvWRYUsFxA&pp=0gcJCRMMAYcqIYzv",
+              "text": "[5th Live] 거짓된 법칙"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -84,24 +90,29 @@
           "en": "white drizzle in gloom"
         },
         "cover_image": "images/discography/togenashitogeari/2nd_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
-            "text": "[MV] 우울, 흐려지다"
-          },
-          {
-            "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
-            "text": "[MV] 이상적 패러독스란"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=-0gxFwIRbRY",
-            "text": "[4th Live] 우울, 흐려지다"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=5PW7qVqYuGk",
-            "text": "[5th Live] 이상적 패러독스란"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+              "text": "[MV] 우울, 흐려지다"
+            },
+            {
+              "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+              "text": "[MV] 이상적 패러독스란"
+            }
+          ],
+          "anime": [],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=-0gxFwIRbRY",
+              "text": "[4th Live] 우울, 흐려지다"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=5PW7qVqYuGk",
+              "text": "[5th Live] 이상적 패러독스란"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -152,20 +163,29 @@
           "en": "Bleeding Hearts"
         },
         "cover_image": "images/discography/togenashitogeari/3rd_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
-            "text": "[MV] 망울을 터뜨리다"
-          },
-          {
-            "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
-            "text": "[MV] 여명을 꿰뚫다"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=cErW6BX2Fu0",
-            "text": "[1st Live] 망울을 터뜨리다"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+              "text": "[MV] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+              "text": "[MV] 여명을 꿰뚫다"
+            }
+          ],
+          "anime": [],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=cErW6BX2Fu0",
+              "text": "[1st Live] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://youtu.be/YI1_I_2MTDk?si=NEpTGargRpm9Ktqy",
+              "text": "[4th Live] 망울을 터뜨리다"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -216,20 +236,25 @@
           "en": "Answer to Extreme"
         },
         "cover_image": "images/discography/togenashitogeari/4th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
-            "text": "[MV] 극사적 극채색 앤서"
-          },
-          {
-            "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
-            "text": "[MV] 상처받고 상처주고 아파서 괴로워"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=iXB0Vn10dWs",
-            "text": "[1st Live] 극사적 극채색 앤서"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+              "text": "[MV] 극사적 극채색 앤서"
+            },
+            {
+              "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+              "text": "[MV] 상처받고 상처주고 아파서 괴로워"
+            }
+          ],
+          "anime": [],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=iXB0Vn10dWs",
+              "text": "[1st Live] 극사적 극채색 앤서"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -280,16 +305,20 @@
           "en": "Lonely fate to be destined"
         },
         "cover_image": "images/discography/togenashitogeari/5th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
-            "text": "[MV] 운명에 걸고 싶은 논리"
-          },
-          {
-            "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
-            "text": "[MV] 안녕 안녕 안녕"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+              "text": "[MV] 운명에 걸고 싶은 논리"
+            },
+            {
+              "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+              "text": "[MV] 안녕 안녕 안녕"
+            }
+          ],
+          "anime": [],
+          "live": []
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -340,20 +369,25 @@
           "en": "Wrong World"
         },
         "cover_image": "images/discography/togenashitogeari/6th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
-            "text": "[Anime] 오프닝"
-          },
-          {
-            "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
-            "text": "[Anime] 1화"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=XRgMRKk6Kd8&pp=0gcJCRMMAYcqIYzv",
-            "text": "[1st Live] 혼잡한 길, 우리의 도시"
-          }
-        ],
+        "media_links": {
+          "mv": [],
+          "anime": [
+            {
+              "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
+              "text": "[Anime] 오프닝"
+            },
+            {
+              "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
+              "text": "[Anime] 1화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=XRgMRKk6Kd8&pp=0gcJCRMMAYcqIYzv",
+              "text": "[1st Live] 혼잡한 길, 우리의 도시"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -413,20 +447,25 @@
           "en": "I'm Nobody"
         },
         "cover_image": "images/discography/togenashitogeari/7th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
-            "text": "[Anime] 엔딩"
-          },
-          {
-            "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
-            "text": "[Anime] 3화"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=0qiqkY8fSvM",
-            "text": "[4th Live] 누구도 될 수 없는 나니까"
-          }
-        ],
+        "media_links": {
+          "mv": [],
+          "anime": [
+            {
+              "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
+              "text": "[Anime] 엔딩"
+            },
+            {
+              "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
+              "text": "[Anime] 3화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=0qiqkY8fSvM",
+              "text": "[4th Live] 누구도 될 수 없는 나니까"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -486,16 +525,21 @@
           "en": "What to raise"
         },
         "cover_image": "images/discography/togenashitogeari/8th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
-            "text": "[Anime] 5화"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=qLLOWnk602c&pp=0gcJCRMMAYcqIYzv",
-            "text": "[5th Live] 시야 한구석 스러지는 소리"
-          }
-        ],
+        "media_links": {
+          "mv": [],
+          "anime": [
+            {
+              "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
+              "text": "[Anime] 5화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=qLLOWnk602c&pp=0gcJCRMMAYcqIYzv",
+              "text": "[5th Live] 시야 한구석 스러지는 소리"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -555,24 +599,29 @@
           "en": "Emptiness and Catharsis"
         },
         "cover_image": "images/discography/togenashitogeari/9th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
-            "text": "[Anime] 11화"
-          },
-          {
-            "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
-            "text": "[Anime] 13화"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=P5B0E5ZjfnM",
-            "text": "[2nd Live] 공백과 카타르시스"
-          },
-          {
-            "url": "https://www.youtube.com/watch?v=NqPiy6ca0i0",
-            "text": "[3rd Live] 운명의 꽃"
-          }
-        ],
+        "media_links": {
+          "mv": [],
+          "anime": [
+            {
+              "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
+              "text": "[Anime] 11화"
+            },
+            {
+              "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
+              "text": "[Anime] 13화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=P5B0E5ZjfnM",
+              "text": "[2nd Live] 공백과 카타르시스"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=NqPiy6ca0i0",
+              "text": "[3rd Live] 운명의 꽃"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -632,16 +681,20 @@
           "en": "No one"
         },
         "cover_image": "images/discography/togenashitogeari/10th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/egoue2V-TAk?si=UIN8Rz3ntKOTnTur",
-            "text": "[MV] 아무도"
-          },
-          {
-            "url": "https://youtu.be/TuaqYVDguXM?si=yYT9r8Wtco49c1i2",
-            "text": "[MV] 날 수 없는 나비는 꿈을 꾼다"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/egoue2V-TAk?si=UIN8Rz3ntKOTnTur",
+              "text": "[MV] 아무도"
+            },
+            {
+              "url": "https://youtu.be/TuaqYVDguXM?si=yYT9r8Wtco49c1i2",
+              "text": "[MV] 날 수 없는 나비는 꿈을 꾼다"
+            }
+          ],
+          "anime": [],
+          "live": []
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -688,16 +741,20 @@
           "en": "Fragile Violet"
         },
         "cover_image": "images/discography/togenashitogeari/11th_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/-etkkmuzZmM?si=Rw0IxZvfa2FXFZiw",
-            "text": "[MV] 박채 디스플레이"
-          },
-          {
-            "url": "https://youtu.be/L_32Cn1ViIA?si=EXFxXarsnh46Xy1N",
-            "text": "[MV] 신기루에게 묻다"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/-etkkmuzZmM?si=Rw0IxZvfa2FXFZiw",
+              "text": "[MV] 박채 디스플레이"
+            },
+            {
+              "url": "https://youtu.be/L_32Cn1ViIA?si=EXFxXarsnh46Xy1N",
+              "text": "[MV] 신기루에게 묻다"
+            }
+          ],
+          "anime": [],
+          "live": []
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -899,52 +956,86 @@
           "en": "Togeari"
         },
         "cover_image": "images/discography/togenashitogeari/1st_album.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
-            "text": "[MV] 이름 없는 모든 것"
-          },
-          {
-            "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
-            "text": "[Anime] 7화"
-          },
-          {
-            "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
-            "text": "[MV] 거짓된 법칙"
-          },
-          {
-            "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
-            "text": "[MV] 우울, 흐려지다"
-          },
-          {
-            "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
-            "text": "[MV] 이상적 패러독스란"
-          },
-          {
-            "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
-            "text": "[MV] 망울을 터뜨리다"
-          },
-          {
-            "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
-            "text": "[MV] 여명을 꿰뚫다"
-          },
-          {
-            "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
-            "text": "[MV] 극사적 극채색 앤서"
-          },
-          {
-            "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
-            "text": "[MV] 상처받고 상처주고 아파서 괴로워"
-          },
-          {
-            "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
-            "text": "[MV] 운명에 걸고 싶은 논리"
-          },
-          {
-            "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
-            "text": "[MV] 안녕 안녕 안녕"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/dDwN4MgcIlU?si=PbgXcxOLOKrPGfw-",
+              "text": "[MV] 이름 없는 모든 것"
+            },
+            {
+              "url": "https://youtu.be/LgoRQSPS-3Y?si=FgUO8L_KBNPBbeI5",
+              "text": "[MV] 거짓된 법칙"
+            },
+            {
+              "url": "https://youtu.be/7R7EcEefRNI?si=a-HHSsIxIAazmfS9",
+              "text": "[MV] 우울, 흐려지다"
+            },
+            {
+              "url": "https://youtu.be/U_Nq0HeJDNY?si=McSEwZ5qQz2BUo0a",
+              "text": "[MV] 이상적 패러독스란"
+            },
+            {
+              "url": "https://youtu.be/LU3f8ZGfd5g?si=j6iC_jmK0cJjqTB3",
+              "text": "[MV] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://youtu.be/wYmNq-2bLsI?si=iLr8x5jluCUvDNqt",
+              "text": "[MV] 여명을 꿰뚫다"
+            },
+            {
+              "url": "https://youtu.be/8eFicWRSgT8?si=bLu6LEPXVjzrNf2I",
+              "text": "[MV] 극사적 극채색 앤서"
+            },
+            {
+              "url": "https://youtu.be/p2augTPjtYM?si=IMrMwkaRWQbtJ_Mv",
+              "text": "[MV] 상처받고 상처주고 아파서 괴로워"
+            },
+            {
+              "url": "https://youtu.be/waC_L2udTco?si=YqSKuz46V5gWEmDP",
+              "text": "[MV] 운명에 걸고 싶은 논리"
+            },
+            {
+              "url": "https://youtu.be/EuBGsmThfu0?si=iXYO5oOwdlzWGYrv",
+              "text": "[MV] 안녕 안녕 안녕"
+            }
+          ],
+          "anime": [
+            {
+              "url": "https://youtu.be/WrWga0k-fzE?si=jwOCf6bLh0Qvz8N4",
+              "text": "[Anime] 7화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=v3y50OyXYRc",
+              "text": "[4th Live] 이름 없는 모든 것"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=wsvWRYUsFxA&pp=0gcJCRMMAYcqIYzv",
+              "text": "[5th Live] 거짓된 법칙"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=-0gxFwIRbRY",
+              "text": "[4th Live] 우울, 흐려지다"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=5PW7qVqYuGk",
+              "text": "[5th Live] 이상적 패러독스란"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=cErW6BX2Fu0",
+              "text": "[1st Live] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://youtu.be/YI1_I_2MTDk?si=NEpTGargRpm9Ktqy",
+              "text": "[4th Live] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=iXB0Vn10dWs",
+              "text": "[1st Live] 극사적 극채색 앤서"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -1049,40 +1140,65 @@
           "en": "Togenashi"
         },
         "cover_image": "images/discography/togenashitogeari/2nd_album.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
-            "text": "[Anime] 오프닝"
-          },
-          {
-            "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
-            "text": "[Anime] 엔딩"
-          },
-          {
-            "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
-            "text": "[Anime] 1화"
-          },
-          {
-            "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
-            "text": "[Anime] 3화"
-          },
-          {
-            "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
-            "text": "[Anime] 5화"
-          },
-          {
-            "url": "https://youtu.be/UnIWvcARb8U?si=PVKhiImuX3EQ6vqI",
-            "text": "[Anime] 11화 (다이더스)"
-          },
-          {
-            "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
-            "text": "[Anime] 11화 (토게토게)"
-          },
-          {
-            "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
-            "text": "[Anime] 13화"
-          }
-        ],
+        "media_links": {
+          "mv": [],
+          "anime": [
+            {
+              "url": "https://youtu.be/YDLafQ-Rg-k?si=Fs4JCVS9CtQNDGI7",
+              "text": "[Anime] 오프닝"
+            },
+            {
+              "url": "https://youtu.be/Go6wsJwKf4c?si=eqfR_I8e5rQqgoZX",
+              "text": "[Anime] 엔딩"
+            },
+            {
+              "url": "https://youtu.be/pA-pzhQQFBA?si=CwhCWgfXa_yEsO0K",
+              "text": "[Anime] 1화"
+            },
+            {
+              "url": "https://youtu.be/sCDwSCYEWoY?si=jIHlDw9xEqKYvRzT",
+              "text": "[Anime] 3화"
+            },
+            {
+              "url": "https://youtu.be/hqxzJhn4RZs?si=q6oEpuuv_QBtFDn8",
+              "text": "[Anime] 5화"
+            },
+            {
+              "url": "https://youtu.be/UnIWvcARb8U?si=PVKhiImuX3EQ6vqI",
+              "text": "[Anime] 11화 (다이더스)"
+            },
+            {
+              "url": "https://youtu.be/tr8psNtqYxg?si=b_sB2d-DjdWoKdxp",
+              "text": "[Anime] 11화 (토게토게)"
+            },
+            {
+              "url": "https://youtu.be/QwdXJv_gMQM?si=WOrSjLQup8AWmw1a",
+              "text": "[Anime] 13화"
+            }
+          ],
+          "live": [
+            {
+              "url": "https://www.youtube.com/watch?v=XRgMRKk6Kd8&pp=0gcJCRMMAYcqIYzv",
+              "text": "[1st Live] 혼잡한 길, 우리의 도시"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=0qiqkY8fSvM",
+              "text": "[4th Live] 누구도 될 수 없는 나니까"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qLLOWnk602c&pp=0gcJCRMMAYcqIYzv",
+              "text": "[5th Live] 시야 한구석 스러지는 소리"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=P5B0E5ZjfnM",
+              "text": "[2nd Live] 공백과 카타르시스"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=NqPiy6ca0i0",
+              "text": "[3rd Live] 운명의 꽃"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -1206,12 +1322,16 @@
           "en": null
         },
         "cover_image": "images/discography/cannalily/1st_digital_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
-            "text": "[MV] 잔상의 고동"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/2gKTaQUFlyY?si=VID1RlSfA_KbceFx",
+              "text": "[MV] 잔상의 고동"
+            }
+          ],
+          "anime": [],
+          "live": []
+        },
         "tracklist": [
           {
             "track_no": 1,
@@ -1259,16 +1379,21 @@
           "ko": "Diorama"
         },
         "cover_image": "images/discography/f-272/1st_digital_single.webp",
-        "media_links": [
-          {
-            "url": "https://youtu.be/3cbYPipPqb4?si=NdG8XJTC6hEvnTpw",
-            "text": "[MV] Diorama"
-          },
-          {
-            "url": "https://youtu.be/t604Tyc-kvU?si=L57uY_D8c-_33BOe",
-            "text": "[1st Live] Diorama"
-          }
-        ],
+        "media_links": {
+          "mv": [
+            {
+              "url": "https://youtu.be/3cbYPipPqb4?si=NdG8XJTC6hEvnTpw",
+              "text": "[MV] Diorama"
+            }
+          ],
+          "anime": [],
+          "live": [
+            {
+              "url": "https://youtu.be/t604Tyc-kvU?si=L57uY_D8c-_33BOe",
+              "text": "[1st Live] Diorama"
+            }
+          ]
+        },
         "tracklist": [
           {
             "track_no": 1,
