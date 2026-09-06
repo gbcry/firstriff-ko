@@ -20,7 +20,7 @@
 
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: clamp(15px, 2.5vw, 40px);
   width: 100%;
 }
