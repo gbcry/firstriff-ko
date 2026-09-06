@@ -6678,7 +6678,92 @@
                     "day_name": null,
                     "date": "2026.09.06 (日)",
                     "venue": "제비오 아레나 센다이",
-                    "setlist": null
+                    "setlist": {
+                        "note": null,
+                        "regular": [
+                            {
+                                "list_no": "1",
+                                "title": {
+                                    "ko": "혼잡한 길, 우리의 도시",
+                                    "ja": "雑踏、僕らの街",
+                                    "en": "Wrong World"
+                                }
+                            },
+                            {
+                                "list_no": "2",
+                                "title": {
+                                    "ko": "안녕 안녕 안녕",
+                                    "ja": "サヨナラサヨナラサヨナラ",
+                                    "en": "Underneath"
+                                }
+                            },
+                            {
+                                "list_no": "3",
+                                "title": {
+                                    "ko": "빈 상자",
+                                    "ja": "空の箱",
+                                    "en": "VOID"
+                                }
+                            },
+                            {
+                                "list_no": "4",
+                                "title": {
+                                    "ko": "아무도",
+                                    "ja": "ダレモ",
+                                    "en": "No one"
+                                }
+                            },
+                            {
+                                "list_no": "5",
+                                "title": {
+                                    "ko": "군청 미니어처",
+                                    "ja": "群青ミニアチュール ",
+                                    "en": null
+                                }
+                            },
+                            {
+                                "list_no": "6",
+                                "title": {
+                                    "ko": "공백과 카타르시스",
+                                    "ja": "空白とカタルシス",
+                                    "en": "Emptiness and Catharsis"
+                                }
+                            },
+                            {
+                                "list_no": "7",
+                                "title": {
+                                    "ko": "시야 한구석 스러지는 소리",
+                                    "ja": "視界の隅 朽ちる音",
+                                    "en": "What to raise"
+                                }
+                            },
+                            {
+                                "list_no": "8",
+                                "title": {
+                                    "ko": "더는 아무것도 필요 없는 미래",
+                                    "ja": "もう何もいらない未来",
+                                    "en": "Against All Answers"
+                                }
+                            },
+                            {
+                                "list_no": "9",
+                                "title": {
+                                    "ko": "망울을 터뜨리다",
+                                    "ja": "爆ぜて咲く",
+                                    "en": "Bleeding Hearts"
+                                }
+                            },
+                            {
+                                "list_no": "10",
+                                "title": {
+                                    "ko": "운명의 꽃",
+                                    "ja": "運命の華",
+                                    "en": "I'm here"
+                                }
+                            }
+                        ],
+                        "encore": []
+                    }
                 }
             ]
         },
@@ -6900,14 +6985,14 @@
                 {
                     "day_id": "part1",
                     "day_name": "1부",
-                    "date": "2026.09.05 (土)",
+                    "date": "2026.09.05 (연기)",
                     "venue": "도쿄·WWW X",
                     "setlist": null
                 },
                 {
                     "day_id": "part2",
                     "day_name": "2부",
-                    "date": "2026.09.05 (土)",
+                    "date": "2026.09.05 (연기)",
                     "venue": "도쿄·WWW X",
                     "setlist": null
                 }
