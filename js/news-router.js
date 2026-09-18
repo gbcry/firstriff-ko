@@ -142,7 +142,12 @@ async function renderNewsDetail(container, newsId) {
 
   // description
   const descriptionHTML = (news.details.description || [])
-    .map((text) => `<p>${text}</p>`)
+    .map((text) => {
+      if (text.trim() === "") {
+        return `<div style="height: 12px;"></div>`; // 빈 줄 처리
+      }
+      return `<p>${text}</p>`;
+    })
     .join("");
 
   // info_list

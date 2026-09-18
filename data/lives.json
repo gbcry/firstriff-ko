@@ -5158,6 +5158,82 @@
             ]
         },
         {
+            "id": "live_taiban_07",
+            "type": "taiban",
+            "title": {
+                "ko": "Sault Ste. Shoegaze"
+            },
+            "key_visual": "images/live/live_taiban_07.webp",
+            "participate": [
+                "f-272"
+            ],
+            "cast": [
+                {
+                    "band": "F-272",
+                    "members": []
+                },
+                {
+                    "band": "plant cell",
+                    "members": []
+                },
+                {
+                    "band": "Ferri-Chrome",
+                    "members": []
+                },
+                {
+                    "band": "Hammersmark (오사카)",
+                    "members": []
+                },
+                {
+                    "band": "shoals",
+                    "members": []
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": null,
+                    "day_name": null,
+                    "date": "2026.09.27 (日)",
+                    "venue": "키치초지 ROCK JOINT GB",
+                    "setlist": null
+                }
+            ]
+        },
+        {
+            "id": "live_taiban_08",
+            "type": "taiban",
+            "title": {
+                "ko": "Girl’s UP!!! vol.421"
+            },
+            "key_visual": "images/live/live_taiban_08.webp",
+            "participate": [
+                "f-272"
+            ],
+            "cast": [
+                {
+                    "band": "F-272",
+                    "members": []
+                },
+                {
+                    "band": "LUMiRiSE",
+                    "members": []
+                },
+                {
+                    "band": "TRiDENT",
+                    "members": []
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": null,
+                    "day_name": null,
+                    "date": "2026.10.22 (木)",
+                    "venue": "시부야 eggman",
+                    "setlist": null
+                }
+            ]
+        },
+        {
             "id": "live_etc_01",
             "type": "etc",
             "title": {
@@ -6789,7 +6865,74 @@
                     "day_name": null,
                     "date": "2026.09.12 (土)",
                     "venue": "치바시 소가 스포츠 공원",
-                    "setlist": null
+                    "setlist": {
+                        "note": null,
+                        "regular": [
+                            {
+                                "list_no": "1",
+                                "title": {
+                                    "ko": "혼잡한 길, 우리의 도시",
+                                    "ja": "雑踏、僕らの街",
+                                    "en": "Wrong World"
+                                }
+                            },
+                            {
+                                "list_no": "2",
+                                "title": {
+                                    "ko": "arrow"
+                                }
+                            },
+                            {
+                                "list_no": "3",
+                                "title": {
+                                    "ko": "군청 미니어처",
+                                    "ja": "群青ミニアチュール ",
+                                    "en": null
+                                }
+                            },
+                            {
+                                "list_no": "4",
+                                "title": {
+                                    "ko": "공백과 카타르시스",
+                                    "ja": "空白とカタルシス",
+                                    "en": "Emptiness and Catharsis"
+                                }
+                            },
+                            {
+                                "list_no": "5",
+                                "title": {
+                                    "ko": "안녕 안녕 안녕",
+                                    "ja": "サヨナラサヨナラサヨナラ",
+                                    "en": "Underneath"
+                                }
+                            },
+                            {
+                                "list_no": "6",
+                                "title": {
+                                    "ko": "시야 한구석 스러지는 소리",
+                                    "ja": "視界の隅 朽ちる音",
+                                    "en": "What to raise"
+                                }
+                            },
+                            {
+                                "list_no": "7",
+                                "title": {
+                                    "ko": "망울을 터뜨리다",
+                                    "ja": "爆ぜて咲く",
+                                    "en": "Bleeding Hearts"
+                                }
+                            },
+                            {
+                                "list_no": "8",
+                                "title": {
+                                    "ko": "운명의 꽃",
+                                    "ja": "運命の華",
+                                    "en": "I'm here"
+                                }
+                            }
+                        ],
+                        "encore": []
+                    }
                 }
             ]
         },
@@ -6825,7 +6968,7 @@
             "title": {
                 "ko": "HIROSHIMA CONTI-NeW FeS 2026"
             },
-            "key_visual": "images/live/live_etc_19.png",
+            "key_visual": "images/live/live_etc_19.webp",
             "participate": [
                 "togenashitogeari",
                 "cannalily"
@@ -6837,6 +6980,10 @@
                 },
                 {
                     "band": "Canna Lily",
+                    "members": []
+                },
+                {
+                    "band": "그 외 다수",
                     "members": []
                 }
             ],
@@ -6985,14 +7132,14 @@
                 {
                     "day_id": "part1",
                     "day_name": "1부",
-                    "date": "2026.09.05 (연기)",
+                    "date": "2026.10.31 (土)",
                     "venue": "도쿄·WWW X",
                     "setlist": null
                 },
                 {
                     "day_id": "part2",
                     "day_name": "2부",
-                    "date": "2026.09.05 (연기)",
+                    "date": "2026.10.31 (土)",
                     "venue": "도쿄·WWW X",
                     "setlist": null
                 }
