@@ -129,6 +129,32 @@ async function renderLiveList(container, bands, currentBand, upcomingLives, past
       `;
   };
 
+  // 년도별 그룹화 렌더링 헬퍼 함수
+  const renderYearGroups = (lives) => {
+    const yearGroups = {};
+    const years = [];
+
+    lives.forEach((live) => {
+      const year = (live.schedules[0]?.date || "9999").substring(0, 4);
+      if (!yearGroups[year]) {
+        yearGroups[year] = [];
+        years.push(year);
+      }
+      yearGroups[year].push(live);
+    });
+
+    return years
+      .map((year) => `
+        <div class="year-section">
+          <h4 class="year-label">${year}</h4>
+          <div class="live-grid">
+            ${yearGroups[year].map(createCardHTML).join("")}
+          </div>
+        </div>
+      `)
+      .join("");
+  };
+
   // 라이브 목록 or 빈 화면
   let liveContentHTML = "";
   if (upcomingLives.length === 0 && pastLives.length === 0) {
@@ -144,8 +170,8 @@ async function renderLiveList(container, bands, currentBand, upcomingLives, past
       sectionsHTML += `
         <div class="live-section">
           <h3 class="status-label">UPCOMING</h3>
-          <div class="live-grid">
-            ${upcomingLives.map(createCardHTML).join("")}
+          <div class="year-groups-wrapper">
+            ${renderYearGroups(upcomingLives)}
           </div>
         </div>
       `;
@@ -155,8 +181,8 @@ async function renderLiveList(container, bands, currentBand, upcomingLives, past
       sectionsHTML += `
         <div class="live-section">
           <h3 class="status-label past-label">PAST</h3>
-          <div class="live-grid">
-            ${pastLives.map(createCardHTML).join("")}
+          <div class="year-groups-wrapper">
+            ${renderYearGroups(pastLives)}
           </div>
         </div>
       `;
@@ -216,37 +242,39 @@ async function renderLiveList(container, bands, currentBand, upcomingLives, past
 
         // 카드 필터링
         let totalVisibleCount = 0;
+
         liveSections.forEach((section) => {
-          const cards = section.querySelectorAll(".live-card");
           let sectionVisibleCount = 0;
+          const yearSections = section.querySelectorAll(".year-section");
 
-          cards.forEach((card) => {
-            const liveType = card.getAttribute("data-type");
+          yearSections.forEach((yearSec) => {
+            const cards = yearSec.querySelectorAll(".live-card");
+            let yearVisibleCount = 0;
 
-            if (filterValue === "all" || filterValue === liveType) {
-              card.style.display = ""; // 카드 보여주기
-              sectionVisibleCount++;
-              totalVisibleCount++;
-            } else {
-              card.style.display = "none"; // 카드 숨기기
-            }
+            cards.forEach((card) => {
+              const liveType = card.getAttribute("data-type");
+
+              if (filterValue === "all" || filterValue === liveType) {
+                card.style.display = "";
+                yearVisibleCount++;
+                sectionVisibleCount++;
+                totalVisibleCount++;
+              } else {
+                card.style.display = "none";
+              }
+            });
+
+            // 해당 년도에 노출할 카드가 없으면 년도 래퍼 전체 숨김
+            yearSec.style.display = yearVisibleCount === 0 ? "none" : "";
           });
 
-          // (upcoming or past)섹션 노출 카드가 0개인 경우 라벨 포함 섹션 전체 숨김
-          if (sectionVisibleCount === 0) {
-            section.style.display = "none";
-          } else {
-            section.style.display = "";
-          }
+          // UPCOMING/PAST 섹션에 노출할 카드가 없으면 섹션 전체 숨김
+          section.style.display = sectionVisibleCount === 0 ? "none" : "";
         });
 
         // 전체 라이브가 0개인 경우 comming soon 표시
         if (filterEmptyState) {
-          if (totalVisibleCount === 0) {
-            filterEmptyState.style.display = "flex";
-          } else {
-            filterEmptyState.style.display = "none";
-          }
+          filterEmptyState.style.display = totalVisibleCount === 0 ? "flex" : "none";
         }
       });
     });

@@ -39,6 +39,31 @@
 }
 
 /* =========================================
+   Live List - Year Label
+========================================= */
+
+.year-groups-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3.5vw, 40px); /* 년도별 그룹 사이의 간격 */
+}
+
+.year-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.year-label {
+  font-family: var(--font-main);
+  font-size: clamp(16px, 2vw, 20px); 
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: clamp(12px, 2vw, 20px);
+  padding-bottom: 6px;
+  border-bottom: 1px solid #cccccc; /* 더 얇고 연한 테두리 */
+}
+
+/* =========================================
    Live Grid & Card
 ========================================= */
 
