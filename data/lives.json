@@ -5195,7 +5195,42 @@
                     "day_name": null,
                     "date": "2026.09.27 (日)",
                     "venue": "키치초지 ROCK JOINT GB",
-                    "setlist": null
+                    "setlist": {
+                        "note": null,
+                        "regular": [
+                            {
+                                "list_no": "1",
+                                "title": {
+                                    "ko": "Diorama"
+                                }
+                            },
+                            {
+                                "list_no": "2",
+                                "title": {
+                                    "ko": "A Tragic Mirage"
+                                }
+                            },
+                            {
+                                "list_no": "3",
+                                "title": {
+                                    "ko": "곡 소개 없음"
+                                }
+                            },
+                            {
+                                "list_no": "4",
+                                "title": {
+                                    "ko": "Sanctuary (Instrumental)"
+                                }
+                            },
+                            {
+                                "list_no": "5",
+                                "title": {
+                                    "ko": "Shallow"
+                                }
+                            }
+                        ],
+                        "encore": []
+                    }
                 }
             ]
         },

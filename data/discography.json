@@ -183,6 +183,10 @@
             {
               "url": "https://youtu.be/YI1_I_2MTDk?si=NEpTGargRpm9Ktqy",
               "text": "[4th Live] 망울을 터뜨리다"
+            },
+            {
+              "url": "https://youtu.be/6rShm3kizLY?si=nlRZVYl8QdjL8UGM",
+              "text": "[5th Live] 여명을 꿰뚫다"
             }
           ]
         },
@@ -1031,6 +1035,10 @@
               "text": "[4th Live] 망울을 터뜨리다"
             },
             {
+              "url": "https://youtu.be/6rShm3kizLY?si=nlRZVYl8QdjL8UGM",
+              "text": "[5th Live] 여명을 꿰뚫다"
+            },
+            {
               "url": "https://www.youtube.com/watch?v=iXB0Vn10dWs",
               "text": "[1st Live] 극사적 극채색 앤서"
             }
@@ -1391,6 +1399,10 @@
             {
               "url": "https://youtu.be/t604Tyc-kvU?si=L57uY_D8c-_33BOe",
               "text": "[1st Live] Diorama"
+            },
+            {
+              "url": "https://youtu.be/zlaEEbWcjk0?si=epzLmaO8_ct6OTBp",
+              "text": "[1st Live BAND multi ver.] Diorama"
             }
           ]
         },
@@ -1401,6 +1413,30 @@
               "ko": "Diorama"
             },
             "audio": "https://youtu.be/5SdFQOmF3SA?si=2XuGozuhUeNQk-aU"
+          }
+        ]
+      },
+      {
+        "id": "f-272_single_02",
+        "release_date": "2026.10.09",
+        "album_type": "single",
+        "album_tag": "Digital Single",
+        "title": {
+          "ko": "A Tragic Mirage"
+        },
+        "cover_image": "images/discography/f-272/2nd_digital_single.webp",
+        "media_links": {
+          "mv": [],
+          "anime": [],
+          "live": []
+        },
+        "tracklist": [
+          {
+            "track_no": 1,
+            "title": {
+              "ko": "A Tragic Mirage"
+            },
+            "audio": null
           }
         ]
       }

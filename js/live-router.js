@@ -37,7 +37,7 @@ async function initLiveEvent() {
     // 요일 제외 날짜만 오늘과 비교
     const firstScheduleDate = live.schedules[0]?.date?.substring(0, 10) || "9999.99.99";
 
-    if (firstScheduleDate > todayStr) {
+    if (firstScheduleDate >= todayStr) {
       upcomingLives.push(live);
     } else {
       pastLives.push(live);
