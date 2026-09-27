@@ -150,6 +150,42 @@
   word-break: keep-all;
 }
 
+/* 최상위 그룹 (블릿 기호 제거 및 여백) */
+.support-year-group {
+  list-style: none;
+  margin-bottom: clamp(12px, 2vw, 18px);
+}
+
+.support-year-group:last-child {
+  margin-bottom: 0;
+}
+
+/* 년도 라벨 디자인 */
+.support-year-label {
+  font-family: var(--font-main);
+  font-weight: 700;
+  color: #e35252; /* 포인트 색상 적용 */
+  font-size: clamp(14px, 1.5vw, 16px); /* 작은 타이틀 느낌으로 조절 */
+  margin-bottom: clamp(6px, 1vw, 10px);
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd; /* 연한 밑줄로 년도 구분선 추가 */
+}
+
+/* 실제 라이브 목록 (들여쓰기 및 불릿 기호 복구) */
+.support-year-shows {
+  padding-left: clamp(15px, 2.5vw, 25px);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 0.8vw, 8px); /* 각 공연명 사이의 간격 */
+}
+
+.support-year-shows li {
+  list-style-type: disc; /* 하위 항목에 점 기호 적용 */
+  color: #333;
+  line-height: 1.5;
+}
+
 .support-live-list {
   padding-left: clamp(15px, 2vw, 25px);
   margin: 0;

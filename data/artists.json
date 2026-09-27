@@ -345,7 +345,12 @@
                     {
                         "label": "참여 라이브",
                         "value": [
-                            "미레이의 활동 중단 이후, 2024년 '카와사키 100 페스'부터 토게나시 토게아리의 모든 라이브 일정에 서포트 멤버로 참여"
+                            {
+                                "year": "2024 - 2026",
+                                "shows": [
+                                    "미레이의 활동 중단 이후, 2024년 '카와사키 100 페스'부터 토게나시 토게아리의 모든 라이브 일정에 서포트 멤버로 참여"
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -372,24 +377,39 @@
                     {
                         "label": "참여 라이브",
                         "value": [
-                            "Animelo Summer Live 2024 -Stargazer-",
-                            "2nd ONE-MAN LIVE “린네의 이치”",
-                            "ATF 25th presents BAYCAMP 2024",
-                            "3rd ONE-MAN LIVE “포효의 연주”",
-                            "“린네의 이치” LIVE IN SHANGHAI",
-                            "rockin’on presents COUNTDOWN JAPAN 24/25",
-                            "MyGO!!!!! x 토게나시 토게아리 「Avoid Note」",
-                            "MEGA VEGAS 2025",
-                            "『걸즈 밴드 크라이』 2nd Anniversary LIVE",
-                            "She is Legend x 토게나시 토게아리 「SOUL&CRY」",
-                            "“격주의 외침” LIVE in 일본 무도관",
-                            "나탈리 x 일본 공학원 카마타 마츠리 School Festival LIVE",
-                            "RAISE A SUILEN x 토게나시 토게아리 「RAISE MY CATHARSIS」",
-                            "rockin’on presents COUNTDOWN JAPAN 25/26",
-                            "Zepp Tour 2026 “박동의 미래” (후쿠오카 제외)",
-                            "“린네의 이치” Live in SEOUL",
-                            "“박동의 미래 -ENCORE-” TOUR 2026 FINAL",
-                            "FEST. INAZUMA 2026"
+                            {
+                                "year": "2024",
+                                "shows": [
+                                    "Animelo Summer Live 2024 -Stargazer-",
+                                    "2nd ONE-MAN LIVE “린네의 이치”",
+                                    "ATF 25th presents BAYCAMP 2024",
+                                    "3rd ONE-MAN LIVE “포효의 연주”",
+                                    "“린네의 이치” LIVE IN SHANGHAI",
+                                    "rockin’on presents COUNTDOWN JAPAN 24/25"
+                                ]
+                            },
+                            {
+                                "year": "2025",
+                                "shows": [
+                                    "MyGO!!!!! x 토게나시 토게아리 「Avoid Note」",
+                                    "MEGA VEGAS 2025",
+                                    "『걸즈 밴드 크라이』 2nd Anniversary LIVE",
+                                    "She is Legend x 토게나시 토게아리 「SOUL&CRY」",
+                                    "“격주의 외침” LIVE in 일본 무도관",
+                                    "나탈리 x 일본 공학원 카마타 마츠리 School Festival LIVE",
+                                    "RAISE A SUILEN x 토게나시 토게아리 「RAISE MY CATHARSIS」",
+                                    "rockin’on presents COUNTDOWN JAPAN 25/26"
+                                ]
+                            },
+                            {
+                                "year": "2026",
+                                "shows": [
+                                    "Zepp Tour 2026 “박동의 미래” (후쿠오카 제외)",
+                                    "“린네의 이치” Live in SEOUL",
+                                    "“박동의 미래 -ENCORE-” TOUR 2026 FINAL",
+                                    "FEST. INAZUMA 2026"
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -416,9 +436,19 @@
                     {
                         "label": "참여 라이브",
                         "value": [
-                            "4th ONE-MAN LIVE “협주의 울림”",
-                            "5th ONE-MAN LIVE “울림의 순간”",
-                            "“린네의 이치” LIVE IN TAIPEI"
+                            {
+                                "year": "2024",
+                                "shows": [
+                                    "4th ONE-MAN LIVE “협주의 울림”"
+                                ]
+                            },
+                            {
+                                "year": "2025",
+                                "shows": [
+                                    "5th ONE-MAN LIVE “울림의 순간”",
+                                    "“린네의 이치” LIVE IN TAIPEI"
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -446,13 +476,28 @@
                     {
                         "label": "참여 라이브",
                         "value": [
-                            "WONDERLIVET 2024",
-                            "J-POP SOUND CAPSULE @AX2025 〜Anisong World Matsuri Returns〜",
-                            "Zepp Tour 2026 “박동의 미래” 후쿠오카",
-                            "CON-CON HONG KONG 2026",
-                            "“린네의 이치” SOUTHEAST ASIA TOUR 2026",
-                            "ASUTO MUSIC PARK 2026",
-                            "ROCK IN JAPAN FESTIVAL 2026"
+                            {
+                                "year": "2024",
+                                "shows": [
+                                    "WONDERLIVET 2024"
+                                ]
+                            },
+                            {
+                                "year": "2025",
+                                "shows": [
+                                    "J-POP SOUND CAPSULE @AX2025 〜Anisong World Matsuri Returns〜"
+                                ]
+                            },
+                            {
+                                "year": "2026",
+                                "shows": [
+                                    "Zepp Tour 2026 “박동의 미래” 후쿠오카",
+                                    "CON-CON HONG KONG 2026",
+                                    "“린네의 이치” SOUTHEAST ASIA TOUR 2026",
+                                    "ASUTO MUSIC PARK 2026",
+                                    "ROCK IN JAPAN FESTIVAL 2026"
+                                ]
+                            }
                         ]
                     }
                 ]

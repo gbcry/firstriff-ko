@@ -89,7 +89,23 @@ async function renderRealBandView(container, realBands, currentBand, artists) {
 
       // 참여 라이브 리스트
       const liveDetail = support.profile.details.find((d) => d.label === "참여 라이브");
-      const liveListHTML = liveDetail ? liveDetail.value.map((v) => `<li>${v}</li>`).join("") : "";
+      let liveListHTML = "";
+
+      if (liveDetail && liveDetail.value) {
+        liveListHTML = liveDetail.value.map((group) => {
+          // 하위 라이브 목록 렌더링
+          const showsHTML = group.shows.map((show) => `<li>${show}</li>`).join("");
+
+          return `
+            <li class="support-year-group">
+              <div class="support-year-label">${group.year}</div>
+              <ul class="support-year-shows">
+                ${showsHTML}
+              </ul>
+            </li>
+          `;
+        }).join("");
+      }
 
       const jpNameHTML = support.name.sub ? `<span class="support-name-sub">${support.name.sub}</span>` : "";
 
