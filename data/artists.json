@@ -1144,6 +1144,121 @@
             "sns": {
                 "x": "https://x.com/luca_F272"
             }
+        },
+        {
+            "id": "aina",
+            "band_id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠",
+            "name": {
+                "main": "아이나",
+                "sub": "藍楠"
+            },
+            "character": {
+                "id": "karuta",
+                "name": "오토즈 카루타"
+            },
+            "position": "Ba.",
+            "profile": null,
+            "images": {
+                "main_visual": "images/artist/kuzumimizuku/karuta_full.webp",
+                "thumbnail": "images/artist/kuzumimizuku/karuta_thumb.webp"
+            },
+            "sns": {
+                "x": "https://x.com/aina_kzmmzk",
+                "instagram": "https://www.instagram.com/aina_kzmmzk"
+            }
+        },
+        {
+            "id": "mana",
+            "band_id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠",
+            "name": {
+                "main": "마나",
+                "sub": "茉那"
+            },
+            "character": {
+                "id": "su",
+                "name": "이토요 스우"
+            },
+            "position": "Gt.",
+            "profile": null,
+            "images": {
+                "main_visual": "images/artist/kuzumimizuku/su_full.webp",
+                "thumbnail": "images/artist/kuzumimizuku/su_thumb.webp"
+            },
+            "sns": {
+                "x": "https://x.com/mana_kzmmzk",
+                "instagram": "https://www.instagram.com/mana_kzmmzk"
+            }
+        },
+        {
+            "id": "an",
+            "band_id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠",
+            "name": {
+                "main": "안",
+                "sub": "和音"
+            },
+            "character": {
+                "id": "wakaba",
+                "name": "와카호리 와카바"
+            },
+            "position": "Vo.",
+            "profile": null,
+            "images": {
+                "main_visual": "images/artist/kuzumimizuku/wakaba_full.webp",
+                "thumbnail": "images/artist/kuzumimizuku/wakaba_thumb.webp"
+            },
+            "sns": {
+                "x": "https://x.com/an_kzmmzk",
+                "instagram": "https://www.instagram.com/an_kzmmzk"
+            }
+        },
+        {
+            "id": "noa",
+            "band_id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠",
+            "name": {
+                "main": "노아",
+                "sub": "乃逢"
+            },
+            "character": {
+                "id": "fuka",
+                "name": "우츠기 후카"
+            },
+            "position": "Dr.",
+            "profile": null,
+            "images": {
+                "main_visual": "images/artist/kuzumimizuku/fuka_full.webp",
+                "thumbnail": "images/artist/kuzumimizuku/fuka_thumb.webp"
+            },
+            "sns": {
+                "x": "https://x.com/noa_kzmmzk",
+                "instagram": "https://www.instagram.com/noa_kzmmzk"
+            }
+        },
+        {
+            "id": "kaya",
+            "band_id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠",
+            "name": {
+                "main": "카야",
+                "sub": "佳哉"
+            },
+            "character": {
+                "id": "shino",
+                "name": "야츠미 시노"
+            },
+            "position": "Key.",
+            "profile": null,
+            "images": {
+                "main_visual": "images/artist/kuzumimizuku/shino_full.webp",
+                "thumbnail": "images/artist/kuzumimizuku/shino_thumb.webp"
+            },
+            "sns": {
+                "x": "https://x.com/kaya_kzmmzk",
+                "instagram": "https://www.instagram.com/kaya_kzmmzk"
+            }
         }
     ]
 }

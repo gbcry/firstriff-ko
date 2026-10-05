@@ -22,12 +22,12 @@
           {
             "label": "■ 티켓 정보",
             "value": [
-              "티켓 예매 정보는 공식 사이트를 확인해 주시기 바랍니다."
+              "티켓 예매 정보는 공식 홈페이지를 확인해 주시기 바랍니다."
             ],
             "link": [
               {
                 "url": "https://anime-japan.jp/tickets/",
-                "text": "AnimeJapan 공식 사이트 바로가기"
+                "text": "AnimeJapan 공식 홈페이지 바로가기"
               }
             ]
           }
@@ -249,7 +249,7 @@
             "link": [
               {
                 "url": "https://cannalily-official.com/",
-                "text": "Canna Lily 공식 사이트"
+                "text": "Canna Lily 공식 홈페이지"
               },
               {
                 "url": "https://x.com/CannaLily_GBC",
@@ -314,7 +314,7 @@
             "link": [
               {
                 "url": "https://clubcitta.co.jp/",
-                "text": "CLUB CITTA' KAWASAKI 공식 사이트"
+                "text": "CLUB CITTA' KAWASAKI 공식 홈페이지"
               }
             ]
           },
@@ -326,7 +326,7 @@
             "link": [
               {
                 "url": "https://f-272.bzone.co.jp/",
-                "text": "F-272 공식 사이트"
+                "text": "F-272 공식 홈페이지"
               },
               {
                 "url": "https://x.com/F_272_GBC",
@@ -371,12 +371,12 @@
               "장소: duo MUSIC EXCHANGE",
               "1부: 입장 13:00 / 개연 14:00",
               "2부: 입장 17:30 / 개연 18:30",
-              "※ 상세한 공연 및 티켓 정보 등에 대해서는 「Canna Lily」 공식 사이트를 통해 확인해 주시기 바랍니다."
+              "※ 상세한 공연 및 티켓 정보 등에 대해서는 「Canna Lily」 공식 홈페이지를 통해 확인해 주시기 바랍니다."
             ],
             "link": [
               {
                 "url": "https://www.duomusicexchange.com/index.html",
-                "text": "duo MUSIC EXCHANGE 공식 사이트"
+                "text": "duo MUSIC EXCHANGE 공식 홈페이지"
               }
             ]
           },
@@ -394,7 +394,116 @@
             "link": [
               {
                 "url": "https://cannalily-official.com/contact/",
-                "text": "Canna Lily 공식 사이트 - 문의 페이지"
+                "text": "Canna Lily 공식 홈페이지 - 문의 페이지"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20261003_01",
+      "date": "2026.10.03",
+      "title": "쿠즈미미즈쿠 수행 중! 공개 연습 라이브 개최 결정!",
+      "details": {
+        "news_image": null,
+        "description": [
+          "쿠즈미미즈쿠 수행 중! 공개 연습 라이브 개최가 결정되었습니다.",
+          "티켓 정보 등의 자세한 사항은 추후 안내를 기다려 주시기 바랍니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": [
+              "2026년 10월 18일 (日) 입장 16:45 / 개연 17:30"
+            ],
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": [
+              "다이칸야마 SPACE ODD"
+            ],
+            "link": [
+              {
+                "url": "https://spaceodd.jp/",
+                "text": "다이칸야마 SPACE ODD 공식 홈페이지"
+              }
+            ]
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": [
+              "본 이벤트는 추첨을 통한 무료 초대제로 진행됩니다.",
+              "접수 기간: 2026년 10월 3일 (土) 20:00 ~ 10월 10일 (土) 23:59",
+              "※ 입장 시 드링크 비용 700엔이 별도로 부과되오니, 미리 양해 부탁드립니다."
+            ],
+            "link": [
+              {
+                "url": "https://forms.gle/nny4gx7niY5DzZaEA",
+                "text": "라이브 신청 폼 바로가기"
+              }
+            ]
+          },
+          {
+            "label": "■ 쿠즈미미즈쿠 공식 HP/SNS",
+            "value": [
+              "라이브 관련 최신 정보는 쿠즈미미즈쿠 공식 HP 또는 X를 통해 확인해 주시기 바랍니다."
+            ],
+            "link": [
+              {
+                "url": "https://kuzumimizuku-official.com/",
+                "text": "쿠즈미미즈쿠 공식 홈페이지"
+              },
+              {
+                "url": "https://x.com/kzmmzk_GBC",
+                "text": "쿠즈미미즈쿠 공식 X"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20261003_02",
+      "date": "2026.10.03",
+      "title": "걸즈 밴드 크라이 Special LIVE “적색의 향제”에 걸리프 밴드 게스트 참가 결정!",
+      "details": {
+        "news_image": "images/news/20261003_02.webp",
+        "description": [
+          "걸즈 밴드 크라이 Special LIVE “적색의 향제”에 「Canna Lily」, 「F-272」, 「쿠즈미미즈쿠」의 게스트 참가가 결정되었습니다.",
+          "걸리프 밴드의 게스트 참여를 기념하여, 걸리프 선행 추첨 예매를 진행합니다."
+        ],
+        "info_list": [
+          {
+            "label": "■ 개최 일정",
+            "value": [
+              "2026년 11월 3일 (火·공휴일) 입장 16:00 / 개연 17:00"
+            ],
+            "link": null
+          },
+          {
+            "label": "■ 장소",
+            "value": [
+              "피아 아레나 MM"
+            ],
+            "link": [
+              {
+                "url": "https://pia-arena.com/",
+                "text": "피아 아레나 MM 공식 홈페이지"
+              }
+            ]
+          },
+          {
+            "label": "■ 티켓 정보",
+            "value": [
+              "걸리프 선행 추첨 예매를 진행합니다.",
+              "접수 기간: 2026년 10월 3일 (土) 20:00 ~ 10월 12일 (月·공휴일) 23:59"
+            ],
+            "link": [
+              {
+                "url": "https://t.pia.jp/pia/event/event.do?eventCd=2629974",
+                "text": "피아 티켓 예매 페이지 바로가기"
               }
             ]
           }

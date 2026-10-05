@@ -357,6 +357,16 @@ a {
   background-color: var(--color-white); /* 호버/활성 */
 }
 
+a[href="#band/kuzumimizuku"] .tab-logo-default,
+a[href="#band/kuzumimizuku"] .tab-logo-hover,
+a[href="#discography/kuzumimizuku"] .tab-logo-default,
+a[href="#discography/kuzumimizuku"] .tab-logo-hover,
+a[href="#real_band/kuzumimizuku"] .tab-logo-default,
+a[href="#real_band/kuzumimizuku"] .tab-logo-hover {
+  max-width: 90%; /* 기본 70%보다 값을 더 올려 투명 여백을 상쇄 */
+  max-height: 90%;
+}
+
 /* 로고 이미지 스위칭 */
 .tab-logo-default,
 .tab-logo-hover {

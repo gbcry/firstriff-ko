@@ -5135,7 +5135,10 @@
             "key_visual": "images/live/live_taiban_06.webp",
             "participate": [
                 "togenashitogeari",
-                "diamonddust"
+                "diamonddust",
+                "cannalily",
+                "f-272",
+                "kuzumimizuku"
             ],
             "cast": [
                 {
@@ -5144,6 +5147,18 @@
                 },
                 {
                     "band": "다이아몬드 더스트",
+                    "members": []
+                },
+                {
+                    "band": "Canna Lily",
+                    "members": []
+                },
+                {
+                    "band": "F-272",
+                    "members": []
+                },
+                {
+                    "band": "쿠즈미미즈쿠",
                     "members": []
                 }
             ],
@@ -7363,6 +7378,38 @@
                     "day_name": null,
                     "date": "2027.01.29 (金)",
                     "venue": "카와사키・CLUB CITTA",
+                    "setlist": null
+                }
+            ]
+        },
+        {
+            "id": "live_kuzu_promotion",
+            "type": "one-man",
+            "title": {
+                "ko": "쿠즈미미즈쿠 수행 중! 공개 연습 라이브"
+            },
+            "key_visual": "images/live/live_kuzu_promotion.webp",
+            "participate": [
+                "kuzumimizuku"
+            ],
+            "cast": [
+                {
+                    "band": "kuzumimizuku",
+                    "members": [
+                        "아이나 (오토즈 카루타 役)",
+                        "마나 (이토요 스우 役)",
+                        "안 (와카호리 와카바 役)",
+                        "노아 (우츠기 후카 役)",
+                        "카야 (야츠미네 시노 役)"
+                    ]
+                }
+            ],
+            "schedules": [
+                {
+                    "day_id": null,
+                    "day_name": null,
+                    "date": "2026.10.18 (日)",
+                    "venue": "다이칸야마 SPACE ODD",
                     "setlist": null
                 }
             ]

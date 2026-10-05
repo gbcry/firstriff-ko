@@ -74,18 +74,34 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
   const jpNameHTML = currentArtist.name.sub ? `<span class="artist-name-sub">${currentArtist.name.sub}</span>` : "";
 
   // 프로필
-  const detailsHTML = currentArtist.profile.details && currentArtist.profile.details.length > 0
-    ? currentArtist.profile.details.map((detail) => {
-      const valueStr = Array.isArray(detail.value)
-        ? detail.value.join(" | ")
-        : detail.value;
-      return `
+  let profileContentHTML = "";
+  if (!currentArtist.profile) {
+    // 프로필 정보가 null인 경우 (COMING SOON 노출)
+    profileContentHTML = `
+      <div class="empty-state" style="padding: 20px 0;">
+        <p class="empty-text">COMING SOON</p>
+      </div>
+    `;
+  } else {
+    const detailsHTML = currentArtist.profile.details && currentArtist.profile.details.length > 0
+      ? currentArtist.profile.details.map((detail) => {
+        const valueStr = Array.isArray(detail.value)
+          ? detail.value.join(" | ")
+          : detail.value;
+        return `
         <div class="profile-row">
           <span class="label">${detail.label}</span><span class="value">${valueStr}</span>
         </div>
       `;
-    }).join("")
-    : "";
+      }).join("")
+      : "";
+
+    profileContentHTML = `
+      <div class="profile-row"><span class="label">생일</span><span class="value">${currentArtist.profile.birth || "미공개"}</span></div>
+      <div class="profile-row"><span class="label">출신지</span><span class="value">${currentArtist.profile.hometown || "미공개"}</span></div>
+      ${detailsHTML}
+    `;
+  }
 
   const visualImageSrc = currentArtist.images.main_visual || currentArtist.images.thumbnail;
 
@@ -140,9 +156,7 @@ async function renderArtistView(container, currentArtist, currentBand, artists, 
             </div>
 
             <div class="artist-profile-details">
-                <div class="profile-row"><span class="label">생일</span><span class="value">${currentArtist.profile.birth}</span></div>
-                <div class="profile-row"><span class="label">출신지</span><span class="value">${currentArtist.profile.hometown || "미공개"}</span></div>
-                ${detailsHTML}
+                ${profileContentHTML}
             </div>
           </div>
 

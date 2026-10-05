@@ -141,6 +141,50 @@
           "text": "F-272 첫 생방송"
         }
       ]
+    },
+    {
+      "id": "kuzumimizuku",
+      "name": "쿠즈미미즈쿠 (쓰레기 부엉이)",
+      "introduction": [
+        "칠칠치 못한 어른 4명과 자의식 과잉인 독설가 꼬맹이 1명으로 이루어진 청춘 펑크 밴드.",
+        "일 때문에 결성한 임시방편 머릿수 채우기. 닥쳐오는 어른들의 사정과 갑작스러운 기획 변경.",
+        "꼴사납고 한심하며, 열정도 활기도 실력도 없다. 그래도 음악만큼은 계속해도 좋다."
+      ],
+      "images": {
+        "main_visual": "images/band/kuzumimizuku/main_visual.webp",
+        "band_main": "images/band/kuzumimizuku/band_main.webp",
+        "band_logo": "images/band/kuzumimizuku/band_logo.webp",
+        "tab_logo": {
+          "default": "images/band/kuzumimizuku/tab_logo_default.webp",
+          "hover": "images/band/kuzumimizuku/tab_logo_hover.webp"
+        },
+        "background": "images/band/kuzumimizuku/background.webp"
+      },
+      "member_ids": [
+        "karuta",
+        "su",
+        "wakaba",
+        "fuka",
+        "shino"
+      ],
+      "links": [
+        {
+          "url": "https://x.com/kzmmzk_GBC",
+          "text": "쿠즈미미즈쿠 공식 X"
+        },
+        {
+          "url": "https://kuzumimizuku-official.com/",
+          "text": "쿠즈미미즈쿠 공식 사이트"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ifbu6saiYxs",
+          "text": "쿠즈미미즈쿠 DEBUT PV"
+        },
+        {
+          "url": "https://www.youtube.com/live/AnaLK4ccTIM?si=cLe81gRYxX-oyMyQ",
+          "text": "쿠즈미미즈쿠 첫 생방송"
+        }
+      ]
     }
   ]
 }

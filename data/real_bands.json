@@ -62,6 +62,24 @@
                 "hinano",
                 "luca"
             ]
+        },
+        {
+            "id": "kuzumimizuku",
+            "band_name": "쿠즈미미즈쿠 (쓰레기 부엉이)",
+            "debut": "2026년 10월 3일",
+            "agency": "KING AMUSEMENT CREATIVE",
+            "band_image": "images/artist/kuzumimizuku/band_main.jpeg",
+            "links": {
+                "official_site": "https://kuzumimizuku-official.com/",
+                "x": "https://x.com/kzmmzk_GBC"
+            },
+            "member_ids": [
+                "aina",
+                "mana",
+                "an",
+                "noa",
+                "kaya"
+            ]
         }
     ]
 }

@@ -707,6 +707,194 @@
         "full_body": "images/character/f-272/saki_full.webp"
       },
       "links": null
+    },
+    {
+      "id": "karuta",
+      "band_id": "kuzumimizuku",
+      "band_name": "쿠즈미미즈쿠",
+      "name": {
+        "main": "오토즈 카루타",
+        "sub": "乙津 歌留多"
+      },
+      "cv": {
+        "id": "aina",
+        "name": "아이나"
+      },
+      "position": "Ba.",
+      "profile": {
+        "age": "22세",
+        "birth": null,
+        "details": [
+          {
+            "label": "취미",
+            "value": [
+              "경마",
+              "경마장 구경",
+              "꽝인 마권 수집"
+            ]
+          }
+        ],
+        "intro_text": [
+          "엉터리 도박 무녀.",
+          "자신이 가장 멀쩡하다고 생각하고 있어서 감당이 안 된다."
+        ],
+        "message": "인생을 윤택하게 해 주는 건, 콸콸 쏟아지는 뇌즙 생활!"
+      },
+      "images": {
+        "thumbnail": "images/character/kuzumimizuku/karuta_thumb.webp",
+        "full_body": "images/character/kuzumimizuku/karuta_full.webp"
+      },
+      "links": null
+    },
+    {
+      "id": "su",
+      "band_id": "kuzumimizuku",
+      "band_name": "쿠즈미미즈쿠",
+      "name": {
+        "main": "이토요 스우",
+        "sub": "飯豊 澄羽"
+      },
+      "cv": {
+        "id": "mana",
+        "name": "마나"
+      },
+      "position": "Gt.",
+      "profile": {
+        "age": "14세",
+        "birth": null,
+        "details": [
+          {
+            "label": "취미",
+            "value": [
+              "음악 이외의 것을 할 시간은 없습니다"
+            ]
+          }
+        ],
+        "intro_text": [
+          "건방진 청개구리 히키코모리.",
+          "실력은 확실한 것 같지만 인성에 문제가 있다."
+        ],
+        "message": "어른이니까, 제대로 좀 하세요."
+      },
+      "images": {
+        "thumbnail": "images/character/kuzumimizuku/su_thumb.webp",
+        "full_body": "images/character/kuzumimizuku/su_full.webp"
+      },
+      "links": null
+    },
+    {
+      "id": "wakaba",
+      "band_id": "kuzumimizuku",
+      "band_name": "쿠즈미미즈쿠",
+      "name": {
+        "main": "와카호리 와카바",
+        "sub": "若堀 若葉"
+      },
+      "cv": {
+        "id": "an",
+        "name": "안"
+      },
+      "position": "Vo.",
+      "profile": {
+        "age": "23세",
+        "birth": null,
+        "details": [
+          {
+            "label": "취미",
+            "value": [
+              "심야 드라이브",
+              "라디오",
+              "사우나"
+            ]
+          }
+        ],
+        "intro_text": [
+          "죽어가는 허세충 종합직.",
+          "사회인 2년차 병을 앓고 있으며, 툭하면 비즈니스 용어를 쓰고 싶어 한다."
+        ],
+        "message": "빌어먹을...이녀석도 저녀석도 제멋대로 지껄이고...진짜 죽여버린다..."
+      },
+      "images": {
+        "thumbnail": "images/character/kuzumimizuku/wakaba_thumb.webp",
+        "full_body": "images/character/kuzumimizuku/wakaba_full.webp"
+      },
+      "links": null
+    },
+    {
+      "id": "fuka",
+      "band_id": "kuzumimizuku",
+      "band_name": "쿠즈미미즈쿠",
+      "name": {
+        "main": "우츠기 후카",
+        "sub": "卯木 風薫"
+      },
+      "cv": {
+        "id": "noa",
+        "name": "노아"
+      },
+      "position": "Dr.",
+      "profile": {
+        "age": "24세",
+        "birth": null,
+        "details": [
+          {
+            "label": "취미",
+            "value": [
+              "수건 수집",
+              "이력서 수집",
+              "사회 복귀"
+            ]
+          }
+        ],
+        "intro_text": [
+          "대충 잠수 타는 전업 사회 부적응자.",
+          "어미에 「~슴다」를 붙이면 존댓말인 줄 안다."
+        ],
+        "message": "책임지고 그만두겠슴다!"
+      },
+      "images": {
+        "thumbnail": "images/character/kuzumimizuku/fuka_thumb.webp",
+        "full_body": "images/character/kuzumimizuku/fuka_full.webp"
+      },
+      "links": null
+    },
+    {
+      "id": "shino",
+      "band_id": "kuzumimizuku",
+      "band_name": "쿠즈미미즈쿠",
+      "name": {
+        "main": "야츠미네 시노",
+        "sub": "八峰 志乃"
+      },
+      "cv": {
+        "id": "kaya",
+        "name": "카야"
+      },
+      "position": "Key.",
+      "profile": {
+        "age": "23세",
+        "birth": null,
+        "details": [
+          {
+            "label": "취미",
+            "value": [
+              "핫요가",
+              "SUP 요가",
+              "필라테스"
+            ]
+          }
+        ],
+        "intro_text": [
+          "적당히 회사나 다니는 화려한 일반직 사원.",
+          "자신은 일을 빈틈없이 소화해 내기 때문에, 입사 동기인 와카바를 얕보고 있다."
+        ],
+        "message": "뒷담화, 서열질, 따돌림은 기본 무장이니까"
+      },
+      "images": {
+        "thumbnail": "images/character/kuzumimizuku/shino_thumb.webp",
+        "full_body": "images/character/kuzumimizuku/shino_full.webp"
+      },
+      "links": null
     }
   ]
 }

@@ -1440,6 +1440,25 @@
           }
         ]
       }
+    ],
+    "kuzumimizuku": [
+      {
+        "id": "kuzumimizuku_single_01",
+        "release_date": "2026.10.18",
+        "album_type": "single",
+        "album_tag": "Digital Single",
+        "title": {
+          "ko": "날개가 생긴 이유",
+          "ja": "羽が生えた理由"
+        },
+        "cover_image": "images/discography/kuzumimizuku/1st_digital_single.webp",
+        "media_links": {
+          "mv": [],
+          "anime": [],
+          "live": []
+        },
+        "tracklist": []
+      }
     ]
   }
 }

@@ -41,6 +41,16 @@
   display: block;
 }
 
+img.band-hero-logo[src*="kuzumimizuku"] {
+  position: absolute;
+  bottom: clamp(-20px, -2vw, -10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(100px, 50%, 380px);
+  object-fit: contain;
+  pointer-events: none;
+}
+
 .band-hero-logo {
   position: absolute;
   bottom: clamp(10px, 2vw, 15px);
